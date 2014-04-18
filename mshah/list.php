@@ -32,7 +32,17 @@ For large images
     <a class="fancybox" rel="group" href="/images/large_macys.jpg"><img src="/images/macys.jpg" alt="" /></a>
 -->
 <?php
-$dir_open = opendir('.');
+
+               //$dir_open = opendir('../../../mshah');
+
+               $files = glob("./images/[fF]*.{jpg,png,gif,bmp}", GLOB_BRACE);
+               for ($i=0; $i<count($files); $i++)
+               {
+                  $num = $files[$i];
+                  echo '<img src="'.$num.'" alt="M Shah Performing"/></br></br>';
+               }
+/*
+$dir_open = opendir('images');
 
 while(false !== ($filename = readdir($dir_open))){
    if (is_dir($filename)) {
@@ -49,7 +59,7 @@ while(false !== ($filename = readdir($dir_open))){
    else
    {
       if($filename != "." && $filename != ".."){
-         $link = "<p><img src='./$filename' alt='$filename'/><br><a href='./$filename'> $filename </a><br/></p>";
+         $link = "<p><img src='./images/$filename' alt='$filename'/><br><a href='./images/$filename'> $filename </a><br/></p>";
          echo $link;
       }
    }
@@ -59,6 +69,7 @@ echo $files;
 echo "<h3>Directories</h3>";
 echo $dirs;
 closedir($dir_open);
+*/
 ?>
       <!-- <a class="fancybox" rel="group" href="big_image_2.jpg"><img src="small_image_2.jpg" alt="" /></a>-->
    </body>

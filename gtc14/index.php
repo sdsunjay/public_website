@@ -12,87 +12,7 @@
 	<!-- Modernizr -->
   <script src="../../js/flexslider/modernizr.js"></script>
 
-  <!-- jQuery -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="../../js/flexslider/libs/jquery-1.7.min.js">\x3C/script>')</script>
 
-  <!-- FlexSlider -->
-  <script defer src="../../js/flexslider/jquery.flexslider.js"></script>
-
-</head>
-<body class="loading">
-
-  <div id="container" class="cf">
-    <header role="navigation">
-      <a class="logo" href="http://www.sunjaydhama.com/projects/swslo14" title="Startup Weekend SLO">
-        <img src="images/logo.png" alt="Startup Weekend SLO" />
-	  </a>
-      <h1>Startup Weekend SLO 2014</h1>
-<h2>
-No Talk, All Action. Launch a Startup in 54 hours.</h2>
-<!--
-      <a class="button green" href="https://github.com/woothemes/FlexSlider/zipball/master">Download Flexslider</a>
--->
-          
-  <h3 class="nav-header">More about Startup Weekend SLO</h3>
-      <nav>
-        <ul>
-          <li><a href="http://slo.startupweekend.org/">Event Page</a></li>
-          <li><a href="http://startupweekend.org/">Global Organization</a></li>
-        </ul>
-      </nav>
-  <h3 class="nav-header">Other</h3>
-      <nav>
-        <ul>
-<!--
-          <li class="active"><a href="index.php">Slider</a></li>
-          <li><a href="fullscreen.php">Fullscreen Mode</a></li>
-          <li><a href="list.php">List Mode</a></li>-->
-          <li><a href="http://sunjaydhama.com">Sunjay's Homepage</a></li>
-          <li><a href="https://github.com/woothemes/flexslider">Source</a></li>
-<!--
-          <li><a href="carousel-min-max.html">Carousel with min and max ranges</a></li>
-          <li><a href="dynamic-carousel-min-max.html">Carousel with dynamic min/max ranges</a></li>
-          <li><a href="video.html">Video & the api (vimeo)</a></li>
-          <li><a href="video-wistia.html">Video & the api (wistia)</a></li>
--->    
-    </ul>
-      </nav>
-    </header>
-    <div id="main" role="main">
-      <section class="slider">
-        <div class="flexslider">
-          <ul class="slides">
-             <li>
-              <iframe id="player_1" src="http://player.vimeo.com/video/89825376?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-  	    		</li>
-  	    		<li>
-  	    	    <img src="fr_748.jpg" />
-  	    		</li>
-  	    		<li>
-  	    	    <img src="fr_749.jpg" />
-  	    		</li>
-  	    		<li>
-  	    	    <img src="fr_750.jpg" />
-  	    		</li>
-  	    		<li>
-  	    	    <img src="fr_754.jpg" />
-  	    		</li>
-  	    		<li>
-  	    	    <img src="fr_756.jpg" />
-  	    		</li>
-  	    		<li>
-  	    	    <img src="fr_757.jpg" />
-  	    		</li>
-  	    		<li>
-  	    	    <img src="fr_758.jpg" />
-  	    		</li>
-  	    		<li>
-  	    	    <img src="fr_765.jpg" />
-  	    		</li>
-          </ul>
-        </div>
-      </section>
 
   <!-- jQuery -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -145,6 +65,64 @@ No Talk, All Action. Launch a Startup in 54 hours.</h2>
       });
     });
   </script>
+</head>
+<body class="loading">
+
+  <div id="container" class="cf">
+    <header role="navigation">
+      <a class="logo" href="http://www.sunjaydhama.com/projects/swslo14" title="Startup Weekend SLO">
+        <img src="logo.png" alt="Startup Weekend SLO" />
+	  </a>
+      <h1>GTC 2014</h1>
+<h2>
+GPU Technology Conference 2014</h2>
+<!--
+      <a class="button green" href="https://github.com/woothemes/FlexSlider/zipball/master">Download Flexslider</a>
+-->
+          
+  <h3 class="nav-header">More about GTC</h3>
+      <nav>
+        <ul>
+          <li><a href="http://www.gputechconf.com/page/home.html">Event Page</a></li>
+          <li><a href="http://www.nvidia.com/content/global/global.php">Nvidia</a></li>
+        </ul>
+      </nav>
+  <h3 class="nav-header">Other</h3>
+      <nav>
+        <ul>
+<!--
+          <li class="active"><a href="index.php">Slider</a></li>
+          <li><a href="fullscreen.php">Fullscreen Mode</a></li>
+          <li><a href="list.php">List Mode</a></li>-->
+          <li><a href="http://sunjaydhama.com">Sunjay's Homepage</a></li>
+          <li><a href="https://github.com/woothemes/flexslider">Source</a></li>
+<!--
+          <li><a href="carousel-min-max.html">Carousel with min and max ranges</a></li>
+          <li><a href="dynamic-carousel-min-max.html">Carousel with dynamic min/max ranges</a></li>
+          <li><a href="video.html">Video & the api (vimeo)</a></li>
+          <li><a href="video-wistia.html">Video & the api (wistia)</a></li>
+-->    
+    </ul>
+      </nav>
+    </header>
+    <div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+      <li><iframe id="player_1" src="http://player.vimeo.com/video/91864683?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
+      <li><iframe id="player_1" src="http://player.vimeo.com/video/91864681?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
+             <li><iframe id="player_1" src="http://player.vimeo.com/video/90510763?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
+      <li><iframe id="player_1" src="http://player.vimeo.com/video/90510764?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
+<?php
+               $files = glob("./images/*.{jpg,png,gif,bmp}", GLOB_BRACE);
+               for ($i=0; $i<count($files); $i++)
+               {
+                  $num = $files[$i];
+                  echo '<li><img src="'.$num.'" alt="my team"/></li>';
+               }?>
+          </ul>
+        </div>
+      </section>
 
    <!-- Syntax Highlighter 
 	<script type="text/javascript" src="demo/js/shCore.js"></script>

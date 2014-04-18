@@ -33,6 +33,18 @@ $(window).load(function(){
 });
 </script>
 
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+      <script type="text/javascript" language="JavaScript">
+         function set_body_height()
+{
+   var wh = $(window).height();
+   $('body').attr('style', 'height:' + wh + 'px;');
+}
+$(document).ready(function() {
+      set_body_height();
+      $(window).bind('resize', function() { set_body_height(); });
+      });
+</script>
 
   <!-- Syntax Highlighter -->
   <script type="text/javascript" src="../../js/flexslider/shCore.js"></script>
@@ -72,7 +84,7 @@ $(window).load(function(){
 
   <div id="container" class="cf">
     <header role="navigation">
-      <a class="logo" href="http://www.sunjaydhama.com/projects/mshah" title="M Shah">
+      <a class="logo" href="http://www.mshah.com" title="M Shah">
         <img src="images/logo.jpg" alt="M Shah" />
      </a>
       <h1>M Shah</h1>
@@ -91,8 +103,8 @@ $(window).load(function(){
   <h3 class="nav-header">Other</h3>
       <nav>
         <ul>
-          <li><a href="index.php">Slider</a></li>
-          <li class="active"><a href="fullscreen.php">Fullscreen Mode</a></li>
+          <li class="active"><a href="index.php">Slider</a></li>
+          <li><a href="fullscreen.php">Fullscreen Mode</a></li>
           <li><a href="list.php">List Mode</a></li>
           <li><a href="http://sunjaydhama.com">Sunjay's Homepage</a></li>
           <li><a href="https://github.com/woothemes/flexslider">Source</a></li>
@@ -105,14 +117,21 @@ $(window).load(function(){
     </ul>
       </nav>
     </header>
+
    <div id="main" role="main">
       <section class="slider">
         <div class="flexslider">
           <ul class="slides">
-            <li>
                <?php
                //$dir_open = opendir('../../../mshah');
-               $dir_open = opendir('.');
+
+               $files = glob("./images/[fF]*.{jpg,png,gif,bmp}", GLOB_BRACE);
+               for ($i=0; $i<count($files); $i++)
+               {
+                  $num = $files[$i];
+                  echo '<li><img src="'.$num.'" alt="M Shah Performing"/></li>';
+               }
+               /*$dir_open = opendir('images');
 
                while(false !== ($filename = readdir($dir_open))){
                   if (exif_imagetype($filename) != IMAGETYPE_JPEG) {
@@ -127,8 +146,8 @@ $(window).load(function(){
                   }
                }
                closedir($dir_open);
-               ?>
-                        </li>
+                */
+?>
           </ul>
         </div>
       </section>
