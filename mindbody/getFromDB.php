@@ -5,6 +5,7 @@ function getFromDB($name)
 
 // include db connect class
 require_once __DIR__ . '/db_connect.php';
+require_once '../../security/htmlpurifier/library/HTMLPurifier.auto.php';
 
 // connecting to db
 $db = new DB_CONNECT();
@@ -16,21 +17,22 @@ $db = new DB_CONNECT();
 // IF YOU ONLY WANT TO SHOW REVIEWS OF A PARTICULAR TYPE 
 // UNCOMMENT LINE BELOW
 
+$config = HTMLPurifier_Config::createDefault();
+$purifier = new HTMLPurifier($config);
+$name = $purifier->purify($name);
 $result = mysql_query("SELECT * FROM reviews WHERE businessName='$name'") or die(mysql_error());
 
 
 $numberOfRows = mysql_num_rows($result);
 if ($numberOfRows == 0) {
- ?>
-<p>Sorry, there are no reviews yet for this farm </p>
-<?php }
+   echo "<p>Sorry, there are no reviews yet for this farm </p>";
+}
 else 
 {
-?>
-<section id="reviews">
-<div class="container">
-    <h2>Reviews</h2>
-       <?php while($row = mysql_fetch_array($result)) : ?>
+   echo '<section id="reviews">
+      <div class="container">
+      <h2>Reviews</h2>';
+   while($row = mysql_fetch_array($result)) : ?>
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title" section id="johnsmith">
@@ -45,8 +47,9 @@ else
 </div>
 
 <?php 
-endwhile; 
-} $db.close()
+      endwhile; 
+} 
+//$db.close();
 ?>
 </section>
 
@@ -56,6 +59,6 @@ endwhile;
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/farmer.js"></script>
-    
+
 </body>
 </html>

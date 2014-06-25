@@ -72,6 +72,7 @@
 
          $db = new DB_CONNECT();
 
+         $result=null;
          $result = mysql_query("SELECT * FROM reviews ORDER BY businessName") or die(mysql_error());
       ?>
 
@@ -130,7 +131,7 @@
 
       <?php 
          endwhile; 
-         $db.close()
+        // $db.close()
       ?>
 
       </table>
