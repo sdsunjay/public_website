@@ -1,10 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <title>Vim</title>
 <meta charset="utf-8"/>
 <!--<link rel=stylesheet href="../doc/docs.css">-->
 <!-- JQuery so we can $.post! -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 <link rel="stylesheet" href="editor/lib/codemirror.css">
 <link rel="stylesheet" href="editor/demo/half.css">
@@ -106,10 +106,23 @@ document.documentElement.style.overflow = "hidden";
 /*
  * XSS Protective Measures 
  */
-require_once '../../security/htmlpurifier/library/HTMLPurifier.auto.php';
+require_once("/usr/share/nginx/html/security/htmlpurifier/HTMLPurifier.standalone.php");
+   
     $config = HTMLPurifier_Config::createDefault();
     $purifier = new HTMLPurifier($config);
-    $clean_html = $purifier->purify($_GET['name']);
+    if($_GET['name']=="")
+    {
+       $clean_html ="test";
+    }
+    else if(empty($_GET['name']))
+    {
+       $clean_html ="test";
+
+    }
+    else
+    {
+      $clean_html = $purifier->purify($_GET['name']);
+    }
 ?>
 //$.get("editor/demo/load/load.php?name=<?php echo $_GET['name'] ?>", function( data ) {
 $.get("editor/demo/load/load.php?name=<?php echo $clean_html?>", function( data ) {

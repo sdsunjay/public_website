@@ -5,8 +5,8 @@ function getFromDB($name)
 
 // include db connect class
 require_once __DIR__ . '/db_connect.php';
-require_once '../../security/htmlpurifier/library/HTMLPurifier.auto.php';
 
+require_once '../../security/htmlpurifier/HTMLPurifier.standalone.php';
 // connecting to db
 $db = new DB_CONNECT();
 
@@ -56,7 +56,7 @@ else
 <?php } ?>
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/farmer.js"></script>
 

@@ -13,7 +13,7 @@
   <script src="../../js/flexslider/modernizr.js"></script>
 
   <!-- jQuery -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="../../js/flexslider/libs/jquery-1.7.min.js">\x3C/script>')</script>
 
   <!-- FlexSlider -->
@@ -55,7 +55,7 @@ $(window).load(function(){
 </h3>
 
 <p>
-<a href="http://sunjaydhama.com">Homepage</a>
+<a href="https://sunjaydhama.com">Homepage</a>
 <p>
 <p>
 <a href="https://github.com/woothemes/flexslider">Source</a>
@@ -72,7 +72,7 @@ $(window).load(function(){
 
   <div id="container" class="cf">
     <header role="navigation">
-      <a class="logo" href="http://www.mshah.com" title="M Shah">
+      <a class="logo" href="https://www.mshah.com" title="M Shah">
         <img src="images/logo.jpg" alt="M Shah" />
      </a>
       <h1>Startup Weekend SLO 2014</h1>
@@ -85,8 +85,8 @@ No Talk, All Action. Launch a Startup in 54 hours.</h2>
   <h3 class="nav-header">More about Startup Weekend SLO</h3>
       <nav>
         <ul>
-          <li><a href="http://slo.startupweekend.org/">Event Page</a></li>
-          <li><a href="http://startupweekend.org/">Global Organization</a></li>
+          <li><a href="https://slo.startupweekend.org/">Event Page</a></li>
+          <li><a href="https://startupweekend.org/">Global Organization</a></li>
         </ul>
       </nav>
   <h3 class="nav-header">Other</h3>
@@ -96,7 +96,7 @@ No Talk, All Action. Launch a Startup in 54 hours.</h2>
           <li class="active"><a href="index.php">Slider</a></li>
           <li><a href="fullscreen.php">Fullscreen Mode</a></li>
           <li><a href="list.php">List Mode</a></li>-->
-          <li><a href="http://sunjaydhama.com">Sunjay's Homepage</a></li>
+          <li><a href="https://sunjaydhama.com">Sunjay's Homepage</a></li>
           <li><a href="https://github.com/woothemes/flexslider">Source</a></li>
 <!--
           <li><a href="carousel-min-max.html">Carousel with min and max ranges</a></li>

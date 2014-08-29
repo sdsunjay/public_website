@@ -15,7 +15,7 @@
 
 
   <!-- jQuery -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="../../js/flexslider/libs/jquery-1.7.min.js">\x3C/script>')</script>
 
   <!-- FlexSlider -->
@@ -51,16 +51,16 @@ $(".flexslider")
 
   <div id="container" class="cf">
     <header role="navigation">
-      <a class="logo" href="http://www.sunjaydhama.com/projects/swslo12" title="Startup Weekend SLO 2012">
+      <a class="logo" href="https://www.sunjaydhama.com/projects/swslo12" title="Startup Weekend SLO 2012">
         <img src="../swslo12/logo.png" alt="Startup Weekend SLO 2012" />
           </a>
       <h1>Startup Weekend SLO 2012</h1>
   <h3 class="nav-header">More about Startup Weekend SLO</h3>
       <nav>
         <ul>
-          <li><a href="http://tiptripweb.herokuapp.com/index.html">Tip Trip Website</a></li>
-          <li><a href="http://slo.startupweekend.org/">Event Page</a></li>
-          <li><a href="http://startupweekend.org/">Global Organization</a></li>
+          <li><a href="https://tiptripweb.herokuapp.com/index.html">Tip Trip Website</a></li>
+          <li><a href="https://slo.startupweekend.org/">Event Page</a></li>
+          <li><a href="https://startupweekend.org/">Global Organization</a></li>
          </ul>
       </nav>
   <h3 class="nav-header">Other</h3>
@@ -70,10 +70,10 @@ $(".flexslider")
           <li class="active"><a href="index.php">Slider</a></li>
           <li><a href="fullscreen.php">Fullscreen Mode</a></li>
           <li><a href="list.php">List Mode</a></li>-->
-           <li><a href="http://sunjaydhama.com/gui">GUI</a></li>
-           <li><a href="http://sunjaydhama.com/images">Project Images</a></li>
-           <li><a href="http://sunjaydhama.com/projects">Projects</a></li>
-           <li><a href="http://sunjaydhama.com">Sunjay's Homepage</a></li>
+           <li><a href="https://sunjaydhama.com/gui">GUI</a></li>
+           <li><a href="https://sunjaydhama.com/images">Project Images</a></li>
+           <li><a href="https://sunjaydhama.com/projects">Projects</a></li>
+           <li><a href="https://sunjaydhama.com">Sunjay's Homepage</a></li>
           <li><a href="https://github.com/woothemes/flexslider">Source</a></li>
 <!--
           <li><a href="carousel-min-max.html">Carousel with min and max ranges</a></li>

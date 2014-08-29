@@ -15,7 +15,7 @@
 
 
   <!-- jQuery -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="../../js/flexslider/libs/jquery-1.7.min.js">\x3C/script>')</script>
 
   <!-- FlexSlider -->
@@ -70,7 +70,7 @@
 
   <div id="container" class="cf">
     <header role="navigation">
-      <a class="logo" href="http://www.sunjaydhama.com/projects/swslo14" title="Startup Weekend SLO">
+      <a class="logo" href="https://www.sunjaydhama.com/projects/swslo14" title="Startup Weekend SLO">
         <img src="logo.png" alt="Startup Weekend SLO" />
 	  </a>
       <h1>GTC 2014</h1>
@@ -83,8 +83,8 @@ GPU Technology Conference 2014</h2>
   <h3 class="nav-header">More about GTC</h3>
       <nav>
         <ul>
-          <li><a href="http://www.gputechconf.com/page/home.html">Event Page</a></li>
-          <li><a href="http://www.nvidia.com/content/global/global.php">Nvidia</a></li>
+          <li><a href="https://www.gputechconf.com/page/home.html">Event Page</a></li>
+          <li><a href="https://www.nvidia.com/content/global/global.php">Nvidia</a></li>
         </ul>
       </nav>
   <h3 class="nav-header">Other</h3>
@@ -94,7 +94,7 @@ GPU Technology Conference 2014</h2>
           <li class="active"><a href="index.php">Slider</a></li>
           <li><a href="fullscreen.php">Fullscreen Mode</a></li>
           <li><a href="list.php">List Mode</a></li>-->
-          <li><a href="http://sunjaydhama.com">Sunjay's Homepage</a></li>
+          <li><a href="https://sunjaydhama.com">Sunjay's Homepage</a></li>
           <li><a href="https://github.com/woothemes/flexslider">Source</a></li>
 <!--
           <li><a href="carousel-min-max.html">Carousel with min and max ranges</a></li>
@@ -109,10 +109,10 @@ GPU Technology Conference 2014</h2>
       <section class="slider">
         <div class="flexslider">
           <ul class="slides">
-      <li><iframe id="player_1" src="http://player.vimeo.com/video/91864683?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
-      <li><iframe id="player_1" src="http://player.vimeo.com/video/91864681?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
-             <li><iframe id="player_1" src="http://player.vimeo.com/video/90510763?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
-      <li><iframe id="player_1" src="http://player.vimeo.com/video/90510764?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
+      <li><iframe id="player_1" src="https://player.vimeo.com/video/91864683?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
+      <li><iframe id="player_1" src="https://player.vimeo.com/video/91864681?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
+             <li><iframe id="player_1" src="https://player.vimeo.com/video/90510763?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
+      <li><iframe id="player_1" src="https://player.vimeo.com/video/90510764?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
 <?php
                $files = glob("./images/*.{jpg,png,gif,bmp}", GLOB_BRACE);
                for ($i=0; $i<count($files); $i++)

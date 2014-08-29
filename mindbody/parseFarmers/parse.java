@@ -24,7 +24,7 @@ public class parse{
       try{
          
          /*read the file from www.californiagasprices.com*/
-         /*wget -q -O index.html http://www.californiagasprices.com/index.aspx?area=San%20Luis%20Obispo*/
+         /*wget -q -O index.html https://www.californiagasprices.com/index.aspx?area=San%20Luis%20Obispo*/
          File f= new File("index.html");
          /*file scanner*/
          Scanner scan = new Scanner(f);

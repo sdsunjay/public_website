@@ -1,29 +1,41 @@
-<?php session_start(); 
-include("passwords.php");
-/*check to make sure we are logged in*/
-check_logged();
+
+<?php
+
+include_once("../../config/db_config.php");
+include("../accounts/functions.php");
+sec_session_start(); // Our custom secure way of starting a PHP session.
+
+
+$mysqli = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+/* check connection */
+if (mysqli_connect_errno()) 
+{
+   printf("Connect failed: %s\n", mysqli_connect_error());
+   echo "Connect: failed";
+   exit();
+}
 /*read prices from file*/
 /*return array of prices*/
 function getPrices()
 {
-	$fh = fopen('prices.txt', "r");
-	while (!feof($fh) ) {
-		$text = fgets($fh);
-		$vals = explode("|", $text);
-	}
-	fclose($fh);
-	return $vals;
+   $fh = fopen('prices.txt', "r");
+   if (!feof($fh) ) {
+      $text = fgets($fh);
+      $vals = explode("|", $text);
+   }
+   fclose($fh);
+   return $vals;
 }
 /*write prices in prices array*/
 function writePrices($prices)
 {
-	$fh = fopen('prices.txt', "w");
-	foreach($prices as $line)
-	{
-		fwrite($fh, $line."|");
-	}
+   $fh = fopen('prices.txt', "w");
+   foreach($prices as $line)
+   {
+      fwrite($fh, $line."|");
+   }
 
-	fclose($fh);
+   fclose($fh);
 }
 
 
@@ -31,53 +43,132 @@ function writePrices($prices)
 /*Logout user*/
 if(isset($_GET['logout']))
 {
-	session_destroy();
-	header("location:admin.php");
+   session_destroy();
+   header("location:admin.php");
 }
 
 
 
 if(isset($_POST['update']))
 {
-    $prices = getPrices();
-    if(!isset($prices[0])|| $prices[0] != $_POST['sfogas'])
-        $prices[0] = $_POST['sfogas'];                                              
-        
-    if(!isset($prices[1]) || $prices[1] != $_POST['sbpgas'])
-        $prices[1] = $_POST['sbpgas'];
-    
-    if(!isset($prices[2])|| $prices[2] != $_POST['sfoctime'])
-        $prices[2] = $_POST['sfoctime'];                                              
-    if(!isset($prices[3])|| $prices[3] != $_POST['sbpctime'])
-        $prices[3] = $_POST['sbpctime'];                                              
+   $prices = getPrices();
+   if(!isset($prices[0])|| $prices[0] != $_POST['sfogas'])
+      $prices[0] = $_POST['sfogas'];                                              
 
-    if(!isset($prices[4])|| $prices[4] != $_POST['sfopcost'])
-        $prices[4] = $_POST['sfopcost'];                                              
-    if(!isset($prices[5]) || $prices[5] != $_POST['sbppcost'])
-        $prices[5] = $_POST['sbppcost'];
+   if(!isset($prices[1]) || $prices[1] != $_POST['sbpgas'])
+      $prices[1] = $_POST['sbpgas'];
+
+   if(!isset($prices[2])|| $prices[2] != $_POST['sfoctime'])
+      $prices[2] = $_POST['sfoctime'];                                              
+   if(!isset($prices[3])|| $prices[3] != $_POST['sbpctime'])
+      $prices[3] = $_POST['sbpctime'];                                              
+
+   if(!isset($prices[4])|| $prices[4] != $_POST['sfopcost'])
+      $prices[4] = $_POST['sfopcost'];                                              
+   if(!isset($prices[5]) || $prices[5] != $_POST['sbppcost'])
+      $prices[5] = $_POST['sbppcost'];
 
    if(!isset($prices[6]) || $prices[6] != $_POST['sfodistance'])
-        $prices[6] = $_POST['sfodistance'];
-    if(!isset($prices[7]) || $prices[7] != $_POST['sbpdistance'])
-        $prices[7] = $_POST['sbpdistance'];
-    
-    //Writes array to file in order, separated by new lines
-    writePrices($prices);     //MODIFIED!
+      $prices[6] = $_POST['sfodistance'];
+   if(!isset($prices[7]) || $prices[7] != $_POST['sbpdistance'])
+      $prices[7] = $_POST['sbpdistance'];
+
+   //Writes array to file in order, separated by new lines
+   writePrices($prices);     //MODIFIED!
 }
 ?>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Admin Panel</title>
-</head>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta https-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Airport Calculator</title>
+<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../../gui/style.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+<script type="text/javascript" src="../../gui/jquery.formerize-0.1.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#search').formerize();
+	});
+</script>
 
+
+<script type="text/javascript" src="calculate.js">
+		</script>
+<style>
+.uinput {
+	width:50px;
+	background-color:blue;
+	background:white;
+}
+#output, #output1 {
+	text-align:center;
+}
+#text {
+	display:none;
+}
+#plane {
+	width:630px;
+	height:300px;
+}
+
+</style>
+
+
+</head>
 <body>
-<p>
+<div id="wrapper">
+<div id="header">
+  <div id="logo">
+    <h1><strong>Sunjay's Homepage</strong></h1>
+  </div>
+  <div id="search">
+    <form action="" method="post">
+      <div>
+        <input class="form-text" name="search" size="44" maxlength="100" title="Search my website" />
+      </div>
+    </form>
+  </div>
+ 	<div id="menu">
+                        <ul>
+                             <li class="https://sunjaydhama.com"><a href="../../gui/index.html">Home</a></li>
+                             <li><a href="../../gui/about.html">About</a></li>
+                             <li><a href="../../gui/images.html">Images</a></li>
+                             <li><a href="../../blog">Blog</a></li>
+                             <li><a href="../../gui/projects.html">Projects</a></li>
+                             <li><a href="../../gui/contact.html">Contact Me</a></li>
+<!--
+   <li class="https://sunjaydhama.com"><a href="https://sunjaydhama.com">Homepage</a></li>
+      <li><a href='#' onClick="window.open('https://about.me/sdsunjay', 'external');"   >About</a></li>
+                <li><a href="#" onClick="window.open('https://www.sunjaydhama.com/blog', 'external');">Blog</a></li>
+				<li><a href="#" onClick="window.open('https://www.users.csc.calpoly.edu/~sdhama', 'external');">CSC Stuff</a> </li> 
+				<li><a href="contact1.html">Contact Me</a></li>
+-->
+                        </ul>
+			<br class="clearfix" />
+		</div>
+	</div>
+	<div id="page">
+		<div id="sidebar">
+			<h3>Sidebar</h3>
+			<ul class="list">
+                         <li class="first"><a href="https://sunjaydhama.com">Terminal</a></li>
+                         <li><a href="#" onClick="window.open('https://github.com/sdsunjay?tab=repositories', 'external');">Github</a></li>
+                      
+      <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/sdsunjay" data-widget-id="459207762094735360">Tweets by @sdsunjay</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^https:/.test(d.location)?'https':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </ul>
+</div>
+<div id="content">
+<div id="post1">
+
 <?php 
-	$prices = getPrices();
+/*check to make sure we are logged in*/
+if(login_check($mysqli))
+{
+$prices = getPrices();
 ?>
+
 <form id="form2" name="form2" method="post" action="">
 <table width="450" border="0" cellpadding="0">
   <tr>
@@ -112,7 +203,7 @@ if(isset($_POST['update']))
     <td>&nbsp;</td>
     <td>
       <input type="submit" name="update" id="update" value="Update" />
-   
+
     </td>
   </tr>
 </table>
@@ -125,5 +216,34 @@ if(isset($_POST['update']))
 </form>
 
 </p>
+<?php }
+else
+{
+   Redirect('https://www.sunjaydhama.com/projects/accounts/index.php', true);
+}
+?>
+</div>
+</div>
+
+                  <div id="footer"> Copyright (c) 2014 <a href="https://www.sunjaydhama.com/">Sunjay Dhama</a>. All rights reserved. Template by <a href="https://www.freecsstemplates.org/">CSS Templates</a><br>
+<a class='facebook' href='#' onclick="window.open('https://www.linkedin.com/in/sdsunjay','external');" >
+                        <img alt='' src='../../gui/images/li.png' width="30" height="30" /></a>
+                     <a class='twitter' href='#' onclick="window.open('https://www.twitter.com/sdsunjay','external');" >
+                        <br>
+                        <img alt='' src='../../gui/images/twitt.jpg' width="30" height="30"/></a>
+                     <br>
+                     <a href="https://bitcoin.org" target="_NEW">BitCoin</a>: <b><a href="bitcoin:1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx">1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx</a></b><br />
+                  </div>
+               </body>
+            </html>
+<!--
+<div id="footer"> Copyright (c) 2012 www.sunjaydhama.com. All rights reserved. Template by <a href="https://www.freecsstemplates.org/">CSS Templates</a>. </div>
+
+</div>
+</div>
 </body>
-</html>
+</html></div>
+
+
+</body>
+</html>-->

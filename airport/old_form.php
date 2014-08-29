@@ -1,9 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 </head>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta https-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Airport Calculator</title>
 <script type="text/javascript" src="calculate.js">
 </script>
@@ -105,7 +105,7 @@ function resetForm(){
       </tr>
       <tr>
         <td width="222" align="left" valign="middle"/>
-        <a href ="http://www.yourweblog.com/yourfile.html" onclick="window.open('mileageCost.html','popup','width=200,height=200,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,right=0,top=0, middle=0'); return false"> Mileage Cost($):</a>
+        <a href ="https://www.yourweblog.com/yourfile.html" onclick="window.open('mileageCost.html','popup','width=200,height=200,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,right=0,top=0, middle=0'); return false"> Mileage Cost($):</a>
         </td>
       
       
@@ -124,7 +124,7 @@ function resetForm(){
       <tr>
         <td align="left" valign="middle"><input type="button" name="calculate" value="Calculate" onclick="Calculation()" />
           <input type="button"  value="Reset" onclick="resetForm()" />
-          &nbsp;&nbsp; <a href="http://www.yourweblog.com/yourfile.html" onclick="window.open('info.html','popup','width=200,height=200,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,right=0,top=0, middle=0'); return false">?</a></td>
+          &nbsp;&nbsp; <a href="https://www.yourweblog.com/yourfile.html" onclick="window.open('info.html','popup','width=200,height=200,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,right=0,top=0, middle=0'); return false">?</a></td>
         <td align="left" valign="middle" id="output"></td>
         <td align="left" valign="middle" id="output1"></td>
       </tr>

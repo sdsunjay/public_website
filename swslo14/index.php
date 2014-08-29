@@ -13,7 +13,7 @@
   <script src="../../js/flexslider/modernizr.js"></script>
 
   <!-- jQuery -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="../../js/flexslider/libs/jquery-1.7.min.js">\x3C/script>')</script>
 
   <!-- FlexSlider -->
@@ -24,8 +24,8 @@
 
   <div id="container" class="cf">
     <header role="navigation">
-      <a class="logo" href="http://www.sunjaydhama.com/projects/swslo14" title="Startup Weekend SLO">
-        <img src="logo.png" alt="Startup Weekend SLO" />
+      <a class="logo" href="https://www.sunjaydhama.com/projects/swslo14" title="Startup Weekend SLO 2014">
+        <img src="logo.png" alt="Startup Weekend SLO 2014" />
 	  </a>
       <h1>Startup Weekend SLO 2014</h1>
 <h2>
@@ -37,8 +37,8 @@ No Talk, All Action. Launch a Startup in 54 hours.</h2>
   <h3 class="nav-header">More about Startup Weekend SLO</h3>
       <nav>
         <ul>
-          <li><a href="http://slo.startupweekend.org/">Event Page</a></li>
-          <li><a href="http://startupweekend.org/">Global Organization</a></li>
+          <li><a href="https://slo.startupweekend.org/">Event Page</a></li>
+          <li><a href="https://startupweekend.org/">Global Organization</a></li>
         </ul>
       </nav>
   <h3 class="nav-header">Other</h3>
@@ -47,15 +47,10 @@ No Talk, All Action. Launch a Startup in 54 hours.</h2>
 <!--
           <li class="active"><a href="index.php">Slider</a></li>
           <li><a href="fullscreen.php">Fullscreen Mode</a></li>
-          <li><a href="list.php">List Mode</a></li>-->
-          <li><a href="http://sunjaydhama.com">Sunjay's Homepage</a></li>
+-->        
+          <li><a href="list.php">List Mode</a></li>
+          <li><a href="https://sunjaydhama.com">Homepage</a></li>
           <li><a href="https://github.com/woothemes/flexslider">Source</a></li>
-<!--
-          <li><a href="carousel-min-max.html">Carousel with min and max ranges</a></li>
-          <li><a href="dynamic-carousel-min-max.html">Carousel with dynamic min/max ranges</a></li>
-          <li><a href="video.html">Video & the api (vimeo)</a></li>
-          <li><a href="video-wistia.html">Video & the api (wistia)</a></li>
--->    
     </ul>
       </nav>
     </header>
@@ -64,7 +59,7 @@ No Talk, All Action. Launch a Startup in 54 hours.</h2>
         <div class="flexslider">
           <ul class="slides">
              <li>
-              <iframe id="player_1" src="http://player.vimeo.com/video/89825376?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+              <iframe id="player_1" src="https://player.vimeo.com/video/89825376?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 </li>
 <?php
@@ -79,7 +74,7 @@ No Talk, All Action. Launch a Startup in 54 hours.</h2>
       </section>
 
   <!-- jQuery -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="../../js/flexslider/libs/jquery-1.7.min.js">\x3C/script>')</script>
 
   <!-- FlexSlider -->

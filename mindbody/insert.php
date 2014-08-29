@@ -1,6 +1,6 @@
 <?php
-require_once '../../security/htmlpurifier/library/HTMLPurifier.auto.php';
 include_once("db_config.php");
+require_once '../../security/htmlpurifier/HTMLPurifier.standalone.php';
 
 securelyinsertIntoDB($_POST['fname'],$_POST['lname'],$_POST['businessname'],$_POST['comment']);
 echo '<META HTTP-EQUIV="Refresh" Content="0; URL=review.html">';    

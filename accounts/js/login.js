@@ -29,18 +29,36 @@ $(document).on('click', '#submit', function() { // catch the form's submit event
             }
             else if(result === "No")
             {
-               // window.location = "http://google.com";
+               // window.location = "https://google.com";
                window.location = "index.php";
             }
             else
             {
-               window.location = "error.php";
+               alert(result);
+               //window.location = "error.php";
             }
          },
-         error: function (request,error) {
+         /*error: function (request,error) {
                // This callback function will trigger on unsuccessful action                
                alert('Network error has occurred please try again!');
-            }
+               }*/
+         error: function(jqXHR, exception) {
+          if (jqXHR.status === 0) {
+             alert('Not connect.\n Verify Network.');
+          } else if (jqXHR.status == 404) {
+             alert('Requested page not found. [404]');
+          } else if (jqXHR.status == 500) {
+             alert('Internal Server Error [500].');
+          } else if (exception === 'parsererror') {
+             alert('Requested JSON parse failed.');
+          } else if (exception === 'timeout') {
+             alert('Time out error.');
+          } else if (exception === 'abort') {
+             alert('Ajax request aborted.');
+          } else {
+             alert('Uncaught Error.\n' + jqXHR.responseText);
+          }
+       }
       });                   
    } else {
       alert('Please fill all nececery fields');

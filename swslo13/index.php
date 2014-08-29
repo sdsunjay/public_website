@@ -15,7 +15,7 @@
 
 
   <!-- jQuery -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="../../js/flexslider/libs/jquery-1.7.min.js">\x3C/script>')</script>
 
   <!-- FlexSlider -->
@@ -51,18 +51,19 @@ $(".flexslider")
 
   <div id="container" class="cf">
     <header role="navigation">
-      <a class="logo" href="http://www.sunjaydhama.com/projects/swslo13" title="Startup Weekend SLO 2013">
+      <a class="logo" href="https://www.sunjaydhama.com/projects/swslo13" title="Startup Weekend SLO 2013">
         <img src="../swslo14/logo.png" alt="Startup Weekend SLO 2013" />
           </a>
       <h1>Startup Weekend SLO 2013</h1>
-  <h3 class="nav-header">More about Startup Weekend SLO</h3>
+      <h2>No Talk, All Action. Launch a Startup in 54 hours.</h2>
+      <h3 class="nav-header">More about Startup Weekend SLO</h3>
       <nav>
         <ul>
-          <li><a href="http://mustangnews.net/startup-weekend-slo-brings-ideas-business-to-cal-poly/">Press Release</a></li>
+          <li><a href="https://mustangnews.net/startup-weekend-slo-brings-ideas-business-to-cal-poly/">Press Release</a></li>
           <li><a href="https://www.softec.org/blogs/news_and_announcements/archive/2013/01/28/start-up-weekend-slo.aspx">Softec Blog</a></li>
           <li><a href="Innovation Quest Application.pdf">Detailed Explanation</a></li> 
-          <li><a href="http://santamaria.startupweekend.org/">Event Page</a></li>
-          <li><a href="http://startupweekend.org/">Global Organization</a></li>
+          <li><a href="https://slo.startupweekend.org/">Event Page</a></li>
+          <li><a href="https://startupweekend.org/">Global Organization</a></li>
          </ul>
       </nav>
   <h3 class="nav-header">Other</h3>
@@ -71,17 +72,13 @@ $(".flexslider")
 <!--
           <li class="active"><a href="index.php">Slider</a></li>
           <li><a href="fullscreen.php">Fullscreen Mode</a></li>
-          <li><a href="list.php">List Mode</a></li>-->
-           <li><a href="http://sunjaydhama.com/images">Project Images</a></li>
-           <li><a href="http://sunjaydhama.com/projects">Projects</a></li>
-           <li><a href="http://sunjaydhama.com">Sunjay's Homepage</a></li>
+-->          
+            <li><a href="list.php">List Mode</a></li>
+           <li><a href="https://sunjaydhama.com/images">Project Images</a></li>
+           <li><a href="https://sunjaydhama.com/projects">Projects</a></li>
+          <li><a href="https://sunjaydhama.com">Homepage</a></li>
+         <li> <a href="https://sunjaydhama.com/gui">GUI</a></li>
           <li><a href="https://github.com/woothemes/flexslider">Source</a></li>
-<!--
-          <li><a href="carousel-min-max.html">Carousel with min and max ranges</a></li>
-          <li><a href="dynamic-carousel-min-max.html">Carousel with dynamic min/max ranges</a></li>
-          <li><a href="video.html">Video & the api (vimeo)</a></li>
-          <li><a href="video-wistia.html">Video & the api (wistia)</a></li>
--->    
     </ul>
       </nav>
     </header>
