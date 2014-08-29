@@ -1,5 +1,15 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+https://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 3.0 License
+
+Name       : Individual
+Description: A two-column, fixed-width design with a bright color scheme.
+Version    : 1.0
+Released   : 20120201
+-->
 <html xmlns="https://www.w3.org/1999/xhtml">
 <head>
             <link rel="icon" href="https://sunjaydhama.com/images/batman.png" type="image/x-icon">
@@ -10,26 +20,40 @@
             <meta content="images/batman.png" itemprop="image">
 <meta https-equiv="content-type" content="text/html; charset=utf-8" />
 <title>About</title>
-
-<script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-                ga('create', 'UA-29303782-1', 'auto');
-                  ga('send', 'pageview');
-
-               </script>
-
 <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="jquery.formerize-0.1.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../projects/matrix/style.css">
+<!--<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dokv=abba2f56bd/"},atok:"0d0169b228cd5f6222bc43243c5743f7",petok:"33a04106f03ed494345743c04a6f592207ba73e6-1404618823-1800",zone:"ltdev.im",rocket:"0",apps:{"ga_key":{"ua":"UA-23469607-6","ga_bs":"2"},"abetterbrowser":{"ie":"10"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dokv=97fb4d042e/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+<style>body{background-color:black;color:white;}</style>
+<script type="text/javascript" src="../projects/matrix/matrix.js"></script>
 <script type="text/javascript">
-	$(function() {
-		$('#search').formerize();
-	});
+var matrix = false;
+window.onload = function () {
+     matrix = new Matrix({count:500,auto:1});
+};
+function start () {
+    if (matrix && !matrix.interval) {
+       matrix.init();
+    }
+}
+function stop () {
+    if (matrix && matrix.interval) {
+       matrix.stop();
+    }
+}
+function pause () {
+    if (matrix && matrix.interval) {
+       matrix.pause();
+    }
+}
 </script>
 </head>
 <body>
@@ -70,16 +94,7 @@
                       </div>
                       <div id="content">
                          <div id="post1">
-                            <p>
-                            &nbsp;&nbsp;&nbsp;&nbsp;I graduated from <a href="https://www.calpoly.edu" target="_blank" title="Cal Poly">Cal Poly</a>, San Luis Obispo in December 2013 with a degree in Computer Science. I am passionate about security (finding and exploiting both application and network level vulnerabilities) and developing software. I also love learning new things. <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;I have participated in over 10 hackathons; most recently I attended <a href="https://sunjaydhama.com/projects/swsm14">Startup Weekend Santa Maria</a><!-- <a href="https://laedu.startupweekend.org/">LA EDU Startup Weekend</a>-->, my 5th Startup Weekend. At each and every hackathon, I learn something new and meet some of the most incredible people. I have been drawn to entrepreneurship from a young age because of the exciting challenges and opportunities to express my creativity.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;This is also why I enjoy security so much. The field is constantly evolving and changing, which makes finding the most recent vulnerabilities demanding, but to me that is fun and exciting. I have only recently moved my focus from client-side security to server-side application security. However, I do not think that puts me at a disadvantage because of my ability to learn quickly and desire to do so.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;I am proficient at C, Java, and Android development, but have experience in many other languages. Most recently I have been learning Ruby on Rails, PHP, and JS in my free time. Check out some of the <a href="./projects.html">projects</a> I have worked on.
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp; My greatest nontechnical skill lies in my ability to work around roadblocks. I have never given up on a project, software or hardware. I use the resources available to me to overcome any challenge, which has led me to near perfect scores on all of my programming assignments.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;When working in a group, others often describe me as a perfectionist, which I believe to be accurate as I always strive for the best possible outcome.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;I am currently looking for new employment opportunities both in security consulting and software development. If your company has an opening, feel free to reach out to me at sd [at] sunjaydhama [dot] com.
-                            </p>
+                         
                          </div>
                          <br class="clearfix" />
                       </div>
