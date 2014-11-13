@@ -24,7 +24,6 @@
       .CodeMirror {border-top: 0px margin-top:0 margin-left:0 margin-right:0 margin-bottom:0 solid #eee; border-bottom: 0px solid #eee;}
    </style>
    <article>
-<!--<textarea id="temp" name ="temp"</textarea>-->
 <form ><textarea id="code" name="code" >
 </textarea></form>
 <div id="command-display" style="width: 100px; height: 30px;"></div>

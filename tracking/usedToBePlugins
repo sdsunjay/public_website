@@ -1,0 +1,8 @@
+
+  // +   " | " +
+  //    navigator.plugins[i].filename +
+   //   " | " +
+    //  navigator.plugins[i].description +
+   //   " | " +
+  //    navigator.plugins[i].version +
+  //    "<br>";

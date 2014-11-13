@@ -8,268 +8,32 @@
 <meta https-equiv="Content-Language" content="en">
 <meta name="description" content="JavaScript that attempts to identify your Web browser and provide information about your computer.">
 <meta name="keywords" content="Web browser, Web browsers, browser, browsers, identify, identification, information, JavaScript">
-<script src="cookie.js"></script>
-<script language="JavaScript" type="text/javascript">
-<!-- Start of script
+      <!-- Add jQuery library -->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!--<script src="cookie.js"></script>
+-->
 
-var yourapp=navigator.appName
-var yourappalt=navigator.userAgent
-var yourversion=navigator.appVersion
-var yourappcodename=navigator.appCodeName
-var yourplatform=navigator.platform
-var youroscpu=navigator.oscpu
-var yourcookie=navigator.cookieEnabled
-var outwinw=window.outerWidth
-var outwinh=window.outerHeight
-var inwinw=window.innerWidth
-var inwinh=window.innerHeight
-document.write("You're using JavaScript");
-document.write("You're using: " + navigator.appName);
-document.write("<br><br>");
-document.write("Version: " + navigator.appVersion);
-document.write("<br><br>");
-document.write("Browser details: " + navigator.userAgent);
+<script src="js/plugins.js"></script>
 
-var yourappalt=navigator.userAgent
-document.cookie="Cookies are supported";
-
-jsversion = "1.0";
-// End of script -->
-</script>
-
-<script>
-   var x=document.getElementById("demo");
-   function getLocation()
-   {
-      if (navigator.geolocation)
-      {
-         navigator.geolocation.getCurrentPosition(showPosition);
-      }
-      else{document.write("Geolocation is not supported by this browser.");}
-   }
-   function showPosition(position)
-   {
-      document.write("Latitude: " + position.coords.latitude + 
-      "<br>Longitude: " + position.coords.longitude); 
-   }
-</script>
-
-<script language="JavaScript1.1" type="text/javascript">
-   <!-- Start of script
-   jsversion = "1.1";
-   // End of script -->
-</script>
-
-<script language="JavaScript1.2" type="text/javascript">
-   <!-- Start of script
-   jsversion = "1.2";
-   colourbits = window.screen.colorDepth;
-   colournumber = Math.pow (2, colourbits);
-   // End of script -->
-</script>
-
-<script language="JavaScript1.3">
-   <!-- Start of script
-   jsversion = "1.3";
-   // End of script -->
-</script>
-
-<script language="JavaScript1.4">
-   <!-- Start of script
-   jsversion = "1.4";
-   // End of script -->
-</script>
-
-<script language="JavaScript1.5">
-   <!-- Start of script
-   jsversion = "1.5";
-   // End of script -->
-</script>
-
-<script language="JavaScript1.6">
-   <!-- Start of script
-   jsversion = "1.6";
-   // End of script -->
-</script>
-
-<script language="JavaScript1.7">
-   <!-- Start of script
-   jsversion = "1.7";
-   // End of script -->
-</script>
-
-<script language="JavaScript1.8">
-   <!-- Start of script
-   jsversion = "1.8";
-   // End of script -->
-</script>
-
-<script language="JavaScript1.9">
-   <!-- Start of script
-   jsversion = "1.9";
-   // End of script -->
-</script>
-
+<!--
+<script src="js/tracking.js"></script>
+-->
 </head>
-<body onload="checkCookie()">
-<a name="top"></a>
+<body>
+<p> This page intentionally left blank.</p>
+<p> See <a href="js/tracking.js">tracking.js</a> for actual project.</p>
+<script>
 
-   <div class="c">
-
-
-      <script language="JavaScript" type="text/javascript">
-         <!-- Start of script
-         document.write (yourapp);
-         // End of script -->
-      </script>
-      <br>
-      <script language="JavaScript" type="text/javascript">
-         <!-- Start of script
-         document.write (yourappcodename);
-         // End of script -->
-      </script>
-      <br>
-
-      <script language="JavaScript" type="text/javascript">
-         document.write (yourappalt);
-      </script>
-      <br>
-
-      <script language="JavaScript" type="text/javascript">
-         document.write (yourversion);
-      </script>
-
-      <script language="JavaScript" type="text/javascript">
-         <!-- Start of script
-if (document.cookie.length > 0)
-{
-   document.write("<h4>Cookie support<\/h4>");
-}
-else
-{
-   document.write("<h4>Cookies NOT support<\/h4>");
-}
-document.write(<p>yourcookie + "<\/strong><\/p>");
-// End of script -->
-</script>
-
-<script language="JavaScript1.1" type="text/javascript">
-   <!-- Start of script
-if (navigator.javaEnabled())
-{
-   document.write("<h4>Java support<\/h4>");
-}
-else
-{
-document.write("<h4>NO Java support<\/h4>");
-}
-// End of script -->
-</script>
-
-<script language="JavaScript" type="text/javascript">
-   <!-- Start of script
-   document.write( jsversion );
-   // End of script -->
-</script>
-
-<script language="JavaScript" type="text/javascript">
-   <!-- Start of script
-   if (navigator.userAgent.toLowerCase().indexOf("msie") != -1 && (parseInt(navigator.appVersion) >= 4) && navigator.userAgent.toLowerCase().indexOf(".net clr") != -1)
-{
-   document.write(document.charset +"<strong>" + document.defaultCharset + "<\/strong>.<\/p><\/div>");
-}
-else
-{
-   document.write(document.characterSet);
-}
-// End of script -->
-</script>
-
-
-<script language="JavaScript" type="text/javascript">
-   <!-- Start of script
-   document.write(yourplatform);
-   // End of script -->
-</script>
-
-<script language="JavaScript1.2" type="text/javascript">
-   <!-- Start of script
-   document.write( colournumber);
-   document.write( colourbits);
-   // End of script -->
-</script>
-
-<script language="JavaScript1.2" type="text/javascript">
-   <!-- Start of script
-   document.write(screen.width + " &times; " + screen.height + " pixels " + screen.availWidth + " &times; " + screen.availHeight + " pixels (width &times; height)");
-   // End of script -->
-</script>
-
-<script language="JavaScript1.2" type="text/javascript">
-   <!-- Start of script
-   document.write("<h4>Browser window size<\/h4><p class='mt'>Your current browser window size is:<br><strong>" + outwinw + " &times; " + outwinh + " pixels (width &times; height)<\/strong><br><small>Technical note: this item displays the outerWidth and outerHeight properties of the window object.<\/small><\/p><p class='mt'>The area of your browser window that is currently available to display web pages is:<br><strong>" + inwinw + " &times; " + inwinh + " pixels (width &times; height)<\/strong><br><small>Technical note: this item displays the innerWidth and innerHeight properties of the window object.<\/small><\/p><p class='mt'>Note 1: If you change the size of your browser window, these values will not change until you refresh the display by pressing F5.<\/p><p class='mt'>Note 2: Internet Explorer 8 and earlier do not support these properties.<\/p><p class='mt'>Note 3: Some browsers modify the values for these properties if you zoom in or zoom out.<\/p><\/div>");
-   // End of script -->
-</script>
-
-<script language="JavaScript" type="text/javascript">
-   <!-- Start of script
-if (jsversion < 1.2)
-{
-   document.write("<h4>Screen colours and resolution<\/h4><p class='mt'>Your Web browser is quite old, and the early version of JavaScript that it supports is not able to determine the resolution or the colour depth of your screen.<\/p><\/div>");
-}
-// End of script -->
-</script>
-
-
-
-<script language="JavaScript" type="text/javascript">
-   <!-- Start of script
-   document.write("<div class='i'><a name='navobj'><\/a><h3>Navigator object properties<\/h3><p>The following table lists all of the properties of the JavaScript navigator object that are supported by your browser:<\/p>");
-   var html = "";
-for (var n in window.navigator)
-html += "<tr><td>" + n + "<\/td><td>" + window.navigator[n] + "&nbsp\;<\/td><\/tr>";
-document.write("<table class='bord' border='1' cellpadding='4' cellspacing='0' width='100%'>");
-document.write("<tr><th>Property<\/th><th>Value<\/th><\/tr>");
-document.write(html);
-document.write("<\/table>");
-document.write("<br><\/div>");
-// End of script -->
-</script>
-
-
-
-<script language="JavaScript" type="text/javascript">
-   <!-- Start of script
-   document.write("<div class='i'><h3>Navigator document properties<\/h3><p>The following table lists a few of the properties of the JavaScript document object that may be supported by your browser:<\/p>");
-   document.write("<table class='bord' border='1' cellpadding='4' cellspacing='0' width='100%'>");
-   document.write("<tr><th>Property<\/th><th>Value<\/th><\/tr>");
-   document.write("<tr><td>charset<\/td><td>" + document.charset + "<\/td><\/tr>");
-   document.write("<tr><td>characterSet<\/td><td>" + document.characterSet + "<\/td><\/tr>");
-   document.write("<tr><td>defaultCharset<\/td><td>" + document.defaultCharset + "<\/td><\/tr>");
-   document.write("<tr><td>inputEncoding<\/td><td>" + document.inputEncoding + "<\/td><\/tr>");
-   document.write("<tr><td>cookie<\/td><td>" + document.cookie + "<\/td><\/tr>");
-   document.write("<tr><td>bgColor<\/td><td>" + document.bgColor + "<\/td><\/tr>");
-   document.write("<tr><td>fgColor<\/td><td>" + document.fgColor + "<\/td><\/tr>");
-   document.write("<tr><td>linkColor<\/td><td>" + document.linkColor + "<\/td><\/tr>");
-   document.write("<tr><td>alinkColor<\/td><td>" + document.alinkColor + "<\/td><\/tr>");
-   document.write("<tr><td>vlinkColor<\/td><td>" + document.vlinkColor + "<\/td><\/tr>");
-   document.write("<tr><td>contentType<\/td><td>" + document.contentType + "<\/td><\/tr>");
-   document.write("<tr><td>mimeType<\/td><td>" + document.mimeType + "<\/td><\/tr>");
-   document.write("<tr><td>compatMode<\/td><td>" + document.compatMode + "<\/td><\/tr>");
-   document.write("<\/table>");
-   document.write("<br><\/div>");
-   // End of script -->
-</script>
-
-
-
+   document.write("<h2>I am tracking all of this information about you </h2>");
+   //      document.write("<p>"+navigator.appName+"<br>"+navigator.userAgent+"<br>"+navigator.appVersion+"<br>"+navigator.platform+"<br>"+navigator.oscpu+"<br>"+charSet+"<br>"+window.outerWidth+"<br>"+window.outerHeight+"<br>"+window.innerWidth+"<br>"+window.innerHeight+"<br>"+window.screen.colorDepth+"<br>"+Math.pow (2, window.screen.colorDepth)+"<br>"+window.navigator.vendor+"<br>"+navigator.hardwareConcurrency+"<br>"+java+"<br>"+navigator.doNotTrack+"<br>"+(navigator.language || navigator.userLanguage)+"<br>"+navigator.productSub+"<br>"+navigator.mimeTypes.length+"<br>"+plugins+"<br></p>");
+      });
+   </script>
 <noscript>
    <div class="i">
       <h3>Your Web browser does not support JavaScript</h3>
-
       <p>This Web page tries to use JavaScript to determine information about your Web browser, but either you are using a browser that does not support JavaScript, or else support has been disabled.</p>
 
-      <p><a href="enabling-javascript.html">Instructions for enabling and disabling JavaScript in Web browsers</a></p>
+      <p><a href="https://support.google.com/adsense/answer/12654?hl=en">Instructions for enabling and disabling JavaScript in Web browsers</a></p>
    </div>
 </noscript>
 

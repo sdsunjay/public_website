@@ -1,6 +1,6 @@
 <?php
-include("/var/www/passwords/passwords.php");
-define("UPLOAD_DIR", "/tmp/");
+//include("/var/www/passwords/passwords.php");
+define("UPLOAD_DIR", "/tmp/uploads/");
 session_set_cookie_params(0);
 session_start();
 /*check to make sure we are logged in*/
@@ -166,7 +166,6 @@ if(isset($_GET['back']))
 <p>
 <input type="submit" name="back" id="back" value="back"/>
 </p>
-</form>
 </form>
 </body>
 </html>

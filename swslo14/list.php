@@ -26,25 +26,18 @@
 </style>
    </head>
    <body>
-<!--
-  
-For large images
-    <a class="fancybox" rel="group" href="/images/large_macys.jpg"><img src="/images/macys.jpg" alt="" /></a>
--->
 <?php
 $dir_open = opendir('images/.');
 
 while(false !== ($filename = readdir($dir_open))){
-   
-      if (is_dir('images/' . $filename)) {
-   
-         $directories.= "<a href='images/$filename'> $filename <br>";  
-      }
-      else
-      {
-  // else if (exif_imagetype($filename) != IMAGETYPE_JPEG) {
+
+   if (is_dir('images/' . $filename)) {
+
+     // $directories.= "<a href='images/$filename'> $filename <br>";  
+   }
+   else
+   {
       $ext = pathinfo($filename, PATHINFO_EXTENSION);
-      //$exts .=$ext."<br>";
       if(strcmp($ext,"php")===0)
       {
          $files.= "<a href='images/$filename'> $filename <br>";  
@@ -53,20 +46,12 @@ while(false !== ($filename = readdir($dir_open))){
       {
          $files.= "<a href='images/$filename'> $filename <br>";  
       }
-  // }
-  // else
-  // {
       else if($filename != "." && $filename != ".."){
-         $link = "<p><img src='images/$filename' alt='$filename'/><br><a href='images/$filename'> $filename </a><br/></p>";
+         $link = "<p><img height='500' src='images/$filename' alt='$filename'/><br><a href='images/$filename'> $filename </a><br/></p>";
          echo $link;
       }
-      }
-  // }
+   }
 }
-echo "<h3>Other Media Files</h3>";
-echo $files;
-echo "<h3>Directories</h3>";
-echo $directories;
 closedir($dir_open);
 ?>
       <!-- <a class="fancybox" rel="group" href="big_image_2.jpg"><img src="small_image_2.jpg" alt="" /></a>-->

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-	<meta content="charset=utf-8">
-	<title>SWSLO13</title>
-        
+        <meta content="charset=utf-8">
+        <title>SWSLO13</title>
+
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 
   <!-- Demo CSS -->
         <link rel="stylesheet" href="../../css/demo.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="../../css/flexslider.css" type="text/css" media="screen" />
-	<!-- Modernizr -->
+        <link rel="stylesheet" href="../../css/flexslider.css" type="text/css" media="screen" />
+        <!-- Modernizr -->
   <script src="../../js/flexslider/modernizr.js"></script>
 
 
@@ -23,26 +23,26 @@
 
 <script type="text/javascript">
 // Can also be used with $(document).ready()
-  // $('.flexslider').flexslider({
-  //    animation: "slide"
- //  });
+// $('.flexslider').flexslider({
+//    animation: "slide"
+//  });
 //});
 
 $(window).load(function() {
-// Call fitVid before FlexSlider initializes, so the proper initial height can be retrieved.
-$(".flexslider")
-//   .fitVids()
-   .flexslider({
-      animation: "slide",
-         useCSS: false,
-         animationLoop: false,
-         smoothHeight: true,
-         start: function(slider){
-           $('body').removeClass('loading');
+   // Call fitVid before FlexSlider initializes, so the proper initial height can be retrieved.
+   $(".flexslider")
+      //   .fitVids()
+      .flexslider({
+         animation: "slide",
+            useCSS: false,
+            animationLoop: false,
+            smoothHeight: true,
+            start: function(slider){
+               $('body').removeClass('loading');
          },
         /*    before: function(slider){
-               $f(player).api('pause');
-   }*/
+           $f(player).api('pause');
+        }*/
    });
     });
   </script>
@@ -59,11 +59,14 @@ $(".flexslider")
       <h3 class="nav-header">More about Startup Weekend SLO</h3>
       <nav>
         <ul>
-          <li><a href="https://mustangnews.net/startup-weekend-slo-brings-ideas-business-to-cal-poly/">Press Release</a></li>
+          <li><a href="http://mustangnews.net/startup-weekend-slo-brings-ideas-business-to-cal-poly/">Press Release</a></li>
+          <!-- 
+         Bob must have moved or deleted the blog... it used to be here
           <li><a href="https://www.softec.org/blogs/news_and_announcements/archive/2013/01/28/start-up-weekend-slo.aspx">Softec Blog</a></li>
-          <li><a href="Innovation Quest Application.pdf">Detailed Explanation</a></li> 
-          <li><a href="https://slo.startupweekend.org/">Event Page</a></li>
-          <li><a href="https://startupweekend.org/">Global Organization</a></li>
+         --> 
+         <li><a href="Innovation Quest Application.pdf">Detailed Explanation</a></li> 
+          <li><a href="http://www.up.co/communities/usa/san-luis-obispo/startup-weekend/5156">Event Page</a></li>
+          <li><a href="http://startupweekend.org/">Global Organization</a></li>
          </ul>
       </nav>
   <h3 class="nav-header">Other</h3>
@@ -74,10 +77,10 @@ $(".flexslider")
           <li><a href="fullscreen.php">Fullscreen Mode</a></li>
 -->          
             <li><a href="list.php">List Mode</a></li>
-           <li><a href="https://sunjaydhama.com/images">Project Images</a></li>
-           <li><a href="https://sunjaydhama.com/projects">Projects</a></li>
-          <li><a href="https://sunjaydhama.com">Homepage</a></li>
-         <li> <a href="https://sunjaydhama.com/gui">GUI</a></li>
+           <li><a href="../../gui/images.html">Project Images</a></li>
+           <li><a href="../../projects">Projects</a></li>
+          <li><a href="../../index.html">Homepage</a></li>
+         <li> <a href="../..//gui">GUI</a></li>
           <li><a href="https://github.com/woothemes/flexslider">Source</a></li>
     </ul>
       </nav>

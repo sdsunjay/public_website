@@ -1,0 +1,211 @@
+
+<script language="JavaScript" type="text/javascript">
+   
+   // Start of script
+
+var yourapp=navigator.appName
+var yourappalt=navigator.userAgent
+var yourversion=navigator.appVersion
+var yourappcodename=navigator.appCodeName
+var yourplatform=navigator.platform
+var youroscpu=navigator.oscpu
+var yourcookie=navigator.cookieEnabled
+var outwinw=window.outerWidth
+var outwinh=window.outerHeight
+var inwinw=window.innerWidth
+var inwinh=window.innerHeight
+document.write("You're using JavaScript");
+document.write("<br><br>");
+document.write("You're using: " + navigator.appName);
+document.write("<br><br>");
+document.write("Version: " + navigator.appVersion);
+document.write("<br><br>");
+document.write("Browser details: " + navigator.userAgent);
+
+var yourappalt=navigator.userAgent
+document.cookie="Cookies are supported";
+
+jsversion = "1.0";
+// End of script -->
+</script>
+
+<script>
+   var x=document.getElementById("demo");
+   function getLocation()
+   {
+      if (navigator.geolocation)
+      {
+         navigator.geolocation.getCurrentPosition(showPosition);
+      }
+      else{document.write("Geolocation is not supported by this browser.");}
+   }
+   function showPosition(position)
+   {
+      document.write("Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude); 
+   }
+</script>
+
+<script language="JavaScript1.1" type="text/javascript">
+   <!-- Start of script
+   jsversion = "1.1";
+   // End of script -->
+</script>
+
+<script language="JavaScript1.2" type="text/javascript">
+   <!-- Start of script
+   jsversion = "1.2";
+   colourbits = window.screen.colorDepth;
+   colournumber = Math.pow (2, colourbits);
+   // End of script -->
+</script>
+
+<script language="JavaScript1.3">
+   <!-- Start of script
+   jsversion = "1.3";
+   // End of script -->
+</script>
+
+<script language="JavaScript1.4">
+   <!-- Start of script
+   jsversion = "1.4";
+   // End of script -->
+</script>
+
+<script language="JavaScript1.5">
+   <!-- Start of script
+   jsversion = "1.5";
+   // End of script -->
+</script>
+
+<script language="JavaScript1.6">
+   <!-- Start of script
+   jsversion = "1.6";
+   // End of script -->
+</script>
+
+<script language="JavaScript1.7">
+   <!-- Start of script
+   jsversion = "1.7";
+   // End of script -->
+</script>
+
+<script language="JavaScript1.8">
+   <!-- Start of script
+   jsversion = "1.8";
+   // End of script -->
+</script>
+
+<script language="JavaScript1.9">
+   <!-- Start of script
+   jsversion = "1.9";
+   // End of script -->
+</script>
+
+</head>
+<body onload="checkCookie()">
+<a name="top"></a>
+
+   <div class="c">
+
+<script language="JavaScript" type="text/javascript">
+if (document.cookie.length > 0)
+{
+   document.write("<h4>Cookie support<\/h4>");
+}
+else
+{
+   document.write("<h4>Cookies NOT support<\/h4>");
+}
+// End of script -->
+</script>
+
+<script language="JavaScript1.1" type="text/javascript">
+   <!-- Start of script
+if (navigator.javaEnabled())
+{
+   document.write("<h4>Java support<\/h4>");
+}
+else
+{
+document.write("<h4>NO Java support<\/h4>");
+}
+// End of script -->
+</script>
+
+
+<script language="JavaScript" type="text/javascript">
+
+      //headless browser 
+   if (window.outerWidth === 0 && window.outerHeight === 0){ 
+      //GTFO
+    window.location.href="https://google.com";
+   }
+
+</script>
+
+<script language="JavaScript" type="text/javascript">
+   <!-- Start of script
+   // End of script -->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+   <!-- Start of script
+   if (navigator.userAgent.toLowerCase().indexOf("msie") != -1 && (parseInt(navigator.appVersion) >= 4) && navigator.userAgent.toLowerCase().indexOf(".net clr") != -1)
+{
+   document.write(document.charset +"<strong>" + document.defaultCharset + "<\/strong>.<\/p><\/div>");
+}
+else
+{
+   document.write(document.characterSet);
+}
+// End of script -->
+</script>
+
+
+<script language="JavaScript1.2" type="text/javascript">
+   <!-- Start of script
+   document.write( colournumber);
+   document.write( colourbits);
+   // End of script -->
+</script>
+
+<script language="JavaScript1.2" type="text/javascript">
+   <!-- Start of script
+   document.write(screen.width + " &times; " + screen.height + " pixels " + screen.availWidth + " &times; " + screen.availHeight + " pixels (width &times; height)");
+   // End of script -->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+   <!-- Start of script
+if (jsversion < 1.2)
+{
+   document.write("<h4>Screen colours and resolution<\/h4><p class='mt'>Your Web browser is quite old, and the early version of JavaScript that it supports is not able to determine the resolution or the colour depth of your screen.<\/p><\/div>");
+}
+// End of script -->
+</script>
+
+
+
+<script language="JavaScript" type="text/javascript">
+   <!-- Start of script
+   document.write("<div class='i'><a name='navobj'><\/a><h3>Navigator object properties<\/h3><p>The following table lists all of the properties of the JavaScript navigator object that are supported by your browser:<\/p>");
+   var html = "";
+for (var n in window.navigator)
+html += "<tr><td>" + n + "<\/td><td>" + window.navigator[n] + "&nbsp\;<\/td><\/tr>";
+document.write("<table class='bord' border='1' cellpadding='4' cellspacing='0' width='100%'>");
+document.write("<tr><th>Property<\/th><th>Value<\/th><\/tr>");
+document.write(html);
+document.write("<\/table>");
+document.write("<br><\/div>");
+// End of script -->
+</script>
+
+
+
+<script language="JavaScript" type="text/javascript">
+   document.write("Here is all the stuff we know about you: "+document.charset+document.characterSet+document.defaultCharset+document.inputEncoding+document.cookie+document.bgColor+document.fgColor+document.linkColor+document.alinkColor+document.vlinkColor+document.contentType+document.mimeType+document.compatMode);
+</script>
+
+
+

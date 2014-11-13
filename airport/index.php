@@ -8,34 +8,35 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 <script type="text/javascript" src="../../gui/jquery.formerize-0.1.js"></script>
 <script type="text/javascript">
-	$(function() {
-		$('#search').formerize();
-	});
+$(function() {
+   $('#search').formerize();
+        });
 </script>
 
 
 <script type="text/javascript" src="calculate.js">
-		</script>
+</script>
 <style>
 .uinput {
-	width:50px;
-	background-color:blue;
-	background:white;
+        width:50px;
+        background-color:blue;
+        background:white;
 }
 #output, #output1 {
-	text-align:center;
+        text-align:center;
 }
 #text {
-	display:none;
+        display:none;
 }
 #plane {
-	width:630px;
-	height:300px;
+        width:630px;
+        height:300px;
 }
 
 </style>
 
 
+   <script type ="text/javascript" src="../../bitcoin/coin.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -50,7 +51,7 @@
       </div>
     </form>
   </div>
- 	<div id="menu">
+        <div id="menu">
                         <ul>
                              <li class="https://sunjaydhama.com"><a href="../../gui/index.html">Home</a></li>
                              <li><a href="../../gui/about.html">About</a></li>
@@ -59,16 +60,16 @@
                              <li><a href="../../gui/projects.html">Projects</a></li>
                              <li><a href="../../gui/contact.html">Contact Me</a></li>
                         </ul>
-			<br class="clearfix" />
-		</div>
-	</div>
-	<div id="page">
-		<div id="sidebar">
-			<h3>Sidebar</h3>
-			<ul class="list">
+                        <br class="clearfix" />
+                </div>
+        </div>
+        <div id="page">
+                <div id="sidebar">
+                        <h3>Sidebar</h3>
+                        <ul class="list">
                          <li class="first"><a href="https://sunjaydhama.com">Terminal</a></li>
                          <li><a href="#" onClick="window.open('https://github.com/sdsunjay?tab=repositories', 'external');">Github</a></li>
-                      
+
       <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/sdsunjay" data-widget-id="459207762094735360">Tweets by @sdsunjay</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^https:/.test(d.location)?'https':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   </ul>
@@ -137,25 +138,29 @@
 </table>
 </form>
 
-                  <div id="footer"> Copyright (c) 2014 <a href="https://www.sunjaydhama.com/">Sunjay Dhama</a>. All rights reserved. Template by <a href="https://www.freecsstemplates.org/">CSS Templates</a><br>
-<a class='facebook' href='#' onclick="window.open('https://www.linkedin.com/in/sdsunjay','external');" >
-                        <img alt='' src='../../gui/images/li.png' width="30" height="30" /></a>
-                     <a class='twitter' href='#' onclick="window.open('https://www.twitter.com/sdsunjay','external');" >
-                        <br>
-                        <img alt='' src='../../gui/images/twitt.jpg' width="30" height="30"/></a>
-                     <br>
-                     <a href="https://bitcoin.org" target="_NEW">BitCoin</a>: <b><a href="bitcoin:1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx">1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx</a></b><br />
-                  </div>
-               </body>
-            </html>
-<!--
-<div id="footer"> Copyright (c) 2012 www.sunjaydhama.com. All rights reserved. Template by <a href="https://www.freecsstemplates.org/">CSS Templates</a>. </div>
-
-</div>
-</div>
-</body>
-</html></div>
-
-
-</body>
-</html>-->
+      <div id="footer"> Copyright (c) 2014 <a href="https://www.sunjaydhama.com/">Sunjay Dhama</a>. All rights reserved. Template by <a href="https://www.freecsstemplates.org/">CSS Templates</a><br>
+         <a class='facebook' href='#' onclick="window.open('https://www.linkedin.com/in/sdsunjay','external');" >
+            <img alt='' src='images/li.png' width="30" height="30" /></a>
+         <a class='twitter' href='#' onclick="window.open('https://www.twitter.com/sdsunjay','external');" >
+            <br>
+            <img alt='' src='images/twitt.jpg' width="30" height="30"/></a>
+         <br>
+         <a href="https://bitcoin.org" target="_NEW">BitCoin</a>: <b>
+<script>
+CoinWidgetCom.go({
+   wallet_address: "1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx"
+      , currency: "bitcoin"
+      , counter: "hide"
+      , alignment: "bl"
+      , qrcode: true
+      , auto_show: false
+      , lbl_button: "1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx"
+      , lbl_address: "My Bitcoin Address:"
+      , lbl_count: "Donations"
+      , lbl_amount: "BTC"
+                                    });
+</script>
+         </b><br />
+      </div>
+   </body>
+</html>

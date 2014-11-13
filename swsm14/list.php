@@ -26,11 +26,6 @@
 </style>
    </head>
    <body>
-<!--
-  
-For large images
-    <a class="fancybox" rel="group" href="/images/large_macys.jpg"><img src="/images/macys.jpg" alt="" /></a>
--->
 <?php
 $dir_open = opendir('images/.');
 
@@ -38,7 +33,7 @@ while(false !== ($filename = readdir($dir_open))){
 
    if (is_dir('images/' . $filename)) {
 
-      $directories.= "<a href='images/$filename'> $filename <br>";  
+     // $directories.= "<a href='images/$filename'> $filename <br>";  
    }
    else
    {
@@ -59,13 +54,8 @@ while(false !== ($filename = readdir($dir_open))){
       }
    }
 }
-echo "<h3>Other Media Files</h3>";
-echo $files;
-//echo "<h3>Directories</h3>";
-//echo $directories;
 closedir($dir_open);
 ?>
-      <!-- <a class="fancybox" rel="group" href="big_image_2.jpg"><img src="small_image_2.jpg" alt="" /></a>-->
    </body>
 
 
