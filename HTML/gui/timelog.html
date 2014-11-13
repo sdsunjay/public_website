@@ -11,14 +11,15 @@ Description: A two-column, fixed-width design with a bright color scheme.
 Version    : 1.0
 Released   : 20120201
 -->
+<!--scrape_shield-->
 <html xmlns="https://www.w3.org/1999/xhtml">
 <head>
-            <link rel="icon" href="https://sunjaydhama.com/images/batman.png" type="image/x-icon">
-            <link rel="shortcut icon" href="https://sunjaydhama.com/images/batman.png" type="image/x-icon">
-            <meta name="keywords" content="Sunjay, Dhama, cal, poly, california, polytechnic, software, engineering, computer, science, Android, iphone, ipod, ipad, security, c, c++, java, javascript, python, php, google, chrome, CUDA, terminal, unix, linux, ubuntu,HTML,CSS,JavaScript,PHP">
-            <meta name="description" content="TimeLog">
-            <meta name="author" content="Sunjay Dhama">
-            <meta content="images/batman.png" itemprop="image">
+<link rel="icon" href="https://sunjaydhama.com/images/batman.png" type="image/x-icon">
+<link rel="shortcut icon" href="https://sunjaydhama.com/images/batman.png" type="image/x-icon">
+<meta name="keywords" content="Sunjay, Dhama, cal, poly, california, polytechnic, software, engineering, computer, science, Android, iphone, ipod, ipad, security, c, c++, java, javascript, python, php, google, chrome, CUDA, terminal, unix, linux, ubuntu,HTML,CSS,JavaScript,PHP">
+<meta name="description" content="TimeLog">
+<meta name="author" content="Sunjay Dhama">
+<meta content="images/batman.png" itemprop="image">
 <meta https-equiv="content-type" content="text/html; charset=utf-8" />
 <title>TimeLog</title>
 <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css" />
@@ -26,265 +27,726 @@ Released   : 20120201
 <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="jquery.formerize-0.1.js"></script>
 <script type="text/javascript">
-	$(function() {
-		$('#search').formerize();
-	});
+$(function() {
+      $('#search').formerize();
+      });
 </script>
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-29303782-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<script type ="text/javascript" src="../bitcoin/coin.js"></script>
 </head>
 <body>
 <div id="wrapper">
-	<div id="header">
-		<div id="logo">
-			<h1><strong>Timelog</strong></h1>
-		</div>
-		<div id="search">
-			<form action="" method="post">
-				<div>
-					<input class="form-text" name="search" size="30" maxlength="100" title="Search my website" />
-				</div>
-						</form>
-		</div>
-		<div id="menu">
-			<ul>
-                             <li class="https://sunjaydhama.com"><a href="../gui/index.html">Home</a></li>
-                             <li><a href="../gui/about.html">About</a></li>
-                             <li><a href="../gui/images.html">Images</a></li>
-                             <li><a href="../blog">Blog</a></li>
-                             <li><a href="../gui/projects.html">Projects</a></li>
-                             <li><a href="../gui/contact.html">Contact Me</a></li>
-			</ul>
-			<br class="clearfix" />
-		</div>
-	</div>
-	<div id="page">
-		<div id="sidebar">
-                   <h3>Sidebar</h3>
-                   <ul class="list">
-                         <li><a href="https://sunjaydhama.com">Terminal</a></li>
-                         <li><a href="#" onClick="window.open('https://github.com/sdsunjay?tab=repositories', 'external');">Github</a></li>
-                        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/sdsunjay" data-widget-id="459207762094735360">Tweets by @sdsunjay</a>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^https:/.test(d.location)?'https':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                  </ul>
-               </div>
-               <div id="content">
-                  <div id="post1">
-                     <table BORDER="3">
-                               <tr>
-                                  <th>Date</th>
-                                  <th>Start</th>         
-                                  <th>Stop</th>
-                                  <th>Activity Code</th>
-                                  <th>Activity</th>
-                                  <th>Delta Time</th>
-                               </tr>
-                               <tr>
-                                  <th>07/16/14</th>
-                                  <th>20:00</th>            
-                                  <th>21:00</th>
-                                  <th>ADMIN</th>
-                                  <th>Checked Nginx logs and created this time log.</th>
-                                  <th>60</th>
-                               </tr>
-                               <tr>
-                                  <th>07/16/14</th>
-                                  <th>21:00</th>            
-                                  <th>21:45</th>
-                                  <th>REWORK</th>
-                                  <th>Fixed php.ini and php-fpm configuration files for error logging.</th>
-                                  <th>45</th>
-                               </tr>
-                               <tr>
-                                  <th>07/16/14</th>
-                                  <th>21:45</th>            
-                                  <th>22:00</th>
-                                  <th>REWORK</th>
-                                  <th>Worked on images issue (homepage images work, but not <a href="https://sunjaydhama.com/projects/laedu/test.html">others</a>.</th>
-                                  <th>45</th>
-                               </tr>
-                               <tr>
-                                  <th>07/16/14</th>
-                                  <th>22:00</th>            
-                                  <th>23:20</th>
-                                  <th>REWORK</th>
-                                  <th>Fixed 'sudo useradd' command, creates cookie successfully.</th>
-                                  <th>80</th>
-                               </tr>
-                               <tr>
-                                  <th>07/18/14</th>
-                                  <th>15:00</th>            
-                                  <th>17:00</th>
-                                  <th>REWORK</th>
-                                  <th>Updated <a href="../gui/projects.html">projects</a> and some other stuff.</th>
-                                  <th>120</th>
-                               </tr>
-                               <tr>
-                                  <th>07/21/14</th>
-                                  <th>02:00</th>            
-                                  <th>03:30</th>
-                                  <th>DEV</th>
-                                  <th>Implemented 'passwd' command for a unique user (with errors).</th>
-                                  <th>90</th>
-                               </tr>
-                               <tr>
-                                  <th>07/25/14</th>
-                                  <th>03:00</th>            
-                                  <th>03:30</th>
-                                  <th>ADMIN</th>
-                                  <th>Upgraded Wordpress to 3.9.1 (the most current release).</th>
-                                  <th>30</th>
-                               </tr>
-                               <tr>
-                                  <th>07/25/14</th>
-                                  <th>03:30</th>            
-                                  <th>05:00</th>
-                                  <th>ADMIN</th>
-                                  <th>Modified syslog.conf</th>
-                                  <th>90</th>
-                               </tr>
-                               <tr>
-                                  <th>07/25/14</th>
-                                  <th>05:15</th>            
-                                  <th>07:30</th>
-                                  <th>DEV</th>
-                                  <th>Worked on <a href="../projects/email/index.php">email project</a></th>
-                                  <th>135</th>
-                               </tr>
-                               <tr>
-                                  <th>07/28/14</th>
-                                  <th>22:30</th>            
-                                  <th>23:00</th>
-                                  <th>REWORK</th>
-                                  <th>Fixed the images in <a href="../projects/RS/index.php">Real School PD</a> and <a href="../projects/mindbody/index.php">SloMo</a></th>
-                                  <th>30</th>
-                               </tr>
-                               <tr>
-                                  <th>07/31/14</th>
-                                  <th>18:00</th>            
-                                  <th>19:00</th>
-                                  <th>REWORK</th>
-                                  <th>Tried to fix passwd command (unsuccessful).</th>
-                                  <th>60</th>
-                               </tr>
-                               <tr>
-                                  <th>08/01/14</th>
-                                  <th>17:00</th>            
-                                  <th>17:30</th>
-                                  <th>REWORK</th>
-                                  <th>Fixed <a href="https://github.com/sdsunjay/skeletons/blob/master/centos5/iptables.sh">iptables script</a>, so I can now receive email.</th>
-                                  <th>30</th>
-                               </tr>
-                               <tr>
-                                  <th>08/04/14</th>
-                                  <th>12:15</th>            
-                                  <th>02:30</th>
-                                  <th>REWORK</th>
-                                  <th>Fixed <a href="https://www.sunjaydhama.com/projects/accounts/register.html">account registration</a> and made more verbose.</th>
-                                  <th>105</th>
-                               </tr>
-                               <tr>
-                                  <th>08/06/14</th>
-                                  <th>13:15</th>            
-                                  <th>14:45</th>
-                                  <th>REWORK</th>
-                                  <th>Fixed <a href="https://www.sunjaydhama.com/projects/email/index.php">email</a> and made more secure.</th>
-                                  <th>90</th>
-                               </tr>
-                               <tr>
-                                  <th>08/06/14</th>
-                                  <th>17:00</th>            
-                                  <th>21:35</th>
-                                  <th>REWORK</th>
-                                  <th>Finally finished 'passwd' command and <a href="https://www.sunjaydhama.com/projects/email/index.php">email</a></th>
-                                  <th>275</th>
-                               </tr>
-                               <tr>
-                                  <th>08/12/14</th>
-                                  <th>03:30</th>            
-                                  <th>04:00</th>
-                                  <th>REWORK</th>
-                                  <th>Fixed small issue in load and save for Vim project.</th>
-                                  <th>30</th>
-                               </tr>
-                               <tr>
-                                  <th>08/12/14</th>
-                                  <th>18:30</th>            
-                                  <th>20:45</th>
-                                  <th>REWORK</th>
-                                  <th>Bug fixes, such as <a href="https://sunjaydhama.com/projects/mshah">this</a> and started <a href="https://sunjaydhama.com/projects/tracking">tracking project</a></th>
-                                  <th>135</th>
-                               </tr>
-                               <tr>
-                                  <th>08/15/14</th>
-                                  <th>13:30</th>            
-                                  <th>15:30</th>
-                                  <th>ADMIN</th>
-                                  <th>Fail2Ban and iptables configuration and <a href="http://www.labnol.org/internet/google-scripts/28281/">website monitoring</a>.</th>
-                                  <th>120</th>
-                               </tr>
-                               <tr>
-                                  <th>08/18/14</th>
-                                  <th>15:40</th>            
-                                  <th>18:00</th>
-                                  <th>REWORK</th>
-                                  <th>Fixing iptables script and email</th>
-                                  <th>140</th>
-                               </tr>
-                               <tr>
-                                  <th>08/26/14</th>
-                                  <th>15:00</th>            
-                                  <th>15:15</th>
-                                  <th>ADMIN</th>
-                                  <th>Updated <a href="https://www.sunjaydhama.com/json/filesystem.json">filesystem</a> and mobile filesystem.</th>
-                                  <th>15</th>
-                               </tr>
-                               <tr>
-                                  <th>08/27/14</th>
-                                  <th>00:30</th>            
-                                  <th>01:15</th>
-                                  <th>REWORK</th>
-                                  <th>Fixed <a href="https://www.sunjaydhama.com/projects/accounts/register.html">registering</a> for accounts, so secret answers stored.</th>
-                                  <th>45</th>
-                               </tr>
-                               <tr>
-                                  <th>08/28/14</th>
-                                  <th>00:15</th>            
-                                  <th>01:00</th>
-                                  <th>DEV</th>
-                                  <th>Partially implemented changing your password for user accounts.</th>
-                                  <th>45</th>
-                               </tr>
-                               <tr>
-                                  <th>08/28/14</th>
-                                  <th>12:00</th>            
-                                  <th>12:30</th>
-                                  <th>DEV</th>
-                                  <th>Continued implementing change your password for user accounts.</th>
-                                  <th>30</th>
-                               </tr>
-                               <tr>
-                                  <th>08/29/14</th>
-                                  <th>11:30</th>            
-                                  <th>14:00</th>
-                                  <th>DEV</th>
-                                  <th>Made more progress on <a href="https://sunjaydhama.com/projects/tracking/temp.html">tracking project</a></th> 
-                                  <th>150</th>
-                               </tr>
-                            </table>
+   <div id="header">
+      <div id="logo">
+         <h1><strong>Timelog</strong></h1>
+      </div>
+      <div id="search">
+         <form action="" method="post">
+            <div>
+               <input class="form-text" name="search" size="30" maxlength="100" title="Search my website" />
+            </div>
+         </form>
+      </div>
+      <div id="menu">
+         <ul>
+            <li class="https://sunjaydhama.com"><a href="../gui/index.html">Home</a></li>
+            <li><a href="../gui/about.html">About</a></li>
+            <li><a href="../gui/images.html">Images</a></li>
+            <li><a href="../blog">Blog</a></li>
+            <li><a href="../gui/projects.html">Projects</a></li>
+            <li><a href="../gui/contact.html">Contact Me</a></li>
+         </ul>
+         <br class="clearfix" />
+      </div>
+   </div>
+   <div id="page">
+      <div id="sidebar">
+         <h3>Sidebar</h3>
+         <ul class="list">
+            <li><a href="https://sunjaydhama.com">Terminal</a></li>
+            <li><a href="#" onClick="window.open('https://github.com/sdsunjay?tab=repositories', 'external');">Github</a></li>
+            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/sdsunjay" data-widget-id="459207762094735360">Tweets by @sdsunjay</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^https:/.test(d.location)?'https':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+         </ul>
+      </div>
+      <div id="content">
+         <p> Please note that although the timelog was created July 16, 2014, this site has been under constant construction since August 6, 2013.</p>
+         <div id="post1">
+            <table BORDER="3">
+               <tr>
+                  <th>Date</th>
+                  <th>Start</th>         
+                  <th>Stop</th>
+                  <th><a href="http://users.csc.calpoly.edu/~jdalbey/308/Mgmt/activityCodes.html">Activity Code</a></th>
+                  <th>Activity</th>
+                  <th>Delta Time</th>
+               </tr>
+               <tr>
+                  <th>07/16/14</th>
+                  <th>20:00</th>            
+                  <th>21:00</th>
+                  <th>ADMIN</th>
+                  <th>Checked nginx logs &amp; created <a href="./timelog.html">this</a> log.</th>
+                  <th>60</th>
+               </tr>
+               <tr>
+                  <th>07/16/14</th>
+                  <th>21:00</th>            
+                  <th>21:45</th>
+                  <th>REWORK</th>
+                  <th>Fixed php.ini &amp; php-fpm config files for error logging.</th>
+                  <th>45</th>
+               </tr>
+               <tr>
+                  <th>07/16/14</th>
+                  <th>21:45</th>            
+                  <th>22:00</th>
+                  <th>REWORK</th>
+                  <th>Worked on images issue (homepage images work), but not <a href="https://sunjaydhama.com/projects/laedu/test.html">others</a>.</th>
+                  <th>45</th>
+               </tr>
+               <tr>
+                  <th>07/16/14</th>
+                  <th>22:00</th>            
+                  <th>23:20</th>
+                  <th>REWORK</th>
+                  <th>Fixed 'sudo useradd' command, creates cookie successfully.</th>
+                  <th>80</th>
+               </tr>
+               <tr>
+                  <th>07/18/14</th>
+                  <th>15:00</th>            
+                  <th>17:00</th>
+                  <th>REWORK</th>
+                  <th>Updated <a href="../gui/projects.html">projects</a> &amp; some other stuff.</th>
+                  <th>120</th>
+               </tr>
+               <tr>
+                  <th>07/21/14</th>
+                  <th>02:00</th>            
+                  <th>03:30</th>
+                  <th>DEV</th>
+                  <th>Implemented 'passwd' command for a unique user (with errors).</th>
+                  <th>90</th>
+               </tr>
+               <tr>
+                  <th>07/25/14</th>
+                  <th>03:00</th>            
+                  <th>03:30</th>
+                  <th>ADMIN</th>
+                  <th>Upgraded Wordpress to 3.9.1 (the most current release).</th>
+                  <th>30</th>
+               </tr>
+               <tr>
+                  <th>07/25/14</th>
+                  <th>03:30</th>            
+                  <th>05:00</th>
+                  <th>ADMIN</th>
+                  <th>Modified syslog.conf</th>
+                  <th>90</th>
+               </tr>
+               <tr>
+                  <th>07/25/14</th>
+                  <th>05:15</th>            
+                  <th>07:30</th>
+                  <th>DEV</th>
+                  <th>Worked on <a href="../projects/email/index.php">email project</a></th>
+                  <th>135</th>
+               </tr>
+               <tr>
+                  <th>07/28/14</th>
+                  <th>22:30</th>            
+                  <th>23:00</th>
+                  <th>REWORK</th>
+                  <th>Fixed the images in <a href="../projects/RS/index.html">Real School PD</a> &amp; <a href="../projects/mindbody/index.html">SloMo</a></th>
+                  <th>30</th>
+               </tr>
+               <tr>
+                  <th>07/31/14</th>
+                  <th>18:00</th>            
+                  <th>19:00</th>
+                  <th>REWORK</th>
+                  <th>Tried to fix passwd command (unsuccessful).</th>
+                  <th>60</th>
+               </tr>
+               <tr>
+                  <th>08/01/14</th>
+                  <th>17:00</th>            
+                  <th>17:30</th>
+                  <th>REWORK</th>
+                  <th>Fixed <a href="https://github.com/sdsunjay/skeletons/blob/master/centos5/iptables.sh">iptables script</a>; can now receive email.</th>
+                  <th>30</th>
+               </tr>
+               <tr>
+                  <th>08/04/14</th>
+                  <th>12:15</th>            
+                  <th>02:30</th>
+                  <th>REWORK</th>
+                  <th>Fixed <a href="../projects/accounts/register.html">account registration</a> &amp; made more verbose.</th>
+                  <th>105</th>
+               </tr>
+               <tr>
+                  <th>08/06/14</th>
+                  <th>13:15</th>            
+                  <th>14:45</th>
+                  <th>REWORK</th>
+                  <th>Fixed <a href="../projects/email/index.php">email</a> &amp; made more secure.</th>
+                  <th>90</th>
+               </tr>
+               <tr>
+                  <th>08/06/14</th>
+                  <th>17:00</th>            
+                  <th>21:35</th>
+                  <th>REWORK</th>
+                  <th><b>Finally</b> finished 'passwd' command &amp; <a href="../projects/email/index.php">email</a></th>
+                  <th>275</th>
+               </tr>
+               <tr>
+                  <th>08/12/14</th>
+                  <th>03:30</th>            
+                  <th>04:00</th>
+                  <th>REWORK</th>
+                  <th>Fixed small issue in load &amp; save for <a href="../projects/vim/index.php">vim project</a>.</th>
+                  <th>30</th>
+               </tr>
+               <tr>
+                  <th>08/12/14</th>
+                  <th>18:30</th>            
+                  <th>20:45</th>
+                  <th>REWORK</th>
+                  <th>Bug fixes, such as <a href="../projects/mshah/index.html">this</a> &amp; started <a href="../projects/tracking/index.html">tracking project</a></th>
+                  <th>135</th>
+               </tr>
+               <tr>
+                  <th>08/15/14</th>
+                  <th>13:30</th>            
+                  <th>15:30</th>
+                  <th>ADMIN</th>
+                  <th>Fail2Ban and iptables config &amp; <a href="http://www.labnol.org/internet/google-scripts/28281/">website monitoring</a>.</th>
+                  <th>120</th>
+               </tr>
+               <tr>
+                  <th>08/18/14</th>
+                  <th>15:40</th>            
+                  <th>18:00</th>
+                  <th>REWORK</th>
+                  <th>Fixed iptables script &amp; email</th>
+                  <th>140</th>
+               </tr>
+               <tr>
+                  <th>08/26/14</th>
+                  <th>15:00</th>            
+                  <th>15:15</th>
+                  <th>ADMIN</th>
+                  <th>Updated <a href="../json/filesystem.json">filesystem</a> &amp; mobile filesystem.</th>
+                  <th>15</th>
+               </tr>
+               <tr>
+                  <th>08/27/14</th>
+                  <th>00:30</th>            
+                  <th>01:15</th>
+                  <th>REWORK</th>
+                  <th>Fixed <a href="../projects/accounts/register.html">registering</a> for accounts, so secret answers stored.</th>
+                  <th>45</th>
+               </tr>
+               <tr>
+                  <th>08/28/14</th>
+                  <th>00:15</th>            
+                  <th>01:00</th>
+                  <th>DEV</th>
+                  <th>Partially implemented changing your password for user accounts.</th>
+                  <th>45</th>
+               </tr>
+               <tr>
+                  <th>08/28/14</th>
+                  <th>12:00</th>            
+                  <th>12:30</th>
+                  <th>DEV</th>
+                  <th>Continued implementing change your password for user accounts.</th>
+                  <th>30</th>
+               </tr>
+               <tr>
+                  <th>08/29/14</th>
+                  <th>11:30</th>            
+                  <th>14:00</th>
+                  <th>DEV</th>
+                  <th>Made more progress on <a href="../projects/tracking/index.html">tracking project</a></th> 
+                  <th>150</th>
+               </tr>
+               <tr>
+                  <th>08/29/14</th>
+                  <th>16:00</th>            
+                  <th>16:45</th>
+                  <th>DEV</th>
+                  <th>Made more progress on <a href="../projects/tracking/index.html">tracking project</a></th> 
+                  <th>45</th>
+               </tr>
+               <tr>
+                  <th>09/01/14</th>
+                  <th>14:30</th>            
+                  <th>15:30</th>
+                  <th>DEV</th>
+                  <th>Cleaned up <a href="../projects/tracking/index.html">tracking project</a> &amp; started <a href="../projects/typeahead/index.html">typeahead project</a>.</th> 
+                  <th>60</th>
+               </tr>
+               <tr>
+                  <th>09/04/14</th>
+                  <th>12:00</th>            
+                  <th>12:45</th>
+                  <th>ADMIN</th>
+                  <th>Created a <a href="./bugReport.html">page</a> for bug tracking &amp; reporting, still needs work</th>
+                  <th>45</th>
+               </tr>
+               <tr>
+                  <th>09/04/14</th>
+                  <th>12:45</th>            
+                  <th>13:15</th>
+                  <th>REWORK</th>
+                  <th>Started fixing issue with vim project</th>
+                  <th>30</th>
+               </tr>
+               <tr>
+                  <th>09/04/14</th>
+                  <th>13:00</th>            
+                  <th>14:30</th>
+                  <th>ADMIN</th>
+                  <th>Set nginx config file to redirect everything to https://www.*</th>
+                  <th>90</th>
+               </tr>
+               <tr>
+                  <th>09/06/14</th>
+                  <th>01:00</th>            
+                  <th>02:30</th>
+                  <th>ADMIN</th>
+                  <th>Setup blocking IP addresses by country in nginx config.</th>
+                  <th>90</th>
+               </tr>
+               <tr>
+                  <th>09/07/14</th>
+                  <th>13:00</th>            
+                  <th>13:30</th>
+                  <th>ADMIN</th>
+                  <th>Started reinstall of nginx from source</th>
+                  <th>30</th>
+               </tr>
+               <tr>
+                  <th>09/09/14</th>
+                  <th>19:30</th>            
+                  <th>21:00</th>
+                  <th>DEV</th>
+                  <th>Worked on <a href="../projects/tracking/index.html">tracking project</a></th>
+                  <th>90</th>
+               </tr>
 
-                         </div>
-                         <br class="clearfix" />
-                      </div>
-                      <br class="clearfix" />
-                   </div>
-                </div>
-                <div id="footer"> Copyright (c) 2014 <a href="https://www.sunjaydhama.com/">Sunjay Dhama</a>. All rights reserved. Template by <a href="https://www.freecsstemplates.org/">CSS Templates</a><br>
-                   <a class='facebook' href='#' onclick="window.open('https://www.linkedin.com/in/sdsunjay','external');" >
-                      <img alt='' src='images/li.png' width="30" height="30" /></a>
-                   <a class='twitter' href='#' onclick="window.open('https://www.twitter.com/sdsunjay','external');" >
-                      <br>
-                      <img alt='' src='images/twitt.jpg' width="30" height="30"/></a>
-                   <br>
-                   <a href="https://bitcoin.org" target="_NEW">BitCoin</a>: <b><a href="bitcoin:1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx">1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx</a></b><br />
-                </div>
-             </body>
-          </html>
+               <tr>
+                  <th>09/10/14</th>
+                  <th>00:00</th>            
+                  <th>01:00</th>
+                  <th>ADMIN</th>
+                  <th>Automated blocking of bad IP Addresses, using <a href="http://bash.cyberciti.biz/web-server/nginx-shell-script-to-block-spamhaus-lasso-drop-spam-ip-address/">this</a> script</th>
+                  <th>60</th>
+               </tr>
+               <tr>
+                  <th>09/23/14</th>
+                  <th>18:00</th>            
+                  <th>19:00</th>
+                  <th>ADMIN</th>
+                  <th>Downloaded &amp; installed log visualization tool, <a href="http://goaccess.io/download">goaccess</a></th>
+                  <th>60</th>
+               </tr>
+               <tr>
+                  <th>09/23/14</th>
+                  <th>19:30</th>            
+                  <th>21:00</th>
+                  <th>ADMIN</th>
+                  <th>Created <a href="https://github.com/sdsunjay/skeletons/blob/master/centos5/checkAccess.sh">script</a> to find 4xx &amp; 5xx errors (with help from <a href="http://www.the-art-of-web.com/system/logs/">this</a></th>
+                  <th>90</th>
+               </tr>
+               <tr>
+                  <th>09/24/14</th>
+                  <th>21:35</th>            
+                  <th>21:40</th>
+                  <th>ADMIN</th>
+                  <th>Updated BASH following release of <a href="https://access.redhat.com/security/cve/CVE-2014-6271">CVE-2014-6271</a></th>
+                  <th>5</th>
+               </tr>
+               <tr>
+                  <th>09/25/14</th>
+                  <th>02:00</th>            
+                  <th>03:00</th>
+                  <th>DEV</th>
+                  <th>Worked more on 'update password' feature<!--&amp; created <a href="../projects/accounts/account.html">this</a> page-->.</th>
+                  <th>60</th>
+               </tr>
+               <tr>
+                  <th>09/25/14</th>
+                  <th>04:00</th>            
+                  <th>04:40</th>
+                  <th>DEV</th>
+                  <th>Implemented jquery lightbox.</th>
+                  <th>30</th>
+               </tr>
+               <tr>
+                  <th>09/25/14</th>
+                  <th>17:00</th>            
+                  <th>19:00</th>
+                  <th>DEV</th>
+                  <th>Worked on 'update password' feature &amp; made javascript &amp; php checks more robust (still errors).</th>
+                  <th>120</th>
+               </tr>
+               <tr>
+                  <th>09/26/14</th>
+                  <th>17:30</th>            
+                  <th>18:00</th>
+                  <th>ADMIN</th>
+                  <th>Researched &amp; ran <a href="https://www.cirt.net/Nikto2">Nikto</a> scan.</th>
+                  <th>30</th>
+               </tr>
+               <tr>
+                  <th>09/26/14</th>
+                  <th>18:15</th>            
+                  <th>19:00</th>
+                  <th>DEV</th>
+                  <th><b>Finished</b> implementing 'update password' feature, just need to integrate into <a href="https://fancybox.net/">lightbox</a>. </th>
+                  <th>45</th>
+               </tr>
+               <tr>
+                  <th>09/27/14</th>
+                  <th>13:00</th>            
+                  <th>14:00</th>
+                  <th>ADMIN</th>
+                  <th><a href="http://back-track-linux.blogspot.com/2012/10/how-to-install-nessus-on-backtrack-5-r3.html">Researched</a> &amp; attempted <a href="http://www.nessus.org">Nessus</a> scan.</th>
+                  <th>30</th>
+               </tr>
+               <tr>
+                  <th>09/27/14</th>
+                  <th>16:00</th>            
+                  <th>17:30</th>
+                  <th>DEV</th>
+                  <th>Started implementing 'upload file' feature &amp; integrating with lightbox</th>
+                  <th>90</th>
+               </tr>
+               <tr>
+                  <th>09/27/14</th>
+                  <th>17:30</th>            
+                  <th>18:30</th>
+                  <th>REWORK</th>
+                  <th>Finished implementing 'upload file' feature. Started 'multiple file upload' feature</th>
+                  <th>60</th>
+               </tr>
+               <tr>
+                  <th>10/03/14</th>
+                  <th>21:30</th>            
+                  <th>23:00</th>
+                  <th>DEV</th>
+                  <th>Continuing working on tracking project</th>
+                  <th>90</th>
+               </tr>
+               <tr>
+                  <th>10/05/14</th>
+                  <th>13:00</th>            
+                  <th>14:30</th>
+                  <th>DEV</th>
+                  <th>Finished development on tracking project, just need to integrate</th>
+                  <th>90</th>
+               </tr>
+               <tr>
+                  <th>10/05/14</th>
+                  <th>16:00</th>            
+                  <th>18:00</th>
+                  <th>ADMIN</th>
+                  <th>Downloaded and installed <a href="http://nginx.org/">nginx 1.7.6</a></th>
+                  <th>120</th>
+               </tr>
+               <tr>
+                  <th>10/06/14</th>
+                  <th>14:00</th>            
+                  <th>16:30</th>
+                  <th>ADMIN</th>
+                  <th>Fixed errors associated with <a href="http://nginx.org/">nginx 1.7.6</a></th>
+                  <th>210</th>
+               </tr>
+               <tr>
+                  <th>10/08/14</th>
+                  <th>16:30</th>            
+                  <th>17:00</th>
+                  <th>ADMIN</th>
+                  <th>Added <a href="../projects/defcon22">DEFCON22</a> images</th>
+                  <th>30</th>
+               </tr>
+               <tr>
+                  <th>10/08/14</th>
+                  <th>17:00</th>            
+                  <th>17:30</th>
+                  <th>ADMIN</th>
+                  <th>Switched DNS to <a href="https://www.cloudflare.com/index.html">Cloudflare</a> by updating domain registered <a href="http://www.arvixe.com">here</a>
+                     <th>30</th>
+                  </tr>
+                  <tr>
+                     <th>10/09/14</th>
+                     <th>14:00</th>            
+                     <th>14:30</th>
+                     <th>ADMIN</th>
+                     <th>Enabled <a href="https://www.cloudflare.com/apps/scrapeshield">Scrapeshield</a>, <a href="https://www.cloudflare.com/apps/abetterbrowse">A Better Browser</a>,<a href="https://www.cloudflare.com/apps/earthhour">Earthhour</a>,<a href="https://www.cloudflare.com/apps/google_analytics">Google Analytics</a>,<a href="https://www.cloudflare.com/apps/webmastertools">Google Webmaster Tools</a>, and other apps from  <a href="https://www.cloudflare.com/index.html">Cloudflare</a></th> 
+                     <th>45</th>
+                  </tr>
+                  <tr>
+                     <th>10/09/14</th>
+                     <th>17:30</th>            
+                     <th>20:00</th>
+                     <th>ADMIN</th>
+                     <th>Terminal broke due to Cloudflare setting, fixed.</th>
+                     <th>120</th>
+                  </tr>
+                  <tr>
+                     <th>10/09/14</th>
+                     <th>20:00</th>            
+                     <th>20:30</th>
+                     <th>DEV</th>
+                     <th>Worked on tracking</th>
+                     <th>30</th>
+                  </tr>
+                  <tr>
+                     <th>10/09/14</th>
+                     <th>15:30</th>            
+                     <th>17:30</th>
+                     <th>DEV</th>
+                     <th>Worked on 'passwd' feature</th>
+                     <th>120</th>
+                  </tr>
+                  <tr>
+                     <th>10/13/14</th>
+                     <th>17:00</th>            
+                     <th>18:00</th>
+                     <th>REWORK</th>
+                     <th>Worked on Content Security Policy and switching <a href="http://www.sunjay.io">this</a> and <a href="http://www.sunjay.me">this</a> site to <a href="https://www.cloudflare.com/index.html">Cloudflare</a>.</th>
+                     <th>60</th>
+                  </tr>
+                  <tr>
+                     <th>10/14/14</th>
+                     <th>19:45</th>            
+                     <th>21:45</th>
+                     <th>DEV</th>
+                     <th>Worked on 'passwd' feature for already existing user.</th>
+                     <th>120</th>
+                  </tr>
+                  <tr>
+                     <th>10/16/14</th>
+                     <th>18:45</th>            
+                     <th>20:45</th>
+                     <th>DEV</th>
+                     <th>Increased robustness of <a href="https://github.com/sdsunjay/skeletons/blob/master/centos5/sshd_config">sshd_config</a>, added <a href="https://github.com/sdsunjay/skeletons/blob/master/centos5/sendmail.mc">mail options</a> and <a href="http://spamassassin.apache.org/">SPAMASSASSIN</a></th>
+                     <th>120</th>
+                  </tr>
+                  <tr>
+                     <th>10/16/14</th>
+                     <th>21:30</th>            
+                     <th>23:00</th>
+                     <th>DEV</th>
+                     <th>Worked on <a href="../projects/accounts/protected_page.php">'Update Password'</a>feature for already existing user, integrated <a href="http://buckwilson.me/lightboxme/">lightbox</a>.</th>
+                     <th>90</th>
+                  </tr>
+                  <tr>
+                     <th>10/19/14</th>
+                     <th>18:00</th>            
+                     <th>19:00</th>
+                     <th>DEV</th>
+                     <th><b>Finished</b> <a href="../projects/accounts/protected_page.php">'Upload Picture'</a> feature for existing user</th>
+                     <th>60</th>
+                  </tr>
+                  <tr>
+                     <th>10/19/14</th>
+                     <th>19:00</th>            
+                     <th>20:00</th>
+                     <th>DEV</th>
+                     <th>Worked on 'passwd' feature for already existing user</th>
+                     <th>60</th>
+                  </tr>
+                  <tr>
+                     <th>10/20/14</th>
+                     <th>00:30</th>            
+                     <th>01:00</th>
+                     <th>ADMIN</th>
+                     <th>Updated <a href="https://wordpress.org/">wordpress</a> <a href="https://www.sunjaydhama.com/blog">blog</a> to 4.0</th>
+                     <th>30</th>
+                  </tr>
+                  <tr>
+                     <th>10/21/14</th>
+                     <th>20:30</th>            
+                     <th>22:30</th>
+                     <th>ADMIN</th>
+                     <th>Fixed <a href="https://www.sunjaydhama.com/blog">blog</a> after breaking a lot of stuff</th>
+                     <th>120</th>
+                  </tr>
+                  <tr>
+                     <th>10/21/14</th>
+                     <th>22:30</th>            
+                     <th>23:00</th>
+                     <th>ADMIN</th>
+                     <th>Created another <a href="https://www.sunjaydhama.com/blog/?page_id=231">About Me</a> page, added lots of pictures</th>
+                     <th>30</th>
+                  </tr>
+                  <tr>
+                     <th>10/22/14</th>
+                     <th>18:00</th>            
+                     <th>19:00</th>
+                     <th>ADMIN</th>
+                     <th>Added the <a href="https://wordpress.org/plugins/wordpress-https/">Wordpress HTTPS</a> plugin and started DEFCON blog post</th>
+                     <th>60</th>
+                  </tr>
+                  <tr>
+                     <th>10/23/14</th>
+                     <th>00:00</th>            
+                     <th>01:00</th>
+                     <th>ADMIN</th>
+                     <th>Tried to better understand <a href="../index.html">terminal</a></th>
+                     <th>60</th>
+                  </tr>
+                  <tr>
+                     <th>10/23/14</th>
+                     <th>01:00</th>            
+                     <th>02:00</th>
+                     <th>DEV</th>
+                     <th>Added <a href="../projects/vim/emacs.html">Emacs</a> editor</th>
+                     <th>60</th>
+                  </tr>
+                  <tr>
+                     <th>10/23/14</th>
+                     <th>02:00</th>            
+                     <th>03:00</th>
+                     <th>ADMIN</th>
+                     <th>Optimized Nginx.conf</th>
+                     <th>60</th>
+                  </tr>
+                  <tr>
+                     <th>10/30/14</th>
+                     <th>22:00</th>            
+                     <th>23:59</th>
+                     <th>ADMIN</th>
+                     <th>Add security features to Nginx.conf</th>
+                     <th>120</th>
+                  </tr>
+                  <tr>
+                     <th>10/31/14</th>
+                     <th>00:00</th>            
+                     <th>01:40</th>
+                     <th>DEV</th>
+                     <th>Hide user entered password in 'passwd'</th>
+                     <th>100</th>
+                  </tr>
+
+                  <tr>
+                     <th>11/04/14</th>
+                     <th>18:00</th>            
+                     <th>19:30</th>
+                     <th>REWORK</th>
+                     <th>Fixed "hide user entered password in 'passwd'</th>
+                     <th>90</th>
+                  </tr>
+                  <tr>
+                     <th>11/04/14</th>
+                     <th>19:00</th>            
+                     <th>20:00</th>
+                     <th>ADMIN</th>
+                     <th>Created a sitemap for google.</th>
+                     <th>60</th>
+                  </tr>
+                  <tr>
+                     <th>11/04/14</th>
+                     <th>20:00</th>            
+                     <th>21:00</th>
+                     <th>ADMIN</th>
+                     <th>Built <a href="http://www.fullybaked.co.uk/articles/installing-latest-vim-on-centos-from-source">vim from source</a> &amp; added <a href="https://github.com/gmarik/Vundle.vim">Vundle</a> &amp; various vim plugins.</th>
+                     <th>60</th>
+                  </tr>
+                  <tr>
+                     <th>11/04/14</th>
+                     <th>21:00</th>            
+                     <th>22:00</th>
+                     <th>ADMIN</th>
+                     <th>Fixed broken links using <a href="http://www.brokenlinkcheck.com/">this</a> tool.</th>
+                     <th>60</th>
+                  </tr>
+                  <tr>
+                     <th>11/04/14</th>
+                     <th>22:00</th>            
+                     <th>23:59</th>
+                     <th>DEV</th>
+                     <th>Created <a href="../bitcoin/index.html">Bitcoin widget</a>.</th>
+                     <th>120</th>
+                  </tr>
+                  <tr>
+                     <th>11/05/14</th>
+                     <th>00:00</th>            
+                     <th>01:40</th>
+                     <th>ADMIN</th>
+                     <th>Fixed more broken links using <a href="http://www.brokenlinkcheck.com/">this</a> tool.</th>
+                     <th>100</th>
+                  </tr>
+                  <tr>
+                     <th>11/05/14</th>
+                     <th>18:00</th>            
+                     <th>19:30</th>
+                     <th>DEV</th>
+                     <th>Worked on typeahead project.</th>
+                     <th>90</th>
+                  </tr>
+                  <tr>
+                  <th>11/07/14</th>
+                     <th>00:00</th>            
+                     <th>00:30</th>
+                     <th>ADMIN</th>
+                     <th>Checked logs and made some minor fixes.</th>
+                     <th>30</th>
+                  </tr>
+                  <tr>
+                  <th>11/10/14</th>
+                     <th>18:00</th>            
+                     <th>22:00</th>
+                     <th>MISC</th>
+                     <th>Worked to implement <a href="https://github.com/google/nogotofail">nogotofail</a> &amp; Fixed 'passwd' &amp; Fixed CSS &amp; Fixed 'clear' &amp; Implemented 'show' (how new JSON is loaded).</th>
+                     <th>240</th>
+                  </tr>
+               </table>
+            </div>
+            <br class="clearfix" />
+         </div>
+         <br class="clearfix" />
+      </div>
+   </div>
+   <div id="footer"> Copyright (c) 2014 <a href="https://www.sunjaydhama.com/">Sunjay Dhama</a>. All rights reserved. Template by <a href="https://www.freecsstemplates.org/">CSS Templates</a><br>
+      <a class='facebook' href='#' onclick="window.open('https://www.linkedin.com/in/sdsunjay','external');" >
+         <img alt='' src='images/li.png' width="30" height="30" /></a>
+      <a class='twitter' href='#' onclick="window.open('https://www.twitter.com/sdsunjay','external');" >
+         <br>
+         <img alt='' src='images/twitt.jpg' width="30" height="30"/></a>
+      <br>
+      <a href="https://bitcoin.org" target="_NEW">BitCoin</a>: <b>
+         <script>
+CoinWidgetCom.go({
+wallet_address: "1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx"
+, currency: "bitcoin"
+, counter: "hide"
+, alignment: "bl"
+, qrcode: true
+, auto_show: false
+, lbl_button: "1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx"
+, lbl_address: "My Bitcoin Address:"
+, lbl_count: "Donations"
+, lbl_amount: "BTC"
+});
+         </script>
+      </b><br />
+   </div>
+   </body>
+   </html>

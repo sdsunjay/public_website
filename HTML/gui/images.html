@@ -30,8 +30,8 @@
                     ga('send', 'pageview');
 
                  </script>
-  
-  <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+      <!-- Add jQuery library -->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script type="text/javascript" src="jquery.formerize-0.1.js"></script>
   <script type="text/javascript">
       $(function() {
@@ -56,6 +56,7 @@
                                                               <link href='https://fonts.googleapis.com/css?family=Tinos:400,400italic|Oswald:400,300' rel='stylesheet' type='text/css'>
 
 
+   <script type ="text/javascript" src="../bitcoin/coin.js"></script>
   </head>
   <body>
   <div id="wrapper">
@@ -118,8 +119,7 @@
                     </div>
                 </div>
              </header>       
-             -->  
-                
+             --> 
             <!-- Article -->
             <article>
                 <!-- Portfolio items -->
@@ -127,7 +127,20 @@
                    <ul class="thumbnails plugin-filter-elements portfolio-items" style="
                               width: 400px;
                               ">
+                             
+                              
                      <li class="span4 ">
+                        <a href="../projects/defcon22" data-destination="portfolio-items" data-insert="before">
+                           <!-- Portfolio image -->
+                            <img src="../projects/defcon22/images/IMG_0085.JPG" alt="DEFCON22" height="300" width="390">
+                            
+                            <!-- Portfolio name, activated on hover -->
+                            <div class="portfolio-overlay">
+                                <h4>DEFCON22</h4>
+                            </div>
+                        </a>
+                    </li>
+                              <li class="span4 ">
                         <a href="../projects/swsm14" data-destination="portfolio-items" data-insert="before">
                            <!-- Portfolio image -->
                             <img src="../projects/swsm14/images/IMG_2461.JPG" alt="Startup Weekend Santa Maria 2014" height="300" width="390">
@@ -204,10 +217,10 @@
                         </a>
                         </li>
                    <li class="span4 ">
-                        <a href="../projects/mshah/" data-destination="portfolio-items" data-insert="before">
+                        <a href="../projects/mshah/index.html" data-destination="portfolio-items" data-insert="before">
                             <!-- Portfolio image -->
                     
-                            <img src="../projects/mshah/images/m_shah.jpg" alt="Pictures of M Shah Performing " height="300" width="300" >
+                            <img src="../projects/mshah/m_shah.jpg" alt="Pictures of M Shah Performing " height="300" width="300" >
                             
                             <!-- Portfolio name, activated on hover -->
                             <div class="portfolio-overlay">
@@ -227,33 +240,6 @@
                   
                     <li class="span4 ">
                         <a href="work.html" data-destination="portfolio-items" data-insert="before">
-                             Portfolio image
-                            <img src="assets/images/pages/work/jess_chaidez_design_bug0.jpg" alt="Jess Chaidez Design Bug Alphabet Poster">
-                            
-                             Portfolio name, activated on hover
-                            <div class="portfolio-overlay">
-                                <h4>Bug Alphabet</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 ">
-                        <a href="work.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="assets/images/pages/work/jess_chaidez_design_photo0.jpg" alt="Jess Chaidez Photography">
-                            <div class="portfolio-overlay">
-                                <h4>Photography</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 ">
-                        <a href="work.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="assets/images/pages/work/jess_chaidez_design_catalog0.jpg" alt="Jess Chaidez Layout Design">
-                            <div class="portfolio-overlay">
-                                <h4>Straight Down Sales Catalog</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 ">
-                        <a href="work.html" data-destination="portfolio-items" data-insert="before">
                             <img src="assets/images/pages/work/jess_chaidez_design_poster0.jpg" alt="Jess Chaidez Design Typography Poster">
                             <div class="portfolio-overlay">
                                 <h4>Mini Poster</h4>
@@ -264,22 +250,43 @@
                      </ul>
             </article>
             <p> Designed by <a href="http://jesschaidez.com/" >Jess Chaidez</a></p>
-            <p> <a href="../imagesview.php" >All Pictures</a></p>
+<!--
+
+THIS doesn't work...not sure why..
+<p> <a href="../images/view.php" >All Pictures</a></p>
+-->
 </div>
+                       </div>
+</div>
+                       </div>
   
                                 <br class="clearfix" />
                              </div>
                              <br class="clearfix" />
                           </div>
-                       </div>
-                  <div id="footer"> Copyright (c) 2014 <a href="https://www.sunjaydhama.com/">Sunjay Dhama</a>. All rights reserved. Template by <a href="https://www.freecsstemplates.org/">CSS Templates</a><br>
-                     <a class='facebook' href='#' onclick="window.open('https://www.linkedin.com/in/sdsunjay','external');" >
-                        <img alt='' src='images/li.png' width="30" height="30" /></a>
-                     <a class='twitter' href='#' onclick="window.open('https://www.twitter.com/sdsunjay','external');" >
-                        <br>
-                        <img alt='' src='images/twitt.jpg' width="30" height="30"/></a>
-                     <br>
-                     <a href="https://bitcoin.org" target="_NEW">BitCoin</a>: <b><a href="bitcoin:1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx">1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx</a></b><br />
-                  </div>
-               </body>
-            </html>
+      <div id="footer"> Copyright (c) 2014 <a href="https://www.sunjaydhama.com/">Sunjay Dhama</a>. All rights reserved. Template by <a href="https://www.freecsstemplates.org/">CSS Templates</a><br>
+         <a class='facebook' href='#' onclick="window.open('https://www.linkedin.com/in/sdsunjay','external');" >
+            <img alt='' src='images/li.png' width="30" height="30" /></a>
+         <a class='twitter' href='#' onclick="window.open('https://www.twitter.com/sdsunjay','external');" >
+            <br>
+            <img alt='' src='images/twitt.jpg' width="30" height="30"/></a>
+         <br>
+         <a href="https://bitcoin.org" target="_NEW">BitCoin</a>: <b>
+<script>
+CoinWidgetCom.go({
+         wallet_address: "1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx"
+            , currency: "bitcoin"
+               , counter: "hide"
+                  , alignment: "bl"
+                     , qrcode: true
+                        , auto_show: false
+                           , lbl_button: "1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx"
+                              , lbl_address: "My Bitcoin Address:"
+                                 , lbl_count: "Donations"
+                                    , lbl_amount: "BTC"
+                                    });
+</script>
+         </b><br />
+      </div>
+   </body>
+</html>

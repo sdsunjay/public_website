@@ -55,6 +55,7 @@ function pause () {
     }
 }
 </script>
+<script type="text/javascript" src"../bitcoin/coin.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -71,7 +72,7 @@ function pause () {
 		</div>
 		<div id="menu">
 			<ul>
-                             <li class="https://sunjaydhama.com"><a href="../gui/index.html">Home</a></li>
+                             <li class="home"><a href="../gui/index.html">Home</a></li>
                              <li><a href="../gui/about.html">About</a></li>
                              <li><a href="../gui/images.html">Images</a></li>
                              <li><a href="../blog">Blog</a></li>
@@ -101,14 +102,29 @@ function pause () {
                       <br class="clearfix" />
                    </div>
                 </div>
-                <div id="footer"> Copyright (c) 2014 <a href="https://www.sunjaydhama.com/">Sunjay Dhama</a>. All rights reserved. Template by <a href="https://www.freecsstemplates.org/">CSS Templates</a><br>
-                   <a class='facebook' href='#' onclick="window.open('https://www.linkedin.com/in/sdsunjay','external');" >
-                      <img alt='' src='images/li.png' width="30" height="30" /></a>
-                   <a class='twitter' href='#' onclick="window.open('https://www.twitter.com/sdsunjay','external');" >
-                      <br>
-                      <img alt='' src='images/twitt.jpg' width="30" height="30"/></a>
-                   <br>
-                   <a href="https://bitcoin.org" target="_NEW">BitCoin</a>: <b><a href="bitcoin:1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx">1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx</a></b><br />
-                </div>
-             </body>
-          </html>
+      <div id="footer"> Copyright (c) 2014 <a href="https://www.sunjaydhama.com/">Sunjay Dhama</a>. All rights reserved. Template by <a href="https://www.freecsstemplates.org/">CSS Templates</a><br>
+         <a class='facebook' href='#' onclick="window.open('https://www.linkedin.com/in/sdsunjay','external');" >
+            <img alt='' src='images/li.png' width="30" height="30" /></a>
+         <a class='twitter' href='#' onclick="window.open('https://www.twitter.com/sdsunjay','external');" >
+            <br>
+            <img alt='' src='images/twitt.jpg' width="30" height="30"/></a>
+         <br>
+         <a href="https://bitcoin.org" target="_NEW">BitCoin</a>: <b>
+<script>
+CoinWidgetCom.go({
+         wallet_address: "1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx"
+            , currency: "bitcoin"
+               , counter: "hide"
+                  , alignment: "bl"
+                     , qrcode: true
+                        , auto_show: false
+                           , lbl_button: "1Shn9NDCuHeAeDDaHtCb9RFMV1kQr6uZx"
+                              , lbl_address: "My Bitcoin Address:"
+                                 , lbl_count: "Donations"
+                                    , lbl_amount: "BTC"
+                                    });
+</script>
+         </b><br />
+      </div>
+   </body>
+</html>
