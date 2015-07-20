@@ -6,12 +6,12 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 
       <!-- Add fancyBox -->
-      <link rel="stylesheet" href="../../CMD/lightbox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-      <script type="text/javascript" src="../../CMD/lightbox/jquery.fancybox.pack.js?v=2.1.5"></script>
+      <link rel="stylesheet" href="../../css/lightbox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../css/lightbox/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
-      <link rel="stylesheet" href="../../CMD/lightbox/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-      <script type="text/javascript" src="../../CMD/lightbox/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+      <link rel="stylesheet" href="../../css/lightbox/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../css/lightbox/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
       <script type="text/javascript">
          $(document).ready(function() {

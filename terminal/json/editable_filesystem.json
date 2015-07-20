@@ -1,0 +1,78 @@
+{
+	"name": "~",
+		"type": "dir",
+		"contents": [
+		{
+			"name": "README",
+			"type": "text",
+			"contents": "Hello, my name is <a href=\"https://about.me/sdsunjay\" target=\"_blank\" title=\"About Me\"><span class=\"exec\">Sunjay Dhama</span></a>. I am studying Computer Science at <a href=\"https://www.calpoly.edu/\" target=\"_blank\" title=\"cal poly\"><span class=\"exec\">Cal Poly</span></a> San Luis Obispo. This is my website. You can find the source code to make your own <a href=\"https://github.com/clark-duvall/jsterm\" target=\"_blank\" title=\"jsterm\"><span class=\"exec\">here</span></a>. <br><br>If you need help, type \"help\".<br><br>You can contact me at sdhama [at] calpoly [dot] edu.",
+			"description": "Read Me File"
+		},
+		{		
+			"name": "Blog",
+			"type": "exec",
+			"contents": "https://www.sunjaydhama.com/blog",
+			"description": "My WordPress Blog"
+		},
+		{		
+			"name": "Resume",
+			"type": "exec",
+			"contents": "https://www.linkedin.com/in/sdsunjay",
+			"description": "Connect with me on LinkedIn."
+		},
+		{
+			"name": "Images",
+			"type": "dir",
+			"contents": [
+			{
+				"name": "pic.jpg",
+				"type": "img",
+				"contents": "/images/small_google_bike.jpg",
+				"caption": "It's me on a Google Bike!"
+			},
+			{
+				"name": "macys.jpg",
+				"type": "img",
+				"contents": "/images/Macys.jpg",
+				"caption": "I interned at Macys.com."
+			}
+			]
+		},
+		{
+			"name": "NEW",
+			"type": "dir",
+			"contents": []
+		},
+		{
+			"name": "Projects",
+			"type": "dir",
+			"contents":
+				[
+				{
+					"name": "Github",
+					"type": "exec",
+					"contents": "https://github.com/sdsunjay",
+					"description": "I have various projects hosted on my Github (including my senior project)."
+				},
+				{
+					"name": "Brawl",
+					"type": "exec",
+					"contents": "https://wiki.csc.calpoly.edu/Django/wiki",
+					"description": "The project for a team I led in my SE class. Download our game!"
+				},
+				{
+					"name": "SloMo",
+					"type": "exec",
+					"contents": "https://sunjaydhama.com/mindbody",
+					"description": "A web app my team created during the Mindbody Hackathon."
+				},
+				{
+					"name": "LinuxGuide",
+					"type": "exec",
+					"contents": "https://www.mediafire.com/view/9u0wivqqscrgt8b/Final_Document_10-9-12.pdf",
+					"description": "A beginner's guide to Linux my team wrote."
+				}
+			]
+		}
+	]
+}

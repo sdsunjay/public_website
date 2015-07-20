@@ -1,0 +1,380 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: underline;
+	color: blue;	
+        /*color: #F00;*/
+}
+
+a:hover {  /* Color when you mouseover <a> */
+   text-decoration: none;
+   color:white;
+   /*color: #F00;
+   color: blue;*/
+}   
+a:visited {  /* Color when you mouseover <a> */
+   color: red;
+}
+body {
+   background: url(images/img04.jpg)  no-repeat center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   font-size: 13pt;
+   line-height: 1.75em;
+
+}
+
+body,input {
+   font-family: Tahoma, sans-serif;
+}
+
+br.clearfix {
+   clear: both;
+}
+
+h1,h2,h3,h4 {
+   font-weight: normal;
+   letter-spacing: -1px;
+}
+
+/*for tablee */
+th{
+   font-weight: normal;
+}
+
+h2 {
+   font-size: 2.25em;
+}
+
+h2,h3,h4 {
+   margin-bottom: 25px;
+   color: #FFFFFF;
+   font-family: Bitter, serif;
+}
+
+h3 {
+   font-size: 1.5em;
+}
+
+h4 {
+   font-size: 1.25em;
+}
+
+img.alignleft {
+   margin: 5px 20px 20px 0;
+   float: left;
+}
+
+img.aligntop {
+   margin: 5px 0 20px 0;
+}
+
+p {
+   margin-bottom: 1.5em;
+}
+
+ul {
+   margin-bottom: 1.5em;
+}
+
+ul h4 {
+   margin-bottom: 0.35em;
+}
+
+#content {
+   padding: 0;
+   margin: 0 0 0 260px;
+  max-width:100%;
+   /*   width: 630px;
+*/
+}
+
+#footer {
+   text-align: center;
+   padding: 40px 0 0 0;
+   margin: 0 0 85px 0;
+}
+/*
+#footer a {
+color: #CEE1E6;
+}
+ */
+#header {
+   padding: 45px;
+   /*color: #FFFFFF;*/
+   margin:0 0 0 0;
+   background-color:#ffffff;
+   opacity:0.75;
+   filter:alpha(opacity=60); /* For IE8 and earlier */
+   border-bottom: solid 1px #8E4602;
+   position: relative;
+   background: #03F repeat-y top left;
+   height: 140px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+#logo {
+   left: 45px;
+   bottom: 0;
+   line-height: 168px;
+   height: 168px;
+   position: absolute;
+}
+
+#logo a {
+   text-decoration: none;
+   color: #FFFFFF;
+}
+
+#logo h1 {
+   font-family: Bitter, serif;
+   font-size: 3.25em;
+}
+
+#menu {
+   font-family: Bitter, serif;
+   height: 62px;
+   left: 0;
+   top: 0;
+   position: absolute;
+   background: #09F repeat-y top left;
+   border-top: solid 3px #09F;
+   border-bottom: solid 3px #09F;
+   width: 890px;
+   padding: 0 45px 0 45px;
+   line-height: 62px;
+   margin: 0 0 45px 0;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+#menu a {
+   letter-spacing: -1px;
+   text-decoration: none;
+   color: #FFFFFF;
+}
+
+#menu ul {
+   list-style: none;
+}
+
+#menu ul li {
+   padding: 0 20px 0 20px;
+   display: inline;
+}
+
+#menu ul li.first {
+   padding-left: 0;
+}
+
+#page {
+   width:890px;
+   /*width: 890px;
+   height:180px;*/
+margin:0 0 0 0;
+background-color:#ffffff;
+border:1px solid black;
+/*
+opacity:0.6;
+filter:alpha(opacity=60); /* For IE8 and earlier */
+/*
+/*	border-bottom: solid 1px #DCDCDC;
+background: url(images/img04.jpg)  no-repeat center;
+color:#000;
+margin: 0 0 0 0;*/
+position: relative;
+padding: 45px 45px 0px 45px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+
+}
+
+#page .childPic {
+   opacity:1.0;
+   position:left;
+   z-index:1;
+}
+/*
+#page:after {
+opacity:0.6;
+}*/
+#page .section-list {
+   list-style: none;
+   padding-left: 0;
+}
+
+#page .section-list li {
+   padding: 25px 0 25px 0;
+   clear: both;
+}
+
+#page a {
+   color: #000
+}
+
+#page h1, #page h2, #page h3, #page h4 {
+   color: #242424;
+}
+
+#page strong {
+   color: #171717;
+}
+
+#page ul {
+   list-style: none;
+}
+
+#page ul li {
+   border-top: solid 1px #C9C9C9;
+   padding: 15px 0 15px 0;
+}
+
+#page ul li.first {
+   border-top: 0;
+   padding-top: 0;
+}
+
+#post1 {
+   width: 630px;
+
+   /*opacity:1.0;*/
+   overflow: hidden;
+   margin: 0 0 35px 0;
+}
+
+#post2 {
+   width: 295px;
+   overflow: hidden;
+   float: left;
+}
+
+#post3 {
+   margin: 0 0 0 330px;
+   width: 295px;
+   overflow: hidden;
+}
+
+#search {
+   bottom: 0;
+   right: 45px;
+   height: 168px;
+   position: absolute;
+   line-height: 168px;
+}
+
+#search input.form-submit {
+   border-bottom: solid 1px #BE370E;
+   margin-left: 1em;
+   padding: 10px;
+   border: 0;
+   color: #FFFFFF;
+   font-family: Bitter, serif;
+   background: #C33C13;
+}
+
+#search input.form-text {
+   padding: 10px;
+   border: 0;
+   border-radius: 7px;
+   border-top: solid 1px #631B00;
+   color: #606060;
+}
+
+#search input.blank {
+   color: #AAAAAA;
+   font-style: italic;
+}
+
+#sidebar {
+   width: 225px;
+   padding: 0;
+   float: left;
+}
+
+#wrapper {
+   width: 980px;
+   margin: 80px auto 0 auto;
+   position: relative;
+}
+#sign_up {
+   -moz-border-radius: 6px;
+   background: #eef2f7;
+   -webkit-border-radius: 6px;
+   border: 1px solid #536376;
+   -webkit-box-shadow: rgba(0,0,0,.6) 0px 2px 12px;
+   -moz-box-shadow:  rgba(0,0,0,.6) 0px 2px 12px;;
+   padding: 14px 22px;
+   width: 400px;
+   position: relative;
+   display: none;
+ }
+ #sign_up #sign_up_form {
+    margin-top: 13px;
+ }
+ #sign_up label {
+    display: block;
+    margin-bottom: 10px; 
+    color: #536376;
+    font-size: .9em;
+ }
+
+ #sign_up label input {
+    display: block;
+    width: 393px;
+    height: 31px;
+    background-position: -201px 0;
+    padding: 2px 8px;
+    font-size: 1.2em;
+    line-height: 31px;
+ }
+
+ #see_id {
+    width: 228px;
+    height: 23px;
+    background-position: -202px -133px;
+ }
+ #left_out {
+    background-position: -202px -158px;
+    width: 113px; height: 16px;
+ }
+ #sign_up_form {
+    position: relative;
+    background: url('../images/css/divider.png') repeat-x bottom left;
+    padding-bottom: 54px;
+    margin-bottom: 12px;
+ }
+ #actions {
+    float: left;
+    position: absolute;
+    right: 0;
+    height: 31px;
+    bottom: 20px;
+ }
+ a.form_button {
+    float: left;
+    width: 93px; height: 31px;
+    margin-right: 15px;
+ }
+ #cancel { background-position: -198px -36px; }
+ #log_in { background-position: -291px -36px; }
+ #log_in { background-position: -291px -36px; }
+ #cancel:hover { background-position: -198px -67px; }
+ #cancel:active { background-position: -198px -98px; }
+ #log_in:hover { background-position: -291px -67px; }
+ #log_in:active { background-position: -291px -98px; }
+ #close_x { 
+    width: 24px; height: 23px;
+    overflow: hidden; line-height: 1000px;
+    display: block;
+    position: absolute; top: 5px; right: 5px;
+    background-position: -387px -102px;
+ }
+ #usage { background-position: -323px -172px; width: 67px; height: 22px;}

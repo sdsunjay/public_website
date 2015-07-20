@@ -1,0 +1,20 @@
+SUDO(8)                       MAINTENANCE COMMANDS                       SUDO(8)
+
+NAME
+       sudo - execute a command as another user
+
+SYNOPSIS
+       sudo -h | -K | -k | -L | -V
+
+       sudo -v [-AknS] [-g group name|#gid] [-p prompt] [-u username|#uid]
+
+       sudo -l[l] [-AknS] [-g group name|#gid] [-p prompt] [-U user name]
+       [-u user name|#uid] [command]
+
+       sudo [-AbEHnPS] [-C fd] [-g group name|#gid] [-p prompt]
+       [-u user name|#uid] [VAR=value] [-i | -s] [command]
+
+       sudoedit [-AnS] [-C fd] [-g group name|#gid] [-p prompt]
+       [-u user name|#uid] file ...
+
+

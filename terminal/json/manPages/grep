@@ -1,0 +1,41 @@
+GREP(1)                                                                GREP(1)
+
+NAME
+       grep, egrep, fgrep - print lines matching a pattern
+
+SYNOPSIS
+       grep [options] PATTERN [FILE...]
+       grep [options] [-e PATTERN | -f FILE] [FILE...]
+
+DESCRIPTION
+       Grep searches the named input FILEs (or standard input if no files are named, or the file name - is given) for lines containing a match to the given PATTERN.  By default, grep prints the matching lines.
+
+       In addition, two variant programs egrep and fgrep are available.  Egrep is the same as grep -E.  Fgrep is the same as grep -F.
+
+OPTIONS
+       -A NUM, --after-context=NUM
+              Print NUM lines of trailing context after matching lines.  Places a line containing -- between contiguous groups of matches.
+
+       -a, --text
+              Process a binary file as if it were text; this is equivalent to the --binary-files=text option.
+
+       -B NUM, --before-context=NUM
+              Print NUM lines of leading context before matching lines.  Places a line containing -- between contiguous groups of matches.
+
+       -C NUM, --context=NUM
+              Print NUM lines of output context.  Places a line containing -- between contiguous groups of matches.
+
+       -b, --byte-offset
+              Print the byte offset within the input file before each line of output.
+
+       --binary-files=TYPE
+              If the first few bytes of a file indicate that the file contains binary data, assume that the file is of type TYPE.  By default, TYPE is binary, and grep normally outputs either a one-line message saying that a binary file matches, or no message if there is no match.  If
+              TYPE is without-match, grep assumes that a binary file does not match; this is equivalent to the -I option.  If TYPE is text, grep processes a binary file as if it were text; this is equivalent to the -a option.  Warning:  grep  --binary-files=text  might  output  binary
+              garbage, which can have nasty side effects if the output is a terminal and if the terminal driver interprets some of it as commands.
+
+       --colour[=WHEN], --color[=WHEN]
+              Surround the matching string with the marker find in GREP_COLOR environment variable. WHEN may be ‘never’, ‘always’, or ‘auto’
+
+       -c, --count
+              Suppress normal output; instead print a count of matching lines for each input file.  With the -v, --invert-match option (see below), count non-matching lines.
+* in progress

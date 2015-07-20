@@ -1,0 +1,42 @@
+BASH_BUILTINS(1)                                              BASH_BUILTINS(1)
+
+NAME
+       bash,  :,  ., [, alias, bg, bind, break, builtin, cd, command, compgen,
+       complete, continue, declare, dirs, disown, echo,  enable,  eval,  exec,
+       exit,  export,  fc,  fg, getopts, hash, help, history, jobs, kill, let,
+       local, logout, popd, printf, pushd, pwd, read, readonly,  return,  set,
+       shift,  shopt,  source,  suspend,  test,  times,  trap,  type, typeset,
+       ulimit, umask, unalias, unset,  wait  -  bash  built-in  commands,  see
+       bash(1)
+
+BASH BUILTIN COMMANDS
+       Unless otherwise noted, each builtin command documented in this section
+       as accepting options preceded by - accepts -- to signify the end of the
+       options.   For  example,  the  :, true, false, and test builtins do not
+       accept options.  Also, please note that while executing in non-interac-
+       tive  mode  and  while  in  posix mode, any special builtin (like ., :,
+       break, continue, eval,  exec,  exit,  export,  readonly,  return,  set,
+       shift,  source,  times,  trap,  unset)  exiting  with a non-zero status
+       causes the shell to stop execution.
+       : [arguments]
+              No effect; the command does nothing beyond  expanding  arguments
+              and  performing any specified redirections.  A zero exit code is
+              returned.
+
+        .  filename [arguments]
+       cd [-L|-P] [dir]
+              Change  the  current directory to dir.  The variable HOME is the
+              default dir.  The variable CDPATH defines the  search  path  for
+              the  directory  containing  dir.  Alternative directory names in
+              CDPATH are separated by a colon (:).  A null directory  name  in
+              CDPATH  is  the  same as the current directory, i.e., ‘‘.’’.  If
+              dir begins with a slash (/), then CDPATH is  not  used.  The  -P
+              option  says  to use the physical directory structure instead of
+              following symbolic links (see also the  -P  option  to  the  set
+              builtin command); the -L option forces symbolic links to be fol-
+              lowed.  An argument of - is equivalent to $OLDPWD.   If  a  non-
+              empty  directory  name from CDPATH is used, or if - is the first
+              argument, and the directory change is successful,  the  absolute
+              pathname of the new working directory is written to the standard
+              output.  The return value is true if the directory was  success-
+              fully changed; false otherwise.

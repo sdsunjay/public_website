@@ -13,18 +13,6 @@
                <input id="submit" type="submit" name="submit" value="Submit">
          </fieldset>
       </div>
-<!--
-
-   <div id="Sign-In">
-         <fieldset style="width:30%"><legend>LOG-IN HERE</legend>
-            <form>
-               Username <br><input id="username" type="text" name="username" size="40"><br>
-               Password <br><input id="password" type="password" name="password" size="40"><br>
-               <input id="button" type="submit" name="submit" value="Log-In">
-            </form>
-         </fieldset>
-      </div>
--->
 <?php 
 include_once 'functions.php';
 sec_session_start(); // Our custom secure way of starting a PHP session.
@@ -59,8 +47,19 @@ $(document).on('click', '#submit', function() { // catch the form's submit event
 
                      if (result === "Yes")
                      {
-                        alert('User exists. Email feature coming soon.');
-                       // echo "Sent";
+                     
+                        //echo "Email has been sent";
+                        //call function to retrieve email address
+                        //if email address exists, send, if not notify admin.
+                        $to = "sdsunjay73@yahoo.com";
+                        $subject = "My subject";
+                        $txt = "Hello world!";
+                        $headers = "From: webmaster@example.com" . "\r\n" . "CC: somebodyelse@example.com";
+
+                        mail($to,$subject,$txt,$headers);
+                        alert('Email has been sent.');
+
+       // echo "Sent";
                         //window.location = "protected_page.php";
                      }
                      else if(result === "No")

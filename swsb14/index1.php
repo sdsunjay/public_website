@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
         <meta content="charset=utf-8">
-        <title>SWSLO13</title>
+        <title>SWSB14</title>
 
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 
@@ -51,23 +51,17 @@ $(window).load(function() {
 
   <div id="container" class="cf">
     <header role="navigation">
-      <a class="logo" href="https://www.sunjaydhama.com/projects/swslo13" title="Startup Weekend SLO 2013">
-        <img src="../swslo14/logo.png" alt="Startup Weekend SLO 2013" />
+      <a class="logo" href="https://www.sunjaydhama.com/projects/swsb14" title="Startup Weekend Santa Barbara">
+        <img src="logo.jpg" alt="Startup Weekend Santa Barbara" />
           </a>
-      <h1>Startup Weekend SLO 2013</h1>
-      <h2>No Talk, All Action. Launch a Startup in 54 hours.</h2>
-      <h3 class="nav-header">More about Startup Weekend SLO</h3>
+      <h1>Startup Weekend Santa Barbara 2014</h1>
+  <h3 class="nav-header">More about Startup Weekend Santa Barbara</h3>
       <nav>
         <ul>
-          <li><a href="http://mustangnews.net/startup-weekend-slo-brings-ideas-business-to-cal-poly/">Press Release</a></li>
-          <!-- 
-         Bob must have moved or deleted the blog... it used to be here
-          <li><a href="https://www.softec.org/blogs/news_and_announcements/archive/2013/01/28/start-up-weekend-slo.aspx">Softec Blog</a></li>
-         --> 
-         <li><a href="Innovation Quest Application.pdf">Detailed Explanation</a></li> 
-          <li><a href="http://www.up.co/communities/usa/san-luis-obispo/startup-weekend/5156">Event Page</a></li>
-          <li><a href="http://startupweekend.org/">Global Organization</a></li>
-         </ul>
+          <li><a href="https://lightninglocks.co/">Lightning Locks Homepage</a></li>
+          <li><a href="http://www.up.co/communities/usa/santa-barbara/startup-weekend/4488">Event Page</a></li>
+          <li><a href="https://startupweekend.org/">Global Organization</a></li>
+        </ul>
       </nav>
   <h3 class="nav-header">Other</h3>
       <nav>
@@ -77,11 +71,16 @@ $(window).load(function() {
           <li><a href="fullscreen.php">Fullscreen Mode</a></li>
 -->          
             <li><a href="list.php">List Mode</a></li>
-           <li><a href="../../gui/images.html">Project Images</a></li>
-           <li><a href="../../projects">Projects</a></li>
-          <li><a href="../../index.html">Homepage</a></li>
-         <li> <a href="../..//gui">GUI</a></li>
+           <li><a href="https://sunjaydhama.com/images">Project Images</a></li>
+           <li><a href="https://sunjaydhama.com/projects">Projects</a></li>
+           <li><a href="https://sunjaydhama.com">Sunjay's Homepage</a></li>
           <li><a href="https://github.com/woothemes/flexslider">Source</a></li>
+<!--
+          <li><a href="carousel-min-max.html">Carousel with min and max ranges</a></li>
+          <li><a href="dynamic-carousel-min-max.html">Carousel with dynamic min/max ranges</a></li>
+          <li><a href="video.html">Video & the api (vimeo)</a></li>
+          <li><a href="video-wistia.html">Video & the api (wistia)</a></li>
+-->    
     </ul>
       </nav>
     </header>
@@ -89,6 +88,9 @@ $(window).load(function() {
       <section class="slider">
         <div class="flexslider">
           <ul class="slides">
+<li>
+              <iframe id="player_1" src="https://player.vimeo.com/video/112254773?api=1&amp;player_id=player_1" height="300" width="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                        </li>
 <?php
 $files = glob("./images/*.{jpg,JPG,png,gif,bmp}", GLOB_BRACE);
 for ($i=0; $i<count($files); $i++)
@@ -96,6 +98,12 @@ for ($i=0; $i<count($files); $i++)
    $num = $files[$i];
    echo '<li><img src="'.$num.'" alt="my team"/></li>';
 }?>
+<li>
+<iframe id="player_1" src="https://player.vimeo.com/video/112156680?api=1&amp;player_id=player_1" height="300" width="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                        </li>
+<li>
+<iframe id="player_1" src="https://player.vimeo.com/video/112007440?api=1&amp;player_id=player_1" height="300" width="500"frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                        </li>
           </ul>
         </div>
       </section>

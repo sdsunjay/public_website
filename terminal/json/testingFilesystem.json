@@ -1,0 +1,17 @@
+{
+	"name": "~",
+		"type": "dir",
+		"contents": [
+		{
+			"name": "README",
+			"type": "text",
+			"contents": "Empty File",
+			"description": "file"
+		},
+		{
+			"name": "Images",
+			"type": "dir",
+			"contents": []
+		}
+	]
+}

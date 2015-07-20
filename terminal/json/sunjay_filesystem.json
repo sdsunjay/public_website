@@ -1,0 +1,398 @@
+{
+   "name":"~",
+   "type":"dir",
+   "description":"Root",
+   "contents":[
+      {
+         "name":"about",
+         "type":"exec",
+         "description":"Redirect to <a href=\"https://www.sunjaydhama.com/gui/new/about.html\">here</a>",
+         "contents":"https://www.sunjaydhama.com/about"
+      },
+      {
+         "name":"blog",
+         "type":"exec",
+         "description":"Sunjay's Wordpress Blog (4.2.2) (Do not delete unless you have backed imaged up to Dropbox)",
+         "contents":"https://www.sunjaydhama.com/blog"
+      },
+      {
+         "name":"broken.html",
+         "type":"exec",
+         "description":"Simple notice to display when/if my website is down for maintenance",
+         "contents":"https://www.sunjaydhama.com/broken.html"
+      },
+      {
+         "name":"caitlin",
+         "type":"exec",
+         "description":"All files for Caitlin's website, www.caitlinlipton.com",
+         "contents":"https://www.sunjaydhama.com/caitlin"
+      },
+      {
+         "name":"cgi-bin",
+         "type":"exec",
+         "description":"Redirect to <a href=\"https://www.sunjaydhama.com/gui/new/index.html\">here</a>",
+         "contents":"https://www.sunjaydhama.com/cgi-bin"
+      },
+      {
+         "name":"CMD",
+         "type":"dir",
+         "description":"(Needs reorg) Simple project for CMD club, holds Lightbox files",
+         "contents":[]
+      },
+      {
+         "name":"config",
+         "type":"dir",
+         "description":"Contains the various configurations scripts and files used by my website.",
+         "contents":[
+            {
+               "name":"db_connect.php",
+               "type":"text",
+               "description":"PHP functions for connecting to database",
+               "contents":"~"
+            },
+            {
+               "name":"password.php",
+               "type":"text",
+               "description":"Updates PHP to use better password hashing",
+               "contents":"~"
+            }
+         ]
+      },
+      {
+         "name":"contact",
+         "type":"exec",
+         "description":"Redirect to <a href=\"https://www.sunjaydhama.com/gui/new/contact.html\">here</a>",
+         "contents":"https://www.sunjaydhama.com/contact"
+      },
+      {
+         "name":"CSS",
+         "type":"dir",
+         "description":"All the CSS used by various pages on my site",
+         "contents":[
+            {
+               "name":"demo.css",
+               "type":"text",
+               "description":"CSS for demo site provided by <a href=\"http://flexslider.woothemes.com/\">FlexSlider Project</a>",
+               "contents":"~"
+            },
+            {
+               "name":"flex.css",
+               "type":"text",
+               "description":"CSS for <a href=\"http://flexslider.woothemes.com/\">FlexSlider Project</a>",
+               "contents":"~"
+            },
+            {
+               "name":"flexslider.css",
+               "type":"text",
+               "description":"CSS for <a href=\"http://flexslider.woothemes.com/\">FlexSlider Project</a>",
+               "contents":"~"
+            },
+            {
+               "name":"Fonts",
+               "type":"dir",
+               "description":"Something with fonts.",
+               "contents":[]
+            },
+            {
+               "name":"Front.css",
+               "type":"text",
+               "description":"CSS used by my homepage (needs to be integrated into skeleton.css)",
+               "contents":"~"
+            },
+            {
+               "name":"jessica.css",
+               "type":"text",
+               "description":"CSS used for <a href=\"https://www.sunjaydhama.com/images/index.html\">the homepage</a>, created by <a href=\"http://jesschaidez.com/\">Jessica</a>.",
+               "contents":"~"
+            },
+            {
+               "name":"login_style.css",
+               "type":"text",
+               "description":"CSS for login pop-up, originally created for my <a href=\"https://www.sunjaydhama.com/projects/oldGui/index.html\">old</a> website.",
+               "contents":"~"
+            },
+            {
+               "name":"normalize.css",
+               "type":"text",
+               "description":"Core CSS from Lorraine Donnegan, used by any page that has a nav bar",
+               "contents":"~"
+            },
+            {
+               "name":"skeleton.css",
+               "type":"text",
+               "description":"Core CSS from <a href=\"http://www.calpoly.edu/~ldonegan/\">Lorraine Donegan</a>, used by any page that has a nav bar",
+               "contents":"~"
+            },
+            {
+               "name":"Original",
+               "type":"dir",
+               "description":"contains original <a href=\"https://www.sunjaydhama.com/css/Original/normalize.css\">normalize.css</a> and <a href=\"https://www.sunjaydhama.com/css/Original/skeleton.css\">skeleton.css</a> from Kenny Gurney",
+               "contents":[]
+            }
+         ]
+      },
+      {
+         "name":"gui",
+         "type":"dir",
+         "description":"the &quot; main &quot; pages of my website",
+         "contents":[
+            {
+               "name":"bugReport.html",
+               "type":"exec",
+               "description":"Running list of bugs/problems with my website and their status.",
+               "contents":"https://www.sunjaydhama.com/gui/bugReport.html"
+            },
+            {
+               "name":"fonts",
+               "type":"dir",
+               "description":"requires more investigation who or what is utilizing this font",
+               "contents":[]
+            },
+            {
+               "name":"index.html",
+               "type":"exec",
+               "description":"Redirect to <a href=\"https://www.sunjaydhama.com/gui/new/index.html\">here",
+               "contents":"https://www.sunjaydhama.com/gui/index.html"
+            },
+            {
+               "name":"new",
+               "type":"dir",
+               "description":"All the files of my newly designed site",
+               "contents":[
+                  {
+                     "name":"index.html",
+                     "type":"exec",
+                     "description":"Main splash page, everyone sees this when they enter the site.",
+                     "contents":"https://www.sunjaydhama.com/gui/new/index.html"
+                  },
+                  {
+                     "name":"all_projects.html",
+                     "type":"exec",
+                     "description":"A complete list of all my projects",
+                     "contents":"https://www.sunjaydhama.com/gui/new/all_projects.html"
+                  },
+                  {
+                     "name":"about.html",
+                     "type":"exec",
+                     "description":"An about me page with some information about me.",
+                     "contents":"https://www.sunjaydhama.com/gui/new/about.html"
+                  },
+                  {
+                     "name":"images.html",
+                     "type":"exec",
+                     "description":"An in-progress version of the page found <a href=\"https://www.sunjaydhama.com/images/index.html\">here</a>",
+                     "contents":"https://www.sunjaydhama.com/gui/new/images.html"
+                  },
+                  {
+                     "name":"contact.html",
+                     "type":"exec",
+                     "description":"A page with an option to send me a message, uses calpoly's code",
+                     "contents":"https://www.sunjaydhama.com/gui/new/contact.html"
+                  },
+                  {
+                     "name":"projects.html",
+                     "type":"exec",
+                     "description":"A graphical list of my most notable or most recent projects.",
+                     "contents":"https://www.sunjaydhama.com/gui/new/projects.html"
+                  },
+                  {
+                     "name":"resume.html",
+                     "type":"exec",
+                     "description":"my r&eacute;sum&eacute; ",
+                     "contents":"https://www.sunjaydhama.com/gui/new/resume.html"
+                  }
+               ]
+            },
+            {
+               "name":"timelog.html",
+               "type":"exec",
+               "description":"A time log of work done on this site.",
+               "contents":"https://www.sunjaydhama.com/gui/timelog.html"
+            }
+         ]
+      },
+      {
+         "name":"projects",
+         "type":"dir",
+         "description":"all my projects",
+         "contents":[
+            {
+               "name":"accounts",
+               "type":"dir",
+               "description":"Accounts Project",
+               "contents":[]
+            },
+            {
+               "name":"airport",
+               "type":"dir",
+               "description":"Airport Travel Calculator Project",
+               "contents":[]
+            },
+            {
+               "name":"bitcoin",
+               "type":"dir",
+               "description":"bitcoin widget fro my old website",
+               "contents":[]
+            },
+            {
+               "name":"blog",
+               "type":"dir",
+               "description":"First steps in moving my Wordpress blog to my own design.",
+               "contents":[]
+            },
+            {
+               "name":"clickjack",
+               "type":"dir",
+               "description":"Simple clickjacking poc, using invisible iframe.",
+               "contents":[]
+            },
+            {
+               "name":"csc",
+               "type":"dir",
+               "description":"my old cal poly computer science directory",
+               "contents":[]
+            },
+            {
+               "name":"defcon22",
+               "type":"dir",
+               "description":"pictures from the defon22 conference in Las Vegas",
+               "contents":[]
+            },
+            {
+               "name":"DWPACLEC2",
+               "type":"dir",
+               "description":"Distributed WPA Cracker Leveraging EC2",
+               "contents":[]
+            },
+            {
+               "name":"email",
+               "type":"dir",
+               "description":"My email project, previously used in my contact me page, now retired",
+               "contents":[]
+            },
+            {
+               "name":"gtc13",
+               "type":"dir",
+               "description":"Pictures from GTC 2013",
+               "contents":[]
+            },
+            {
+               "name":"gtc14",
+               "type":"dir",
+               "description":"Pictures from GTC 2014",
+               "contents":[]
+            },
+            {
+               "name":"honeypot",
+               "type":"dir",
+               "description":"Information about my honeypot project using the MHN",
+               "contents":[]
+            },
+            {
+               "name":"index.html",
+               "type":"text",
+               "description":"redirect",
+               "contents":""
+            },
+            {
+               "name":"laedu",
+               "type":"dir",
+               "description":"RealSchool PD",
+               "contents":[]
+            },
+            {
+               "name":"matrix",
+               "type":"dir",
+               "description":"The Matrix background",
+               "contents":[]
+            },
+            {
+               "name":"mindbody",
+               "type":"dir",
+               "description":"The mindbody hackathon project",
+               "contents":[]
+            },
+            {
+               "name":"mshah",
+               "type":"dir",
+               "description":"Pictures of M Shah, utilizing the flex slider.",
+               "contents":[]
+            },
+            {
+               "name":"oldGui",
+               "type":"dir",
+               "description":"old gui",
+               "contents":[]
+            },
+            {
+               "name":"pictureChanger",
+               "type":"dir",
+               "description":"Autochange pictures",
+               "contents":[]
+            },
+            {
+               "name":"rideshare",
+               "type":"dir",
+               "description":"Autochange pictures",
+               "contents":[]
+            },
+            {
+               "name":"RS",
+               "type":"dir",
+               "description":"Real School PD Project",
+               "contents":[]
+            },
+            {
+               "name":"swsb14",
+               "type":"dir",
+               "description":"Startup Weekend Santa Barbara",
+               "contents":[]
+            },
+            {
+               "name":"swslo12",
+               "type":"dir",
+               "description":"Startup Weekend San Luis Obispo 2012",
+               "contents":[]
+            },
+            {
+               "name":"swslo13",
+               "type":"dir",
+               "description":"Startup Weekend San Luis Obispo 2013",
+               "contents":[]
+            },
+            {
+               "name":"swslo14",
+               "type":"dir",
+               "description":"Startup Weekend San Luis Obispo 2014",
+               "contents":[]
+            },
+            {
+               "name":"swsm14",
+               "type":"dir",
+               "description":"Startup Weekend Santa Maria 2014",
+               "contents":[]
+            },
+            {
+               "name":"terminal",
+               "type":"dir",
+               "description":"My terminal project",
+               "contents":[
+                  {
+                     "name":"CSS",
+                     "description":"",
+                     "type":"dir",
+                     "contents":[
+                        {
+                           "name":"mobile_style.css",
+                           "description":"CSS for mobile version of <a href=\"https://www.sunjaydhama.com/projects/terminal/terminal.html\">terminal project</a> (needs to be integrated into style.css).",
+                           "type":"text",
+                           "contents":"~"
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

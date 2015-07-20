@@ -20,8 +20,8 @@
     if (strcmp($ret,"d") == 0 ) {
         // CHECK TO SEE IF THIS IS A MAIL POST
            // Building a whitelist array with keys which will send through the form, no others would be accepted later on
-           $whitelist = array('token','req-name','opt-cc', 'req-email','req-subject','urgency','newText');
-
+           $whitelist = array('token','req-name', 'req-email','req-subject','urgency','newText');
+/*
            // Building an array with the $_POST-superglobal 
            foreach ($_POST as $key=>$item) {
 
@@ -32,7 +32,7 @@
                  die("Hack-Attempt detected. Whitelist violated. Please use only the fields in the form");
 
               }
-           } 
+           }*/ 
 
            $subject =  $purifier->purify($_POST['req-subject']);
            $clean_name = $purifier->purify($_POST['req-name']);
@@ -63,21 +63,21 @@
 
            // PREPARE THE BODY OF THE MESSAGE
 
-           $message = '<html><body>';
-           $message .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
-           $message .= "<tr style='background: #eee;'><td><strong>Name:</strong> </td><td>" . $clean_name . "</td></tr>";
-           $message .= "<tr><td><strong>Email:</strong> </td><td>" . $clean_from . "</td></tr>";
+        //   $message = '<html><body>';
+          // $message .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
+          // $message .= "<tr style='background: #eee;'><td><strong>Name:</strong> </td><td>" . $clean_name . "</td></tr>";
+          // $message .= "<tr><td><strong>Email:</strong> </td><td>" . $clean_from . "</td></tr>";
            //$message .= "<tr><td><strong>CC:</strong> </td><td>" . $opt_cc . "</td></tr>";
-           $message .= "<tr><td><strong>Subject:</strong> </td><td>" . $subject . "</td></tr>";
-           $message .= "<tr><td><strong>Urgency:</strong> </td><td>" . $clean_urgency . "</td></tr>";
-           $message .= "<tr><td><strong>Message: </strong> </td><td>" . $clean_text . "</td></tr>";
-           $message .= "</table>";
-           $message .= "</body></html>";
-
+          // $message .= "<tr><td><strong>Subject:</strong> </td><td>" . $subject . "</td></tr>";
+          // $message .= "<tr><td><strong>Urgency:</strong> </td><td>" . $clean_urgency . "</td></tr>";
+          // $message .= "<tr><td><strong>Message: </strong> </td><td>" . $clean_text . "</td></tr>";
+          // $message .= "</table>";
+          // $message .= "</body></html>";
+            $message = "\nName: ". $clean_name . "\nEmail: " . $clean_from . "\nSubject: " . $subject . "\nUrgency" . $clean_urgency . "\nMessage: " . $clean_text; 
 
            //   CHANGE THE BELOW VARIABLES TO YOUR NEEDS
 
-           $to = 'dhamaharpal@gmail.com';
+           $to = "sunjay.public@gmail.com";
            //$subject =  $purifier->purify($_POST['req-subject']);
            //subject already set above
            //$subject =  strip_tags($_POST['req-subject']);
@@ -85,8 +85,8 @@
            $headers = "From: " . $clean_from . "\r\n";
            //$headers .= "Reply-To: ". $clean_from . "\r\n";
 	   $headers .= "Reply-To: ". strip_tags($_POST['req-email']) . "\r\n";
-           $headers .= "MIME-Version: 1.0\r\n";
-           $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+          // $headers .= "MIME-Version: 1.0\r\n";
+           //$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
            //
            // // Additional headers
            //$headers .= "To: Sunjay Dhama <dhamaharpal@gmail.com>" . "\r\n";
