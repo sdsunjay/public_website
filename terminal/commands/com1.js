@@ -56,39 +56,6 @@ COMMANDS.cat =  function(argv, cb) {
       }, this);
       cb();
 }
-
-/* NEW CLARK */
-/*
-   var filenames = this._terminal.parseArgs(argv).filenames,
-   stdout;
-
-   this._terminal.scroll();
-   if (!filenames.length) {
-   this._terminal.returnHandler = function() {
-   stdout = this.stdout();
-   if (!stdout)
-   return;
-   stdout.innerHTML += '<br>' + stdout.innerHTML + '<br>';
-   this.scroll();
-   this.newStdout();
-   }.bind(this._terminal);
-   return;
-   }
-   filenames.forEach(function(filename, i) {
-   var entry = this._terminal.getEntry(filename);
-
-   if (!entry)
-   this._terminal.write('cat: ' + filename + ': No such file or directory');
-   else if (entry.type === 'dir')
-   this._terminal.write('cat: ' + filename + ': Is a directory.');
-   else
-   this._terminal.write(entry.contents);
-   if (i !== filenames.length - 1)
-   this._terminal.write('<br>');
-   }, this);
-   cb();
-   }
-   */
 COMMANDS.cd = function(argv, cb) {
    var filename = this._terminal.ParseArgs(argv).filenames[0];
    if (!filename)
@@ -123,14 +90,7 @@ COMMANDS.cd = function(argv, cb) {
 
 
 COMMANDS.clear = function(argv, cb) {
-   //$('#jsterm').empty();
-   //var idiv = document.getElementsByClassName('jsterm')[0].id;
-   document.getElementById('jsterm_id').innerHTML = "";
-   //this._terminal.div.parentNode.innerHTML = '';
-   
    this._terminal.div.innerHTML = '';
-  // elem.parentNode.removeChild(elem);
-//this.div.parentNode.removeChild(
    cb();
 }
 

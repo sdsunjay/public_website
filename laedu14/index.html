@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+        <title>Real School PD</title>
+
+        <meta name="description" content="">
+        <meta name="author" content="Sunjay Dhama">
+
+        <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+
+
+
+        <!-- Flexslider CSS -->
+        <link rel="stylesheet" href="../../css/demo.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="../../css/flexslider.css" type="text/css" media="screen" />
+        <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/skeleton.css">
+        <!-- Modernizr -->
+        <script src="../../js/flexslider/modernizr.js"></script>
+
+        <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
+
+
+        </head>
+        <!--<body>-->
+        <body class="loading">
+
+        <!-- Nav
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <nav>
+           <ul>
+              <li><a href="../../gui/new/about.html">ABOUT</a></li>
+              <li><a href="../../gui/new/projects.html">PROJECTS</a></li>
+              <li>
+              <a href="../../gui/new/index.html">
+                 <img id="navlogo" src="../../images/logo.png" alt="navagation-logo"></a></li>
+              <li><a href="../../gui/new/resume.html">R&Eacute;SUM&Eacute;</a></li>
+              <li><a href="../../gui/new/contact.html">CONTACT</a></li>
+           </ul>
+        </nav>
+        <div class="shell spacer">
+           <div class="left-col">
+              <!-- <img src='../RS/images/RealSchoolPD_logo_sm.png' height='50' alt="Real School PD Logo" />-->
+
+              <h1>Real School PD</h1>
+              <h2>Real Teachers. Real Results</h2>
+              <!--<ul>
+                 <li><a href="index.html">Project Homepage</a></li>
+                 <li><a href="../RS">Real School PD</a></li>
+                 <li><a href="http://laedu.startupweekend.org/author/laedu/">Blog</a></li>
+                 <li><a href="http://laedu.startupweekend.org/">Startup Weekend</a></li>                     
+              </ul>-->
+      <h4>Creating positive change through proven professional development</h4>
+      <p>
+      This is a project I worked on during <a href="http://laedu.startupweekend.org/">Startup Weekend LA EDU</a>. I heard Clay pitch the idea and was immediately drawn to it because of his passion and experience. REALSchool PD is not something he pitched off the top of his head, but something he had been doing for many years. He simply needed someone to help him expand his business by taking it online. During the weekend, I used the knowledge I had gained at the <a href="../swslo14/index.php">previous startup weekend</a> event to learn <a href="http://rubyonrails.org/">Ruby on Rails</a>. I did hit a lot of roadblocks, simply because of my inexperience, but I was able to get a simply website online. However due to server costs, real application is no longer online, but you can check out a mock application <a href="../RS/index.html">here</a>. All my code can be found <a href="https://www.github.com/sdsunjay/RS">here</a>.
+      </p>
+      <p><a class="navbuts" href="../swslo14/index.html"><img src="../../images/css/previous.png" /></a><a class="navbuts" href="../mobilecloset/index.html"><img src="../../images/css/next.png" /></a></p>
+   </div>
+
+   <div class="left-colmn">
+      <div id="main" role="main">
+         <section class="slider">
+            <div class="flexslider">
+               <ul class="slides">
+                  <li><iframe id="player_1" src="https://player.vimeo.com/video/89822298?api=1&amp;player_id=player_1" width="500" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
+                  <li><img src="./images/IMG_1130.JPG" /></li>
+                  <li><img src="./images/IMG_1129.JPG" /></li>
+                  <li><img src="./images/IMG_1135.JPG" /></li>
+                  <li><img src="./images/IMG_1132.JPG" /></li>
+                  <li><img src="./images/IMG_1133.JPG" /></li>
+                  <!--<li><img src="./images/IMG_1134.JPG" /></li>-->
+                  <li><img src="./images/IMG_1136.JPG" /></li>
+                  <!--          <li><img src="./images/IMG_1137.JPG" /></li>-->
+               </ul>
+            </div>                                 
+         </section>
+      </div>
+   </div>
+</div>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../js/flexslider/jquery-1.7.min.js">\x3C/script>')</script>
+
+<!-- FlexSlider -->
+<script defer src="../../js/flexslider/jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+   $(function(){
+      SyntaxHighlighter.all();
+   });
+   $(window).load(function(){
+      // Vimeo API nonsense
+      var player = document.getElementById('player_1');
+      $f(player).addEvent('ready', ready);
+
+      function addEvent(element, eventName, callback) {
+      (element.addEventListener) ? element.addEventListener(eventName, callback, false) : element.attachEvent(eventName, callback, false);
+      }
+
+      function ready(player_id) {
+         var froogaloop = $f(player_id);
+
+         froogaloop.addEvent('play', function(data) {
+            $('.flexslider').flexslider("pause");
+         });
+
+         froogaloop.addEvent('pause', function(data) {
+            $('.flexslider').flexslider("play");
+         });
+      }
+      // Call fitVid before FlexSlider initializes, so the proper initial height can be retrieved.
+      $(".flexslider")
+         .fitVids()
+         .flexslider({
+            animation: "slide",
+            useCSS: false,
+            animationLoop: false,
+            smoothHeight: true,
+            start: function(slider){
+               $('body').removeClass('loading');
+            },
+            before: function(slider){
+               $f(player).api('pause');
+            }
+         });
+});
+</script>
+
+<!-- Syntax Highlighter -->
+<script type="text/javascript" src="../../js/flexslider/shCore.js"></script>
+<script type="text/javascript" src="../../js/flexslider/shBrushXml.js"></script>
+<script type="text/javascript" src="../../js/flexslider/shBrushJScript.js"></script>
+
+<!-- Optional FlexSlider Additions  (necessary for vimeo)-->
+<script src="../../js/flexslider/froogaloop.js"></script>
+<script src="../../js/flexslider/jquery.fitvid.js"></script>
+<script src="../../js/flexslider/demo.js"></script>
+
+<!--
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <!-- Google Analytics -->
+   <script type="text/javascript" src="../../js/googleAnalytics.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+	<title>Real School PD</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+
+  <!-- Demo CSS -->
+        <link rel="stylesheet" href="../../css/demo.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../../css/flexslider.css" type="text/css" media="screen" />
+	<!-- Modernizr -->
+  <script src="../../js/flexslider/modernizr.js"></script>
+
+</head>
+<body class="loading">
+
+  <div id="container" class="cf">
+    <header role="navigation">
+      <a class="logo" href="https://www.sunjaydhama.com/projects/laedu" title="logo">
+         <img src='../RS/images/RealSchoolPD_logo_sm.png' height='150' alt="Real School PD Logo" />
+	  </a>
+      <h1>Real School PD</h1>
+      <h2>Real Teachers. Real Results</h2>
+      <h3 class="nav-header">Info</h3>
+      <nav>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="../RS">Real School PD</a></li>
+          <li><a href="http://laedu.startupweekend.org/author/laedu/">Blog</a></li>
+          <li><a href="http://laedu.startupweekend.org/">Startup Weekend</a></li>
+         <!-- <li><a href="thumbnail-slider.html">Slider w/thumbnail slider</a></li>
+          <li><a href="basic-carousel.html">Basic Carousel</a></li>
+          <li><a href="carousel-min-max.html">Carousel with min and max ranges</a></li>
+          <li><a href="dynamic-carousel-min-max.html">Carousel with dynamic min/max ranges</a></li>
+          <li class="active"><a href="video.html">Video & the api (vimeo)</a></li>
+          <li><a href="video-wistia.html">Video & the api (wistia)</a></li>-->
+        </ul>
+      </nav>
+    </header>
+    <div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <iframe id="player_1" src="https://player.vimeo.com/video/89822298?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  	    		</li>
+  	    		<li>
+  	    	    <img src="./images/IMG_1130.JPG" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="./images/IMG_1129.JPG" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="./images/IMG_1135.JPG" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="./images/IMG_1132.JPG" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="./images/IMG_1133.JPG" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="./images/IMG_1134.JPG" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="./images/IMG_1136.JPG" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="./images/IMG_1137.JPG" />
+  	    		</li>
+          </ul>
+        </div>
+      </section>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/flexslider/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="../../js/flexslider/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+
+      // Vimeo API nonsense
+      var player = document.getElementById('player_1');
+      $f(player).addEvent('ready', ready);
+
+      function addEvent(element, eventName, callback) {
+        (element.addEventListener) ? element.addEventListener(eventName, callback, false) : element.attachEvent(eventName, callback, false);
+      }
+
+      function ready(player_id) {
+        var froogaloop = $f(player_id);
+
+        froogaloop.addEvent('play', function(data) {
+          $('.flexslider').flexslider("pause");
+        });
+
+        froogaloop.addEvent('pause', function(data) {
+          $('.flexslider').flexslider("play");
+        });
+      }
+
+
+      // Call fitVid before FlexSlider initializes, so the proper initial height can be retrieved.
+      $(".flexslider")
+        .fitVids()
+        .flexslider({
+          animation: "slide",
+          useCSS: false,
+          animationLoop: false,
+          smoothHeight: true,
+          start: function(slider){
+            $('body').removeClass('loading');
+          },
+          before: function(slider){
+            $f(player).api('pause');
+          }
+      });
+    });
+  </script>
+
+   <!-- Syntax Highlighter -->
+	<script type="text/javascript" src="../../js/flexslider/shCore.js"></script>
+	<script type="text/javascript" src="../../js/flexslider/shBrushXml.js"></script>
+	<script type="text/javascript" src="../../js/flexslider/shBrushJScript.js"></script>
+
+  <!-- Optional FlexSlider Additions  (necessary for vimeo)-->
+    <script src="../../js/flexslider/froogaloop.js"></script>
+	<script src="../../js/flexslider/jquery.fitvid.js"></script>
+	<script src="../../js/flexslider/demo.js"></script>
+
+</body>
+</html>
