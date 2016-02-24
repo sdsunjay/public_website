@@ -16,8 +16,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <meta charset="utf-8">
-<meta name="keywords" content="Sunjay, Dhama, Cal, Poly, California, Polytechnic, San Luis Obispo, Obispo, Software, Engineering, Computer, Science, Android, Security, C, C++, Java, Javascript, Python, CUDA, Terminal, HTML,CSS,JavaScript,PHP">
-<meta name="description" content="Tweetonomics">
+<meta name="keywords" content="Sunjay, Dhama, Cal, Poly, California, Polytechnic, San Luis Obispo, Obispo, Software, Engineering, Computer, Science, HTML,CSS,JavaScript,PHP">
+<meta name="description" content="Tip Trip App">
 <meta name="author" content="Sunjay Dhama">
 <meta content="images/favicon.ico" itemprop="image">
 <meta https-equiv="content-type" content="text/html; charset=utf-8" />
@@ -95,17 +95,17 @@
         <p><a class="navbuts" href="../vim/vim.html"><img src="../../images/css/previous.png" /></a><a class="navbuts" href="../swslo16/index.html"><img src="../../images/css/next.png" /></a></p>
      </div>    
       <div class="left-colmn">
-
          <div id="main" role="main">
             <section class="slider">
                <div class="flexslider">
                   <ul class="slides">
-                  <li><img src="images/IMG_0001.jpg" alt="The Tip Trip App Homepage"/></li>
-                  <li><img src="images/Team.jpg" alt="The Tip Trip App Team Posing for a Photo"/></li>
-                  <li><img src="images/Team_Working.jpg" alt="The Tip Trip App Team Hard at Work"/></li>
-                  <li><img src="images/frontFace.jpg" alt="The Tip Trip App Website"/></li>
-                  <li><img src="images/All_Startup_Weekend_SLO_2012.jpg" alt="Everyone who attended Startup Weekend SLO 2012"/></li>
-               </ul>
+                     <li><div id="youtube1"></div></li>
+                     <li><img src="images/IMG_0001.jpg" alt="The Tip Trip App Homepage"/></li>
+                     <li><img src="images/Team.jpg" alt="The Tip Trip App Team Posing for a Photo"/></li>
+                     <li><img src="images/Team_Working.jpg" alt="The Tip Trip App Team Hard at Work"/></li>
+                     <li><img src="images/frontFace.jpg" alt="The Tip Trip App Website"/></li>
+                     <li><img src="images/All_Startup_Weekend_SLO_2012.jpg" alt="Everyone who attended Startup Weekend SLO 2012"/></li>
+                  </ul>
                </div>
             </section>
          </div>
@@ -117,26 +117,99 @@
 
    <!-- FlexSlider -->
    <script defer src="../../js/flexslider/jquery.flexslider.js"></script>
-   <script type="text/javascript">
-$(function(){
-      SyntaxHighlighter.all();
+
+  <script type="text/javascript">
+    //var tag = document.createElement('script');
+   // Code based up FlexSlider Video demo:
+   // http://flexslider.woothemes.com/video.html
+   //
+   // Can also be used with $(document).ready()
+   $(document).ready(function() {
+   // Call fitVid before FlexSlider initializes, so the proper initial height can be retrieved.
+   $(".flexslider")
+      .fitVids()
+      .flexslider({
+         animation: "slide",
+         animationLoop: true,
+         smoothHeight: true,
+         //slideshowSpeed: 3000,
+         slideshow: true,
+         useCSS: false,
+         pauseOnHover: true, 
+         start: function(slider){
+            $('body').removeClass('loading');
+         },
+         before: function(slider) {
+            pausePlayers();
+         }
       });
-$(window).load(function(){
-      $('.flexslider').flexslider({
-animation: "slide",
-animationLoop: false,
-smoothHeight: true,
-pausePlay: false,
-start: function(slider){
-$('body').removeClass('loading');
-}
-});
+   });
+
+   // YouTube
+   // Load the iFrame Player API code asynchronously.
+   var tag = document.createElement('script');
+   tag.src = "https://www.youtube.com/player_api";
+   var firstScriptTag = document.getElementsByTagName('script')[0];
+   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+   var player1,youtubePlayers = [];
+   // Replace the 'ytplayer' element with an <iframe> and
+   // YouTube player after the API code downloads.
+   function onYouTubePlayerAPIReady() {
+      player1 = new YT.Player('youtube1', {
+         //          height: '281',
+         width: '500',
+         videoId: 'ki1L_CFLrJc',
+         playerVars: {
+            'autohide': 0,
+            'playsinline': 0,
+            'autoplay': 0,
+            'controls': 1,
+            'modestbranding': 1,
+            'showinfo': 1
+         },
+         events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+         }
       });
-   </script>
+   
+      youtubePlayers[0] = player1;
+   }
+
+      function onPlayerReady(event) {
+         $('.flexslider').flexslider("play");
+      }
+      function onPlayerStateChange(event) {
+         if (event.data == YT.PlayerState.PLAYING || event.data == YT.PlayerState.BUFFERING) {
+            console.log('Playing / Buffering');
+            $('.flexslider').flexslider("pause");
+         } else if (event.data == YT.PlayerState.ENDED || event.data == YT.PlayerState.PAUSED) {
+            console.log('Ended / Paused');
+            $('.flexslider').flexslider("play");
+         }
+      }
+
+   function pausePlayers() {
+      var i = 0;
+      for (i; i < youtubePlayers.length; i += 1) {
+         // YouTube videos
+         youtubePlayers[i].pauseVideo();
+      }
+   }
+</script>
 
    <!-- Syntax Highlighter -->
    <script type="text/javascript" src="../../js/flexslider/shCore.js"></script>
    <script type="text/javascript" src="../../js/flexslider/shBrushXml.js"></script>
    <script type="text/javascript" src="../../js/flexslider/shBrushJScript.js"></script>
+
+   <!-- Optional FlexSlider Additions  (necessary for vimeo)-->
+   <script src="../../js/flexslider/froogaloop.js"></script>
+   <script src="../../js/flexslider/jquery.fitvid.js"></script>
+   <script src="../../js/flexslider/demo.js"></script>
+
+   <!--
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
    </body>
    </html>
