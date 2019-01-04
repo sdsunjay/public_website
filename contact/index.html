@@ -11,7 +11,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <link rel="icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
-
+<link rel="stylesheet" type="text/css" href="css/style.css">
 
 <!-- Meta Content
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -92,36 +92,34 @@
 <div class="shell">
 <div class="contact">
     <div class="content-contactform">	
-  <!--
-       <h3> Apologies, my contact form is currently not working. Unfortunately, that's what happens when you try to run PHP7 on a virtual server with 128mb of RAM. You can contact me at public [at] sunjay [dot] io. </h3>
-     -->
+       <!--  <h3> Apologies, my contact form is currently not working. Unfortunately, that's what happens when you try to run PHP7 on a virtual server with 128mb of RAM. You can contact me at public [at] sunjay [dot] io. </h3>-->
        <!-- Form -->
-      <form id="contact-form" action="submit.php" method="post" >
+      <form id="contact-form" name="contact-form" action="submit.php" method="post" >
          <h3>Let&rsquo;s chat!</h3>
          <h4>Go ahead and fill this here form in and I&rsquo;ll get back to you as soon as possible.</h4>
          <div class="left-col">
             <div>
                <label>
                   <span class="formspacer">Name:&nbsp;&nbsp;</span>
-                  <input placeholder="Name here!" type="text" name="name" tabindex="1" required>
+                  <input placeholder="Name here!" type="text" maxlength="256" id="name" name="name" tabindex="1" required autofocus>
                </label>
             </div>
             <div>
                <label>
                   <span class="formspacer">Email:&nbsp;&nbsp;</span>
-                  <input placeholder="Your Email here!" type="email" name="email" tabindex="2" required>
+                  <input placeholder="Your Email here!" type="email" maxlength="256" id="email" name="email" tabindex="2" required>
                </label>
             </div>
             <div>
                <label>
                   <span class="formspacer">Subject:</span>
-                  <input placeholder="Subject here!" type="text" name="subject" tabindex="2" required>
+                  <input placeholder="Subject here!" type="text" maxlength="256" id="subject" name="subject" tabindex="2" required>
                </label>
             </div>
             <div>
                <label>
                   <span class="formspacer">Captcha:</span>
-                  <input placeholder="Captcha here!" type="text" name="captcha" tabindex="2" required>
+                  <input placeholder="Captcha here!" type="text" maxlength="256" id="captcha" name="captcha" pattern="[0-9]+" tabindex="2" required>
                </label>
             </div>
             <div><img src="captcha.php" width="120" height="30" border="1" alt="CAPTCHA"></div>
@@ -130,7 +128,7 @@
             <div>
                <label>
                   <span class="formspacer">Message:</span>
-                  <textarea class="textareasizer" placeholder="Chat away here!" tabindex="6" name="message" required></textarea>
+                  <textarea class="textareasizer" placeholder="Chat away here!" tabindex="6" maxlength="2048" id="message" name="message" required></textarea>
                </label>
             </div>
          </div>
@@ -147,8 +145,7 @@
 
       </form>
       <!-- /Form -->
-
-      </div><!--End of content-contactform-->
+      </div><!-- End of content-contactform -->
    </div>
 </div>
 
