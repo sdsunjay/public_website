@@ -1,17 +1,164 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="refresh" content="1;url=https://www.sunjaydhama.com/gui/new/contact.html">
-<script type="text/javascript">
-   window.location.href = "https://www.sunjaydhama.com/gui/new/contact.html"
-</script>
-<title>Page Redirection</title>
+
+<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<title>Contact Sunjay Dhama</title>
+
+<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
+
+
+<!-- Meta Content
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<meta charset="utf-8">
+<meta name="keywords" content="Sunjay, Dhama, California, Polytechnic, Software, Engineering, Computer, Science, Javascript, HTML, CSS, PHP">
+<meta name="description" content="Contact Sunjay Dhama">
+<meta name="author" content="Sunjay Dhama">
+<meta content="images/batman.png" itemprop="image">
+<meta https-equiv="content-type" content="text/html; charset=utf-8" />
+
+<!-- ROBOTS -->
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+
+<!-- SEO -->
+<link rel="canonical" href="https://sunjaydhama.com/" />
+
+<!-- Facebook -->
+<meta property="og:image" content="https://sunjaydhama.com/images/selfie.jpg"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Contact Sunjay Dhama"/>
+<meta property="og:url" content="https://sunjaydhama.com/contact"/>
+<meta property="og:site_name" content="sunjaydhama.com"/>
+<meta property="og:description" content="I'm a Software Engineer and am passionate about machine learning, currently based in Oakland, California."/>
+<meta property=”og:locale” content=”en_US” />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@sdsunjay">
+<meta name="twitter:title" content="Sunjay Dhama">
+<meta name="twitter:description" content="I'm a Software Engineer and am passionate about machine learning, currently based in Oakland, California."/>
+<meta name="twitter:image:src" content="https://sunjaydhama.com/images/selfie.jpg">
+
+<!-- Google+ -->
+<meta itemprop="name" content="Sunjay Dhama">
+<meta itemprop="description" content="I'm a Software Engineer and am passionate about machine learning, currently based in Oakland, California.">
+<meta itemprop="image" content="https://sunjaydhama.com/images/selfie.jpg">
+
+<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+
+<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="../../css/normalize.css">
+<link rel="stylesheet" href="../../css/skeleton.css">
+
 </head>
 <body>
-<!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
-<p>
-If you are not redirected automatically, follow the <a href='https://www.sunjaydhama.com/gui/new/contact.html'>link</a>.
-</p>
+
+<!-- Nav
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<nav class="nav">
+   <ul class="nav-list">
+      <li class="nav-item"><a href="../about.html">ABOUT</a></li>
+      <li class="nav-item"><a href="../projects.html">PROJECTS</a></li>
+      <li class="nav-item">
+            <span id="testxyz" role="img">
+               <a href="../index.html">SUNJAY DHAMA</a>
+            </span>
+
+            <!--<img src="../../images/logo.png" alt="navagation-logo">-->
+      </li>
+      <li class="nav-item"><a href="../resume.html">R&Eacute;SUM&Eacute;</a></li>
+      <li class="nav-item"><a href="../contact.html">CONTACT</a></li>
+   </ul>
+</nav>
+
+<!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div class="shell">
+<div class="contact">
+    <div class="content-contactform">	
+  <!--
+       <h3> Apologies, my contact form is currently not working. Unfortunately, that's what happens when you try to run PHP7 on a virtual server with 128mb of RAM. You can contact me at public [at] sunjay [dot] io. </h3>
+     -->
+       <!-- Form -->
+      <form id="contact-form" action="submit.php" method="post" >
+         <h3>Let&rsquo;s chat!</h3>
+         <h4>Go ahead and fill this here form in and I&rsquo;ll get back to you as soon as possible.</h4>
+         <div class="left-col">
+            <div>
+               <label>
+                  <span class="formspacer">Name:&nbsp;&nbsp;</span>
+                  <input placeholder="Name here!" type="text" name="name" tabindex="1" required>
+               </label>
+            </div>
+            <div>
+               <label>
+                  <span class="formspacer">Email:&nbsp;&nbsp;</span>
+                  <input placeholder="Your Email here!" type="email" name="email" tabindex="2" required>
+               </label>
+            </div>
+            <div>
+               <label>
+                  <span class="formspacer">Subject:</span>
+                  <input placeholder="Subject here!" type="text" name="subject" tabindex="2" required>
+               </label>
+            </div>
+            <div>
+               <label>
+                  <span class="formspacer">Captcha:</span>
+                  <input placeholder="Captcha here!" type="text" name="captcha" tabindex="2" required>
+               </label>
+            </div>
+            <div><img src="captcha.php" width="120" height="30" border="1" alt="CAPTCHA"></div>
+         </div>
+         <div class="left-col">
+            <div>
+               <label>
+                  <span class="formspacer">Message:</span>
+                  <textarea class="textareasizer" placeholder="Chat away here!" tabindex="6" name="message" required></textarea>
+               </label>
+            </div>
+         </div>
+         <div>
+
+            <button name="submit" type="submit" id="contact-submit">Submit</button>
+            <span class="contact-info"><i>&#42;&#42;After clicking the Submit button the university visual verification page will be displayed.<br/>Please respond to the question to complete the submission of your request.</i></span>
+         </div>
+         <input name="Location:" type="hidden" value="https://sunjaydhama.com/contact" />
+         <input name="To:" type="hidden" value="temp" />
+         <input name="From:" type="hidden" value="Website Visitor" />
+         <input name="Subject:" type="hidden" value="My Website" />
+         <input name="X-comment:" type="hidden" value="Sunjay Dhama, https://sunjaydhama.com/contact.html" />
+
+      </form>
+      <!-- /Form -->
+
+      </div><!--End of content-contactform-->
+   </div>
+</div>
+
+
+<!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Google Analytics -->
+<script type="text/javascript" src="../js/googleAnalytics.js"></script>
+
 </body>
 </html>
+
+
