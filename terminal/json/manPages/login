@@ -1,0 +1,37 @@
+LOGIN(1)                   Linux Programmer’s Manual                  LOGIN(1)
+
+NAME
+       login - sign on
+
+SYNOPSIS
+       login [ name ]
+       login -p
+       login -h hostname
+       login -f name
+
+DESCRIPTION
+       login is used when signing onto a system.
+
+       If an argument is not given, login prompts for the username.
+
+       If the user is not root, and if /etc/nologin exists, the contents of this file are printed to the screen, and the login is terminated.  This is typ-
+       ically used to prevent logins when the system is being taken down.
+
+       If special access restrictions are specified for the user in /etc/usertty, these must be met, or the log in attempt will be denied and a syslog mes-
+       sage will be generated. See the section on "Special Access Restrictions".
+
+       If the user is root, then the login must be occurring on a tty listed in /etc/securetty.  Failures will be logged with the syslog facility.
+
+       After  these  conditions  have been checked, the password will be requested and checked (if a password is required for this username).  Ten attempts
+       are allowed before login dies, but after the first three, the response starts to get very slow.  Login failures are reported via the  syslog  facil-
+       ity.  This facility is also used to report any successful root logins.
+
+       If  the  file  .hushlogin  exists, then a "quiet" login is performed (this disables the checking of mail and the printing of the last login time and
+       message of the day).  Otherwise, if /var/log/lastlog exists, the last login time is printed (and the current login is recorded).
+
+       Random administrative things, such as setting the UID and GID of the tty are performed.  The TERM environment variable is preserved,  if  it  exists
+       (other environment variables are preserved if the -p option is used).  Then the HOME, PATH, SHELL, TERM, MAIL, and LOGNAME environment variables are
+       set.  PATH defaults to /usr/local/bin:/bin:/usr/bin for normal users, and to /usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin for  root.
+       Last,  if this is not a "quiet" login, the message of the day is printed and the file with the user’s name in /var/spool/mail will be checked, and a
+       message printed if it has non-zero length.
+

@@ -1,0 +1,13 @@
+
+				{
+					"name": "LinuxGuide",
+					"type": "exec",
+					"contents": "https://www.mediafire.com/view/9u0wivqqscrgt8b/Final_Document_10-9-12.pdf",
+					"description": "A beginner's guide to Linux my team wrote."
+				}
+				{
+					"name": "TipTripApp",
+					"type": "exec",
+					"contents": "https://tiptripweb.herokuapp.com/index.html",
+					"description": "Website I created for SWSLO 2011."
+				},

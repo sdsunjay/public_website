@@ -1,0 +1,75 @@
+{
+	"name": "~",
+		"type": "dir",
+		"contents": [
+		{
+			"name": "README",
+			"type": "text",
+			"contents": "Hello and welcome. Thank you for viewing my website on your mobile device. Unfortunately, your mobile device does not run JavaScript so the functionality of this website is limited. However you can still click links, but you are unable to enter commands. <br>Contact me at sd [at] sunjaydhama [dot] com.",
+			"description": "Read Me File"
+		},
+		{		
+			"name": "GUI",
+			"type": "exec",
+			"contents": "https://www.sunjaydhama.com/gui/mobile-gui.html",
+			"description": "A graphical version of my website"
+		},
+                {		
+			"name": "blog",
+			"type": "exec",
+			"contents": "https://www.sunjaydhama.com/blog",
+			"description": "My WordPress Blog"
+		},
+		{
+			"name": "images",
+			"type": "dir",
+			"contents": [
+			{
+				"name": "pic.jpg",
+				"type": "img",
+				"contents": "/images/selfie.jpg",
+			        "description": "#selfie",
+				"caption": "#selfie!"
+			},
+			{
+				"name": "swslo.jpg",
+				"type": "img",
+				"contents": "/images/swslo2014.jpg",
+				"description": "It's my SWSLO 2014 Team",
+				"caption": "It's my SWSLO 2014 Team"
+			}
+			]
+		},
+		{
+			"name": "projects",
+			"type": "dir",
+			"contents": 
+				[
+				{
+					"name": "Github",
+					"type": "exec",
+					"contents": "https://github.com/sdsunjay",
+					"description": "I have various projects hosted on my Github (including my senior project)."
+				},
+				{
+					"name": "Lightning Locks",
+					"type": "exec",
+					"contents": "https://lightninglocks.co",
+					"description": "A splash page for my team's Startup Weekend SB project."
+				},
+				{
+					"name": "User Accounts",
+					"type": "exec",
+					"contents": "https://sunjaydhama.com/projects/accounts",
+					"description": "Create an account today!"
+				},
+				{
+					"name": "Real School PD",
+					"type": "exec",
+					"contents": "https://sunjaydhama.com/projects/RS",
+					"description": "A beta version of my LA EDU Startup Weekend project."
+				}
+			]
+		}
+	]
+}

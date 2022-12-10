@@ -1,0 +1,97 @@
+{
+	"name": "~",
+		"type": "dir",
+	        "description": "Root",
+		"contents": [
+		{
+			"name": "README",
+			"type": "text",
+			"contents": "Hello, my name is <a href=\"../../gui/new/about.html\" target=\"_blank\" title=\"About Me\"><span class=\"exec\">Sunjay Dhama</span></a>. I graduated from <a href=\"http://www.calpoly.edu/\" target=\"_blank\" title=\"Cal Poly\"><span class=\"exec\">Cal Poly</span></a> San Luis Obispo with a Computer Science degree. This is my website. You can find the source code to make your own <a href=\"https://github.com/clark-duvall/jsterm\" target=\"_blank\" title=\"jsterm\"><span class=\"exec\">here</span></a>. <br><br>If you need help, type \"help\".<br><br>You can contact me <a href=\"../../gui/new/contact.html\" title=\"Contact Me\"><span class=\"exec\">here</span></a>.",
+			"description": "Read Me File"
+		},
+		{		
+			"name": "GUI",
+			"type": "exec",
+			"contents": "../../gui/new/index.html",
+			"description": "A graphical version of my website"
+		},
+		{		
+			"name": "blog",
+			"type": "exec",
+			"contents": "../../blog",
+			"description": "My WordPress Blog"
+		},
+		{		
+			"name": "Resume",
+			"type": "exec",
+			"contents": "../../gui/new/resume.html",
+			"description": "Check out my resume."
+		},
+		{
+			"name": "images",
+			"type": "dir",
+	                "description": "Images Directory",
+			"contents": [
+			{
+				"name": "pic.jpg",
+				"type": "img",
+				"contents": "/images/wedding.jpg",
+			        "description": "I'm at a wedding",
+				"caption": "Cheezin'"
+			},
+			{
+				"name": "swslo.jpg",
+				"type": "img",
+				"contents": "/images/swslo2014.jpg",
+				"description": "It's my SWSLO 2014 Team",
+				"caption": "It's my SWSLO 2014 Team"
+			}
+			]
+		},
+		{
+			"name": "projects",
+			"type": "dir",
+			"contents":
+				[
+				{
+					"name": "Github",
+					"type": "exec",
+					"contents": "https://github.com/sdsunjay",
+					"description": "I have various projects hosted on my Github (including my senior project)."
+				},
+
+				{
+					"name": "Cal Poly Rideshare",
+					"type": "exec",
+					"contents": "https://www.sunjaydhama.com/projects/rideshare/index.html",
+					"description": "Categorizing <a href=\"https://www.facebook.com/groups/250502971675365/\">Cal Poly Rideshare</a> posts using Python's NLTK library"
+				},
+                                {
+					"name": "Lightning Locks",
+					"type": "exec",
+					"contents": "https://lightninglocks.co",
+					"description": "A splash page for my team's Startup Weekend SB project."
+				},
+				{
+					"name": "User Accounts",
+					"type": "exec",
+					"contents": "https://sunjaydhama.com/projects/accounts",
+					"description": "Create an account today!"
+				},
+				{
+					"name": "Real School PD",
+					"type": "exec",
+					"contents": "https://sunjaydhama.com/projects/RS",
+					"description": "A beta version of my LA EDU Startup Weekend project."
+				},
+				{
+					"name": "Brawl",
+					"type": "exec",
+					"contents": "https://wiki.csc.calpoly.edu/Django/wiki",
+					"description": "The project for a team I led in my SE class. Download our game!"
+				}
+			],
+	                "description": "Projects Directory"
+		}
+	]
+}

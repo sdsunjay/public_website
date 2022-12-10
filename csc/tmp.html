@@ -1,0 +1,24 @@
+
+<html>
+
+   <head>
+   </head>
+   <!-- // Bind the posted array of checkbox elements to a variable. -->
+  <?php $service_needed = $_POST['service_needed']; ?>
+  <?php $comma_separated = implode(",", $service_needed); ?>
+  <?php echo $comma_separated; ?>
+  <!-- // We use implode to separate the array with a comma and a space.-->
+   <?php $allCheckboxes=implode("," ,$service_needed); ?>
+   <!-- // Echo out the string for you to see.-->
+   <?php echo $allCheckboxes; ?>
+  
+   <body>
+   <input name="service_needed[]" type="checkbox" value="service1" class="checkbox" />
+   <input name="service_needed[]" type="checkbox" value="service2" class="checkbox" />
+   <input name="service_needed[]" type="checkbox" value="service3" class="checkbox" />
+  <!--session variables
+   var myform =doc.form.index[0] 
+  myform.addeventlister(submit,function(event),false);
+  add a action event listener to every checkbox -->
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>TWEETS</title>
+<script>
+
+//https://search.twitter.com/search.json?q=sunjay&rpp=100&include_entities=true&result_type=recent
+function searchTwitter(query) {
+   $.ajax({
+url: 'https://search.twitter.com/search.json?' + jQuery.param(query),
+dataType: 'jsonp',
+success: function(data) {
+var tweets = $('#tweets');
+tweets.html('');
+for (res in data['results']) {
+tweets.append('<div>' + data['results'][res]['from_user'] + ' wrote: <p>' + data['results'][res]['text'] + '</p></div><br />');
+}
+}
+});
+}
+
+$(document).ready(function() {
+      $('#submit').click(function() {
+	 var params = {
+q: $('#query').val(),
+rpp: 5
+};
+// alert(jQuery.param(params));
+searchTwitter(params);
+});
+      });
+
+</script>
+
+
+</head>
+<body>
+<div style="padding: 20px;">
+<input id="query" type="text" value="blue angels" />
+<input id="submit" type="button" value="Search" />
+</div>
+<div id="tweets" style="padding: 20px;">
+Tweets will go here.
+</div>
+</body>
+</html>

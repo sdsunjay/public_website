@@ -1,0 +1,33 @@
+*                           { margin: 0; padding: 0; }
+html                        { overflow-y: scroll; }
+body                        { font: 14px/1 Georgia, Serif; }
+
+
+.clear                      { clear: both; }
+
+#page-wrap                  { width: 500px; margin: 5px auto; }
+
+h1                          { font: 26px, Serif; margin: 10px 0; }
+
+label                       { width: 190px; display: block; }
+
+input[type=text], textarea  { width: 250px; outline: none; }
+
+.rowElem 
+label.error                 { float: none; font-style: italic; color: red;
+                              position: absolute; top: 16px; left: 0; 
+                              font-size: 12px; }
+                              
+.rowElem #jqTransformTextarea-mm
+label.error                 { top: 32px; }
+
+#changeTypeArea             { float: left; margin: 0 0 10px 0; width: 350px; }
+
+.rowElem                    { position: relative; clear: both; min-height: 35px; }
+.rowElemSelect              { clear: both; min-height: 35px; }
+
+.thanks                     { color: green; font-weight: bold; }
+
+
+.jqTransformTextarea, 
+.jqTransformSelectWrapper   { margin: 0 0 8px 0; }

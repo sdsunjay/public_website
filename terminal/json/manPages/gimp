@@ -1,0 +1,114 @@
+GIMP(1)                        GIMP Manual Pages                       GIMP(1)
+
+NAME
+       gimp - an image manipulation and paint program.
+
+SYNOPSIS
+       gimp   [-h]   [--help]   [--help-all]   [--help-gtk]  [-v]  [--version]
+       [--license] [--verbose]  [-n]  [--new-instance]  [-a]  [--as-new]  [-i]
+       [--no-interface]  [-d] [--no-data] [-f] [--no-fonts] [-s] [--no-splash]
+       [--no-shm] [--no-cpu-accel] [--display display] [--session <name>] [-g]
+       [--gimprc  <gimprc>] [--system-gimprc <gimprc>] [--dump-gimprc] [--con‐
+       sole-messages]    [--debug-handlers]    [--stack-trace-mode     <mode>]
+       [--pdb-compat-mode   <mode>]   [--batch-interpreter  <procedure>]  [-b]
+       [--batch <command>] [filename] ...
+
+DESCRIPTION
+       GIMP is the GNU Image Manipulation Program. It  is  used  to  edit  and
+       manipulate  images. It can load and save a variety of image formats and
+       can be used to convert between formats.
+
+       GIMP can also be used as a paint program. It features a set of  drawing
+       and  painting  tools  such as airbrush, clone, pencil, and paint brush.
+       Painting and drawing tools can be applied to an image with a variety of
+       paint modes.  It also offers an extensive array of selection tools like
+       rectangle, ellipse, fuzzy select, bezier select, intelligent  scissors,
+       and select by color.
+
+       GIMP  offers  a  variety  of  plug-ins  that perform a variety of image
+       manipulations.  Examples include bumpmap, edge detect,  gaussian  blur,
+       and  many  others.  In  addition,  GIMP has several scripting extension
+       which allow for advanced non-interactive  processing  and  creation  of
+       images.
+
+       GIMP  ships  with a second binary called gimp-console. This binary is a
+       console-only version and  behaves  as  if  gimp  was  called  with  the
+       --no-interface command-line option.
+
+       On  platforms  with  the D-Bus message bus system, GIMP will by default
+       check if an instance is already running in this  user  session.  If  it
+       detects  that,  it will pass all filenames given on the command-line to
+       the already running GIMP instance and quit.
+
+OPTIONS
+       GIMP accepts the following options:
+
+       -h, --help
+               Show GIMP command-line options.
+
+       --help-all
+               Show all command-line options.
+
+       --help-gtk
+               Show GTK+ command-line options.
+
+       --help-gegl
+               Show GEGL command-line options.
+
+       -v, --version
+               Output version information and exit.  When  combined  with  the
+               --verbose  option,  version information about libraries used by
+               GIMP is shown as well.
+
+       --license
+               Output license information and exit.
+
+       --verbose
+               Be verbose and create information on standard output.
+
+       -n, --new-instance
+               Do not attempt to  reuse  an  already  running  GIMP  instance.
+               Always start a new one.
+
+       -a, --as-new
+               Open  filenames passed on the command-line as new images, don't
+               set the filename on them.
+
+       -i, --no-interface
+               Run without a user interface.
+
+	* All options not shown or implemented.
+
+SUGGESTIONS AND BUG REPORTS
+       Any  bugs  found  should  be reported to the online bug-tracking system
+       available on the web at  https://bugzilla.gnome.org/.  Before  reporting
+       bugs, please check to see if the bug has already been reported.
+
+       When  reporting GIMP bugs, it is important to include a reliable way to
+       reproduce the bug, version number of GIMP (and probably GTK+), OS  name
+       and  version,  and  any  relevant hardware specs. If a bug is causing a
+       crash, it is very useful if a stack  trace  can  be  provided.  And  of
+       course, patches to rectify the bug are even better.
+
+OTHER INFO
+       The canonical place to find GIMP info is at https://www.gimp.org/.  Here
+       you can find links to just about many other GIMP sites, tutorials, data
+       sets, mailing list archives, and more.
+
+       There  is  also  a  GIMP User Manual available at https://docs.gimp.org/
+       that goes into much more detail about the interactive use of GIMP.
+
+       The latest versions of GIMP and the GTK+ libs are always  available  at
+       ftp://ftp.gimp.org/.
+
+AUTHORS
+       Spencer Kimball, Peter Mattis and the GIMP Development Team.
+
+       With patches, fixes, plug-ins, extensions, scripts, translations, docu‐
+       mentation and more from lots and lots of people all over the world.
+
+SEE ALSO
+       gimprc(5), gimptool(1),
+
+Version 2.8.2                    March 23 2008                         GIMP(1)
+

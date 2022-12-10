@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8">
+<title>GTC 2013</title>
+<meta name="keywords" content="Sunjay, Dhama, Startup, Sunjay Dhama, Nvidia, San Jose, GPU, CUDA, GTC, GPU Technology Conference">
+<meta name="description" content="GTC 2013">
+<meta name="author" content="Sunjay Dhama">
+
+<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+
+<!-- Flexslider CSS -->
+<link rel="stylesheet" href="../../css/demo.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/flexslider.css" type="text/css" media="screen" />
+<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="../../css/normalize.css">
+<link rel="stylesheet" href="../../css/skeleton.css">
+<!-- Modernizr -->
+<script src="../../js/flexslider/modernizr.js"></script>
+
+<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
+
+
+</head>
+<!--<body>-->
+<body class="loading">
+
+<!-- Nav
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <nav>
+      <ul>
+         <li><a href="../../gui/new/about.html">ABOUT</a></li>
+         <li><a href="../../gui/new/projects.html">PROJECTS</a></li>
+         <li>
+         <a href="../../gui/new/index.html">
+            <img id="navlogo" src="../../images/logo.png" alt="navagation-logo"></a></li>
+         <li><a href="../../gui/new/resume.html">R&Eacute;SUM&Eacute;</a></li>
+         <li><a href="../../gui/new/contact.html">CONTACT</a></li>
+      </ul>
+   </nav>
+   <div class="shell spacer">
+
+      <div class="left-col">
+         <h1>GTC 2013</h1>
+         <h4>GPU Technology Conference 2013</h4>
+         <p>GTC 2013 was my first time at GTC. I decided to go because at the time I was taking a parallel programming class in CUDA at Cal Poly with <a href='http://users.csc.calpoly.edu/~clupo/'>Dr. Lupo</a>. The conference was really fun and I learned a lot. I was also really impressed with what people are doing with GPUs and CUDA. It was awesome seeing people push the limits of what they thought was possible. GPUs allow for massive parallelization, which can result in an exponential increase in performance. You can see even more pictures from the event <a href="list.html">here</a>.
+         </p>
+         <p><a class="navbuts" href="../swslo12/index.html"><img src="../../images/css/previous.png" /></a><a class="navbuts" href="../gtc14/index.html"><img src="../../images/css/next.png" /></a></p>
+      </div>
+
+      <div class="left-colmn">
+
+         <div id="main" role="main">
+            <section class="slider">
+               <div class="flexslider">
+                  <ul class="slides">
+                     <li><img src='images/0.jpg' alt='Welcome to Karmik'/></li>
+                     <li><img src='images/1.jpg' alt='Welcome to Karmik'/></li>
+                     <li><img src='images/2.jpg' alt='Welcome to Karmik'/></li>
+                  </ul>
+               </div>
+            </section>
+         </div>
+      </div>
+   </div>
+   <!-- jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="../../js/flexslider/jquery-1.7.min.js">\x3C/script>')</script>
+
+   <!-- FlexSlider -->
+   <script defer src="../../js/flexslider/jquery.flexslider.js"></script>
+   <script type="text/javascript">
+$(function(){
+      SyntaxHighlighter.all();
+      });
+$(window).load(function(){
+      $('.flexslider').flexslider({
+animation: "slide",
+animationLoop: false,
+smoothHeight: true,
+pausePlay: false,
+start: function(slider){
+$('body').removeClass('loading');
+}
+});
+      });
+   </script>
+
+   <!-- Syntax Highlighter -->
+   <script type="text/javascript" src="../../js/flexslider/shCore.js"></script>
+   <script type="text/javascript" src="../../js/flexslider/shBrushXml.js"></script>
+   <script type="text/javascript" src="../../js/flexslider/shBrushJScript.js"></script>
+   </body>
+   </html>

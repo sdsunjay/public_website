@@ -1,0 +1,50 @@
+{
+   "name": "~",
+   "type": "dir",
+   "contents": [
+      {
+         "name": "README",
+         "type": "text",
+         "contents": "My name is Sunjay Dhama. I am studying Computer Science at Cal Poly San Luis Obispo with a focus in security. This is my website. You can find the source code to make your very own here. If you need help, type help. You can contact me at sdhama [at] calpoly [dot] edu.",
+         "description": "Read Me File"
+      },
+      {
+					"name": "mobileCloset",
+					"type": "exec",
+					"contents": "https://play.google.com/store/apps/details?id=com.mobilecloset",
+					"description": "A mobile application my team worked on during an Android Dev class."
+     },
+
+      {
+               "name": "TipTripApp",
+               "type": "exec",
+               "contents": "https://tiptripweb.herokuapp.com/index.html",
+               "description": "A website I created for SWSLO 2011."
+      },
+      {
+         "name": "Images",
+         "type": "dir",
+         "contents": [
+            {
+               "name": "Subdir",
+               "type": "dir",
+	"contents": [
+				{
+				"name": "pic.jpg",
+				"type": "img",
+				"contents": "/images/google_bike.jpg",
+				"caption": "It's me on a Google Bike!"
+				},
+				{
+				"name": "macys.jpg",
+				"type": "img",
+				"contents": "/images/macys.jpg",
+				"caption": "I interned at Macys.com"
+				}
+
+               ]
+            }
+         ]
+      }
+   ]
+}

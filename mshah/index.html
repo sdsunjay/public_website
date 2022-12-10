@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+   <head>
+      <style>
+         * {
+            padding: 0;
+            margin: 0;
+         }
+         .fit {
+            max-width: 150%;
+            max-height: 150%;
+         }
+         .center {
+            display: block;
+            margin: auto;
+         }
+      </style>
+      <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+      <script type="text/javascript" language="JavaScript">
+/*         function set_body_height()
+{
+   //var wh = $(window).height();
+  // $('body').attr('style', 'height:' + wh + 'px;');
+}
+$(document).ready(function() {
+      set_body_height();
+      $(window).bind('resize', function() { set_body_height(); });
+      });
+     */
+      </script>
+
+
+	<meta content="charset=utf-8">
+	<title>M Shah</title>
+        
+<!-- <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">-->
+
+  <!-- Demo CSS -->
+        <link rel="stylesheet" href="../../css/demo.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../../css/flexslider.css" type="text/css" media="screen" />
+	<!-- Modernizr -->
+  <script src="../../js/flexslider/modernizr.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/flexslider/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="../../js/flexslider/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+
+      // Vimeo API nonsense
+      var player = document.getElementById('player_1');
+      $f(player).addEvent('ready', ready);
+
+      function addEvent(element, eventName, callback) {
+        (element.addEventListener) ? element.addEventListener(eventName, callback, false) : element.attachEvent(eventName, callback, false);
+      }
+
+      function ready(player_id) {
+        var froogaloop = $f(player_id);
+
+        froogaloop.addEvent('play', function(data) {
+          $('.flexslider').flexslider("pause");
+        });
+
+        froogaloop.addEvent('pause', function(data) {
+          $('.flexslider').flexslider("play");
+        });
+      }
+
+
+      // Call fitVid before FlexSlider initializes, so the proper initial height can be retrieved.
+      $(".flexslider")
+        .fitVids()
+        .flexslider({
+          animation: "slide",
+          useCSS: false,
+          animationLoop: false,
+          smoothHeight: true,
+          start: function(slider){
+            $('body').removeClass('loading');
+          },
+          before: function(slider){
+            $f(player).api('pause');
+          }
+      });
+    });
+  </script>
+
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="../../js/flexslider/shCore.js"></script>
+  <script type="text/javascript" src="../../js/flexslider/shBrushXml.js"></script>
+  <script type="text/javascript" src="../../js/flexslider/shBrushJScript.js"></script>
+
+  <!-- Optional FlexSlider Additions  (necessary for vimeo)-->
+  <script src="../../js/flexslider/jquery.easing.js"></script>
+  <script src="../../js/flexslider/jquery.mousewheel.js"></script>
+  <script defer src="../../js/flexslider/demo.js"></script>
+    <script src="../../js/flexslider/froogaloop.js"></script>
+	<script src="../../js/flexslider/jquery.fitvid.js"></script>
+
+                               </head>
+
+<body class="loading">
+
+  <div id="container" class="cf">
+    <header role="navigation">
+      <a class="logo" href="https://www.mshah.com" title="M Shah">
+        <img src="logo.jpg" alt="M Shah" />
+     </a>
+      <h1>M Shah</h1>
+      <h2>An up and coming artist from Northern California</h2>
+          
+  <h3 class="nav-header">More M Shah</h3>
+      <nav>
+        <ul>
+          <li><a href="https://soundcloud.com/mshahmusic">SoundCloud</a></li>
+          <li><a href="https://www.facebook.com/MShahMusic">Faceboook</a></li>
+        </ul>
+      </nav>
+  <h3 class="nav-header">Other</h3>
+      <nav>
+        <ul>
+          <li class="active"><a href="index.html">Slider</a></li>
+          <li><a href="fullscreen.php">Fullscreen Mode</a></li>
+          <li><a href="list.php">List Mode</a></li>
+          <li><a href="https://sunjaydhama.com">Sunjay's Homepage</a></li>
+          <li><a href="https://github.com/woothemes/flexslider">Source</a></li>
+    </ul>
+      </nav>
+    </header>
+
+   <div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+           <ul class="slides">
+             <li><iframe id="player_1" src="https://player.vimeo.com/video/91901355?api=1&amp;player_id=player_1" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></li>
+             <li><img id="the_pic" class="center fit" src="fr_802_size1024.jpg"/></li>    
+                        <li><img id="the_pic" class="center fit" src="fr_803_size1024.jpg"/></li>    
+                        <li><img id="the_pic" class="center fit"  src="fr_804_size1024.jpg"/></li>    
+                        <li><img id="the_pic" class="center fit"  src="fr_805_size1024.jpg"/></li>    
+                        <li><img id="the_pic"  class="center fit" src="fr_806_size1024.jpg"/></li>    
+                        <li><img id="the_pic" class="center fit"  src="fr_807_size1024.jpg"/></li>    
+          </ul>
+        </div>
+      </section>
+   </div>
+</div>
+ </ul>
+</body>
+</html>

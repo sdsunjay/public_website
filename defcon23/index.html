@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8">
+<title>DEFCON23</title>
+<meta name="description" content="DECON23">
+<meta name="author" content="Sunjay Dhama">
+
+<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+
+
+
+<!-- Flexslider CSS -->
+<link rel="stylesheet" href="../../css/demo.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/flexslider.css" type="text/css" media="screen" />
+<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="../../css/normalize.css">
+<link rel="stylesheet" href="../../css/skeleton.css">
+<!-- Modernizr -->
+<script src="../../js/flexslider/modernizr.js"></script>
+
+<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
+
+
+</head>
+<!--<body>-->
+<body class="loading">
+
+<!-- Nav
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <nav>
+      <ul>
+         <li><a href="../../gui/new/about.html">ABOUT</a></li>
+         <li><a href="../../gui/new/projects.html">PROJECTS</a></li>
+         <li>
+         <a href="../../gui/new/index.html">
+            <img id="navlogo" src="../../images/logo.png" alt="navagation-logo"></a></li>
+         <li><a href="../../gui/new/resume.html">R&Eacute;SUM&Eacute;</a></li>
+         <li><a href="../../gui/new/contact.html">CONTACT</a></li>
+      </ul>
+   </nav>
+   <div class="shell spacer">
+
+      <div class="left-col">
+         <h1>DEFCON23</h1>
+ 
+         <h4>The biggest hacker conference in the world</h4>
+         <p>DEFCON is the biggest hacker conference in the world. I attended it AGAIN in the summer of 2015 and it was awesome. Learn more about the conference <a href="https://www.defcon.org/html/defcon-23/dc-23-index.html">here</a>. See more pictures <a href="list.html">here</a>.</p> 
+         <p>
+            <a class="navbuts" href="../defcon22/index.html">
+               <img src="../../images/css/previous.png" />
+            </a>
+            <a class="navbuts" href="../swslo16/index.html">
+               <img src="../../images/css/next.png" />
+            </a>
+         </p>
+   </div>    
+
+      <div class="left-colmn">
+
+
+         <div id="main" role="main">
+            <section class="slider">
+               <div class="flexslider">
+                  <ul class="slides">
+                     <li><img src="images/IMG_0010.jpg" alt=""/></li>
+                     <li><img src="images/IMG_0000.jpg" alt=""/></li>
+                     <li><img src="images/IMG_0001.jpg" alt=""/></li>
+                     <li><img src="images/IMG_0002.jpg" alt=""/></li>
+                     <li><img src="images/IMG_0003.jpg" alt=""/></li>
+                     <li><img src="images/IMG_0004.jpg" alt=""/></li>
+                     <li><img src="images/IMG_0005.jpg" alt=""/></li>
+                     <li><img src="images/IMG_0006.jpg" alt=""/></li>
+                     <li><img src="images/IMG_0007.jpg" alt=""/></li>
+                     <li><img src="images/IMG_0008.jpg" alt=""/></li>
+                     <li><img src="images/IMG_0009.jpg" alt=""/></li>
+                     <li><img src="images/IMG_0011.jpg" alt=""/></li>
+                  </ul>
+               </div>
+            </section>
+         </div>
+      </div>
+   </div>
+   <!-- jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="../../js/flexslider/jquery-1.7.min.js">\x3C/script>')</script>
+
+   <!-- FlexSlider -->
+   <script defer src="../../js/flexslider/jquery.flexslider.js"></script>
+   <script type="text/javascript">
+$(function(){
+      SyntaxHighlighter.all();
+      });
+$(window).load(function(){
+      $('.flexslider').flexslider({
+animation: "slide",
+animationLoop: false,
+smoothHeight: true,
+pausePlay: false,
+start: function(slider){
+$('body').removeClass('loading');
+}
+});
+      });
+   </script>
+
+   <!-- Syntax Highlighter -->
+   <script type="text/javascript" src="../../js/flexslider/shCore.js"></script>
+   <script type="text/javascript" src="../../js/flexslider/shBrushXml.js"></script>
+   <script type="text/javascript" src="../../js/flexslider/shBrushJScript.js"></script>
+   </body>
+   </html>

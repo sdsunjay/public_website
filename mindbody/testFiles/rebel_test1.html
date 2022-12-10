@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My first PHP page</h1>
+<!-- Create a html field: Notice that username is default val -->
+<INPUT TYPE = "Text" VALUE = "username" NAME = "username">
+
+<!-- Start using some PHP! -->
+<?php	
+	//create a variable and hook onto the html object
+	$username = $_POST['username'];
+	print($username);
+	echo "Hello World!";
+?>
+
+</body>
+</html> 
+

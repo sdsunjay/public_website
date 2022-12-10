@@ -1,0 +1,45 @@
+{
+	"name": "~",
+		"type": "dir",
+	        "description": "Root",
+		"contents": [
+		{
+			"name": "README",
+			"type": "text",
+			"contents": "Hello",
+			"description": "Read Me File"
+		},
+		{
+			"name": "projects",
+			"type": "dir",
+			"contents":
+				[
+				{
+					"name": "Github",
+					"type": "exec",
+					"contents": "https://github.com/sdsunjay",
+					"description": "I have various projects hosted on my Github (including my senior project)."
+				},
+				{
+					"name": "User Accounts",
+					"type": "exec",
+					"contents": "https://sunjaydhama.com/projects/accounts",
+					"description": "Create an account today!"
+				},
+				{
+					"name": "Real School PD",
+					"type": "exec",
+					"contents": "https://sunjaydhama.com/projects/RS",
+					"description": "A beta version of my LA EDU Startup Weekend project."
+				},
+				{
+					"name": "Brawl",
+					"type": "exec",
+					"contents": "https://wiki.csc.calpoly.edu/Django/wiki",
+					"description": "The project for a team I led in my SE class. Download our game!"
+				}
+			],
+	                "description": "Projects Directory"
+		}
+	]
+}

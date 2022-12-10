@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<title>Cal Poly Rideshare</title>
+<meta name="author" content="Sunjay Dhama">
+
+<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
+
+<!-- Meta Content
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<meta charset="utf-8">
+<meta name="keywords" content="Sunjay, Dhama, Cal, Poly, California, Polytechnic, San Luis Obispo, Obispo, Software, Engineering, Computer, Science, Android, Security, C, C++, Java, Javascript, Python, CUDA, Terminal, HTML,CSS,JavaScript,PHP">
+<meta name="description" content="Cal Poly Rideshare Project">
+<meta name="author" content="Sunjay Dhama">
+<meta content="images/favicon.ico" itemprop="image">
+<meta https-equiv="content-type" content="text/html; charset=utf-8" />
+
+<!-- SEO -->
+<link rel="canonical" href="https://www.sunjaydhama.com/" />
+
+<!-- Facebook -->
+<meta property="og:image" content="https://www.sunjaydhama.com/images/selfie.jpg"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Cal Poly Rideshare"/>
+<meta property="og:url" content="https://www.sunjaydhama.com/"/>
+<meta property="og:site_name" content="sunjaydhama.com"/>
+<meta property="og:description" content="I'm a Software Engineer and am passionate about security, currently based in San Luis Obispo, California."/>
+<meta property=”og:locale” content=”en_US” />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@sdsunjay">
+<meta name="twitter:title" content="Sunjay Dhama">
+<meta name="twitter:description" content="I'm a Software Engineer and am passionate about security, currently based in San Luis Obispo, California."/>
+<meta name="twitter:image:src" content="https://www.sunjaydhama.com/images/selfie.jpg">
+
+<!-- Google+ -->
+<meta itemprop="name" content="Sunjay Dhama">
+<meta itemprop="description" content="I'm a Software Engineer and am passionate about security, currently based in San Luis Obispo, California.">
+<meta itemprop="image" content="https://www.sunjaydhama.com/images/selfie.jpg">
+
+<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+
+<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="../../css/normalize.css">
+<link rel="stylesheet" href="../../css/skeleton.css">
+<!-- specific to the homepage -->
+
+</head>
+<body>
+
+<!-- Nav
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<nav>
+   <ul>
+      <li><a href="../../gui/new/about.html">ABOUT</a></li>
+      <li><a href="../../gui/new/projects.html">PROJECTS</a></li>
+      <li>
+      <a href="../gui/new/index.html">
+         <img id="navlogo" src="../../images/logo.png" alt="navagation-logo"></a></li>
+      <li><a href="../../gui/new/resume.html">R&Eacute;SUM&Eacute;</a></li>
+      <!--
+        <li><a href="../../blog">BLOG</a></li>
+        -->
+      <li><a href="../../gui/new/contact.html">CONTACT</a></li>
+   </ul>
+</nav>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="shell spacer">
+
+     <div class="left-col">
+        <h1>Cal Poly Rideshare</h1>
+        <h4>An easier way to get a ride</h4>
+        <p>
+        Currently the easiest way to travel to SLO is by car. However many people (mainly students) do not have cars or would prefer to save money and carpool. The easiest way to setup a carpool is through the <a href="https://www.facebook.com/groups/250502971675365/">Cal Poly Rideshare Facebook group</a>, which has over 11,000 members and is still rapidly growing. Unfortunately due to the prolific posts, finding a ride either leaving or arriving in SLO is difficult as a user must scroll through potentially dozens of posts. This project aims to eliminate that problem. <br>
+        Using the <a href="https://developers.facebook.com/docs/php/gettingstarted/4.0.0">Facebook SDK</a> for PHP, I have been able to capture all the posts from the Facebook group and using Python's NLTK library pull out the important information. This project is still under development, but you can track my progress <a href="https://github.com/sdsunjay/rideshare">here</a>. I hope to finish this project soon, so students can save time and easily find people to give or get rides with. <!--I am currently stuck on how to best store the names of places (cities,counties, etc) in such a way as to check if cities such as "san luis obispo" occur in the data structure, while parsing the post one word at a time. So 'san' would be need to return something like 'no, but keep going', so we would know concatenate 'san luis obispo', instead of just getting a false for 'san' and moving on to 'luis'. This may require a custom data structure. To be continued...
+        -->
+        </p>
+        <p><a class="navbuts" href="../swslo16/index.html"><img src="../../images/css/previous.png" /></a><a class="navbuts" href="../terminal/terminal.html"><img src="../../images/css/next.png" /></a></p>
+     </div>    
+     <div class="left-colmn">
+        <div class="workimgs ugsbb">
+           <a href="index.html"><img src="images/frontFace.jpg" alt="A picture of my team"></a> 
+        </div>
+     </div>
+
+  </div>
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Google Analytics -->
+  <script type="text/javascript" src="../../js/googleAnalytics.js"></script>
+  </body>
+  </html>
