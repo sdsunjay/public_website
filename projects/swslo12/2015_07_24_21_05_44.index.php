@@ -51,7 +51,7 @@ $(".flexslider")
 
   <div id="container" class="cf">
     <header role="navigation">
-      <a class="logo" href="https://www.sunjaydhama.com/projects/swslo12" title="Startup Weekend SLO 2012">
+      <a class="logo" href="https://sunjaydhama.com/projects/swslo12" title="Startup Weekend SLO 2012">
         <img src="../swslo12/logo.png" alt="Startup Weekend SLO 2012" />
           </a>
       <h1>Startup Weekend SLO 2012</h1>

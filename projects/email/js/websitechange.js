@@ -9,7 +9,7 @@ $(function(){
                     $('#change-form').hide();
                     $('#page-wrap').append("<p class='thanks'>Thanks! Your request has been sent.</p>")
                     window.setTimeout(function(){
-                            window.location.href = "https://www.sunjaydhama.com/projects/email";
+                            window.location.href = "https://sunjaydhama.com/projects/email";
                                 }, 1525);
                 }
            });

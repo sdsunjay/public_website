@@ -24,28 +24,28 @@
             <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
 
 <!-- SEO -->
-<link rel="canonical" href="https://www.sunjaydhama.com/" />
+<link rel="canonical" href="https://sunjaydhama.com/" />
 
 <!-- Facebook -->
-<meta property="og:image" content="https://www.sunjaydhama.com/images/selfie.jpg"/>
+<meta property="og:image" content="https://sunjaydhama.com/images/about.jpg"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Tip Trip Project Homepage"/>
-<meta property="og:url" content="https://www.sunjaydhama.com/"/>
+<meta property="og:url" content="https://sunjaydhama.com/"/>
 <meta property="og:site_name" content="sunjaydhama.com"/>
-<meta property="og:description" content="I'm a Software Engineer and am passionate about security, currently based in San Luis Obispo, California."/>
+<meta property="og:description" content="I'm a Software Engineer and am passionate about Machine Learning, currently based in Seattle, Washington."/>
 <meta property=”og:locale” content=”en_US” />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@sdsunjay">
 <meta name="twitter:title" content="Sunjay Dhama">
-<meta name="twitter:description" content="I'm a Software Engineer and am passionate about security, currently based in San Luis Obispo, California."/>
-<meta name="twitter:image:src" content="https://www.sunjaydhama.com/images/selfie.jpg">
+<meta name="twitter:description" content="I'm a Software Engineer and am passionate about Machine Learning, currently based in Seattle, Washington."/>
+<meta name="twitter:image:src" content="https://sunjaydhama.com/images/about.jpg">
 
 <!-- Google+ -->
 <meta itemprop="name" content="Sunjay Dhama">
-<meta itemprop="description" content="I'm a Software Engineer and am passionate about security, currently based in San Luis Obispo, California.">
-<meta itemprop="image" content="https://www.sunjaydhama.com/images/selfie.jpg">
+<meta itemprop="description" content="I'm a Software Engineer and am passionate about Machine Learning, currently based in Seattle, Washington.">
+<meta itemprop="image" content="https://sunjaydhama.com/images/about.jpg">
 
 <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

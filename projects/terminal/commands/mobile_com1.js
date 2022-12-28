@@ -467,7 +467,7 @@ COMMANDS.login = function(argv, cb) {
    }
 }
 COMMANDS.startx = function(argv, cb) {
-   window.location = "https://www.sunjaydhama.com/gui/mobile-gui.html";
+   window.location = "https://sunjaydhama.com/gui/mobile-gui.html";
    this._terminal.NewStdout();
    this._terminal.Scroll();
    cb();
@@ -513,7 +513,7 @@ COMMANDS.useradd = function(argv, cb)
 }
 COMMANDS.vim = function(argv, cb) {
    var name = this._terminal.ParseArgs(argv).filenames;
-   var location1 ='https://www.sunjaydhama.com/projects/vim/index.php?name=';
+   var location1 ='https://sunjaydhama.com/projects/vim/index.php?name=';
    var temp = location1 + name[0];
    window.open(temp,'_blank');
    this._terminal.NewStdout();

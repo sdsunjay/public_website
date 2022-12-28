@@ -51,7 +51,7 @@ $(".flexslider")
 
   <div id="container" class="cf">
     <header role="navigation">
-      <a class="logo" href="https://www.sunjaydhama.com/projects/defcon22" title="DEFCON22">
+      <a class="logo" href="https://sunjaydhama.com/projects/defcon22" title="DEFCON22">
         <img src="logo.jpg" alt="Defcon 22" />
           </a>
       <h1>DEFCON 22</h1>

@@ -24,7 +24,7 @@
 
   <div id="container" class="cf">
     <header role="navigation">
-      <a class="logo" href="https://www.sunjaydhama.com/projects/swslo14" title="Startup Weekend SLO 2014">
+      <a class="logo" href="https://sunjaydhama.com/projects/swslo14" title="Startup Weekend SLO 2014">
         <img src="logo.png" alt="Startup Weekend SLO 2014" />
 	  </a>
       <h1>Startup Weekend SLO 2014</h1>

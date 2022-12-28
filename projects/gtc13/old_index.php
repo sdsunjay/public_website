@@ -70,7 +70,7 @@
 
   <div id="container" class="cf">
     <header role="navigation">
-      <a class="logo" href="https://www.sunjaydhama.com/projects/swslo14" title="Startup Weekend SLO">
+      <a class="logo" href="https://sunjaydhama.com/projects/swslo14" title="Startup Weekend SLO">
         <img src="logo.png" alt="Startup Weekend SLO" />
 	  </a>
       <h1>GTC 2012</h1>

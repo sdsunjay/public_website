@@ -63,7 +63,7 @@
 				{
 					"name": "Cal Poly Rideshare",
 					"type": "exec",
-					"contents": "https://www.sunjaydhama.com/projects/rideshare/index.html",
+					"contents": "https://sunjaydhama.com/projects/rideshare/index.html",
 					"description": "Categorizing <a href=\"https://www.facebook.com/groups/250502971675365/\">Cal Poly Rideshare</a> posts using Python's NLTK library"
 				},
                                 {

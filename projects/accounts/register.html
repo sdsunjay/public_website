@@ -4,7 +4,8 @@
 
 <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<title>User Sign-In</title>
+<title>Registration</title>
+<meta name="author" content="Sunjay Dhama">
 
 <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -14,12 +15,12 @@
 <!-- Meta Content
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-            <meta charset="utf-8">
-            <meta name="keywords" content="Sunjay, Dhama, Cal, Poly, California, Polytechnic, San Luis Obispo, Obispo, Software, Engineering, Computer, Science, Android, Security, C, C++, Java, Javascript, Python, CUDA, Terminal, HTML,CSS,JavaScript, PHP">
-            <meta name="description" content="User Accounts Registration">
-            <meta name="author" content="Sunjay Dhama">
-            <meta content="images/batman.png" itemprop="image">
-            <meta https-equiv="content-type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
+<meta name="keywords" content="Sunjay, Dhama, Cal, Poly, California, Polytechnic, San Luis Obispo, Obispo, Software, Engineering, Computer, Science, Android, Security, C, C++, Java, Javascript, Python, CUDA, Terminal, HTML,CSS,JavaScript,PHP">
+<meta name="description" content="Account Registration">
+<meta name="author" content="Sunjay Dhama">
+<meta content="images/favicon.ico" itemprop="image">
+<meta https-equiv="content-type" content="text/html; charset=utf-8" />
 
 <!-- SEO -->
 <link rel="canonical" href="https://sunjaydhama.com/" />
@@ -27,22 +28,22 @@
 <!-- Facebook -->
 <meta property="og:image" content="https://sunjaydhama.com/images/about.jpg"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="User Accounts Registration"/>
+<meta property="og:title" content="Account Registration"/>
 <meta property="og:url" content="https://sunjaydhama.com/"/>
 <meta property="og:site_name" content="sunjaydhama.com"/>
-<meta property="og:description" content="I'm a Software Engineer and am passionate about Machine Learning, currently based in Seattle, Washington."/>
+<meta property="og:description" content="I'm a Software Engineer, passionate about Machine Learning, currently based in Seattle, Washington."/>
 <meta property=”og:locale” content=”en_US” />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@sdsunjay">
 <meta name="twitter:title" content="Sunjay Dhama">
-<meta name="twitter:description" content="I'm a Software Engineer and am passionate about Machine Learning, currently based in Seattle, Washington."/>
+<meta name="twitter:description" content="I'm a Software Engineer, passionate about Machine Learning, currently based in Seattle, Washington."/>
 <meta name="twitter:image:src" content="https://sunjaydhama.com/images/about.jpg">
 
 <!-- Google+ -->
 <meta itemprop="name" content="Sunjay Dhama">
-<meta itemprop="description" content="I'm a Software Engineer and am passionate about Machine Learning, currently based in Seattle, Washington.">
+<meta itemprop="description" content="I'm a Software Engineer, passionate about Machine Learning,  currently based in Seattle, Washington."/>
 <meta itemprop="image" content="https://sunjaydhama.com/images/about.jpg">
 
 <!-- Mobile Specific Metas
@@ -58,10 +59,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <link rel="stylesheet" href="../../css/normalize.css">
 <link rel="stylesheet" href="../../css/skeleton.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
 
 <!-- Nav
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -80,24 +79,28 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="shell spacer">
 
-     <div class="left-col">
-<!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="shell">
-   <div class="contact">
+<div class="left-col">
+  <div class="contact">
       <div class="content-contactform">
-  <div id="Sign-In">
-         <fieldset style="width:30%"><legend>LOG-IN HERE</legend>
-            <!--<form method="POST" action="check.php">-->
-               <br><input type="text" id="username"  name="username" size="40" placeholder="Username" autocorrect=off autocapitalize=words ><br>
-               <br><input type="password" id="password" name="password" size="40" placeholder="Password" autocorrect=off autocapitalize=off  ><br>
-               <input id="submit" type="submit" name="submit" value="Log-In">
-           <!-- </form>-->
-         </fieldset>
-      </div>
-      <p>If you don't have a login, please <a href="register.html">Register</a>.</p>
-      <p>If you are done, please <a href="logout.php">Log Out</a>.</p>
-      <p><a href="forgot.php">Forgot your password</a>.</p>
+     <h3>Registration</h3>
+         <input type="text" id="username" name="username" size="64" placeholder="Username" autocorrect=off autocapitalize=words>
+         <br><input type="text" id="email" name="email" size="64" placeholder="Email" autocorrect=off autocapitalize=words  >
+         <br>
+         <input type="password" id="password" name="password" size="64" placeholder="Password (Must be at least 10 characters)">
+         <br><input type="password" id="password1" name="password1" size="64" placeholder="Confirm Password"  >
+
+         <select name="question1" id="question1" >
+            <option value=1>What is your favorite actor's name?</option>
+            <option value=2>What is the last name of the teacher who gave you your first failing grade?</option>
+            <option value=3>If you could have any super power, what would it be?</option>
+            <option value=4>What was the name of your favorite teacher in school?</option>
+            <option value=5>In what city is your vacation home located?</option>
+            <option value=6>What was the nickname of your grandfather or grandmother?</option>
+         </select>
+         <br>
+         <input type="text" id="answer1" name="answer1" size="64" placeholder="Must be at least 8 characters" autocorrect=off autocapitalize=words /><br>
+         <input id="submit" type="submit" name="submit" value="Register"/>
+          <p>Return to the <a href="index.html">login</a></p>
       </div>
    </div>
 </div>
@@ -105,13 +108,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- Login Scripts -->
+<script language="javascript" type="text/JavaScript" src="js/register.js"></script>
+<script language="javascript" type="text/JavaScript" src="js/forms.js"></script>
 <!-- Google Analytics -->
 <script type="text/javascript" src="../../js/googleAnalytics.js"></script>
 
-<!-- Login Scripts -->
-<script language="javascript" type="text/JavaScript" src="js/login.js"></script>
-<!--
-<script language="javascript" type="text/JavaScript" src="js/forms.js"></script>
--->
 </body>
 </html>

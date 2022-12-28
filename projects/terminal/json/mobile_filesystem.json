@@ -11,13 +11,13 @@
 		{		
 			"name": "GUI",
 			"type": "exec",
-			"contents": "https://www.sunjaydhama.com/gui/mobile-gui.html",
+			"contents": "https://sunjaydhama.com/gui/mobile-gui.html",
 			"description": "A graphical version of my website"
 		},
                 {		
 			"name": "blog",
 			"type": "exec",
-			"contents": "https://www.sunjaydhama.com/blog",
+			"contents": "https://sunjaydhama.com/blog",
 			"description": "My WordPress Blog"
 		},
 		{
@@ -27,7 +27,7 @@
 			{
 				"name": "pic.jpg",
 				"type": "img",
-				"contents": "/images/selfie.jpg",
+				"contents": "/images/about.jpg",
 			        "description": "#selfie",
 				"caption": "#selfie!"
 			},

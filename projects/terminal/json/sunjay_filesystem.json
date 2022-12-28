@@ -6,32 +6,32 @@
       {
          "name":"about",
          "type":"exec",
-         "description":"Redirect to <a href=\"https://www.sunjaydhama.com/gui/new/about.html\">here</a>",
-         "contents":"https://www.sunjaydhama.com/about"
+         "description":"Redirect to <a href=\"https://sunjaydhama.com/gui/new/about.html\">here</a>",
+         "contents":"https://sunjaydhama.com/about"
       },
       {
          "name":"blog",
          "type":"exec",
          "description":"Sunjay's Wordpress Blog (4.2.2) (Do not delete unless you have backed imaged up to Dropbox)",
-         "contents":"https://www.sunjaydhama.com/blog"
+         "contents":"https://sunjaydhama.com/blog"
       },
       {
          "name":"broken.html",
          "type":"exec",
          "description":"Simple notice to display when/if my website is down for maintenance",
-         "contents":"https://www.sunjaydhama.com/broken.html"
+         "contents":"https://sunjaydhama.com/broken.html"
       },
       {
          "name":"caitlin",
          "type":"exec",
          "description":"All files for Caitlin's website, www.caitlinlipton.com",
-         "contents":"https://www.sunjaydhama.com/caitlin"
+         "contents":"https://sunjaydhama.com/caitlin"
       },
       {
          "name":"cgi-bin",
          "type":"exec",
-         "description":"Redirect to <a href=\"https://www.sunjaydhama.com/gui/new/index.html\">here</a>",
-         "contents":"https://www.sunjaydhama.com/cgi-bin"
+         "description":"Redirect to <a href=\"https://sunjaydhama.com/gui/new/index.html\">here</a>",
+         "contents":"https://sunjaydhama.com/cgi-bin"
       },
       {
          "name":"CMD",
@@ -61,8 +61,8 @@
       {
          "name":"contact",
          "type":"exec",
-         "description":"Redirect to <a href=\"https://www.sunjaydhama.com/gui/new/contact.html\">here</a>",
-         "contents":"https://www.sunjaydhama.com/contact"
+         "description":"Redirect to <a href=\"https://sunjaydhama.com/gui/new/contact.html\">here</a>",
+         "contents":"https://sunjaydhama.com/contact"
       },
       {
          "name":"CSS",
@@ -102,13 +102,13 @@
             {
                "name":"jessica.css",
                "type":"text",
-               "description":"CSS used for <a href=\"https://www.sunjaydhama.com/images/index.html\">the homepage</a>, created by <a href=\"http://jesschaidez.com/\">Jessica</a>.",
+               "description":"CSS used for <a href=\"https://sunjaydhama.com/images/index.html\">the homepage</a>, created by <a href=\"http://jesschaidez.com/\">Jessica</a>.",
                "contents":"~"
             },
             {
                "name":"login_style.css",
                "type":"text",
-               "description":"CSS for login pop-up, originally created for my <a href=\"https://www.sunjaydhama.com/projects/oldGui/index.html\">old</a> website.",
+               "description":"CSS for login pop-up, originally created for my <a href=\"https://sunjaydhama.com/projects/oldGui/index.html\">old</a> website.",
                "contents":"~"
             },
             {
@@ -126,7 +126,7 @@
             {
                "name":"Original",
                "type":"dir",
-               "description":"contains original <a href=\"https://www.sunjaydhama.com/css/Original/normalize.css\">normalize.css</a> and <a href=\"https://www.sunjaydhama.com/css/Original/skeleton.css\">skeleton.css</a> from Kenny Gurney",
+               "description":"contains original <a href=\"https://sunjaydhama.com/css/Original/normalize.css\">normalize.css</a> and <a href=\"https://sunjaydhama.com/css/Original/skeleton.css\">skeleton.css</a> from Kenny Gurney",
                "contents":[]
             }
          ]
@@ -140,7 +140,7 @@
                "name":"bugReport.html",
                "type":"exec",
                "description":"Running list of bugs/problems with my website and their status.",
-               "contents":"https://www.sunjaydhama.com/gui/bugReport.html"
+               "contents":"https://sunjaydhama.com/gui/bugReport.html"
             },
             {
                "name":"fonts",
@@ -151,8 +151,8 @@
             {
                "name":"index.html",
                "type":"exec",
-               "description":"Redirect to <a href=\"https://www.sunjaydhama.com/gui/new/index.html\">here",
-               "contents":"https://www.sunjaydhama.com/gui/index.html"
+               "description":"Redirect to <a href=\"https://sunjaydhama.com/gui/new/index.html\">here",
+               "contents":"https://sunjaydhama.com/gui/index.html"
             },
             {
                "name":"new",
@@ -163,43 +163,43 @@
                      "name":"index.html",
                      "type":"exec",
                      "description":"Main splash page, everyone sees this when they enter the site.",
-                     "contents":"https://www.sunjaydhama.com/gui/new/index.html"
+                     "contents":"https://sunjaydhama.com/gui/new/index.html"
                   },
                   {
                      "name":"all_projects.html",
                      "type":"exec",
                      "description":"A complete list of all my projects",
-                     "contents":"https://www.sunjaydhama.com/gui/new/all_projects.html"
+                     "contents":"https://sunjaydhama.com/gui/new/all_projects.html"
                   },
                   {
                      "name":"about.html",
                      "type":"exec",
                      "description":"An about me page with some information about me.",
-                     "contents":"https://www.sunjaydhama.com/gui/new/about.html"
+                     "contents":"https://sunjaydhama.com/gui/new/about.html"
                   },
                   {
                      "name":"images.html",
                      "type":"exec",
-                     "description":"An in-progress version of the page found <a href=\"https://www.sunjaydhama.com/images/index.html\">here</a>",
-                     "contents":"https://www.sunjaydhama.com/gui/new/images.html"
+                     "description":"An in-progress version of the page found <a href=\"https://sunjaydhama.com/images/index.html\">here</a>",
+                     "contents":"https://sunjaydhama.com/gui/new/images.html"
                   },
                   {
                      "name":"contact.html",
                      "type":"exec",
                      "description":"A page with an option to send me a message, uses calpoly's code",
-                     "contents":"https://www.sunjaydhama.com/gui/new/contact.html"
+                     "contents":"https://sunjaydhama.com/gui/new/contact.html"
                   },
                   {
                      "name":"projects.html",
                      "type":"exec",
                      "description":"A graphical list of my most notable or most recent projects.",
-                     "contents":"https://www.sunjaydhama.com/gui/new/projects.html"
+                     "contents":"https://sunjaydhama.com/gui/new/projects.html"
                   },
                   {
                      "name":"resume.html",
                      "type":"exec",
                      "description":"my r&eacute;sum&eacute; ",
-                     "contents":"https://www.sunjaydhama.com/gui/new/resume.html"
+                     "contents":"https://sunjaydhama.com/gui/new/resume.html"
                   }
                ]
             },
@@ -207,7 +207,7 @@
                "name":"timelog.html",
                "type":"exec",
                "description":"A time log of work done on this site.",
-               "contents":"https://www.sunjaydhama.com/gui/timelog.html"
+               "contents":"https://sunjaydhama.com/gui/timelog.html"
             }
          ]
       },
@@ -384,7 +384,7 @@
                      "contents":[
                         {
                            "name":"mobile_style.css",
-                           "description":"CSS for mobile version of <a href=\"https://www.sunjaydhama.com/projects/terminal/terminal.html\">terminal project</a> (needs to be integrated into style.css).",
+                           "description":"CSS for mobile version of <a href=\"https://sunjaydhama.com/projects/terminal/terminal.html\">terminal project</a> (needs to be integrated into style.css).",
                            "type":"text",
                            "contents":"~"
                         }

@@ -11,7 +11,7 @@
 		{		
 			"name": "Blog",
 			"type": "exec",
-			"contents": "https://www.sunjaydhama.com/blog",
+			"contents": "https://sunjaydhama.com/blog",
 			"description": "My WordPress Blog"
 		},
 		{		

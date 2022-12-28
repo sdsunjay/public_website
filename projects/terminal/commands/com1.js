@@ -1126,7 +1126,7 @@ COMMANDS.exit = function(argv, cb) {
  * This is a hidden command. It will not be displayed by the 'help' command.
  */
 COMMANDS.startx = function(argv, cb) {
-   window.location = "https://www.sunjaydhama.com/new/gui/index.html";
+   window.location = "https://sunjaydhama.com/new/gui/index.html";
    this._terminal.NewStdout();
    this._terminal.Scroll();
    cb();
@@ -1192,7 +1192,7 @@ COMMANDS.vim = function(argv, cb) {
       name = ["VE0u6HQvH4YaPQMxRPWkZ"]; 
 
    }
-   var location1 ='https://www.sunjaydhama.com/projects/vim/index.php?name=';
+   var location1 ='https://sunjaydhama.com/projects/vim/index.php?name=';
    var temp = location1 + name[0];
    window.open(temp,'_blank');
    this._terminal.NewStdout();
@@ -1207,7 +1207,7 @@ COMMANDS.vim = function(argv, cb) {
 COMMANDS.emacs = function(argv, cb) {
 
    //var name = this._terminal.ParseArgs(argv).filenames;
-   loc ='https://www.sunjaydhama.com/projects/vim/emacs.html';
+   loc ='https://sunjaydhama.com/projects/vim/emacs.html';
    window.open(loc,'_blank');
    this._terminal.NewStdout();
    this._terminal.Scroll();
@@ -1220,7 +1220,7 @@ COMMANDS.emacs = function(argv, cb) {
 COMMANDS.sublime = function(argv, cb) {
 
    //var name = this._terminal.ParseArgs(argv).filenames;
-   loc ='https://www.sunjaydhama.com/projects/vim/sublime.html';
+   loc ='https://sunjaydhama.com/projects/vim/sublime.html';
    window.open(loc,'_blank');
    this._terminal.NewStdout();
    this._terminal.Scroll();

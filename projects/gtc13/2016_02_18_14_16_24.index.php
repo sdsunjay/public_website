@@ -51,7 +51,7 @@ $(".flexslider")
 
   <div id="container" class="cf">
     <header role="navigation">
-      <a class="logo" href="https://www.sunjaydhama.com/projects/gtc13" title="GTC 2013">
+      <a class="logo" href="https://sunjaydhama.com/projects/gtc13" title="GTC 2013">
         <img src="logo.jpg" alt="Logo for GPU Technology Conference" />
           </a>
       <h1>GPU Technology Conference 2013</h1>
