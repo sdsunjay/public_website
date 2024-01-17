@@ -1,1566 +1,2193 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 
-<!-- Basic Page Needs
+    <!-- Basic Page Needs
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <title>Time Log</title>
+
+    <!-- Favicon
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
+
+    <!-- Meta Content
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8" />
+    <meta name="author" content="Sunjay Dhama" />
+    <meta name="description" content="Time Log" />
+    <meta name="keywords" content="Website, Time, Log, Tracking, 2015, 2016, 2022, 2023, 2024" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta content="images/favicon.ico" itemprop="image" />
+
+    <!-- SEO
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="canonical" href="https://sunjaydhama.com/timelog.html" />
+
+    <!-- Facebook -->
+    <meta property="og:image" content="https://sunjaydhama.com/images/about.webp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Time Log" />
+    <meta property="og:url" content="https://sunjaydhama.com/timelog.html" />
+    <meta property="og:site_name" content="sunjaydhama.com" />
+    <meta property="og:description" content="Time Log for Website" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@sdsunjay" />
+    <meta name="twitter:title" content="Sunjay Dhama" />
+    <meta name="twitter:description" content="Time Log for Website" />
+    <meta name="twitter:image:src" content="https://sunjaydhama.com/images/about.webp" />
+
+    <!-- Google+ -->
+    <meta itemprop="name" content="Sunjay Dhama" />
+    <meta itemprop="description" content="Time Log for Website" />
+    <meta itemprop="image" content="https://sunjaydhama.com/images/about.webp" />
+    <!-- Mobile Specific Metas
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONT
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css' />
+
+    <!-- CSS
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css" type='text/css' />
+    <link rel="stylesheet" href="css/skeleton.css" type='text/css' />
+
+    <!-- Google tag (gtag.js)
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRD5PMETRP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-BRD5PMETRP');
+    </script>
+  </head>
+  <body>
+    <!-- Nav
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<title>Timelog</title>
-
-<!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link rel="icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
-
-<!-- Meta Content
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-<meta charset="utf-8">
-<meta name="keywords" content="Sunjay, Dhama, Cal, Poly, California, Polytechnic, San Luis Obispo, Obispo, Software, Engineering, Computer, Science, Android, Security, C, C++, Java, Javascript, Python, CUDA, Terminal, HTML,CSS,JavaScript,PHP">
-<meta name="description" content="Time Log">
-<meta name="author" content="Sunjay Dhama">
-<meta content="images/favicon.ico" itemprop="image">
-<meta https-equiv="content-type" content="text/html; charset=utf-8" />
-
-<!-- SEO -->
-<link rel="canonical" href="https://www.sunjaydhama.com/" />
-
-<!-- Facebook -->
-<meta property="og:image" content="https://www.sunjaydhama.com/images/selfie.jpg"/>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="Time Log"/>
-<meta property="og:url" content="https://www.sunjaydhama.com/"/>
-<meta property="og:site_name" content="sunjaydhama.com"/>
-<meta property="og:description" content="I'm a Software Engineer and am passionate about security, currently based in San Luis Obispo, California."/>
-<meta property=”og:locale” content=”en_US” />
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:creator" content="@sdsunjay">
-<meta name="twitter:title" content="Sunjay Dhama">
-<meta name="twitter:description" content="I'm a Software Engineer and am passionate about security, currently based in San Luis Obispo, California."/>
-<meta name="twitter:image:src" content="https://www.sunjaydhama.com/images/selfie.jpg">
-
-<!-- Google+ -->
-<meta itemprop="name" content="Sunjay Dhama">
-<meta itemprop="description" content="I'm a Software Engineer and am passionate about security, currently based in San Luis Obispo, California.">
-<meta itemprop="image" content="https://www.sunjaydhama.com/images/selfie.jpg">
-
-<!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-
-<!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link rel="stylesheet" href="../../css/normalize.css">
-<link rel="stylesheet" href="../../css/skeleton.css">
-<!-- specific to the homepage -->
-<!--
-<link rel="stylesheet" href="front.css">
--->
-</head>
-<body>
-
-
-<!-- Nav
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<nav class="nav">
-   <ul class="nav-list">
-      <li class="nav-item"><a href="new/about.html">ABOUT</a></li>
-      <li class="nav-item"><a href="new/projects.html">PROJECTS</a></li>
-      <li class="nav-item">
+    <div id="navbar">
       <a href="index.html">
-         <img src="../images/logo.png" alt="navagation-logo"></a>
-   </a>
-   </li>
-   <li class="nav-item"><a href="new/resume.html">R&Eacute;SUM&Eacute;</a></li>
-   <li class="nav-item"><a href="new/contact.html">CONTACT</a></li>
-</ul>
-</nav>
-<!-- Primary Page Layout
+        <img src="images/logo.png" alt="Personal Identity">
+      </a>
+      <ul>
+        <li><a href="index.html" title="Home">HOME</a></li>
+        <li><a href="about.html" title="About">ABOUT</a></li>
+        <li><a href="projects.html" title="Projects">PROJECTS</a></li>
+        <li><a href="resume.html" title="Resume">R&Eacute;SUM&Eacute;</a></li>
+        <li><a href="contact.html" title="Contact">CONTACT</a></li>
+      </ul>
+    </div>
+    <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-<div class="top-con container ">
-      <p> Please note that although the timelog was created July 16, 2014, this site has been under constant construction since August 6, 2013.</p>
-         <table BORDER="3">
-            <tr>
-               <th>Date</th>
-               <th>Start</th>
-               <th>Stop</th>
-               <th><a href="http://users.csc.calpoly.edu/~jdalbey/308/Mgmt/activityCodes.html">Activity Code</a></th>
-               <th>Activity</th>
-               <th>Delta Time</th>
-            </tr>
-            <tr>
-               <th>07/16/14</th>
-               <th>20:00</th>
-               <th>21:00</th>
-               <th>ADMIN</th>
-               <th>Checked nginx logs &amp; created <a href="./timelog.html">this</a> log.</th>
-               <th>60</th>
-            </tr>
-            <tr>
-               <th>07/16/14</th>
-               <th>21:00</th>
-               <th>21:45</th>
-               <th>REWORK</th>
-               <th>Fixed php.ini &amp; php-fpm config files for error logging.</th>
-               <th>45</th>
-            </tr>
-            <tr>
-               <th>07/16/14</th>
-               <th>21:45</th>
-               <th>22:00</th>
-               <th>REWORK</th>
-               <th>Worked on images issue (homepage images work), but not <a href="https://sunjaydhama.com/projects/laedu/test.html">others</a>.</th>
-               <th>45</th>
-            </tr>
-            <tr>
-               <th>07/16/14</th>
-               <th>22:00</th>
-               <th>23:20</th>
-               <th>REWORK</th>
-               <th>Fixed 'sudo useradd' command, creates cookie successfully.</th>
-               <th>80</th>
-            </tr>
-            <tr>
-               <th>07/18/14</th>
-               <th>15:00</th>
-               <th>17:00</th>
-               <th>REWORK</th>
-               <th>Updated <a href="../gui/new/projects.html">projects</a> &amp; some other stuff.</th>
-               <th>120</th>
-            </tr>
-            <tr>
-               <th>07/21/14</th>
-               <th>02:00</th>
-               <th>03:30</th>
-               <th>DEV</th>
-               <th>Implemented 'passwd' command for a unique user (with errors).</th>
-               <th>90</th>
-            </tr>
-            <tr>
-               <th>07/25/14</th>
-               <th>03:00</th>
-               <th>03:30</th>
-               <th>ADMIN</th>
-               <th>Upgraded Wordpress to 3.9.1 (the most current release).</th>
-               <th>30</th>
-            </tr>
-            <tr>
-               <th>07/25/14</th>
-               <th>03:30</th>
-               <th>05:00</th>
-               <th>ADMIN</th>
-               <th>Modified syslog.conf</th>
-               <th>90</th>
-            </tr>
-            <tr>
-               <th>07/25/14</th>
-               <th>05:15</th>
-               <th>07:30</th>
-               <th>DEV</th>
-               <th>Worked on <a href="../projects/email/index.php">email project</a></th>
-               <th>135</th>
-            </tr>
-            <tr>
-               <th>07/28/14</th>
-               <th>22:30</th>
-               <th>23:00</th>
-               <th>REWORK</th>
-               <th>Fixed the images in <a href="../projects/RS/index.html">Real School PD</a> &amp; <a href="../projects/mindbody/index.html">SloMo</a></th>
-               <th>30</th>
-            </tr>
-            <tr>
-               <th>07/31/14</th>
-               <th>18:00</th>
-               <th>19:00</th>
-               <th>REWORK</th>
-               <th>Tried to fix passwd command (unsuccessful).</th>
-               <th>60</th>
-            </tr>
-            <tr>
-               <th>08/01/14</th>
-               <th>17:00</th>
-               <th>17:30</th>
-               <th>REWORK</th>
-               <th>Fixed <a href="https://github.com/sdsunjay/skeletons/blob/master/centos5/iptables.sh">iptables script</a>; can now receive email.</th>
-               <th>30</th>
-            </tr>
-            <tr>
-               <th>08/04/14</th>
-               <th>12:15</th>
-               <th>02:30</th>
-               <th>REWORK</th>
-               <th>Fixed <a href="../projects/accounts/register.html">account registration</a> &amp; made more verbose.</th>
-               <th>105</th>
-            </tr>
-            <tr>
-               <th>08/06/14</th>
-               <th>13:15</th>
-               <th>14:45</th>
-               <th>REWORK</th>
-               <th>Fixed <a href="../projects/email/index.php">email</a> &amp; made more secure.</th>
-               <th>90</th>
-            </tr>
-            <tr>
-               <th>08/06/14</th>
-               <th>17:00</th>
-               <th>21:35</th>
-               <th>REWORK</th>
-               <th><b>Finally</b> finished 'passwd' command &amp; <a href="../projects/email/index.php">email</a></th>
-               <th>275</th>
-            </tr>
-            <tr>
-               <th>08/12/14</th>
-               <th>03:30</th>
-               <th>04:00</th>
-               <th>REWORK</th>
-               <th>Fixed small issue in load &amp; save for <a href="../projects/vim/index.php">vim project</a>.</th>
-               <th>30</th>
-            </tr>
-            <tr>
-               <th>08/12/14</th>
-               <th>18:30</th>
-               <th>20:45</th>
-               <th>REWORK</th>
-               <th>Bug fixes, such as <a href="../projects/mshah/index.html">this</a> &amp; started <a href="../projects/tracking/index.html">tracking project</a></th>
-               <th>135</th>
-            </tr>
-            <tr>
-               <th>08/15/14</th>
-               <th>13:30</th>
-               <th>15:30</th>
-               <th>ADMIN</th>
-               <th>Fail2Ban and iptables config &amp; <a href="http://www.labnol.org/internet/google-scripts/28281/">website monitoring</a>.</th>
-               <th>120</th>
-            </tr>
-            <tr>
-               <th>08/18/14</th>
-               <th>15:40</th>
-               <th>18:00</th>
-               <th>REWORK</th>
-               <th>Fixed iptables script &amp; email</th>
-               <th>140</th>
-            </tr>
-            <tr>
-               <th>08/26/14</th>
-               <th>15:00</th>
-               <th>15:15</th>
-               <th>ADMIN</th>
-               <th>Updated <a href="../json/filesystem.json">filesystem</a> &amp; mobile filesystem.</th>
-               <th>15</th>
-            </tr>
-            <tr>
-               <th>08/27/14</th>
-               <th>00:30</th>
-               <th>01:15</th>
-               <th>REWORK</th>
-               <th>Fixed <a href="../projects/accounts/register.html">registering</a> for accounts, so secret answers stored.</th>
-               <th>45</th>
-            </tr>
-            <tr>
-               <th>08/28/14</th>
-               <th>00:15</th>
-               <th>01:00</th>
-               <th>DEV</th>
-               <th>Partially implemented changing your password for user <a href="../projects/accounts/">accounts</a>.</th>
-               <th>45</th>
-            </tr>
-            <tr>
-               <th>08/28/14</th>
-               <th>12:00</th>
-               <th>12:30</th>
-               <th>DEV</th>
-               <th>Continued implementing change your password for user accounts.</th>
-               <th>30</th>
-            </tr>
-            <tr>
-               <th>08/29/14</th>
-               <th>11:30</th>
-               <th>14:00</th>
-               <th>DEV</th>
-               <th>Made more progress on <a href="../projects/tracking/index.html">tracking project</a></th>
-               <th>150</th>
-            </tr>
-            <tr>
-               <th>08/29/14</th>
-               <th>16:00</th>
-               <th>16:45</th>
-               <th>DEV</th>
-               <th>Made more progress on <a href="../projects/tracking/index.html">tracking project</a></th>
-               <th>45</th>
-            </tr>
-            <tr>
-               <th>09/01/14</th>
-               <th>14:30</th>
-               <th>15:30</th>
-               <th>DEV</th>
-               <th>Cleaned up <a href="../projects/tracking/index.html">tracking project</a> &amp; started <a href="../projects/typeahead/index.html">typeahead project</a>.</th>
-               <th>60</th>
-            </tr>
-            <tr>
-               <th>09/04/14</th>
-               <th>12:00</th>
-               <th>12:45</th>
-               <th>ADMIN</th>
-               <th>Created a <a href="./bugReport.html">page</a> for bug tracking &amp; reporting, still needs work</th>
-               <th>45</th>
-            </tr>
-            <tr>
-               <th>09/04/14</th>
-               <th>12:45</th>
-               <th>13:15</th>
-               <th>REWORK</th>
-               <th>Started fixing issue with <a href="../projects/vim">Vim</a>.</th>
-               <th>30</th>
-            </tr>
-            <tr>
-               <th>09/04/14</th>
-               <th>13:00</th>
-               <th>14:30</th>
-               <th>ADMIN</th>
-               <th>Set nginx config file to redirect everything to https://www.*</th>
-               <th>90</th>
-            </tr>
-            <tr>
-               <th>09/06/14</th>
-               <th>01:00</th>
-               <th>02:30</th>
-               <th>ADMIN</th>
-               <th>Setup blocking IP addresses by country in nginx config.</th>
-               <th>90</th>
-            </tr>
-            <tr>
-               <th>09/07/14</th>
-               <th>13:00</th>
-               <th>13:30</th>
-               <th>ADMIN</th>
-               <th>Started reinstall of nginx from source</th>
-               <th>30</th>
-            </tr>
-            <tr>
-               <th>09/09/14</th>
-               <th>19:30</th>
-               <th>21:00</th>
-               <th>DEV</th>
-               <th>Worked on <a href="../projects/tracking/index.html">tracking project</a></th>
-               <th>90</th>
-            </tr>
-
-            <tr>
-               <th>09/10/14</th>
-               <th>00:00</th>
-               <th>01:00</th>
-               <th>ADMIN</th>
-               <th>Automated blocking of bad IP Addresses, using <a href="http://bash.cyberciti.biz/web-server/nginx-shell-script-to-block-spamhaus-lasso-drop-spam-ip-address/">this</a> script</th>
-               <th>60</th>
-            </tr>
-            <tr>
-               <th>09/23/14</th>
-               <th>18:00</th>
-               <th>19:00</th>
-               <th>ADMIN</th>
-               <th>Downloaded &amp; installed log visualization tool, <a href="http://goaccess.io/download">goaccess</a></th>
-               <th>60</th>
-            </tr>
-            <tr>
-               <th>09/23/14</th>
-               <th>19:30</th>
-               <th>21:00</th>
-               <th>ADMIN</th>
-               <th>Created <a href="https://github.com/sdsunjay/skeletons/blob/master/centos5/checkAccess.sh">script</a> to find 4xx &amp; 5xx errors (with help from <a href="http://www.the-art-of-web.com/system/logs/">this</a>)</th>
-               <th>90</th>
-            </tr>
-            <tr>
-               <th>09/24/14</th>
-               <th>21:35</th>
-               <th>21:40</th>
-               <th>ADMIN</th>
-               <th>Updated BASH following release of <a href="https://access.redhat.com/security/cve/CVE-2014-6271">CVE-2014-6271</a></th>
-               <th>5</th>
-            </tr>
-            <tr>
-               <th>09/25/14</th>
-               <th>02:00</th>
-               <th>03:00</th>
-               <th>DEV</th>
-               <th>Worked more on 'update password' feature<!--&amp; created <a href="../projects/accounts/account.html">this</a> page-->.</th>
-               <th>60</th>
-            </tr>
-            <tr>
-               <th>09/25/14</th>
-               <th>04:00</th>
-               <th>04:40</th>
-               <th>DEV</th>
-               <th>Implemented jquery lightbox.</th>
-               <th>30</th>
-            </tr>
-            <tr>
-               <th>09/25/14</th>
-               <th>17:00</th>
-               <th>19:00</th>
-               <th>DEV</th>
-               <th>Worked on 'update password' feature &amp; made javascript &amp; php checks more robust (still errors).</th>
-               <th>120</th>
-            </tr>
-            <tr>
-               <th>09/26/14</th>
-               <th>17:30</th>
-               <th>18:00</th>
-               <th>ADMIN</th>
-               <th>Researched &amp; ran <a href="https://www.cirt.net/Nikto2">Nikto</a> scan.</th>
-               <th>30</th>
-            </tr>
-            <tr>
-               <th>09/26/14</th>
-               <th>18:15</th>
-               <th>19:00</th>
-               <th>DEV</th>
-               <th><b>Finished</b> implementing 'update password' feature, just need to integrate into <a href="https://fancybox.net/">lightbox</a>. </th>
-               <th>45</th>
-            </tr>
-            <tr>
-               <th>09/27/14</th>
-               <th>13:00</th>
-               <th>14:00</th>
-               <th>ADMIN</th>
-               <th><a href="http://back-track-linux.blogspot.com/2012/10/how-to-install-nessus-on-backtrack-5-r3.html">Researched</a> &amp; attempted <a href="http://www.nessus.org">Nessus</a> scan.</th>
-               <th>30</th>
-            </tr>
-            <tr>
-               <th>09/27/14</th>
-               <th>16:00</th>
-               <th>17:30</th>
-               <th>DEV</th>
-               <th>Started implementing 'upload file' feature &amp; integrating with lightbox</th>
-               <th>90</th>
-            </tr>
-            <tr>
-               <th>09/27/14</th>
-               <th>17:30</th>
-               <th>18:30</th>
-               <th>REWORK</th>
-               <th>Finished implementing 'upload file' feature. Started 'multiple file upload' feature</th>
-               <th>60</th>
-            </tr>
-            <tr>
-               <th>10/03/14</th>
-               <th>21:30</th>
-               <th>23:00</th>
-               <th>DEV</th>
-               <th>Continuing working on tracking project</th>
-               <th>90</th>
-            </tr>
-            <tr>
-               <th>10/05/14</th>
-               <th>13:00</th>
-               <th>14:30</th>
-               <th>DEV</th>
-               <th>Finished development on tracking project, just need to integrate</th>
-               <th>90</th>
-            </tr>
-            <tr>
-               <th>10/05/14</th>
-               <th>16:00</th>
-               <th>18:00</th>
-               <th>ADMIN</th>
-               <th>Downloaded and installed <a href="http://nginx.org/">nginx 1.7.6</a></th>
-               <th>120</th>
-            </tr>
-            <tr>
-               <th>10/06/14</th>
-               <th>14:00</th>
-               <th>16:30</th>
-               <th>ADMIN</th>
-               <th>Fixed errors associated with <a href="http://nginx.org/">nginx 1.7.6</a></th>
-               <th>210</th>
-            </tr>
-            <tr>
-               <th>10/08/14</th>
-               <th>16:30</th>
-               <th>17:00</th>
-               <th>ADMIN</th>
-               <th>Added <a href="../projects/defcon22">DEFCON22</a> images</th>
-               <th>30</th>
-            </tr>
-            <tr>
-               <th>10/08/14</th>
-               <th>17:00</th>
-               <th>17:30</th>
-               <th>ADMIN</th>
-               <th>Switched DNS to <a href="https://www.cloudflare.com/index.html">Cloudflare</a> by updating domain registered <a href="http://www.arvixe.com">here</a>
-                  <th>30</th>
-               </tr>
-               <tr>
-                  <th>10/09/14</th>
-                  <th>14:00</th>
-                  <th>14:30</th>
-                  <th>ADMIN</th>
-                  <th>Enabled <a href="https://www.cloudflare.com/apps/scrapeshield">Scrapeshield</a>, <a href="https://www.cloudflare.com/apps/abetterbrowse">A Better Browser</a>,<a href="https://www.cloudflare.com/apps/earthhour">Earthhour</a>,<a href="https://www.cloudflare.com/apps/google_analytics">Google Analytics</a>,<a href="https://www.cloudflare.com/apps/webmastertools">Google Webmaster Tools</a>, and other apps from  <a href="https://www.cloudflare.com/index.html">Cloudflare</a></th>
-                  <th>45</th>
-               </tr>
-               <tr>
-                  <th>10/09/14</th>
-                  <th>17:30</th>
-                  <th>20:00</th>
-                  <th>ADMIN</th>
-                  <th>Terminal broke due to Cloudflare setting, fixed.</th>
-                  <th>120</th>
-               </tr>
-               <tr>
-                  <th>10/09/14</th>
-                  <th>20:00</th>
-                  <th>20:30</th>
-                  <th>DEV</th>
-                  <th>Worked on tracking</th>
-                  <th>30</th>
-               </tr>
-               <tr>
-                  <th>10/09/14</th>
-                  <th>15:30</th>
-                  <th>17:30</th>
-                  <th>DEV</th>
-                  <th>Worked on 'passwd' feature</th>
-                  <th>120</th>
-               </tr>
-               <tr>
-                  <th>10/13/14</th>
-                  <th>17:00</th>
-                  <th>18:00</th>
-                  <th>REWORK</th>
-                  <th>Worked on Content Security Policy and switching <a href="http://www.sunjay.io">this</a> and <a href="http://www.sunjay.me">this</a> site to <a href="https://www.cloudflare.com/index.html">Cloudflare</a>.</th>
-                  <th>60</th>
-               </tr>
-               <tr>
-                  <th>10/14/14</th>
-                  <th>19:45</th>
-                  <th>21:45</th>
-                  <th>DEV</th>
-                  <th>Worked on 'passwd' feature for already existing user.</th>
-                  <th>120</th>
-               </tr>
-               <tr>
-                  <th>10/16/14</th>
-                  <th>18:45</th>
-                  <th>20:45</th>
-                  <th>DEV</th>
-                  <th>Increased robustness of <a href="https://github.com/sdsunjay/skeletons/blob/master/centos5/sshd_config">sshd_config</a>, added <a href="https://github.com/sdsunjay/skeletons/blob/master/centos5/sendmail.mc">mail options</a> and <a href="http://spamassassin.apache.org/">SPAMASSASSIN</a></th>
-                  <th>120</th>
-               </tr>
-               <tr>
-                  <th>10/16/14</th>
-                  <th>21:30</th>
-                  <th>23:00</th>
-                  <th>DEV</th>
-                  <th>Worked on <a href="../projects/accounts/protected_page.php">'Update Password'</a>feature for already existing user, integrated <a href="http://buckwilson.me/lightboxme/">lightbox</a>.</th>
-                  <th>90</th>
-               </tr>
-               <tr>
-                  <th>10/19/14</th>
-                  <th>18:00</th>
-                  <th>19:00</th>
-                  <th>DEV</th>
-                  <th><b>Finished</b> <a href="../projects/accounts/protected_page.php">'Upload Picture'</a> feature for existing user</th>
-                  <th>60</th>
-               </tr>
-               <tr>
-                  <th>10/19/14</th>
-                  <th>19:00</th>
-                  <th>20:00</th>
-                  <th>DEV</th>
-                  <th>Worked on 'passwd' feature for already existing user</th>
-                  <th>60</th>
-               </tr>
-               <tr>
-                  <th>10/20/14</th>
-                  <th>00:30</th>
-                  <th>01:00</th>
-                  <th>ADMIN</th>
-                  <th>Updated <a href="https://wordpress.org/">wordpress</a> <a href="https://www.sunjaydhama.com/blog">blog</a> to 4.0</th>
-                  <th>30</th>
-               </tr>
-               <tr>
-                  <th>10/21/14</th>
-                  <th>20:30</th>
-                  <th>22:30</th>
-                  <th>ADMIN</th>
-                  <th>Fixed <a href="https://www.sunjaydhama.com/blog">blog</a> after breaking a lot of stuff</th>
-                  <th>120</th>
-               </tr>
-               <tr>
-                  <th>10/21/14</th>
-                  <th>22:30</th>
-                  <th>23:00</th>
-                  <th>ADMIN</th>
-                  <th>Created another <a href="https://www.sunjaydhama.com/blog/?page_id=231">About Me</a> page, added lots of pictures</th>
-                  <th>30</th>
-               </tr>
-               <tr>
-                  <th>10/22/14</th>
-                  <th>18:00</th>
-                  <th>19:00</th>
-                  <th>ADMIN</th>
-                  <th>Added the <a href="https://wordpress.org/plugins/wordpress-https/">Wordpress HTTPS</a> plugin and started DEFCON blog post</th>
-                  <th>60</th>
-               </tr>
-               <tr>
-                  <th>10/23/14</th>
-                  <th>00:00</th>
-                  <th>01:00</th>
-                  <th>ADMIN</th>
-                  <th>Tried to better understand <a href="../index.html">terminal</a></th>
-                  <th>60</th>
-               </tr>
-               <tr>
-                  <th>10/23/14</th>
-                  <th>01:00</th>
-                  <th>02:00</th>
-                  <th>DEV</th>
-                  <th>Added <a href="../projects/vim/emacs.html">Emacs</a> editor</th>
-                  <th>60</th>
-               </tr>
-               <tr>
-                  <th>10/23/14</th>
-                  <th>02:00</th>
-                  <th>03:00</th>
-                  <th>ADMIN</th>
-                  <th>Optimized Nginx.conf</th>
-                  <th>60</th>
-               </tr>
-               <tr>
-                  <th>10/30/14</th>
-                  <th>22:00</th>
-                  <th>23:59</th>
-                  <th>ADMIN</th>
-                  <th>Add security features to Nginx.conf</th>
-                  <th>120</th>
-               </tr>
-               <tr>
-                  <th>10/31/14</th>
-                  <th>00:00</th>
-                  <th>01:40</th>
-                  <th>DEV</th>
-                  <th>Hide user entered password in 'passwd'</th>
-                  <th>100</th>
-               </tr>
-
-               <tr>
-                  <th>11/04/14</th>
-                  <th>18:00</th>
-                  <th>19:30</th>
-                  <th>REWORK</th>
-                  <th>Fixed "hide user entered password in 'passwd'</th>
-                  <th>90</th>
-               </tr>
-               <tr>
-                  <th>11/04/14</th>
-                  <th>19:00</th>
-                  <th>20:00</th>
-                  <th>ADMIN</th>
-                  <th>Created a sitemap for google.</th>
-                  <th>60</th>
-               </tr>
-               <tr>
-                  <th>11/04/14</th>
-                  <th>20:00</th>
-                  <th>21:00</th>
-                  <th>ADMIN</th>
-                  <th>Built <a href="http://www.fullybaked.co.uk/articles/installing-latest-vim-on-centos-from-source">vim from source</a> &amp; added <a href="https://github.com/gmarik/Vundle.vim">Vundle</a> &amp; various vim plugins.</th>
-                  <th>60</th>
-               </tr>
-               <tr>
-                  <th>11/04/14</th>
-                  <th>21:00</th>
-                  <th>22:00</th>
-                  <th>ADMIN</th>
-                  <th>Fixed broken links using <a href="http://www.brokenlinkcheck.com/">this</a> tool.</th>
-                  <th>60</th>
-               </tr>
-               <tr>
-                  <th>11/04/14</th>
-                  <th>22:00</th>
-                  <th>23:59</th>
-                  <th>DEV</th>
-                  <th>Created <a href="../bitcoin/index.html">Bitcoin widget</a>.</th>
-                  <th>120</th>
-               </tr>
-               <tr>
-                  <th>11/05/14</th>
-                  <th>00:00</th>
-                  <th>01:40</th>
-                  <th>ADMIN</th>
-                  <th>Fixed more broken links using <a href="http://www.brokenlinkcheck.com/">this</a> tool.</th>
-                  <th>100</th>
-               </tr>
-               <tr>
-                  <th>11/05/14</th>
-                  <th>18:00</th>
-                  <th>19:30</th>
-                  <th>DEV</th>
-                  <th>Worked on typeahead project.</th>
-                  <th>90</th>
-               </tr>
-               <tr>
-                  <th>11/07/14</th>
-                  <th>00:00</th>
-                  <th>00:30</th>
-                  <th>ADMIN</th>
-                  <th>Checked logs and made some minor fixes.</th>
-                  <th>30</th>
-               </tr>
-               <tr>
-                  <th>11/10/14</th>
-                  <th>18:00</th>
-                  <th>22:00</th>
-                  <th>MISC</th>
-                  <th>Worked to implement <a href="https://github.com/google/nogotofail">nogotofail</a> &amp; Fixed 'passwd' &amp; Fixed CSS &amp; Fixed 'clear' &amp; Implemented 'show' (how new JSON is loaded).</th>
-                  <th>240</th>
-               </tr>
-               <tr>
-                  <th>11/20/14</th>
-                  <th>17:00</th>
-                  <th>18:00</th>
-                  <th>REWORK</th>
-                  <th>Fixed <a href="../projects/vim/sublime.html">sublime editor</a></th>
-                  <th>60</th>
-               </tr>
-               <tr>
-                  <th>11/20/14</th>
-                  <th>20:00</th>
-                  <th>23:00</th>
-                  <th>DEV</th>
-                  <th>Worked on 'mkdir' command</th>
-                  <th>180</th>
-               </tr>
-               <tr>
-                  <th>11/21/14</th>
-                  <th>17:00</th>
-                  <th>17:30</th>
-                  <th>ADMIN</th>
-                  <th>Took 'terminal' interface offline and other admin stuff</th>
-                  <th>30</th>
-               </tr>
-               <tr>
-                  <th>11/28/14</th>
-                  <th>23:00</th>
-                  <th>23:30</th>
-                  <th>ADMIN</th>
-                  <th>Added <a href='../projects/terminal'>"Terminal Interface"</a> back in new location.</th>
-                  <th>30</th>
-               </tr>
-               <tr>
-                  <th>01/08/15</th>
-                  <th>09:00</th>
-                  <th>11:00</th>
-                  <th>DEV</th>
-                  <th>Created <a href='../projects/grc'>GRC landing page</a> for <a href='http://classes.grc.calpoly.edu/339/'>339</a>, following this tutorial</th>
-                  <th>120</th>
-               </tr>
-               <tr>
-                  <th>01/08/15</th>
-                  <th>11:00</th>
-                  <th>11:45</th>
-                  <th>ADMIN</th>
-                  <th>Updated <a href="../sitemap.xml">sitemap</a> to reflect less focus on old projects</th>
-                  <th>45</th>
-               </tr>
-               <tr>
-                  <th>02/02/15</th>
-                  <th>14:00</th>
-                  <th>16:00</th>
-                  <th>ADMIN</th>
-                  <th>Setup <a href='https://www.gnupg.org/'>GPG</a> and integrated with <a href='http://www.mutt.org/'>mutt</a>.</th>
-                  <th>120</th>
-               </tr>
-               <tr>
-                  <th>02/05/15</th>
-                  <th>18:00</th>
-                  <th>19:30</th>
-                  <th>DEV</th>
-                  <th>Started implementing <a href='https://code.google.com/p/crypto-js/#PBKDF2'>encryption</a> for password in javascript <a href='../Learning/login.html'>here</a></th>
-                  <th>90</th>
-               </tr>
-               <!--- New Entry -->
-               <tr>
-                  <th>02/16/15</th>
-                  <th>15:30</th>
-                  <th>16:00</th>
-                  <th>DEV</th>
-                  <th>Finished POC for javascript password encrption</th>
-                  <th>30</th>
-               </tr>
-               <!--- New Entry -->
-               <tr>
-                  <th>02/16/15</th>
-                  <th>16:30</th>
-                  <th>18:00</th>
-                  <th>DEV</th>
-                  <th>Finished integrating 'Sign In Lightbox' feature to all GUI pages</th>
-                  <th>90</th>
-               </tr>
-               <!--- New Entry -->
-               <tr>
-                  <th>02/16/15</th>
-                  <th>18:00</th>
-                  <th>19:00</th>
-                  <th>REWORK</th>
-                  <th>Tried (unsuccessfully) to fix the email project.</th>
-                  <th>60</th>
-               </tr>
-               <!--- New Entry -->
-               <tr>
-                  <th>02/21/15</th>
-                  <th>17:30</th>
-                  <th>18:30</th>
-                  <th>ADMIN</th>
-                  <th>Adjusted firewall settings for <a href="https://www.qualys.com/">Qualys</a> scan.</th>
-                  <th>60</th>
-               </tr>
-               <!--- New Entry -->
-               <tr>
-                  <th>02/22/15</th>
-                  <th>19:00</th>
-                  <th>20:00</th>
-                  <th>DEV</th>
-                  <th>Added photos and videos to (main) <a href="images.html">images</a> page and (secondary)<a href="../images" >images</a> page  and <a href="../projects/swsb14/swsb14.html">swsb14</a>.</th>
-                  <th>30</th>
-               </tr>
-               <!--- New Entry -->
-               <tr>
-                  <th>03/09/15</th>
-                  <th>19:30</th>
-                  <th>22:30</th>
-                  <th>DEV</th>
-                  <th>Updated <a href="../projects/accounts">accounts</a> project to encrypt secret answers, increase robustness of registration, and account logout</th>
-                  <th>180</th>
-               </tr>
-               <tr>
-                  <th>03/10/15</th>
-                  <th>22:00</th>
-                  <th>23:00</th>
-                  <th>DEV</th>
-                  <th>Updated <a href="../projects/accounts/captcha/index.php?ID=69">this</a>, so given a user's 'code', a secret question is displayed.</th>
-                  <th>60</th>
-               </tr>
-               <tr>
-                  <th>03/18/15</th>
-                  <th>18:30</th>
-                  <th>19:00</th>
-                  <th>REWORK</th>
-                  <th>Fixed user sign-in with updated <a href="http://content-security-policy.com/">CSP Policy</a></th>
-                  <th>30</th>
-               </tr>
-               <!--- New Entry -->
-               <tr>
-                  <th>03/19/15</th>
-                  <th>18:00</th>
-                  <th>23:00</th>
-                  <th>DEV</th>
-                  <th>Created <a href="../projects/DWPACLEC2/index.html">this</a> &amp; <a href="../projects/DWPACLEC2/README.html">this</a> &amp; <a href="../gui/new">this</a> page in preparation for migration of site.</th>
-                  <th>300</th>
-               </tr>
-               <tr>
-                  <th>03/20/15</th>
-                  <th>18:30</th>
-                  <th>22:00</th>
-                  <th>DEV</th>
-                  <th>Fixed CSS for <a href="../projects/DWPACLEC2/index.html">DWPACLEC2</a> &amp; created <a href="../projects/honeypot/index.html">honeypot</a></th>
-                  <th>240</th>
-               </tr>
-               <tr>
-                  <th>03/21/15</th>
-                  <th>16:30</th>
-                  <th>21:30</th>
-                  <th>DEV</th>
-                  <th>Added content and CSS for new <a href="../gui/new/projects.html">projects</a> page &amp; created <a href="../projects/swsb14/swsb14.html">LightningLocks &amp; <a href="../projects/terminal/terminal.html">Terminal Emulator</a>page.</th>
-                     <th>300</th>
-                  </tr>
-                  <tr>
-                     <th>03/22/15</th>
-                     <th>16:00</th>
-                     <th>24:00</th>
-                     <th>DEV</th>
-                     <th>Updated CSS for new <a href="../gui/new/index.html">homepage</a> page</th>
-                     <th>480</th>
-                  </tr>
-                  <tr>
-                     <th>03/23/15</th>
-                     <th>16:20</th>
-                     <th>19:20</th>
-                     <th>DEV</th>
-                     <th>Created <a href="../projects/mindbody/mindbody.html">this</a>, <a href="../projects/vim/vim.html">this</a>, and <a href="../projects/tracking/tracking.html">this</a>.</th>
-                     <th>180</th>
-                  </tr>
-                  <tr>
-                     <th>03/24/15</th>
-                     <th>17:00</th>
-                     <th>21:00</th>
-                     <th>DEV</th>
-                     <th><b>Finished</b> editing the <a href="../css/skeleton.css">CSS</a> for the <a href="../gui/new/index.html">new homepage</a> &amp; created the <a href="../gui/new/about.html">about page</a>.</th>
-                     <th>240</th>
-                  </tr>
-                  <tr>
-                     <th>03/26/15</th>
-                     <th>14:00</th>
-                     <th>20:00</th>
-                     <th>DEV</th>
-                     <th>Created my <a href="new/resume.html">r&eacute;sum&eacute; page</a> &amp; fixed all nav bars &amp; update layout of <a href="../gui/timelog.html">this timelog</a></th>
-                     <th>360</th>
-                  </tr>
-                  <tr>
-                     <th>03/27/15</th>
-                     <th>19:00</th>
-                     <th>23:00</th>
-                     <th>DEV</th>
-                     <th>Integrate <a href="../projects/accounts/index.html">log in</a> and <a href="../projects/accounts/register.html">registration page</a>, toyed with ideas for <a href="../projects/accounts/new/index.html">login design</a></th>
-                     <th>240</th>
-                  </tr>
-                  <tr>
-                     <th>03/28/15</th>
-                     <th>20:00</th>
-                     <th>21:00</th>
-                     <th>DEV</th>
-                     <th>Small fixes</th>
-                     <th>60</th>
-                  </tr>
-                  <tr>
-                     <th>03/30/15</th>
-                     <th>20:00</th>
-                     <th>22:00</th>
-                     <th>DEV</th>
-                     <th>New <a href="../blog/?p=298">blog entry</a>, worked on <a href="../projects/blog/index.php">blog project</a> &amp; <a href="../projects/swsm14/index.php">Startup Weekend Santa Maria</a> layout &amp; <a href="../projects/swslo14">Startup Weekend SLO</a> layout.</th>
-                     <th>120</th>
-                  </tr>
-                  <tr>
-                     <th>04/04/15</th>
-                     <th>18:00</th>
-                     <th>21:00</th>
-                     <th>REWORK</th>
-                     <th>Worked on <a href="../css/skeleton.css">CSS</a> to make website mobile friendly</th>
-                     <th>180</th>
-                  </tr>
-                  <tr>
-                     <th>04/06/15</th>
-                     <th>21:00</th>
-                     <th>23:00</th>
-                     <th>REWORK</th>
-                     <th>Updated nginx config, updated <a href="../projects/terminal/index.html">terminal projects</a>, updated images</th>
-                     <th>120</th>
-                  </tr>
-                  <tr>
-                     <th>04/09/15</th>
-                     <th>18:00</th>
-                     <th>19:00</th>
-                     <th>REWORK</th>
-                     <th>Small fixes and reorganization</th>
-                     <th>60</th>
-                  </tr>
-                  <tr>
-                     <th>04/13/15</th>
-                     <th>23:20</th>
-                     <th>02:20</th>
-                     <th>REWORK</th>
-                     <th>Fixed <a href="../projects/accounts/register.html">registration</a> and started fixing <a href="../projects/accounts/protected_page.php">protected page</a></th>
-                     <th>180</th>
-                  </tr>
-                  <tr>
-                     <th>04/14/15</th>
-                     <th>15:00</th>
-                     <th>19:00</th>
-                     <th>REWORK</th>
-                     <th>Using <a href="http://toddmotto.com/building-an-html5-responsive-menu-with-media-queries-javascript/">this</a> tutorial, tried to make <a href="../css/skeleton.css">CSS</a> more mobile friendly.</th>
-                     <th>240</th>
-                  </tr>
-                  <tr>
-                     <th>04/15/15</th>
-                     <th>14:30</th>
-                     <th>18:00</th>
-                     <th>ADMIN</th>
-                     <th>Organization</th>
-                     <th>210</th>
-                  </tr>
-                  <tr>
-                     <th>04/16/15</th>
-                     <th>00:00</th>
-                     <th>01:30</th>
-                     <th>ADMIN</th>
-                     <th>Started work on <a href="../README.html">contents page</a></th>
-                     <th>90</th>
-                  </tr>
-                  <tr>
-                     <th>04/21/15</th>
-                     <th>15:00</th>
-                     <th>17:00</th>
-                     <th>REWORK</th>
-                     <th>Fixing broken links</th>
-                     <th>120</th>
-                  </tr>
-                  <tr>
-                     <th>04/23/15</th>
-                     <th>16:00</th>
-                     <th>19:00</th>
-                     <th>ADMIN</th>
-                     <th>Created real <a href="../projects/terminal/json/sunjay_filesystem.json">JSON</a> filesystem</th>
-                     <th>180</th>
-                  </tr>
-                  <tr>
-                     <th>04/24/15</th>
-                     <th>15:00</th>
-                     <th>16:00</th>
-                     <th>DEV</th>
-                     <th>Fixed <a href="../projects/terminal/json/sunjay_filesystem.json">JSON</a> &amp; try to fix make_fs.py</th>
-                     <th>60</th>
-                  </tr>
-                  <tr>
-                     <th>04/27/15</th>
-                     <th>15:00</th>
-                     <th>17:00</th>
-                     <th>REWORK</th>
-                     <th>Updated favicon, logo. Fixed <a href="../projects/RS/rs.html">this</a> &amp; <a href="../projects/swslo13/index.html">this</a></th>
-                     <th>120</th>
-                  </tr>
-                  <tr>
-                     <th>04/27/15</th>
-                     <th>22:00</th>
-                     <th>23:00</th>
-                     <th>REWORK</th>
-                     <th>Fixed some stuff, like JSON, &amp; logo.</th>
-                     <th>60</th>
-                  </tr>
-                  <tr>
-                     <th>05/02/15</th>
-                     <th>16:30</th>
-                     <th>18:30</th>
-                     <th>REWORK</th>
-                     <th>Updated sendmail.mc to prevent sending SPAM.</th>
-                     <th>120</th>
-                  </tr>
-                  <tr>
-                     <th>05/11/15</th>
-                     <th>12:30</th>
-                     <th>15:30</th>
-                     <th>DEV</th>
-                     <th>Wrote this script to track csp reports, fixed accounts, &amp; updated make_fs.py.</th>
-                     <th>180</th>
-                  </tr>
-                  <tr>
-                     <th>05/13/15</th>
-                     <th>17:00</th>
-                     <th>20:00</th>
-                     <th>DEV</th>
-                     <th>Increase security for sendmail, updated <a href="../projects/tweetonomics/index.html">Tweetonomics</a> &amp; <a href="../projects/swslo14/index.html">Karmic</a>.</th>
-                     <th>180</th>
-                  </tr>
-                  <tr>
-                     <th>05/25/15</th>
-                     <th>16:00</th>
-                     <th>17:00</th>
-                     <th>REWORK</th>
-                     <th>Updated nginx configuration to allow access to my website from more countries</th>
-                     <th>60</th>
-                  </tr>
-                  <tr>
-                     <th>06/23/15</th>
-                     <th>16:00</th>
-                     <th>18:00</th>
-                     <th>REWORK</th>
-                     <th>Updated nginx configuration, fixed errors and missing pages. Tried to resolve 520 errors (examined Fail2Ban)</th>
-                     <th>120</th>
-                  </tr>
-                  <tr>
-                     <th>06/23/15</th>
-                     <th>19:00</th>
-                     <th>21:30</th>
-                     <th>ADMIN</th>
-                     <th>Tried to fix CloudFlare 520 error by generating and adding HAR file, traceroute, and curl information. </th>
-                     <th>150</th>
-                  </tr>
-                  <tr>
-                     <th>06/24/15</th>
-                     <th>16:00</th>
-                     <th>17:30</th>
-                     <th>DEV</th>
-                     <th>Successfully implement 'mkdir' command in <a href="../projects/terminal/terminal.html">terminal project</a>.</th>
-                     <th>90</th>
-                  </tr>
-                  <tr>
-                     <th>06/26/15</th>
-                     <th>16:00</th>
-                     <th>18:00</th>
-                     <th>DEV</th>
-                     <th>Created a new project page for my <a href="../projects/mobilecloset/index.html">Mobile Closet</a> Android app.</th>
-                     <th>120</th>
-                  </tr>
-                  <tr>
-                     <th>06/26/15</th>
-                     <th>18:00</th>
-                     <th>18:35</th>
-                     <th>REWORK</th>
-                     <th>Added whitelist of commands to 'man' command, no more 404 errors</th>
-                     <th>35</th>
-                  </tr>
-                  <tr>
-                     <th>06/26/15</th>
-                     <th>18:35</th>
-                     <th>19:15</th>
-                     <th>DEV</th>
-                     <th>Finished implementation of 'rm' command in <a href="../projects/terminal/terminal.html">terminal project</a>.</th>
-                     <th>40</th>
-                  <tr>
-                     <th>06/26/15</th>
-                     <th>19:20</th>
-                     <th>19:40</th>
-                     <th>DEV</th>
-                     <th>Wrote pseudo-code for  implementation of 'grep' command in <a href="../projects/terminal/terminal.html">terminal project</a>.</th>
-                     <th>20</th>
-                  </tr>
-                  <tr>
-                     <th>06/27/15</th>
-                     <th>20:30</th>
-                     <th>00:00</th>
-                     <th>DEV</th>
-                     <th>Started <a href="../projects/rideshare">rideshare project</a> PHP script for facebook posts</th>
-                     <th>210</th>
-                  </tr>
-                  <tr>
-                     <th>06/28/15</th>
-                     <th>21:30</th>
-                     <th>00:00</th>
-                     <th>DEV</th>
-                     <th>Finished <a href="../projects/rideshare">rideshare project</a> PHP script for facebook posts</th>
-                     <th>150</th>
-                  </tr>
-                  <tr>
-                     <th>06/29/15</th>
-                     <th>00:15</th>
-                     <th>01:20</th>
-                     <th>DEV</th>
-                     <th>Created the landing page for the <a href="../projects/rideshare">rideshare project</a></th>
-                     <th>65</th>
-                  </tr>
-                  <tr>
-                     <th>06/29/15</th>
-                     <th>15:40</th>
-                     <th>17:50</th>
-                     <th>DEV</th>
-                     <th>Created script to check if this website goes down, installed mutt and gpg on 'droplet'</th>
-                     <th>65</th>
-                  </tr>
-                  <tr>
-                     <th>06/29/15</th>
-                     <th>17:50</th>
-                     <th>18:50</th>
-                     <th>DEV</th>
-                     <th>Learning about python nltk</th>
-                     <th>60</th>
-                  </tr>
-                  <tr>
-                     <th>06/29/15</th>
-                     <th>19:50</th>
-                     <th>23:50</th>
-                     <th>DEV</th>
-                     <th>Getting, organizing, and classifying posts from <a href="https://www.facebook.com/groups/250502971675365/">Cal Poly Rideshare Facebook Group</a></th>
-                     <th>180</th>
-                  </tr>
-                  <tr>
-                     <th>07/01/15</th>
-                     <th>17:30</th>
-                     <th>00:55</th>
-                     <th>MISC</th>
-                     <th>Watching <a href="https://www.youtube.com/watch?v=FLZvOKSCkxY&feature=youtu.be&list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL">Natural Language Processing with Python YouTube videos</a>, creating account on <a href="https://sslmate.com/">SSLMate</a>, (unsucessfully) installing <a href="http://www.cpan.org/src/">Perl5.22</a>, and figuring <a href="https://developers.facebook.com/docs/reference/php/5.0.0">Facebook API</a> for paging.</th>
-                     <th>445</th>
-                  </tr>
-                  <tr>
-                     <th>07/02/15</th>
-                     <th>20:30</th>
-                     <th>21:30</th>
-                     <th>ADMIN</th>
-                     <th>Installing a new SSL certificate from <a href="https://www.startssl.com/">StartSSL.com</a></th>
-                     <th>60</th>
-                  </tr>
-                  <tr>
-                     <th>07/03/15</th>
-                     <th>18:00</th>
-                     <th>23:30</th>
-                     <th>DEV</th>
-                     <th>Watching <a href="https://www.youtube.com/watch?v=FLZvOKSCkxY&feature=youtu.be&list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL">Natural Language Processing with Python YouTube videos</a>, practicing python, writing PHP MySQL connector code</th>
-                     <th>330</th>
-                  </tr>
-                  <tr>
-                     <th>07/07/15</th>
-                     <th>15:00</th>
-                     <th>18:30</th>
-                     <th>DEV</th>
-                     <th>Writing PHP MySQL connector code and getting user information from <a href="https://developers.facebook.com/docs/reference/php/5.0.0">Facebook SDK</a></th>
-                     <th>210</th>
-                  </tr>
-                  <tr>
-                     <th>07/09/15</th>
-                     <th>18:20</th>
-                     <th>20:40</th>
-                     <th>DEV</th>
-                     <th>Finished writing PHP code (all posts inserted into DB) for rideshare project. Played with python text classification. </th>
-                     <th>140</th>
-                  </tr>
-                  <tr>
-                     <th>07/11/15</th>
-                     <th>15:30</th>
-                     <th>17:45</th>
-                     <th>DEV</th>
-                     <th>Finished PHP code for cleaning rideshare posts, created new table for training purposes, started writing Python code (get posts from db)</th>
-                     <th>135</th>
-                  </tr>
-                  <tr>
-                     <th>07/11/15</th>
-                     <th>18:30</th>
-                     <th>23:30</th>
-                     <th>DEV</th>
-                     <th>Used the <a href="https://maps.googleapis.com/maps/api/geocode/json?address=Charlotte+NC&key=xxx">Google API</a> to add all cities in CA to database for determining origin and destination of client</th>
-                     <th>300</th>
-                  </tr>
-                  <tr>
-                     <th>07/12/15</th>
-                     <th>15:00</th>
-                     <th>16:00</th>
-                     <th>DEV</th>
-                     <th>Looked at the patterns in date and time in the facebook posts on the rideshare group to attempt to regex them out</th>
-                     <th>60</th>
-                  </tr>
-                  <tr>
-                     <th>07/13/15</th>
-                     <th>19:30</th>
-                     <th>20:45</th>
-                     <th>DEV</th>
-                     <th>Removed all punctuation and contractions and appreviations from posts for the <a href="../projects/rideshare">rideshare project</a></th>
-                     <th>75</th>
-                  </tr>
-                  <tr>
-                     <th>07/13/15</th>
-                     <th>22:30</th>
-                     <th>02:30</th>
-                     <th>DEV</th>
-                     <th>Regex to clean text, such as separate words with slashes, remove money amount, remove 'rd', 'st' from numbers, etc.</th>
-                     <th>240</th>
-                  </tr>
-                  <tr>
-                     <th>07/16/15</th>
-                     <th>16:00</th>
-                     <th>20:00</th>
-                     <th>DEV</th>
-                     <th>More cleaning of text for the <a href="../projects/rideshare">rideshare project</a></th>
-                     <th>240</th>
-                  </tr>
-                  <tr>
-                     <th>07/17/15</th>
-                     <th>19:00</th>
-                     <th>01:30</th>
-                     <th>DEV</th>
-                     <th>Setting up new server for sunjay.io, see details <a href="../blog/?p=304">here</a></th>
-                     <th>390</th>
-                  </tr>
-                  <tr>
-                     <th>07/19/15</th>
-                     <th>15:30</th>
-                     <th>17:30</th>
-                     <th>ADMIN</th>
-                     <th>Updated Wordpress Blog, updated <a href="https://www.sunjaydhama.com/blog/?page_id=231">About Me</a> page, backed up blog, updated pictures, misc</th>
-                     <th>120</th>
-                  </tr>
-                  <tr>
-                     <th>07/19/15</th>
-                     <th>22:00</th>
-                     <th>23:30</th>
-                     <th>ADMIN</th>
-                     <th>Finished installing and moving files onto new server for <a href="https://www.sunjay.io">sunjay.io</a></th>
-                     <th>90</th>
-                  </tr>
-                  <tr>
-                     <th>07/19/15</th>
-                     <th>23:30</th>
-                     <th>01:30</th>
-                     <th>ADMIN</th>
-                     <th>Continued work on real <a href="../projects/terminal/json/sunjay_filesystem.json">JSON</a> filesystem</th>
-                     <th>120</th>
-                  </tr>
-                  <tr>
-                     <th>07/20/15</th>
-                     <th>01:30</th>
-                     <th>02:10</th>
-                     <th>ADMIN</th>
-                     <th>Backed up this entire website to github</th>
-                     <th>40</th>
-                  </tr>
-                  <tr>
-                     <th>07/20/15</th>
-                     <th>11:30</th>
-                     <th>12:30</th>
-                     <th>ADMIN</th>
-                     <th>Worked on Sendmail (sendmail.mc &amp; access.db) for <a href="https://www.sunjay.io">sunjay.io</a></th>
-                     <th>40</th>
-                  </tr>
-                  <tr>
-                     <th>07/24/15</th>
-                     <th>17:30</th>
-                     <th>21:45</th>
-                     <th>DEV</th>
-                     <th>Worked on <a href="new/projects.html">projects page</a> &amp; created <a href="../projects/swslo14/index.html">this</a> &amp; <a href="../projects/swslo13/index.html">this</a> &amp; <a href="../projects/swslo12/index.html">this</a> page</th>
-                     <th>240</th>
-                  </tr>
-                  <tr>
-                     <th>07/27/15</th>
-                     <th>16:30</th>
-                     <th>19:40</th>
-                     <th>DEV</th>
-                     <th>Worked more on cleaning posts with regex &amp; wrote pseudocode to remove locations for <a href="../projects/rideshare">rideshare project</a></th>
-                     <th>190</th>
-                  </tr>
-                  <tr>
-                     <th>07/28/15</th>
-                     <th>20:00</th>
-                     <th>23:30</th>
-                     <th>DEV</th>
-                     <th>Restructures database, added tables for county and states and places for <a href="../projects/rideshare">rideshare project</a></th>
-                     <th>210</th>
-                  </tr>
-                  <tr>
-                     <th>07/29/15</th>
-                     <th>16:30</th>
-                     <th>20:00</th>
-                     <th>DEV</th>
-                     <th>Cleaning text for locations for the <a href="../projects/rideshare">rideshare project</a></th>
-                     <th>210</th>
-                  </tr>
-                  <tr>
-                     <th>07/30/15</th>
-                     <th>17:30</th>
-                     <th>22:00</th>
-                     <th>DEV</th>
-                     <th>Writing python to remove locations from post and replace with meta word for the <a href="../projects/rideshare">rideshare project</a></th>
-                     <th>270</th>
-                  </tr>
-                  <tr>
-                     <th>07/31/15</th>
-                     <th>00:25</th>
-                     <th>02:10</th>
-                     <th>DEV</th>
-                     <th>Writing python to store cities in a trie for the <a href="../projects/rideshare">rideshare project</a></th>
-                     <th>105</th>
-                  </tr>
-                  <tr>
-                     <th>07/31/15</th>
-                     <th>02:20</th>
-                     <th>03:30</th>
-                     <th>REWORK</th>
-                     <th>Fixing broken stuff in <a href="../projects/swslo14/list.html">swslo14</a>(list images) &amp; <a href="../projects/oldGui/index.html">oldGui</a></th>
-                     <th>70</th>
-                  </tr>
-                  <tr>
-                     <th>07/31/15</th>
-                     <th>03:30</th>
-                     <th>04:20</th>
-                     <th>REWORK</th>
-                     <th>Updating <a href="../projects/defcon22/index.html">defcon22</a> &amp; <a href="../blog/?page_id=231">blog</a>(image resizing)</th>
-                     <th>50</th>
-                  </tr>
-                  <tr>
-                     <th>08/03/15</th>
-                     <th>21:00</th>
-                     <th>21:30</th>
-                     <th>DEV</th>
-                     <th>Updated <a href="../projects/swsb14">swsb14 website</a>, moved to this server.</th>
-                     <th>30</th>
-                  </tr>
-                  <tr>
-                     <th>08/03/15</th>
-                     <th>21:50</th>
-                     <th>22:40</th>
-                     <th>DEV</th>
-                     <th>Working on storing cities in a trie for the <a href="../projects/rideshare">rideshare project</a></th>
-                     <th>50</th>
-                  </tr>
-                  <tr>
-                     <th>08/04/15</th>
-                     <th>15:00</th>
-                     <th>18:00</th>
-                     <th>DEV</th>
-                     <th>Realized storing cities in marias-trie for the <a href="../projects/rideshare">rideshare project</a> won't work</th>
-                     <th>180</th>
-                  </tr>
-                  <tr>
-                     <th>08/04/15</th>
-                     <th>21:15</th>
-                     <th>02:00</th>
-                     <th>DEV</th>
-                     <th>Adding 'Places' &amp; 'Cities' &amp; 'Counties' to MySQL DB for the <a href="../projects/rideshare">rideshare project</a></th>
-                     <th>285</th>
-                  </tr>
-                  <tr>
-                     <th>08/07/15</th>
-                     <th>20:15</th>
-                     <th>22:00</th>
-                     <th>DEV</th>
-                     <th>Wrote custom hashmap data structure in Python to store places, cities, and counties for recognition in posts for the <a href="../projects/rideshare">rideshare project</a></th>
-                     <th>135</th>
-                  </tr>
-                  <tr>
-                     <th>08/09/15</th>
-                     <th>22:00</th>
-                     <th>23:00</th>
-                     <th>REWORK</th>
-                     <th>Updated images for <a href="../projects/defcon22/index.html">DEFCON22 project</a> and added <a href="../projects/defcon22/list.html">images list</a></th>
-                     <th>60</th>
-                  </tr>
-                  <tr>
-                     <th>08/12/15</th>
-                     <th>01:00</th>
-                     <th>02:30</th>
-                     <th>REWORK</th>
-                     <th>Updated my <a href="../sitemap.xml">sitemap.xml</a></th>
-                     <th>90</th>
-                  </tr>
-                  <tr>
-                     <th>08/13/15</th>
-                     <th>00:45</th>
-                     <th>02:55</th>
-                     <th>ADMIN</th>
-                     <th><b>Finally</b> created <a href="https://github.com/sdsunjay/rideshare">Github Repo</a> for the <a href="../projects/rideshare">rideshare project</a></th>
-                     <th>130</th>
-                  </tr>
-                  <tr>
-                     <th>08/13/15</th>
-                     <th>05:50</th>
-                     <th>06:55</th>
-                     <th>DEV</th>
-                     <th>Partially completely removal of city names from post for the training set for the <a href="../projects/rideshare">rideshare project</a></th>
-                     <th>65</th>
-                  </tr>
-                  <tr>
-                     <th>08/14/15</th>
-                     <th>01:40</th>
-                     <th>03:35</th>
-                     <th>DEV</th>
-                     <th>Completed (with errors) removal of city names from post for the training set for the <a href="../projects/rideshare">rideshare project</a></th>
-                     <th>115</th>
-                  </tr>
-                  <tr>
-                     <th>09/04/15</th>
-                     <th>10:00</th>
-                     <th>12:02</th>
-                     <th>DEV</th>
-                     <th>Fixed <a href="../caitlin/index.html">www.caitlinlipton.com</a> and started making it look good</th>
-                     <th>120</th>
-                  </tr>
-                  <tr>
-                     <th>10/13/15</th>
-                     <th>19:00</th>
-                     <th>19:30</th>
-                     <th>Admin</th>
-                     <th>Updated <a href="https://wordpress.org/">wordpress</a> <a href="https://www.sunjaydhama.com/blog">blog</a> to 4.3</th>
-                     <th>30</th>
-                  </tr>
-                  <tr>
-                     <th>10/24/15</th>
-                     <th>18:00</th>
-                     <th>20:00</th>
-                     <th>Admin</th>
-                     <th>Updated my <a href="new/resume.html">resume</a></th>
-                     <th>120</th>
-                  </tr>
-                  <tr>
-                     <th>10/25/15</th>
-                     <th>19:00</th>
-                     <th>20:00</th>
-                     <th>Admin</th>
-                     <th>Finished updating my <a href="new/resume.html">resume</a></th>
-                     <th>60</th>
-                  </tr>
-                  <tr>
-                     <th>10/26/15</th>
-                     <th>15:00</th>
-                     <th>15:30</th>
-                     <th>Admin</th>
-                     <th>Updated my <a href="new/about.html">about</a> page</th>
-                     <th>30</th>
-                  </tr>
-                  <tr>
-                     <th>11/10/15</th>
-                     <th>20:00</th>
-                     <th>21:30</th>
-                     <th>Admin</th>
-                     <th>Added security to blog &amp; updated <a href="new/resume.html">resume</a></th>
-                     <th>90</th>
-                  </tr>
-                  <tr>
-                     <th>11/17/15</th>
-                     <th>16:00</th>
-                     <th>16:30</th>
-                     <th>Admin</th>
-                     <th>Updated 404, 403, 50x, pages. Checked server logs</th>
-                     <th>30</th>
-                  </tr>
-                  <tr>
-                     <th>11/28/15</th>
-                     <th>15:00</th>
-                     <th>17:30</th>
-                     <th>OTHER</th>
-                     <th>Taught Caitlin about <a href="https://www.caitlinlipton.com">her website</a>and some HTML and CSS</th>
-                     <th>90</th>
-                  </tr>
-                  <tr>
-                     <th>11/29/15</th>
-                     <th>15:00</th>
-                     <th>20:30</th>
-                     <th>CLASS</th>
-                     <th>Worked on Ruby on Rails class</th>
-                     <th>xx</th>
-                  </tr>
-                  <tr>
-                     <th>12/09/15</th>
-                     <th>15:30</th>
-                     <th>19:30</th>
-                     <th>DEV</th>
-                     <th>Began integrating my terminal into Clarks and added to github</th>
-                     <th>xx</th>
-                  <tr>
-                     <th>01/28/16</th>
-                     <th>17:00</th>
-                     <th>20:00</th>
-                     <th>DEV</th>
-                     <th>Created SWSLO16, updated resume, projects, and SWSLO14, and SWEDU14</th>
-                     <th>xx</th>
-                  </tr>
-                  <tr>
-                     <th>02/12/16</th>
-                     <th>19:00</th>
-                     <th>23:59</th>
-                     <th>REWORK</th>
-                     <th>Created SWSM14, updated resume, projects, and SWSLO14, and SWEDU14, and others</th>
-                     <th>xx</th>
-                  </tr>
-                  <tr>
-                     <th>02/18/16</th>
-                     <th>13:30</th>
-                     <th>17:30</th>
-                     <th>REWORK</th>
-                     <th>Updated GTC13 and GTC14 for resume.</th>
-                     <th>xx</th>
-                  </tr>
-                  <tr>
-                     <th>12/27/22</th>
-                     <th>xx:xx</th>
-                     <th>xx:xx</th>
-                     <th>REWORK</th>
-                     <th>Updated entire website for s3</th>
-                     <th>xx</th>
-                  </tr>
-                  </tr>
-               </table>
-            </div>
-            </body>
-            </html>
+    <div class="timelog container">
+      <p> Please note that although the time log was created July 16, 2014, this site has been under constant construction since August 6, 2013.</p>
+      <table BORDER="3">
+        <tbody>
+          <tr>
+            <td> Date </td>
+            <td> Start </td>
+            <td> Stop </td>
+            <td>
+              <a href="./activityCodes.html" target="_blank" title="Activity Code"> Activity Code </a>
+            </td>
+            <td> Activity </td>
+            <td> Delta Time </td>
+          </tr>
+          <tr>
+              <td> 01/17/24 </td>
+              <td> 03:00 </td>
+              <td> 07:00 </td>
+              <td> DEV </td>
+              <td> Worked on <a href="resume.html" target="_blank" title="resume">new resume design</a></td>
+              <td> xx </td>
+          </tr>
+          <tr>
+              <td> 01/16/24 </td>
+              <td> 11:50 </td>
+              <td> 02:50 </td>
+              <td> DEV </td>
+              <td> Worked on skeleton.css for table formatting</td>
+              <td> 180 </td>
+          </tr>
+          <tr>
+              <td> 01/14/24 </td>
+              <td> 00:50 </td>
+              <td> 06:50 </td>
+              <td> DEV </td>
+              <td> Worked on code for <a href="projects/nlp_product_reviews/index.html" target="_blank" title="NLP product reviews project">NLP product reviews project</a></td>
+              <td> 360 </td>
+          </tr>
+          <tr>
+              <td> 01/12/24 </td>
+              <td> 18:30 </td>
+              <td> 20:30 </td>
+              <td> REWORK </td>
+              <td> Updated <a href="blog.html" target="_blank" title="blog">blog</a>  and all blog headers to be LinkedIn, GitHub, Medium in nav header</td>
+              <td> 120 </td>
+          </tr>
+          <tr>
+              <td> 01/12/24 </td>
+              <td> 15:00 </td>
+              <td> 17:15 </td>
+              <td> DEV </td>
+              <td> Update this time log and time log Python script</td>
+              <td> 135 </td>
+          </tr>
+          <tr>
+              <td> 12/28/23 </td>
+              <td> 20:25 </td>
+              <td> 02:05 </td>
+              <td> DEV </td>
+              <td> Work on <a href="https://github.com/sdsunjay/StaticWebsiteCDK" target="_blank" title="Static Website CDK">StaticWebsiteCDK code</a> and <a href="https://dhamaharpal.medium.com/host-and-deploy-a-static-website-on-amazon-s3-and-cloudfront-using-aws-cdk-c961d7118921">Host and Deploy a Static Website on Amazon S3 and CloudFront using AWS CDK blog</a></td>
+              <td> 340 </td>
+          </tr>
+          <tr>
+              <td> 11/20/23 </td>
+              <td> 22:30 </td>
+              <td> 22:40 </td>
+              <td> Analysis </td>
+              <td> View CloudWatch logs for Alexa skill </td>
+              <td> 10 </td>
+          </tr>
+          <tr>
+              <td> 11/15/23 </td>
+              <td> 23:25 </td>
+              <td> 05:05 </td>
+              <td> REWORK </td>
+              <td> Attempt to fix <code>'ACCESS_DENIED' is not a valid ErrorCode</code> Error  for Alexa skill </td>
+              <td> 340 </td>
+          </tr>
+          <tr>
+              <td> 11/13/23 </td>
+              <td> 19:40 </td>
+              <td> 19:55 </td>
+              <td> Analysis </td>
+              <td> View CloudWatch logs for Alexa skill </td>
+              <td> 15 </td>
+          </tr>
+          <tr>
+              <td> 11/12/23 </td>
+              <td> 16:55 </td>
+              <td> 00:10 </td>
+              <td> DEV </td>
+              <td> Fix broken skill due to OpenAI API changes and add subscription code </td>
+              <td> 435 </td>
+          </tr>
+          <tr>
+              <td> 11/06/23 </td>
+              <td> 22:05 </td>
+              <td> 00:35 </td>
+              <td> OTHER </td>
+              <td> Publish Alexa skill to Amazon Skill Store</td>
+              <td> 150 </td>
+          </tr>
+          <tr>
+              <td> 11/05/23 </td>
+              <td> 20:25 </td>
+              <td> 22:05 </td>
+              <td> DEV </td>
+              <td>Wrote and ran various security scripts, such as <a href="https://github.com/sdsunjay/skeletons/commit/c3b14bb10b02cc3ca2dc56c0c40b5f59081799fe" target="_blank" title="Network Monitoring Script for OS X">monitor_network.py</a></td>
+              <td> 100 </td>
+          </tr>
+          <tr>
+              <td> 11/4/23 </td>
+              <td> 21:35 </td>
+              <td> 00:55 </td>
+              <td> REWORK </td>
+              <td> Attempt to fix issue with <code>get-ups-service()</code> and <code>get_profile_email()</code> and <code>get_profile_given_name()</code> in Alexa Skill. More info in <a href="https://alexa-skills-kit-python-sdk.readthedocs.io/en/latest/api/core.html" target="_blank" title="Alexa Skill Kits SDK for Python">Alexa Handler Input Docs</a>. </td>
+              <td> 200 </td>
+          </tr>
+          <tr>
+            <td> 08/31/23 </td>
+            <td> 22:20 </td>
+            <td> 09:45 </td>
+            <td> DEV </td>
+            <td> Fixed issue with time out for Alexa Skill </td>
+            <td> 685 </td>
+          </tr>
+          <tr>
+            <td> 08/29/23 </td>
+            <td> 22:25 </td>
+            <td> 09:45 </td>
+            <td> DEV </td>
+            <td> New feature for <a href="projects/alexa_chat_skill/index.html" target="_blank" title="ChatGPT Alexa Skill project page">ChatGPT Alexa Skill project page</a> </td>
+            <td> 680 </td>
+          </tr>
+         <tr>
+            <td> 08/28/23 </td>
+            <td> 17:45 </td>
+            <td> 19:00 </td>
+            <td> TEST </td>
+            <td> Dev <a href="projects/alexa_chat_skill/index.html" target="_blank" title="ChatGPT Alexa Skill project page">ChatGPT Alexa Skill project page</a> </td> </td>
+            <td> 75 </td>
+          </tr>
+         <tr>
+            <td> 08/28/23 </td>
+            <td> 16:15 </td>
+            <td> 17:30 </td>
+            <td> TEST </td>
+            <td> Testing and rework for <a href="projects/alexa_chat_skill/index.html" target="_blank" title="ChatGPT Alexa Skill project page">ChatGPT Alexa Skill project</a> </td>
+            <td> 75 </td>
+          </tr>
+         <tr>
+            <td> 08/24/23 </td>
+            <td> 22:00 </td>
+            <td> 10:00 </td>
+            <td> DEV </td>
+            <td> New feature for <a href="projects/alexa_chat_skill/index.html" target="_blank" title="ChatGPT Alexa Skill project page">ChatGPT Alexa Skill project</a> </td>
+            <td> 720 </td>
+          </tr>
+          <tr>
+            <td> 08/24/23 </td>
+            <td> 02:15 </td>
+            <td> 05:50 </td>
+            <td> TEST </td>
+            <td> Testing and rework for in <a href="projects/alexa_chat_skill/index.html" target="_blank" title="ChatGPT Alexa Skill project page">ChatGPT Alexa Skill project</a> </td>
+            <td> 215 </td>
+          </tr>
+          <tr>
+            <td> 08/22/23 </td>
+            <td> 23:55 </td>
+            <td> 11:00 </td>
+            <td> TEST </td>
+            <td> Submitted for certification. Refactored, tested, and fixed issues in prod with the deployed code in <a href="projects/alexa_chat_skill/index.html" target="_blank" title="ChatGPT Alexa Skill project">ChatGPT Alexa Skill project</a> </td>
+            <td> 665 </td>
+          </tr>
+          <tr>
+            <td> 08/21/23 </td>
+            <td> 23:30 </td>
+            <td> 06:45 </td>
+            <td> TEST </td>
+            <td> Refactored, tested, and fixed issues in prod with the deployed code in <a href="projects/alexa_chat_skill/index.html" target="_blank" title="ChatGPT Alexa Skill project page">ChatGPT Alexa Skill project page</a> </td>
+            <td> 435 </td>
+          </tr>
+          <tr>
+            <td> 08/20/23 </td>
+            <td> 22:10 </td>
+            <td> 05:20 </td>
+            <td> TEST </td>
+            <td> Refactored and tested the code in <a href="projects/alexa_chat_skill/index.html" target="_blank" title="ChatGPT Alexa Skill project page">ChatGPT Alexa Skill project page</a> </td>
+            <td> 430 </td>
+          </tr>
+          <tr>
+            <td> 08/19/23 </td>
+            <td> 18:05 </td>
+            <td> 21:30 </td>
+            <td> TEST </td>
+            <td> Refactored and tested the code in <a href="projects/alexa_chat_skill/index.html" target="_blank" title="ChatGPT Alexa Skill project page">ChatGPT Alexa Skill project page</a> </td>
+            <td> 205 </td>
+          </tr>
+          <tr>
+            <td> 08/19/23 </td>
+            <td> 15:55 </td>
+            <td> 17:55 </td>
+            <td> REWORK </td>
+            <td> Refactored <a href="https://github.com/sdsunjay/timelog-parser" target="_blank" title="Timelog Parser">timelog parser Python script</a></td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 08/17/23 </td>
+            <td> 22:15 </td>
+            <td> 02:00 </td>
+            <td> TEST </td>
+            <td> Refactored and tested the code in <a href="projects/alexa_chat_skill/index.html" target="_blank" title="ChatGPT Alexa Skill project page">ChatGPT Alexa Skill project page</a> </td>
+            <td> 225 </td>
+          </tr>
+          <tr>
+            <td> 08/17/23 </td>
+            <td> 02:45 </td>
+            <td> 06:25 </td>
+            <td> TEST </td>
+            <td> Refactored and tested the code in <a href="projects/alexa_chat_skill/index.html" target="_blank" title="ChatGPT Alexa Skill project page">ChatGPT Alexa Skill project page</a> </td>
+            <td> 220 </td>
+          </tr>
+          <tr>
+            <td> 08/16/23 </td>
+            <td> 21:50 </td>
+            <td> 02:30 </td>
+            <td> REWORK </td>
+            <td> Updated my <a href="https://dhamaharpal.medium.com/moving-aws-resources-between-cloudformation-stacks-4c7e3aebbece" target="_blank" title="Moving AWS Resources Between CloudFormation Stacks">Moving AWS Resources Between CloudFormation Stacks</a> Medium article with better code examples, more thorough explanations, more screenshots, and better sentence structure. </td>
+            <td> 280 </td>
+          </tr>
+          <tr>
+            <td> 08/16/23 </td>
+            <td> 01:10 </td>
+            <td> 04:45 </td>
+            <td> TEST </td>
+            <td> Refactored and tested the code in <a href="projects/alexa_chat_skill/index.html" target="_blank" title="ChatGPT Alexa Skill project page">ChatGPT Alexa Skill project page</a> </td>
+            <td> 215 </td>
+          </tr>
+          <tr>
+            <td> 08/15/23 </td>
+            <td> 20:30 </td>
+            <td> 21:35 </td>
+            <td> REWORK </td>
+            <td> Converted images from <code>.jpg</code> to <code>.webp</code> for <a href="blog/defcon-22.html" target="_blank" title="DEFCON 22 Security Conference in Las Vegas">DEFCON 22 Security Conference in Las Vegas</a></td>
+            <td> 65 </td>
+          </tr>
+          <tr>
+            <td> 08/14/23 </td>
+            <td> 19:30 </td>
+            <td> 01:45 </td>
+            <td> REWORK </td>
+            <td> Refactored the code in <a href="projects/alexa_chat_skill/index.html" target="_blank" title="ChatGPT Alexa Skill project page">ChatGPT Alexa Skill project page</a> </td>
+            <td> 375 </td>
+          </tr>
+          <tr>
+            <td> 08/11/23 </td>
+            <td> 23:00 </td>
+            <td> 00:00 </td>
+            <td> REWORK </td>
+            <td> Updated <a href="timelog.html" target="_blank" title="Timelog">this timelog</a>, fixed links, added titles and <code>target="_blank"</code></td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 08/11/23 </td>
+            <td> 21:00 </td>
+            <td> 23:00 </td>
+            <td> REWORK </td>
+            <td> Updated <a href="projects/mindbody/index.html" target="_blank" title="MindBody Project">MindBody Project</a>, <a href="projects/mindbody/map.html" target="_blank" title="MindBody Project Map">MindBody Project Map</a>, <a href="blog.html" target="_blank" title="Blog">blog.html</a> and added one new blog posts, <a href="blog/defcon-22.html" target="_blank" title="DEFCON 22 Security Conference in Las Vegas">DEFCON 22 Security Conference in Las Vegas</a>
+            </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 08/09/23 </td>
+            <td> 19:40 </td>
+            <td> 20:40 </td>
+            <td> REWORK </td>
+            <td> Updated <a href="resume.html" target="_blank" title="resume">resume</a> and <a href="blog.html" target="_blank" title="blog">blog</a>, and added one new blog posts, <a href="blog/heartbleed.html" target="_blank" title="Heartbleed Vulnerability Exposed: A Deep Dive into OpenSSL Nightmare">Heartbleed Vulnerability Exposed: A Deep Dive into OpenSSL Nightmare</a>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 08/07/23 </td>
+            <td> 22:20 </td>
+            <td> 04:20 </td>
+            <td> REWORK </td>
+            <td> Updated <a href="resume.html" target="_blank" title="resume">resume</a>, <a href="about.html" target="_blank" title="about">about</a>, <a href="projects.html" target="_blank" title="projects">projects</a>, <a href="projects/website/index.html" target="_blank" title="Website Project">Website Project</a>, <a href="blog.html" target="_blank" title="blog.html">blog</a>, and added three new blog posts, <a href="blog/migrating-blog.html" target="_blank" title="Migrating Blog">Migrating Blog</a>, <a href="blog/updating-nginx.html" target="_blank" title="Compiling Nginx from Source and Updating">Compiling Nginx from Source and Updating</a>, <a href="blog/senior-project-notes.html" target="_blank" title="Technical Details for Distributed WPA Cracker Leveraging EC2">Technical Details for Distributed WPA Cracker Leveraging EC2</a>
+            </td>
+            <td> 360 </td>
+          </tr>
+          <tr>
+            <td> 08/05/23 </td>
+            <td> 21:30 </td>
+            <td> 22:30 </td>
+            <td> REWORK </td>
+            <td> Updated <a href="resume.html" target="_blank" title="resume">resume</a> and <a href="about.html" target="_blank" title="about">about</a>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 03/29/23 </td>
+            <td>14:00 </td>
+            <td> 15:00 </td>
+            <td> DEV </td>
+            <td> Created <a href="projects/alexa_chat_skill/index.html" target="_blank" title="ChatGPT Alexa Skill project page">ChatGPT Alexa Skill project page</a>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 02/13/23 </td>
+            <td> 18:00 </td>
+            <td> 19:00 </td>
+            <td> DEV </td>
+            <td> Preload images using <code> &lt;\link rel="preload" as="image" href="images/about.webp" type="image/webp" /&gt; </code>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 02/08/23 </td>
+            <td> 19:30 </td>
+            <td> 21:30 </td>
+            <td> REWORK </td>
+            <td> Fixed layout of projects page with <a href="https://isotope.metafizzy.co/layout-modes/masonry.html" target="_blank" title="Isotope grid">Isotope grid</a> and <code>imagesloaded.pkgd.min.js</code>
+            </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 02/08/23 </td>
+            <td> 14:50 </td>
+            <td> 16:50 </td>
+            <td> REWORK </td>
+            <td> Changed all frontFace images to be <code>.webp</code> and updated all project pages with specific project image instead of &quot;about.jpg&quot; </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 02/01/23 </td>
+            <td> 12:30 </td>
+            <td> 13:00 </td>
+            <td> REWORK </td>
+            <td> Minor bug fixes </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 01/31/23 </td>
+            <td> 02:00 </td>
+            <td> 05:00 </td>
+            <td> DEV </td>
+            <td> Updated <a href="blog.html" target="_blank" title="blog">blog</a> with <a href="./blog/appsec-california-2014.html" target="_blank" title="AppSec California 2014 Conference">AppSec California 2014 Conference</a>, updated <a href="./projects/gtc13/index.html" target="_blank" title="GTC 13 project page">GTC 13 project page</a> and <a href="./projects/gtc14/index.html" target="_blank" title="GTC 14 project page">GTC 14 project page</a>, updated images to be <code>webp</code>
+            </td>
+            <td> 180 </td>
+          </tr>
+          <tr>
+            <td> 01/30/23 </td>
+            <td> 00:00 </td>
+            <td> 01:00 </td>
+            <td> DEV </td>
+            <td> Updated <a href="blog.html" target="_blank" title="blog">blog</a> with improved images and excerpts </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 01/29/23 </td>
+            <td> 23:00 </td>
+            <td> 00:00 </td>
+            <td> DEV </td>
+            <td> Updated <a href="blog.html" target="_blank" title="blog">blog</a> with <a href="blog/cal-poly-design-dev-hackathon.html" target="_blank" title="Cal Poly Design &amp; Dev Hackathon">Cal Poly Design &amp; Dev Hackathon</a>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 01/29/23 </td>
+            <td> 16:15 </td>
+            <td> 18:15 </td>
+            <td> REWORK </td>
+            <td> Updated all pages with Google Analytics code and fixed <code>meta</code> tags</td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 01/22/23 </td>
+            <td> 21:00 </td>
+            <td> 22:00 </td>
+            <td> REWORK </td>
+            <td> Updated <a href="projects/terminal/index.html" target="_blank" title="terminal project">terminal project</a>, so it actually works and displays correctly </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 01/20/23 </td>
+            <td> 00:30 </td>
+            <td> 01:30 </td>
+            <td> REWORK </td>
+            <td> Updated resume links and fixed layout on <a href="projects/gtc14/index.html" target="_blank" title="GTC 2014 project page">GTC 2014 project page</a>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 01/18/23 </td>
+            <td> 15:30 </td>
+            <td> 17:30 </td>
+            <td> REWORK </td>
+            <td> Updated <a href="projects/movie_recommendations_with_ml/index.html" target="_blank" title="movie recommendations with ml project page">movie recommendations with ml project page</a> with new summary, fixing FlexSlider YouTube video and add Instagram profile embedding </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 01/16/23 </td>
+            <td> 17:00 </td>
+            <td> 22:30 </td>
+            <td> DEV </td>
+            <td> Worked on <a href="projects/nlp_product_reviews/index.html" target="_blank" title="NLP product reviews project">NLP product reviews project</a></td>
+            <td> 330 </td>
+          </tr>
+          <tr>
+            <td> 01/15/23 </td>
+            <td> 14:00 </td>
+            <td> 14:30 </td>
+            <td> DEV </td>
+            <td> Created <a href="projects/website/index.html" target="_blank" title="Website Project Page">Website Project Page</a>
+            </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 01/15/23 </td>
+            <td> 12:15 </td>
+            <td> 14:00 </td>
+            <td> DEV </td>
+            <td> Worked on <a href="blog.html" target="_blank" title="Blog Overview Page">Blog Overview Page</a>
+            </td>
+            <td> 105 </td>
+          </tr>
+          <tr>
+            <td> 01/15/23 </td>
+            <td> 11:30 </td>
+            <td> 12:00 </td>
+            <td> DEV </td>
+            <td> Fixed <a href="https://github.com/sdsunjay/timelog-parser" target="_blank" title="Timelog Parser">timelog parser script</a> </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 01/15/23 </td>
+            <td> 10:15 </td>
+            <td> 11:00 </td>
+            <td> DEV </td>
+            <td> Found "a" tags missing using <a href="https://github.com/sdsunjay/timelog-parser" target="_blank" title="Timelog Parser">timelog parser script</a> and fixed it.</td>
+            <td> 45 </td>
+          </tr>
+          <tr>
+            <td> 01/12/23 </td>
+            <td> 22:00 </td>
+            <td> 23:00 </td>
+            <td> DEV </td>
+            <td> Wrote <a href="https://github.com/sdsunjay/timelog-parser" target="_blank" title="Timelog Parser">timelog parser Python script</a> for reordering <code>timelog.html</code> file and check time delta in minutes and finding bugs in existing table </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 01/12/23 </td>
+            <td> 20:00 </td>
+            <td> 21:00 </td>
+            <td> DEV </td>
+            <td> Wrote <a href="https://github.com/sdsunjay/timelog-parser" target="_blank" title="Timelog Parser">timelog parser Python script</a> for reordering <code>timelog.html</code> file and check time delta in minutes </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 01/12/23 </td>
+            <td> 13:00 </td>
+            <td> 16:30 </td>
+            <td> REWORK </td>
+            <td> Downloading and installing WordPress locally, in order to export old WordPress Blog using <a href="https://wordpress.org/plugins/export-wp-page-to-static-html/" target="_blank" title="Export WP Page to Static HTML/CSS Plugin"> Export WP Page to Static HTML/CSS Plugin </a>
+            </td>
+            <td> 210 </td>
+          </tr>
+          <tr>
+            <td> 01/11/23 </td>
+            <td> 00:30 </td>
+            <td> 04:45 </td>
+            <td> REWORK </td>
+            <td> Fixing issue in Python script with content type for HTML, CSS, and JS files being set to <code> application/octet-stream </code> and <code> binary/octet-stream </code>
+            </td>
+            <td> 255 </td>
+          </tr>
+          <tr>
+            <td> 01/10/23 </td>
+            <td> 22:15 </td>
+            <td> 23:15 </td>
+            <td> REWORK </td>
+            <td> Fixing various small issues in various HTML files, such as <code> https-equiv </code> to <code> http-equiv </code>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 01/10/23 </td>
+            <td> 22:15 </td>
+            <td> 00:30 </td>
+            <td> DEV </td>
+            <td> Added <a href="./projects/swslo13/news.html" target="_blank" title="Startup Weekend 2013 News">Startup Weekend 2013 News</a> and <a href="./projects/swslo14/news.html" target="_blank" title="Startup Weekend 2014 News">Startup Weekend 2014 News</a></td>
+            <td> 135 </td>
+          </tr>
+          <tr>
+            <td> 01/10/23 </td>
+            <td> 15:30 </td>
+            <td> 16:00 </td>
+            <td> REWORK </td>
+            <td> Tried to fix issue with html files downloading after uploading to AWS S3 with <a href="https://github.com/sdsunjay/public_website/blob/master/scripts/deploy.py" target="_blank" title="Deploy Script">Python deploy script</a></td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 01/10/23 </td>
+            <td> 00:15 </td>
+            <td> 02:30 </td>
+            <td> DEV </td>
+            <td> Wrote <a href="https://github.com/sdsunjay/public_website/blob/master/scripts/deploy.py" target="_blank" title="Deploy Script">Python deploy script</a>, which automatically uploads to files to s3 when the etag does not match (broke a lot of things by running it before testing. Oops, it was late) </td>
+            <td> 135 </td>
+          </tr>
+          <tr>
+            <td> 01/09/23 </td>
+            <td> 18:30 </td>
+            <td> 00:00 </td>
+            <td> DEV </td>
+            <td> Updated <a href="css/skeleton.css" target="_blank" title="skeleton.css">skeleton.css</a>, adding <code> right-col </code> and updating <strong> all </strong> project pages with this new <code> div </code>. Wrote the descriptions for the following projects: <a href="projects/swslo12/index.html" target="_blank" title="Tip Trip App">Tip Trip App</a>, <a href="projects/blog/index.html" target="_blank" title="Blog Overview Page">Blog Overview Page</a>, <a href="projects/stock_ml/index.html" target="_blank" title="stock ml project">stock ml project</a>. Updated <a href="projects/imageCarousel/index.html" target="_blank" title="Image Carousel project">Image Carousel project</a> to have smooth transitions </td>
+            <td> 330 </td>
+          </tr>
+          <tr>
+            <td> 01/08/23 </td>
+            <td> 18:15 </td>
+            <td> 02:15 </td>
+            <td> DEV </td>
+            <td> Update <a href="projects/movie_recommendations_with_ml/index.html" target="_blank" title="movie recommendations with ml project page">movie recommendations with ml project page</a>, updated <a href="projects/imageCarousel/index.html" target="_blank" title="Image Carousel project page">Image Carousel project page</a>, and created stock ml project page </td>
+            <td> 480 </td>
+          </tr>
+          <tr>
+            <td> 01/02/23 </td>
+            <td> 16:30 </td>
+            <td> 21:00 </td>
+            <td> DEV </td>
+            <td> Updated <a href="projects/tracking/tracking.html" target="_blank" title="Tracking Project">Tracking Project</a>, Home Page, Resume, and Images, made responsive </td>
+            <td> 270 </td>
+          </tr>
+          <tr>
+            <td> 01/02/23 </td>
+            <td> 14:30 </td>
+            <td> 17:30 </td>
+            <td> DEV </td>
+            <td> Create <a href="projects/nlp_product_reviews/index.html" target="_blank" title="NLP product reviews project
+              page">NLP product reviews project page</a>, updated images for images pages, and updated accounts project </td>
+            <td> 180 </td>
+          </tr>
+          <tr>
+            <td> 12/29/22 </td>
+            <td> 12:30 </td>
+            <td> 16:00 </td>
+            <td> DEV </td>
+            <td> CSS hell </td>
+            <td> 210 </td>
+          </tr>
+          <tr>
+            <td> 12/29/22 </td>
+            <td> 11:15 </td>
+            <td> 12:30 </td>
+            <td> DEV </td>
+            <td> React, Gatsby, Deployment to S3 </td>
+            <td> 75 </td>
+          </tr>
+          <tr>
+            <td> 12/28/22 </td>
+            <td> 04:00 </td>
+            <td> 05:00 </td>
+            <td> REWORK </td>
+            <td> Fixing CloudFront misconfiguration </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 12/28/22 </td>
+            <td> 04:00 </td>
+            <td> 05:00 </td>
+            <td> REWORK </td>
+            <td> Fixing CloudFront misconfiguration (index.html and http3) </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 12/27/22 </td>
+            <td> 18:00 </td>
+            <td> 02:30 </td>
+            <td> REWORK </td>
+            <td> Updated and <a href="https://dhamaharpal.medium.com/host-and-deploy-a-static-website-on-amazon-s3-and-cloudfront-using-aws-cdk-c961d7118921" target="_blank" title="Host and Deploy a Static Website on Amazon S3 and CloudFront using AWS CDK">deployed entire website for AWS S3</a></td>
+            <td> 510 </td>
+          </tr>
+          <tr>
+            <td> 02/18/16 </td>
+            <td> 13:30 </td>
+            <td> 17:30 </td>
+            <td> REWORK </td>
+            <td> Updated <a href="projects/gtc13/index.html" title="GPU Technology Conference 2013">GPU Technology Conference 2013</a> and <a href="projects/gtc14/index.html" title="GPU Technology Conference 2014">GPU Technology Conference 2014</a> for <a href="resume.html" target="_blank" title="resume">resume</a>
+            </td>
+            <td> 240 </td>
+          </tr>
+          <tr>
+            <td> 02/12/16 </td>
+            <td> 19:00 </td>
+            <td> 00:00 </td>
+            <td> REWORK </td>
+            <td> Created <a href="projects/swsm14/index.html" target="_blank" title="Startup Weekend Santa Maria 2014">Startup Weekend Santa Maria 2014 page</a>, updated resume, projects, and SWSLO14, and <a href="projects/laedu14/index.html">Startup Weekend LA EDU 2014</a>, and others </td>
+            <td> 300 </td>
+          </tr>
+          <tr>
+            <td> 01/28/16 </td>
+            <td> 17:00 </td>
+            <td> 20:00 </td>
+            <td> DEV </td>
+            <td> Created <a href="https://sunjaydhama.com/projects/swslo16/index.html" target="_blank" title="Startup Weekend SLO 2016">Startup Weekend SLO 2016</a>, updated resume, projects, and Startup Weekend SLO 2014, and Startup Weekend LA EDU 2014 </td>
+            <td> 180 </td>
+          </tr>
+          <tr>
+            <td> 12/09/15 </td>
+            <td> 15:30 </td>
+            <td> 19:30 </td>
+            <td> DEV </td>
+            <td> Began integrating <a href="https://sunjaydhama.com/projects/terminal/index.html" target="_blank" title="jsterm 2.0">my terminal project</a> into Clark's and forked to <a href="https://github.com/sdsunjay/jsterm" target="_blank">my own GitHub repo</a></td>
+            <td> 240 </td>
+          </tr>
+          <tr>
+            <td> 11/29/15 </td>
+            <td> 15:00 </td>
+            <td> 20:30 </td>
+            <td> CLASS </td>
+            <td> Worked on <a href="https://www.udemy.com/course/learn-ruby-on-rails-building-projects" target="_blank" title="Learn Ruby On Rails Building Projects">Learn Ruby On Rails Building Projects class</a> </td>
+            <td> 330 </td>
+          </tr>
+          <tr>
+            <td> 11/28/15 </td>
+            <td> 15:00 </td>
+            <td> 17:30 </td>
+            <td> OTHER </td>
+            <td> Taught Caitlin about her website that I set up for her and some HTML and CSS </td>
+            <td> 150 </td>
+          </tr>
+          <tr>
+            <td> 11/17/15 </td>
+            <td> 16:00 </td>
+            <td> 16:30 </td>
+            <td> Admin </td>
+            <td> Updated <a href="404.html">404</a>, 403, 50x, pages. Checked server logs </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 11/10/15 </td>
+            <td> 20:00 </td>
+            <td> 21:30 </td>
+            <td> Admin </td>
+            <td> Added security to blog &amp; updated <a href="resume.html" target="_blank" title="resume">Resume</a>
+            </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 10/26/15 </td>
+            <td> 15:00 </td>
+            <td> 15:30 </td>
+            <td> Admin </td>
+            <td> Updated my <a href="about.html" target="_blank" title="about"> About </a> page </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 10/25/15 </td>
+            <td> 19:00 </td>
+            <td> 20:00 </td>
+            <td> Admin </td>
+            <td> Finished updating my <a href="resume.html" target="_blank" title="Resume">Resume </a>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 10/24/15 </td>
+            <td> 18:00 </td>
+            <td> 20:00 </td>
+            <td> Admin </td>
+            <td> Updated my <a href="resume.html" target="_blank" title="Resume">Resume </a>
+            </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 10/13/15 </td>
+            <td> 19:00 </td>
+            <td> 19:30 </td>
+            <td> Admin </td>
+            <td> Updated <a href="blog.html" target="_blank" title="WordPress Blog">WordPress Blog</a> to 4.3
+            </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 09/04/15 </td>
+            <td> 10:00 </td>
+            <td> 12:05 </td>
+            <td> DEV </td>
+            <td> Fixed Caitlin website for her and started making it look good </td>
+            <td> 125 </td>
+          </tr>
+          <tr>
+            <td> 08/14/15 </td>
+            <td> 01:40 </td>
+            <td> 03:35 </td>
+            <td> DEV </td>
+            <td> Completed (with errors) removal of city names from post for the training set for the <a href="projects/rideshare/index.html" target="_blank" title="rideshare project">rideshare project </a>
+            </td>
+            <td> 115 </td>
+          </tr>
+          <tr>
+            <td> 08/13/15 </td>
+            <td> 05:50 </td>
+            <td> 06:55 </td>
+            <td> DEV </td>
+            <td> Partially completely removal of city names from post for the training set for the <a href="projects/rideshare/index.html" target="_blank" title="rideshare project">rideshare project </a>
+            </td>
+            <td> 65 </td>
+          </tr>
+          <tr>
+            <td> 08/13/15 </td>
+            <td> 00:45 </td>
+            <td> 02:55 </td>
+            <td> ADMIN </td>
+            <td>
+              <b> Finally </b> created <a href="https://github.com/sdsunjay/rideshare" target="_blank" title="Github Repo">Github Repo </a> for the <a href="projects/rideshare/index.html" target="_blank" title="rideshare project"> rideshare project </a>
+            </td>
+            <td> 130 </td>
+          </tr>
+          <tr>
+            <td> 08/12/15 </td>
+            <td> 01:00 </td>
+            <td> 02:30 </td>
+            <td> REWORK </td>
+            <td> Updated my <a href="sitemap.xml" target="_blank" title="sitemap.xml"> sitemap.xml </a>
+            </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 08/09/15 </td>
+            <td> 22:00 </td>
+            <td> 23:00 </td>
+            <td> REWORK </td>
+            <td> Updated images for <a href="projects/defcon22/index.html" target="_blank" title="DEFCON22 project"> DEFCON22 project </a> and added <a href="projects/defcon22/list.html" target="_blank" title="images list"> images list </a>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 08/07/15 </td>
+            <td> 20:15 </td>
+            <td> 22:00 </td>
+            <td> DEV </td>
+            <td> Wrote custom hashmap data structure in Python to store places, cities, and counties for recognition in posts for the <a href="projects/rideshare/index.html" target="_blank" title="rideshare project"> rideshare project </a>
+            </td>
+            <td> 105 </td>
+          </tr>
+          <tr>
+            <td> 08/04/15 </td>
+            <td> 21:15 </td>
+            <td> 02:00 </td>
+            <td> DEV </td>
+            <td> Adding 'Places' &amp; 'Cities' &amp; 'Counties' to MySQL DB for the <a href="projects/rideshare/index.html" target="_blank" title="rideshare project"> rideshare project </a>
+            </td>
+            <td> 285 </td>
+          </tr>
+          <tr>
+            <td> 08/04/15 </td>
+            <td> 15:00 </td>
+            <td> 18:00 </td>
+            <td> DEV </td>
+            <td> Realized storing cities in marias-trie for the <a href="projects/rideshare/index.html" target="_blank" title="rideshare project"> rideshare project </a> won't work </td>
+            <td> 180 </td>
+          </tr>
+          <tr>
+            <td> 08/03/15 </td>
+            <td> 21:50 </td>
+            <td> 22:40 </td>
+            <td> DEV </td>
+            <td> Working on storing cities in a trie for the <a href="projects/rideshare/index.html" target="_blank" title="rideshare project"> rideshare project </a>
+            </td>
+            <td> 50 </td>
+          </tr>
+          <tr>
+            <td> 08/03/15 </td>
+            <td> 21:00 </td>
+            <td> 21:30 </td>
+            <td> DEV </td>
+            <td> Updated <a href="projects/swsb14/index.html" target="_blank" title="Startup Weekend Santa Barbara 2014 website">Startup Weekend Santa Barbara 2014 website project </a>, moved to html pages to my website server. </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 07/31/15 </td>
+            <td> 03:30 </td>
+            <td> 04:20 </td>
+            <td> REWORK </td>
+            <td> Updating <a href="projects/defcon22/index.html" target="_blank" title="defcon22"> defcon22 </a> &amp; <a href="blog/?page_id=231" target="_blank" title="blog"> blog </a> (image resizing) </td>
+            <td> 50 </td>
+          </tr>
+          <tr>
+            <td> 07/31/15 </td>
+            <td> 02:20 </td>
+            <td> 03:30 </td>
+            <td> REWORK </td>
+            <td> Fixing broken stuff in <a href="projects/swslo14/index.html" target="_blank" title="Startup Weekend SLO 2014">Startup Weekend SLO 2014</a> (list images) &amp; <a href="projects/oldGui/index.html" target="_blank" title="oldGui"> oldGui </a>
+            </td>
+            <td> 70 </td>
+          </tr>
+          <tr>
+            <td> 07/31/15 </td>
+            <td> 00:25 </td>
+            <td> 02:10 </td>
+            <td> DEV </td>
+            <td> Writing python to store cities in a trie for the <a href="projects/rideshare/index.html" target="_blank" title="rideshare project"> rideshare project </a>
+            </td>
+            <td> 105 </td>
+          </tr>
+          <tr>
+            <td> 07/30/15 </td>
+            <td> 17:30 </td>
+            <td> 22:00 </td>
+            <td> DEV </td>
+            <td> Writing python to remove locations from Facebook posts and replace with meta word for the <a href="projects/rideshare/index.html" target="_blank" title="rideshare project">rideshare project </a>
+            </td>
+            <td> 270 </td>
+          </tr>
+          <tr>
+            <td> 07/29/15 </td>
+            <td> 16:30 </td>
+            <td> 20:00 </td>
+            <td> DEV </td>
+            <td> Cleaning text for locations for the <a href="projects/rideshare/index.html" target="_blank" title="rideshare project"> rideshare project </a>
+            </td>
+            <td> 210 </td>
+          </tr>
+          <tr>
+            <td> 07/28/15 </td>
+            <td> 20:00 </td>
+            <td> 23:30 </td>
+            <td> DEV </td>
+            <td> Restructures database, added tables for county and states and places for <a href="projects/rideshare/index.html" target="_blank" title="rideshare project"> rideshare project </a>
+            </td>
+            <td> 210 </td>
+          </tr>
+          <tr>
+            <td> 07/27/15 </td>
+            <td> 16:30 </td>
+            <td> 19:40 </td>
+            <td> DEV </td>
+            <td> Worked more on cleaning posts with regex &amp; wrote pseudocode to remove locations for <a href="projects/rideshare/index.html" target="_blank" title="rideshare project"> rideshare project </a>
+            </td>
+            <td> 190 </td>
+          </tr>
+          <tr>
+            <td> 07/24/15 </td>
+            <td> 17:30 </td>
+            <td> 21:45 </td>
+            <td> DEV </td>
+            <td> Worked on <a href="projects.html" target="_blank" title="projects page"> projects page </a> &amp; created <a href="projects/swslo14/index.html" target="_blank" title="Startup Weekend SLO 2014">Startup Weekend SLO 2014 project page</a> &amp; <a href="projects/swslo13/index.html" target="_blank" title="Startup Weekend SLO 2013">Startup Weekend SLO 2013 project page</a> &amp; <a href="projects/swslo12/index.html" target="_blank" title="Startup Weekend SLO 2012">Startup Weekend SLO 2012 project page</a></td>
+            <td> 255 </td>
+          </tr>
+          <tr>
+            <td> 07/20/15 </td>
+            <td> 11:30 </td>
+            <td> 12:30 </td>
+            <td> ADMIN </td>
+            <td> Worked on Sendmail (sendmail.mc &amp; access.db) for <a href="#" target="_blank" title="sunjay.io"> sunjay.io </a>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 07/20/15 </td>
+            <td> 01:30 </td>
+            <td> 02:10 </td>
+            <td> ADMIN </td>
+            <td> Backed up this entire website to <a href="https://github.com/sdsunjay/mywebsite" target="_blank" title="My Website GitHub Repo">My Website GitHub Repo</a></td>
+            <td> 40 </td>
+          </tr>
+          <tr>
+            <td> 07/19/15 </td>
+            <td> 23:30 </td>
+            <td> 01:30 </td>
+            <td> ADMIN </td>
+            <td> Continued work on real <a href="projects/terminal/json/sunjay_filesystem.json" target="_blank" title="JSON"> JSON </a> filesystem </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 07/19/15 </td>
+            <td> 22:00 </td>
+            <td> 23:30 </td>
+            <td> ADMIN </td>
+            <td> Finished installing and moving files onto new server for <a href="#" target="_blank" title="sunjay.io"> sunjay.io </a>
+            </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 07/19/15 </td>
+            <td> 15:30 </td>
+            <td> 17:30 </td>
+            <td> ADMIN </td>
+            <td> Updated WordPress Blog, updated <a href="blog.html" target="_blank" title="About Me"> About Me </a> page, backed up blog, updated pictures, misc </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 07/17/15 </td>
+            <td> 19:00 </td>
+            <td> 01:30 </td>
+            <td> DEV </td>
+            <td> Setting up new server for sunjay.io, see details <a href="#" target="_blank" title="new server for sunjay io blog post">new server for sunjay io blog post</a>. Link is  broken.
+            </td>
+            <td> 390 </td>
+          </tr>
+          <tr>
+            <td> 07/16/15 </td>
+            <td> 16:00 </td>
+            <td> 20:00 </td>
+            <td> DEV </td>
+            <td> More cleaning of text for the <a href="projects/rideshare/index.html" target="_blank" title="rideshare project"> rideshare project </a>
+            </td>
+            <td> 240 </td>
+          </tr>
+          <tr>
+            <td> 07/13/15 </td>
+            <td> 22:30 </td>
+            <td> 02:30 </td>
+            <td> DEV </td>
+            <td> Regex to clean text, such as separate words with slashes, remove money amount, remove 'rd', 'st' from numbers, etc. </td>
+            <td> 240 </td>
+          </tr>
+          <tr>
+            <td> 07/13/15 </td>
+            <td> 19:30 </td>
+            <td> 20:45 </td>
+            <td> DEV </td>
+            <td> Removed all punctuation and contractions and abbreviations from posts for the <a href="projects/rideshare/index.html" target="_blank" title="rideshare project"> rideshare project </a>
+            </td>
+            <td> 75 </td>
+          </tr>
+          <tr>
+            <td> 07/12/15 </td>
+            <td> 15:00 </td>
+            <td> 16:00 </td>
+            <td> DEV </td>
+            <td> Looked at the patterns in date and time in the facebook posts on the rideshare group to attempt to regex them out for <a href="projects/rideshare/index.html" target="_blank" title="rideshare project">rideshare project</a> </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 07/11/15 </td>
+            <td> 18:30 </td>
+            <td> 23:30 </td>
+            <td> DEV </td>
+            <td> Used the <a href="https://maps.googleapis.com/maps/api/geocode/json?address=Charlotte+NC&amp;key=xxx" target="_blank" title="Google API"> Google API </a> to add all cities in CA to database for determining origin and destination of client </td>
+            <td> 300 </td>
+          </tr>
+          <tr>
+            <td> 07/11/15 </td>
+            <td> 15:30 </td>
+            <td> 17:45 </td>
+            <td> DEV </td>
+            <td> Finished PHP code for cleaning ride-share posts, created new table for training purposes, started writing Python to get posts from DB for <a href="projects/rideshare/index.html" target="_blank" title="rideshare project">rideshare project</a> </td>
+            <td> 135 </td>
+          </tr>
+          <tr>
+            <td> 07/09/15 </td>
+            <td> 18:20 </td>
+            <td> 20:40 </td>
+            <td> DEV </td>
+            <td> Finished writing PHP code (all posts inserted into DB) for <a href="projects/rideshare/index.html" target="_blank" title="rideshare project">rideshare project</a>. Played with python text classification. </td>
+            <td> 140 </td>
+          </tr>
+          <tr>
+            <td> 07/07/15 </td>
+            <td> 15:00 </td>
+            <td> 18:30 </td>
+            <td> DEV </td>
+            <td> Writing PHP MySQL connector code and getting user information from <a href="https://developers.facebook.com/docs/reference/php/5.0.0" target="_blank" title="Facebook SDK"> Facebook SDK </a>
+            </td>
+            <td> 210 </td>
+          </tr>
+          <tr>
+            <td> 07/03/15 </td>
+            <td> 18:00 </td>
+            <td> 23:30 </td>
+            <td> DEV </td>
+            <td> Watching <a href="https://www.youtube.com/watch?v=FLZvOKSCkxY&amp;feature=youtu.be&amp;list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL" target="_blank" title="Natural Language Processing with Python YouTube videos"> Natural Language Processing with Python YouTube videos </a> , practicing python, writing PHP MySQL connector code </td>
+            <td> 330 </td>
+          </tr>
+          <tr>
+            <td> 07/02/15 </td>
+            <td> 20:30 </td>
+            <td> 21:30 </td>
+            <td> ADMIN </td>
+            <td> Installing a new SSL certificate from <a href="https://www.startssl.com/" target="_blank" title="StartSSL.com"> StartSSL.com </a>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 07/01/15 </td>
+            <td> 17:30 </td>
+            <td> 00:55 </td>
+            <td> MISC </td>
+            <td> Watching <a href="https://www.youtube.com/watch?v=FLZvOKSCkxY&amp;feature=youtu.be&amp;list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL" target="_blank" title="Natural Language Processing with Python YouTube videos"> Natural Language Processing with Python YouTube videos </a> , creating account on <a href="https://sslmate.com/" target="_blank" title="SSLMate"> SSLMate </a> , (unsucessfully) installing <a href="http://www.cpan.org/src/" target="_blank" title="Perl5.22"> Perl5.22 </a> , and figuring <a href="https://developers.facebook.com/docs/reference/php/5.0.0" target="_blank" title="Facebook API"> Facebook API </a> for paging. </td>
+            <td> 445 </td>
+          </tr>
+          <tr>
+            <td> 06/29/15 </td>
+            <td> 19:50 </td>
+            <td> 23:50 </td>
+            <td> DEV </td>
+            <td> Getting, organizing, and classifying posts from <a href="https://www.facebook.com/groups/250502971675365/" target="_blank" title="Cal Poly Rideshare Facebook Group">Cal Poly Rideshare Facebook Group</a>
+            </td>
+            <td> 240 </td>
+          </tr>
+          <tr>
+            <td> 06/29/15 </td>
+            <td> 17:50 </td>
+            <td> 18:50 </td>
+            <td> DEV </td>
+            <td> Learning about <a href="https://www.nltk.org/" target="_blank" title="Python NLTK"> Python NLTK </a>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 06/29/15 </td>
+            <td> 15:40 </td>
+            <td> 17:50 </td>
+            <td> DEV </td>
+              <td> Created script to check if this website goes down, installed <code>mutt</code> and <code>gpg</code> on droplet </td>
+            <td> 130 </td>
+          </tr>
+          <tr>
+            <td> 06/29/15 </td>
+            <td> 00:15 </td>
+            <td> 01:20 </td>
+            <td> DEV </td>
+            <td> Created the landing page for the <a href="projects/rideshare/index.html" target="_blank" title="rideshare project"> rideshare project </a>
+            </td>
+            <td> 65 </td>
+          </tr>
+          <tr>
+            <td> 06/28/15 </td>
+            <td> 21:30 </td>
+            <td> 00:00 </td>
+            <td> DEV </td>
+            <td> Finished <a href="projects/rideshare/index.html" target="_blank" title="rideshare project"> rideshare project </a> PHP script for facebook posts </td>
+            <td> 150 </td>
+          </tr>
+          <tr>
+            <td> 06/27/15 </td>
+            <td> 20:30 </td>
+            <td> 00:00 </td>
+            <td> DEV </td>
+            <td> Started <a href="projects/rideshare/index.html" target="_blank" title="rideshare project"> rideshare project </a> PHP script for facebook posts </td>
+            <td> 210 </td>
+          </tr>
+          <tr>
+            <td> 06/26/15 </td>
+            <td> 19:20 </td>
+            <td> 19:40 </td>
+            <td> DEV </td>
+            <td> Wrote pseudocode for implementation of <code>grep</code> command in <a href="projects/terminal/terminal.html" target="_blank" title="terminal project"> terminal project </a> . </td>
+            <td> 20 </td>
+          </tr>
+          <tr>
+            <td> 06/26/15 </td>
+            <td> 18:35 </td>
+            <td> 19:15 </td>
+            <td> DEV </td>
+            <td> Finished implementation of <code>rm</code> command in <a href="projects/terminal/terminal.html" target="_blank" title="terminal project">terminal project</a>.</td>
+            <td> 40 </td>
+          </tr>
+          <tr>
+            <td> 06/26/15 </td>
+            <td> 18:00 </td>
+            <td> 18:35 </td>
+            <td> REWORK </td>
+            <td> Added whitelist of commands to <code>man</code> command in <a href="projects/terminal/terminal.html" target="_blank" title="terminal project">terminal project</a>, no more 404 errors </td>
+            <td> 35 </td>
+          </tr>
+          <tr>
+            <td> 06/26/15 </td>
+            <td> 16:00 </td>
+            <td> 18:00 </td>
+            <td> DEV </td>
+            <td> Created a new project page for my <a href="projects/mobilecloset/index.html" target="_blank" title="Mobile Closet"> Mobile Closet </a> Android app. </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 06/24/15 </td>
+            <td> 16:00 </td>
+            <td> 17:30 </td>
+            <td> DEV </td>
+            <td> Successfully implement <code>mkdir</code> command in <a href="projects/terminal/terminal.html" target="_blank" title="terminal project">terminal project</a> . </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 06/23/15 </td>
+            <td> 19:00 </td>
+            <td> 21:30 </td>
+            <td> ADMIN </td>
+            <td> Tried to fix CloudFlare 520 error by generating and adding HAR file, traceroute, and curl information. </td>
+            <td> 150 </td>
+          </tr>
+          <tr>
+            <td> 06/23/15 </td>
+            <td> 16:00 </td>
+            <td> 18:00 </td>
+            <td> REWORK </td>
+            <td> Updated nginx configuration, fixed errors and missing pages. Tried to resolve 520 errors (examined Fail2Ban) </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 05/25/15 </td>
+            <td> 16:00 </td>
+            <td> 17:00 </td>
+            <td> REWORK </td>
+            <td> Updated nginx configuration to allow access to my website from more countries </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 05/13/15 </td>
+            <td> 17:00 </td>
+            <td> 20:00 </td>
+            <td> DEV </td>
+            <td> Increase security for sendmail, updated <a href="projects/tweetonomics/index.html" target="_blank" title="Tweetonomics"> Tweetonomics </a> &amp; <a href="projects/swslo14/index.html" target="_blank" title="Karmic"> Karmic </a> . </td>
+            <td> 180 </td>
+          </tr>
+          <tr>
+            <td> 05/11/15 </td>
+            <td> 12:30 </td>
+            <td> 15:30 </td>
+            <td> DEV </td>
+            <td> Wrote this script to track csp reports, fixed accounts, &amp; updated <a href="https://github.com/sdsunjay/jsterm/blob/master/make_fs.py" target="_blank">make_fs.py</a></td>
+            <td> 180 </td>
+          </tr>
+          <tr>
+            <td> 05/02/15 </td>
+            <td> 16:30 </td>
+            <td> 18:30 </td>
+            <td> REWORK </td>
+            <td> Updated <a href="https://github.com/sdsunjay/skeletons/blob/master/centos/sendmail.mc" target="_blank" title="sendmail.mc">sendmail.mc</a> to prevent sending SPAM. </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 04/27/15 </td>
+            <td> 22:00 </td>
+            <td> 23:00 </td>
+            <td> REWORK </td>
+            <td> Fixed some stuff, like JSON, &amp; logo. </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 04/27/15 </td>
+            <td> 15:00 </td>
+            <td> 17:00 </td>
+            <td> REWORK </td>
+            <td> Updated favicon, logo. Fixed <a href="projects/laedu14/index.html" target="_blank" title="Startup Weekend LA EDU 2014 Project Page">Startup Weekend LA EDU 2014 Project Page</a> &amp; <a href="projects/swslo13/index.html" target="_blank" title="Startup Weekend SLO 2013">Startup Weekend SLO 2013 Project Page</a>
+            </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 04/24/15 </td>
+            <td> 15:00 </td>
+            <td> 16:00 </td>
+            <td> DEV </td>
+            <td> Fixed <a href="projects/terminal/json/sunjay_filesystem.json" target="_blank" title="JSON"> JSON </a> &amp; try to fix <a href="https://github.com/sdsunjay/jsterm/blob/master/make_fs.py" target="_blank">make_fs.py</a></td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 04/23/15 </td>
+            <td> 16:00 </td>
+            <td> 19:00 </td>
+            <td> ADMIN </td>
+            <td> Created real <a href="projects/terminal/json/sunjay_filesystem.json" target="_blank" title="JSON"> JSON </a> filesystem </td>
+            <td> 180 </td>
+          </tr>
+          <tr>
+            <td> 04/21/15 </td>
+            <td> 15:00 </td>
+            <td> 17:00 </td>
+            <td> REWORK </td>
+            <td> Fixing broken links </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 04/16/15 </td>
+            <td> 00:00 </td>
+            <td> 01:30 </td>
+            <td> ADMIN </td>
+            <td> Started work on <a href="README.html" target="_blank" title="contents page">contents page</a>
+            </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 04/15/15 </td>
+            <td> 14:30 </td>
+            <td> 18:00 </td>
+            <td> ADMIN </td>
+            <td> Organization </td>
+            <td> 210 </td>
+          </tr>
+          <tr>
+            <td> 04/14/15 </td>
+            <td> 15:00 </td>
+            <td> 19:00 </td>
+            <td> REWORK </td>
+            <td> Using <a href="http://toddmotto.com/building-an-html5-responsive-menu-with-media-queries-javascript/" target="_blank" title="Building an HTML5 Responsive Menu with Media Queries Javascript Tutorial">Building an HTML5 Responsive Menu with Media Queries Javascript Tutorial</a>, tried to make <a href="css/skeleton.css" target="_blank" title="CSS"> CSS </a> more mobile friendly. </td>
+            <td> 240 </td>
+          </tr>
+          <tr>
+            <td> 04/13/15 </td>
+            <td> 23:20 </td>
+            <td> 02:20 </td>
+            <td> REWORK </td>
+            <td> Fixed <a href="projects/accounts/register.html" target="_blank" title="Accounts Registration">Accounts Registration </a> and started fixing protected page.php</td>
+            <td> 180 </td>
+          </tr>
+          <tr>
+            <td> 04/09/15 </td>
+            <td> 18:00 </td>
+            <td> 19:00 </td>
+            <td> REWORK </td>
+            <td> Small fixes and reorganization </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 04/06/15 </td>
+            <td> 21:00 </td>
+            <td> 23:00 </td>
+            <td> REWORK </td>
+            <td> Updated nginx config, updated <a href="projects/terminal/index.html" target="_blank" title="terminal projects"> terminal projects </a> , updated images </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 04/04/15 </td>
+            <td> 18:00 </td>
+            <td> 21:00 </td>
+            <td> REWORK </td>
+            <td> Worked on <a href="css/skeleton.css" target="_blank" title="CSS"> CSS </a> to make website mobile friendly </td>
+            <td> 180 </td>
+          </tr>
+          <tr>
+            <td> 03/30/15 </td>
+            <td> 20:00 </td>
+            <td> 22:00 </td>
+            <td> DEV </td>
+            <td> New <a href="blog/new-website-design.html" target="_blank" title="New Website Design">New Website Design Blog Post</a> , worked on <a href="blog.html" target="_blank" title="blog project"> blog project </a> &amp; <a href="projects/swsm14/index.html" target="_blank" title="Startup Weekend Santa Maria"> Startup Weekend Santa Maria </a> layout &amp; <a href="projects/swslo14/index.html" target="_blank" title="Startup Weekend SLO"> Startup Weekend SLO </a> layout. </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 03/28/15 </td>
+            <td> 20:00 </td>
+            <td> 21:00 </td>
+            <td> DEV </td>
+            <td> Small fixes to website</td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 03/27/15 </td>
+            <td> 19:00 </td>
+            <td> 23:00 </td>
+            <td> DEV </td>
+            <td> Integrate <a href="projects/accounts/index.html" target="_blank" title="log in"> log in </a> and <a href="projects/accounts/register.html" target="_blank" title="registration page">registration page</a>, toyed with ideas for <a href="projects/accounts/index.html" target="_blank" title="login design">login design </a>
+            </td>
+            <td> 240 </td>
+          </tr>
+          <tr>
+            <td> 03/26/15 </td>
+            <td> 14:00 </td>
+            <td> 20:00 </td>
+            <td> DEV </td>
+            <td> Created my <a href="resume.html" target="_blank" title="résumé page"> résumé page </a> &amp; fixed all nav bars &amp; update layout of <a href="timelog.html" target="_blank" title="this timelog"> this timelog</a>
+            </td>
+            <td> 360 </td>
+          </tr>
+          <tr>
+            <td> 03/24/15 </td>
+            <td> 17:00 </td>
+            <td> 21:00 </td>
+            <td> DEV </td>
+            <td>
+              <b> Finished </b> editing the <a href="css/skeleton.css" target="_blank" title="skeleton.css">skeleton.css</a> for the <a href="index.html" target="_blank" title="new homepage"> new homepage </a> &amp; created the <a href="about.html" target="_blank" title="about page">About page </a> .
+            </td>
+            <td> 240 </td>
+          </tr>
+          <tr>
+            <td> 03/23/15 </td>
+            <td> 16:20 </td>
+            <td> 19:20 </td>
+            <td> DEV </td>
+            <td> Created <a href="projects/mindbody/mindbody.html" target="_blank" title="MindBody Project Page"> MindBody Project Page </a> , <a href="projects/vim/vim.html" target="_blank" title="Vim Project Page"> Vim Project Page </a> , and <a href="projects/tracking/tracking.html" target="_blank" title="Tracking Project Page">Tracking Project Page </a>.</td>
+            <td> 180 </td>
+          </tr>
+          <tr>
+            <td> 03/22/15 </td>
+            <td> 16:00 </td>
+            <td> 00:00 </td>
+            <td> DEV </td>
+            <td> Updated CSS for new <a href="index.html" target="_blank" title="homepage">homepage</a></td>
+            <td> 480 </td>
+          </tr>
+          <tr>
+            <td> 03/21/15 </td>
+            <td> 16:30 </td>
+            <td> 21:30 </td>
+            <td> DEV </td>
+            <td> Added content and CSS for new <a href="projects.html" target="_blank" title="projects"> projects </a> page &amp; created <a href="projects/swsb14/swsb14.html" target="_blank" title="Startup Weekend Santa Barbara 2014">Startup Weekend Santa Barbara 2014 - Lightning Locks</a>,
+              <a href="projects/terminal/terminal.html" target="_blank" title="Terminal Emulator Project"> Terminal Emulator Project </a> page.
+            </td>
+            <td> 300 </td>
+          </tr>
+          <tr>
+            <td> 03/20/15 </td>
+            <td> 18:30 </td>
+            <td> 22:00 </td>
+            <td> DEV </td>
+            <td> Fixed CSS for <a href="projects/DWPACLEC2/index.html" target="_blank" title="Distributed WPA Cracking Leveraging EC2 Project"> Distributed WPA Cracking Leveraging EC2 Project </a> &amp; created <a href="projects/honeypot/index.html" target="_blank" title="honeypot"> honeypot </a>
+            </td>
+            <td> 210 </td>
+          </tr>
+          <tr>
+            <td> 03/19/15 </td>
+            <td> 18:00 </td>
+            <td> 23:00 </td>
+            <td> DEV </td>
+            <td> Created <a href="projects/DWPACLEC2/index.html" target="_blank" title="Distributed WPA Cracking Leveraging EC2 Project">Distributed WPA Cracking Leveraging EC2 Project </a> &amp; <a href="projects/DWPACLEC2/README.html" target="_blank" title="Distributed WPA Cracking Leveraging EC2 Project README">Distributed WPA Cracking Leveraging EC2 Project README </a> &amp; <a href="index.html" target="_blank" title="Homepage">Homepage </a> in preparation for migration of site. </td>
+            <td> 300 </td>
+          </tr>
+          <tr>
+            <td> 03/18/15 </td>
+            <td> 18:30 </td>
+            <td> 19:00 </td>
+            <td> REWORK </td>
+            <td> Fixed user sign-in with updated <a href="http://content-security-policy.com/" target="_blank" title="CSP Policy"> CSP Policy </a>
+            </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 03/10/15 </td>
+            <td> 22:00 </td>
+            <td> 23:00 </td>
+            <td> DEV </td>
+            <td> Updated <a href="projects/accounts/captcha/index.php?ID=69" target="_blank" title="Accounts CAPTCHA">Accounts CAPTCHA</a>, so given a user's 'code', a secret question is displayed. </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 03/09/15 </td>
+            <td> 19:30 </td>
+            <td> 22:30 </td>
+            <td> DEV </td>
+            <td> Updated <a href="projects/accounts/index.html" target="_blank" title="Accounts project">Accounts project</a> to encrypt secret answers, increase robustness of registration, and account logout </td>
+            <td> 180 </td>
+          </tr>
+          <tr>
+            <td> 02/22/15 </td>
+            <td> 19:00 </td>
+            <td> 20:00 </td>
+            <td> DEV </td>
+            <td> Added photos and videos to (main) <a href="./images/index.html" target="_blank" title="images"> images page</a> and (secondary) <a href="images/index.html" target="_blank" title="images project">images project </a> page and <a href="projects/swsb14/swsb14.html" target="_blank" title="Startup Weekend Santa Barbara 2014">Startup Weekend Santa Barbara 2014</a> . </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 02/21/15 </td>
+            <td> 17:30 </td>
+            <td> 18:30 </td>
+            <td> ADMIN </td>
+            <td> Adjusted firewall settings for <a href="https://www.qualys.com/" target="_blank" title="Qualys"> Qualys </a> scan. </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 02/16/15 </td>
+            <td> 18:00 </td>
+            <td> 19:00 </td>
+            <td> REWORK </td>
+            <td> Attempted to fix the <a href="projects/email/index.html">email project</a>. Link is broken.</td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 02/16/15 </td>
+            <td> 16:30 </td>
+            <td> 18:00 </td>
+            <td> DEV </td>
+            <td> Finished integrating 'Sign In Lightbox' feature to all GUI pages </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 02/16/15 </td>
+            <td> 15:30 </td>
+            <td> 16:00 </td>
+            <td> DEV </td>
+            <td> Finished POC for javascript password encryption for <a href="./projects/accounts/accounts.html" target="_blank" title="Accounts Projects">Accounts project</a></td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 02/05/15 </td>
+            <td> 18:00 </td>
+            <td> 19:30 </td>
+            <td> DEV </td>
+            <td> Started implementing <a href="https://code.google.com/p/crypto-js/#PBKDF2" target="_blank" title="
+              encryption"> encryption </a> for password in javascript <a href="projects/Learning/login.html" target="_blank" title="here"> here </a>
+            </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 02/02/15 </td>
+            <td> 14:00 </td>
+            <td> 16:00 </td>
+            <td> ADMIN </td>
+            <td> Setup <a href="https://www.gnupg.org/" target="_blank" title="GPG"> GPG </a> and integrated with <a href="http://www.mutt.org/" target="_blank" title="mutt"> mutt </a> . </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 01/08/15 </td>
+            <td> 11:00 </td>
+            <td> 11:45 </td>
+            <td> ADMIN </td>
+            <td> Updated <a href="sitemap.xml" target="_blank" title="sitemap"> sitemap </a> to reflect less focus on old projects </td>
+            <td> 45 </td>
+          </tr>
+          <tr>
+            <td> 01/08/15 </td>
+            <td> 09:00 </td>
+            <td> 11:00 </td>
+            <td> DEV </td>
+            <td> Created  GRC landing page for <a href="http://classes.grc.calpoly.edu/339/" target="_blank" title="339">339</a>, following a tutorial </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 11/28/14 </td>
+            <td> 23:00 </td>
+            <td> 23:30 </td>
+            <td> ADMIN </td>
+            <td> Added <a href="projects/terminal/index.html" target="_blank" title='Terminal Interface'><i>Terminal Interface</i> </a> back in new location. </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 11/21/14 </td>
+            <td> 17:00 </td>
+            <td> 17:30 </td>
+            <td> ADMIN </td>
+            <td> Took <a href="projects/terminal/index.html" target="_blank" title="terminal project">terminal interface</a> offline and other admin stuff </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 11/20/14 </td>
+            <td> 20:00 </td>
+            <td> 23:00 </td>
+            <td> DEV </td>
+            <td> Worked on <code>mkdir</code> command for <a href="projects/terminal/index.html" target="_blank" title="terminal project">terminal project</a></td>
+            <td> 180 </td>
+          </tr>
+          <tr>
+            <td> 11/20/14 </td>
+            <td> 17:00 </td>
+            <td> 18:00 </td>
+            <td> REWORK </td>
+            <td> Fixed <a href="projects/vim/sublime.html" target="_blank" title="sublime editor"> sublime editor </a>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 11/10/14 </td>
+            <td> 18:00 </td>
+            <td> 22:00 </td>
+            <td> MISC </td>
+            <td> Worked to implement <a href="https://github.com/google/nogotofail" target="_blank" title="nogotofail"> nogotofail </a> &amp; Fixed <code>passwd</code> &amp; Fixed CSS &amp; Fixed 'clear' &amp; Implemented 'show' (how new JSON is loaded). </td>
+            <td> 240 </td>
+          </tr>
+          <tr>
+            <td> 11/07/14 </td>
+            <td> 00:00 </td>
+            <td> 00:30 </td>
+            <td> ADMIN </td>
+            <td> Checked logs and made some minor fixes. </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 11/05/14 </td>
+            <td> 18:00 </td>
+            <td> 19:30 </td>
+            <td> DEV </td>
+            <td> Worked on typeahead project. </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 11/05/14 </td>
+            <td> 00:00 </td>
+            <td> 01:40 </td>
+            <td> ADMIN </td>
+            <td> Fixed more broken links using <a href="http://www.brokenlinkcheck.com/" target="_blank" title="Broken Link Check Tool"> Broken Link Check Tool</a></td>
+            <td> 100 </td>
+          </tr>
+          <tr>
+            <td> 11/04/14 </td>
+            <td> 22:00 </td>
+            <td> 00:00 </td>
+            <td> DEV </td>
+            <td> Created <a href="projects/bitcoin/index.html" target="_blank" title="Bitcoin widget"> Bitcoin widget </a> . </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 11/04/14 </td>
+            <td> 21:00 </td>
+            <td> 22:00 </td>
+            <td> ADMIN </td>
+            <td> Fixed broken links using <a href="http://www.brokenlinkcheck.com/" target="_blank" title="Broken Link Check Tool"> Broken Link Check Tool</a></td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 11/04/14 </td>
+            <td> 20:00 </td>
+            <td> 21:00 </td>
+            <td> ADMIN </td>
+            <td> Built <a href="http://www.fullybaked.co.uk/articles/installing-latest-vim-on-centos-from-source" target="_blank" title="vim from source"> vim from source </a> &amp; added <a href="https://github.com/gmarik/Vundle.vim" target="_blank" title="Vundle"> Vundle </a> &amp; various vim plugins. </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 11/04/14 </td>
+            <td> 19:00 </td>
+            <td> 20:00 </td>
+            <td> ADMIN </td>
+              <td> Created a <code>sitemap.xml</code> for Google</td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 11/04/14 </td>
+            <td> 18:00 </td>
+            <td> 19:30 </td>
+            <td> REWORK </td>
+            <td> Fixed "hide user entered password in <code>passwd</code> for <a href="projects/terminal/index.html" target="_blank" title="terminal project"> terminal project </a>
+            </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 10/31/14 </td>
+            <td> 00:00 </td>
+            <td> 01:45 </td>
+            <td> DEV </td>
+            <td> Hide user entered password in <code>passwd</code> for <a href="projects/terminal/index.html" target="_blank" title="terminal project"> terminal project </a>
+            </td>
+            <td> 105 </td>
+          </tr>
+          <tr>
+            <td> 10/30/14 </td>
+            <td> 22:00 </td>
+            <td> 00:00 </td>
+            <td> ADMIN </td>
+            <td>Added <a href="./blog/security-enhancements-to-my-website.html">security features to Nginx.conf</a></td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 10/23/14 </td>
+            <td> 02:00 </td>
+            <td> 03:00 </td>
+            <td> ADMIN </td>
+            <td> Optimized Nginx.conf </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 10/23/14 </td>
+            <td> 01:00 </td>
+            <td> 02:00 </td>
+            <td> DEV </td>
+            <td> Added <a href="projects/vim/emacs.html" target="_blank" title="Emacs"> Emacs </a> editor </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 10/23/14 </td>
+            <td> 00:00 </td>
+            <td> 01:00 </td>
+            <td> ADMIN </td>
+            <td> Tried to better understand <a href="projects/terminal/index.html" target="_blank" title="terminal project">terminal project</a>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 10/22/14 </td>
+            <td> 18:00 </td>
+            <td> 19:00 </td>
+            <td> ADMIN </td>
+            <td> Added the <a href="https://wordpress.org/plugins/wordpress-https/" target="_blank" title="Wordpress HTTPS"> Wordpress HTTPS </a> plugin and started DEFCON blog post </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 10/21/14 </td>
+            <td> 22:30 </td>
+            <td> 23:00 </td>
+            <td> ADMIN </td>
+            <td> Created another <a href="https://sunjaydhama.com/blog/?page_id=231" target="_blank" title="About Me"> About Me </a> page, added lots of pictures </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 10/21/14 </td>
+            <td> 20:30 </td>
+            <td> 22:30 </td>
+            <td> ADMIN </td>
+            <td> Fixed <a href="blog.html" target="_blank" title="Blog">my blog</a> after breaking a lot of stuff </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 10/20/14 </td>
+            <td> 00:30 </td>
+            <td> 01:00 </td>
+            <td> ADMIN </td>
+            <td> Updated <a href="blog.html" target="_blank" title="Blog">WordPress Blog</a> to version <code>4.0</code>.
+            </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 10/19/14 </td>
+            <td> 19:00 </td>
+            <td> 20:00 </td>
+            <td> DEV </td>
+            <td> Worked on <code>passwd</code> feature for already existing user for <a href="projects/terminal/terminal.html" target="_blank">Terminal Project</a></td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 10/19/14 </td>
+            <td> 18:00 </td>
+            <td> 19:00 </td>
+            <td> DEV </td>
+            <td> <b>Finished </b>Upload Picture feature for existing user on protected page in <a href="./projects/accounts/accounts.html" target="_blank" title="User Accounts">accounts project</a>.</td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 10/16/14 </td>
+            <td> 21:30 </td>
+            <td> 23:00 </td>
+            <td> DEV </td>
+            <td>Worked on 'Update Password' feature for existing user on protected page in <a href="./projects/accounts/accounts.html" target="_blank" title="User Accounts">accounts project</a>, integrated <a href="http://buckwilson.me/lightboxme/" target="_blank" title="lightbox"> lightbox </a> . </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 10/16/14 </td>
+            <td> 18:45 </td>
+            <td> 20:45 </td>
+            <td> DEV </td>
+            <td> Increased robustness of <a href="https://github.com/sdsunjay/skeletons/blob/master/centos5/sshd_config" target="_blank" title="sshd_config"> sshd_config </a> , added <a href="https://github.com/sdsunjay/skeletons/blob/master/centos5/sendmail.mc" target="_blank" title="mail options"> mail options </a> and <a href="http://spamassassin.apache.org/" target="_blank" title="SPAMASSASSIN"> SPAMASSASSIN </a>
+            </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 10/14/14 </td>
+            <td> 19:45 </td>
+            <td> 21:45 </td>
+            <td> DEV </td>
+            <td> Worked on <code>passwd</code> feature for already existing user. </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 10/13/14 </td>
+            <td> 17:00 </td>
+            <td> 18:00 </td>
+            <td> REWORK </td>
+            <td> Worked on <code>Content-Security-Policy</code> and switching <a href="#" target="_blank" title="Sunjay.io Website">sunjay.io website</a> and <a href="#" target="_blank" title="sunjay.me">sunjay.me</a> site to <a href="https://www.cloudflare.com/index.html" target="_blank" title="Cloudflare"> Cloudflare </a> . </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 10/09/14 </td>
+            <td> 20:00 </td>
+            <td> 20:30 </td>
+            <td> DEV </td>
+            <td> Worked on <a href="projects/tracking/tracking.html" target="_blank" title="Tracking Project">Tracking Project</a></td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 10/09/14 </td>
+            <td> 17:30 </td>
+            <td> 20:00 </td>
+            <td> ADMIN </td>
+            <td>
+              <a href="projects/terminal/index.html" target="_blank" title="Terminal Project">Terminal Project</a> broke due to Cloudflare setting, fixed.
+            </td>
+            <td> 150 </td>
+          </tr>
+          <tr>
+            <td> 10/09/14 </td>
+            <td> 15:30 </td>
+            <td> 17:30 </td>
+            <td> DEV </td>
+            <td> Worked on <code>passwd</code> feature for <a href="projects/terminal/terminal.html" target="_blank" title="terminal project">terminal project</a></td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 10/09/14 </td>
+            <td> 14:00 </td>
+            <td> 14:30 </td>
+            <td> ADMIN </td>
+            <td> Enabled <a href="https://www.cloudflare.com/apps/scrapeshield" target="_blank" title="Scrapeshield"> Scrapeshield </a> , <a href="https://www.cloudflare.com/apps/abetterbrowse" target="_blank" title="A Better Browser"> A Better Browser </a> , <a href="https://www.cloudflare.com/apps/earthhour" target="_blank" title="Earthhour"> Earthhour </a> , <a href="https://www.cloudflare.com/apps/google_analytics" target="_blank" title="Google Analytics"> Google Analytics </a> , <a href="https://www.cloudflare.com/apps/webmastertools" target="_blank" title="Google Webmaster Tools"> Google Webmaster Tools </a> , and other apps from <a href="https://www.cloudflare.com/index.html" target="_blank" title="Cloudflare"> Cloudflare </a>
+            </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 10/08/14 </td>
+            <td> 17:00 </td>
+            <td> 17:30 </td>
+            <td> ADMIN </td>
+            <td> Switched DNS to <a href="https://www.cloudflare.com/index.html" target="_blank" title="Cloudflare"> Cloudflare </a> by updating domain registered <a href="http://www.arvixe.com" target="_blank" title="here"> here </a>
+            </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 10/08/14 </td>
+            <td> 16:30 </td>
+            <td> 17:00 </td>
+            <td> ADMIN </td>
+            <td> Added <a href="projects/defcon22/index.html" target="_blank" title="DEFCON22"> DEFCON22 </a> images </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 10/06/14 </td>
+            <td> 14:00 </td>
+            <td> 16:30 </td>
+            <td> ADMIN </td>
+            <td> Fixed errors associated with compiling <a href="blog/updating-nginx.html" target="_blank" title="Updating Nginx: Building from Source">nginx 1.7.6 from source</a>
+            </td>
+            <td> 150 </td>
+          </tr>
+          <tr>
+            <td> 10/05/14 </td>
+            <td> 16:00 </td>
+            <td> 18:00 </td>
+            <td> ADMIN </td>
+            <td> Downloaded and installed <a href="blog/updating-nginx.html" target="_blank" title="Updating Nginx: Building from Source"> nginx 1.7.6 </a>
+            </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 10/05/14 </td>
+            <td> 13:00 </td>
+            <td> 14:30 </td>
+            <td> DEV </td>
+            <td> Finished development on <a href="projects/tracking/tracking.html" target="_blank" title="Tracking Project">Tracking Project</a>, just need to integrate </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 10/03/14 </td>
+            <td> 21:30 </td>
+            <td> 23:00 </td>
+            <td> DEV </td>
+            <td> Continuing working on <a href="projects/tracking/tracking.html" target="_blank" title="Tracking Project">Tracking Project</a></td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 09/27/14 </td>
+            <td> 17:30 </td>
+            <td> 18:30 </td>
+            <td> REWORK </td>
+            <td> Finished implementing 'upload file' feature. Started 'multiple file upload' feature </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 09/27/14 </td>
+            <td> 16:00 </td>
+            <td> 17:30 </td>
+            <td> DEV </td>
+            <td> Started implementing 'upload file' feature &amp; integrating with lightbox </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 09/27/14 </td>
+            <td> 13:00 </td>
+            <td> 14:00 </td>
+            <td> ADMIN </td>
+            <td>
+              <a href="http://back-track-linux.blogspot.com/2012/10/how-to-install-nessus-on-backtrack-5-r3.html" target="_blank" title="Researched"> Researched </a> &amp; attempted <a href="http://www.nessus.org" target="_blank" title="Nessus"> Nessus </a> scan.
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 09/26/14 </td>
+            <td> 18:15 </td>
+            <td> 19:00 </td>
+            <td> DEV </td>
+            <td>
+              <b> Finished </b> implementing 'update password' feature, just need to integrate into <a href="https://fancybox.net/" target="_blank" title="lightbox"> lightbox </a> .
+            </td>
+            <td> 45 </td>
+          </tr>
+          <tr>
+            <td> 09/26/14 </td>
+            <td> 17:30 </td>
+            <td> 18:00 </td>
+            <td> ADMIN </td>
+            <td> Researched &amp; ran <a href="https://www.cirt.net/Nikto2" target="_blank" title="Nikto"> Nikto </a> scan. </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 09/25/14 </td>
+            <td> 17:00 </td>
+            <td> 19:00 </td>
+            <td> DEV </td>
+            <td> Worked on 'update password', <code>passwd</code> feature &amp; made javascript &amp; php checks more robust (still errors) for <a href="projects/terminal/terminal.html" target="_blank" title="terminal project."> terminal project. </a>
+            </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 09/25/14 </td>
+            <td> 04:00 </td>
+            <td> 04:45 </td>
+            <td> DEV </td>
+            <td> Added <a href="https://lokeshdhakar.com/projects/lightbox2/">jQuery lightbox</a> to my website.</td>
+            <td> 45 </td>
+          </tr>
+          <tr>
+            <td> 09/25/14 </td>
+            <td> 02:00 </td>
+            <td> 03:00 </td>
+            <td> DEV </td>
+            <td> Worked more on 'update password' feature and created <a href="projects/accounts/account.html">Account Project Page</a>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 09/24/14 </td>
+            <td> 21:35 </td>
+            <td> 21:40 </td>
+            <td> ADMIN </td>
+            <td> Updated BASH following release of <a href="https://access.redhat.com/security/cve/CVE-2014-6271" target="_blank" title="CVE-2014-6271"> CVE-2014-6271 </a>
+            </td>
+            <td> 5 </td>
+          </tr>
+          <tr>
+            <td> 09/23/14 </td>
+            <td> 19:30 </td>
+            <td> 21:00 </td>
+            <td> ADMIN </td>
+            <td> Created <a href="https://github.com/sdsunjay/skeletons/blob/master/centos5/checkAccess.sh" target="_blank" title="script"> script </a> to find 4xx &amp; 5xx errors (with help from <a href="http://www.the-art-of-web.com/system/logs/" target="_blank" title="Analyzing Apache Log Files &lt; System"> Analyzing Apache Log Files &lt; System</a> ) </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 09/23/14 </td>
+            <td> 18:00 </td>
+            <td> 19:00 </td>
+            <td> ADMIN </td>
+            <td> Downloaded &amp; installed log visualization tool, <a href="http://goaccess.io/download" target="_blank" title="goaccess">goaccess</a>
+            </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 09/10/14 </td>
+            <td> 00:00 </td>
+            <td> 01:00 </td>
+            <td> ADMIN </td>
+            <td> Automated blocking of bad IP Addresses, using <a href="http://bash.cyberciti.biz/web-server/nginx-shell-script-to-block-spamhaus-lasso-drop-spam-ip-address/" target="_blank" title="Nginx Shell Script To Block Spamhaus Lasso Drop Spam IP Address"> Nginx Shell Script To Block Spamhaus Lasso Drop Spam IP Address </a> script </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 09/09/14 </td>
+            <td> 19:30 </td>
+            <td> 21:00 </td>
+            <td> DEV </td>
+            <td> Worked on <a href="projects/tracking/index.html" target="_blank" title="Tracking project">Tracking project </a>
+            </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 09/07/14 </td>
+            <td> 13:00 </td>
+            <td> 13:30 </td>
+            <td> ADMIN </td>
+            <td> Started reinstall of <a href="./blog/updating-nginx.html" target="_blank" title="Updating Nginx: Building from Source">nginx from source</a> </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 09/06/14 </td>
+            <td> 01:00 </td>
+            <td> 02:30 </td>
+            <td> ADMIN </td>
+            <td> Setup blocking IP addresses by country in Nginx config. </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 09/04/14 </td>
+            <td> 13:00 </td>
+            <td> 14:30 </td>
+            <td> ADMIN </td>
+            <td> Set Nginx config file to redirect everything to <code>https://www.*</code></td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 09/04/14 </td>
+            <td> 12:45 </td>
+            <td> 13:15 </td>
+            <td> REWORK </td>
+            <td> Started fixing issue with <a href="projects/vim/index.html" target="_blank" title="Vim Project">Vim Project </a> . </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 09/04/14 </td>
+            <td> 12:00 </td>
+            <td> 12:45 </td>
+            <td> ADMIN </td>
+            <td> Created a <a href="./bugReport.html" target="_blank" title="page"> page </a> for bug tracking &amp; reporting, still needs work </td>
+            <td> 45 </td>
+          </tr>
+          <tr>
+            <td> 09/01/14 </td>
+            <td> 14:30 </td>
+            <td> 15:30 </td>
+            <td> DEV </td>
+            <td> Cleaned up <a href="projects/tracking/index.html" target="_blank" title="tracking project"> tracking project </a> &amp; started <a href="projects/typeahead/index.html" target="_blank" title="typeahead project"> typeahead project </a> . </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 08/29/14 </td>
+            <td> 16:00 </td>
+            <td> 16:45 </td>
+            <td> DEV </td>
+            <td> Made more progress on <a href="projects/tracking/index.html" target="_blank" title="tracking project"> tracking project </a>
+            </td>
+            <td> 45 </td>
+          </tr>
+          <tr>
+            <td> 08/29/14 </td>
+            <td> 11:30 </td>
+            <td> 14:00 </td>
+            <td> DEV </td>
+            <td> Made more progress on <a href="projects/tracking/index.html" target="_blank" title="tracking project"> tracking project </a>
+            </td>
+            <td> 150 </td>
+          </tr>
+          <tr>
+            <td> 08/28/14 </td>
+            <td> 12:00 </td>
+            <td> 12:30 </td>
+            <td> DEV </td>
+            <td> Continued implementing change your password for user accounts. </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 08/28/14 </td>
+            <td> 00:15 </td>
+            <td> 01:00 </td>
+            <td> DEV </td>
+            <td> Partially implemented changing your password for <a href="projects/accounts/accounts.html" target="_blank" title="User Accounts">User Accounts</a></td>
+            <td> 45 </td>
+          </tr>
+          <tr>
+            <td> 08/27/14 </td>
+            <td> 00:30 </td>
+            <td> 01:15 </td>
+            <td> REWORK </td>
+            <td> Fixed <a href="projects/accounts/register.html" target="_blank" title="registering"> registering </a> for accounts, so secret answers stored. </td>
+            <td> 45 </td>
+          </tr>
+          <tr>
+            <td> 08/26/14 </td>
+            <td> 15:00 </td>
+            <td> 15:15 </td>
+            <td> ADMIN </td>
+            <td> Updated <a href="projects/terminal/json/filesystem.json" target="_blank" title="filesystem"> filesystem </a> &amp; mobile filesystem. </td>
+            <td> 15 </td>
+          </tr>
+          <tr>
+            <td> 08/18/14 </td>
+            <td> 15:40 </td>
+            <td> 18:00 </td>
+            <td> REWORK </td>
+            <td> Fixed <code>iptables</code> script &amp; email </td>
+            <td> 140 </td>
+          </tr>
+          <tr>
+            <td> 08/15/14 </td>
+            <td> 13:30 </td>
+            <td> 15:30 </td>
+            <td> ADMIN </td>
+            <td> Fail2Ban and iptables config &amp; <a href="http://www.labnol.org/internet/google-scripts/28281/" target="_blank" title="website monitoring"> website monitoring </a> . </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 08/12/14 </td>
+            <td> 18:30 </td>
+            <td> 20:45 </td>
+            <td> REWORK </td>
+            <td> Bug fixes, such as <a href="projects/mshah/index.html" target="_blank" title="M Shah Project Page">M Shah Project Page</a> &amp; started <a href="projects/tracking/index.html" target="_blank" title="tracking project"> tracking project </a>
+            </td>
+            <td> 135 </td>
+          </tr>
+          <tr>
+            <td> 08/12/14 </td>
+            <td> 03:30 </td>
+            <td> 04:00 </td>
+            <td> REWORK </td>
+            <td> Fixed small issue in load &amp; save for <a href="projects/vim/vim.html" target="_blank" title="vim project"> vim project </a> . </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 08/06/14 </td>
+            <td> 17:00 </td>
+            <td> 21:35 </td>
+            <td> REWORK </td>
+            <td> <b> Finally </b> finished <code>passwd</code> command &amp; email project. </td>
+            <td> 275 </td>
+          </tr>
+          <tr>
+            <td> 08/06/14 </td>
+            <td> 13:15 </td>
+            <td> 14:45 </td>
+            <td> REWORK </td>
+            <td> Fixed email project </a> &amp; made more secure. </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 08/04/14 </td>
+            <td> 12:15 </td>
+            <td> 14:30 </td>
+            <td> REWORK </td>
+            <td> Fixed <a href="projects/accounts/register.html" target="_blank" title="account registration"> account registration </a> &amp; made more verbose. </td>
+            <td> 135 </td>
+          </tr>
+          <tr>
+            <td> 08/01/14 </td>
+            <td> 17:00 </td>
+            <td> 17:30 </td>
+            <td> REWORK </td>
+            <td> Fixed <a href="https://github.com/sdsunjay/skeletons/blob/master/centos5/iptables.sh" target="_blank" title="iptables script"> iptables script </a> ; can now receive email. </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 07/31/14 </td>
+            <td> 18:00 </td>
+            <td> 19:00 </td>
+            <td> REWORK </td>
+            <td> Attempted to fix <code>passwd</code> command (unsuccessful). </td>
+            <td> 60 </td>
+          </tr>
+          <tr>
+            <td> 07/28/14 </td>
+            <td> 22:30 </td>
+            <td> 23:00 </td>
+            <td> REWORK </td>
+            <td> Fixed the images in <a href="projects/RS/index.html" target="_blank" title="Real School PD"> Real School PD </a> &amp; <a href="projects/mindbody/index.html" target="_blank" title="SloMo"> SloMo </a>
+            </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 07/25/14 </td>
+            <td> 05:15 </td>
+            <td> 07:30 </td>
+            <td> DEV </td>
+            <td> Worked on <a href="projects/email/index.php" target="_blank" title="email project"> email project </a>
+            </td>
+            <td> 135 </td>
+          </tr>
+          <tr>
+            <td> 07/25/14 </td>
+            <td> 03:30 </td>
+            <td> 05:00 </td>
+            <td> ADMIN </td>
+            <td> Modified <code>syslog.conf</code></td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 07/25/14 </td>
+            <td> 03:00 </td>
+            <td> 03:30 </td>
+            <td> ADMIN </td>
+            <td> Upgraded WordPress to 3.9.1 (the most current release). </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 07/21/14 </td>
+            <td> 02:00 </td>
+            <td> 03:30 </td>
+            <td> DEV </td>
+            <td> Implemented <code>passwd</code>command for a unique user (with errors). </td>
+            <td> 90 </td>
+          </tr>
+          <tr>
+            <td> 07/18/14 </td>
+            <td> 15:00 </td>
+            <td> 17:00 </td>
+            <td> REWORK </td>
+            <td> Updated <a href="projects.html" target="_blank" title="projects"> projects </a> &amp; some other stuff. </td>
+            <td> 120 </td>
+          </tr>
+          <tr>
+            <td> 07/16/14 </td>
+            <td> 22:00 </td>
+            <td> 23:20 </td>
+            <td> REWORK </td>
+              <td> Fixed <code>sudo useradd</code> command, creates cookie successfully. </td>
+            <td> 80 </td>
+          </tr>
+          <tr>
+            <td> 07/16/14 </td>
+            <td> 21:45 </td>
+            <td> 22:15 </td>
+            <td> REWORK </td>
+            <td> Worked on images issue (homepage images work), but not <a href="projects/laedu14/index.html" target="_blank" title="Real School PD Project Page">Real School PD Project Page</a> . </td>
+            <td> 30 </td>
+          </tr>
+          <tr>
+            <td> 07/16/14 </td>
+            <td> 21:00 </td>
+            <td> 21:45 </td>
+            <td> REWORK </td>
+            <td> Fixed <code>php.ini</code> &amp; php-fpm config files for error logging. </td>
+            <td> 45 </td>
+          </tr>
+          <tr>
+            <td> 07/16/14 </td>
+            <td> 20:00 </td>
+            <td> 21:00 </td>
+            <td> ADMIN </td>
+            <td> Checked nginx logs &amp; created <a href="timelog.html" target="_blank" title="timelog">this timelog</a> </td>
+            <td> 60 </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

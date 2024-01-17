@@ -15,34 +15,35 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <meta charset="utf-8">
-<meta name="keywords" content="About, Sunjay, Dhama, Cal, Poly, California, Polytechnic, Oakland, Obispo, Software, Engineering, Computer, Science, Security, C, C++, Rails, Java, Javascript, Python, HTML, CSS, PHP">
-<meta name="description" content="About Sunjay Dhama">
-<meta name="author" content="Sunjay Dhama">
-<meta content="images/favicon.ico" itemprop="image">
-<meta https-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="About, Sunjay, Dhama, Software, Engineering">
+<meta name="description" content="About Sunjay Dhama"/>
+<meta name="author" content="Sunjay Dhama" />
+<meta content="images/favicon.ico" itemprop="image" />
+<meta name="robots" content="max-image-preview:large" />
+
 <!-- SEO -->
-<link rel="canonical" href="https://sunjaydhama.com/" />
+<link rel="canonical" href="https://sunjaydhama.com/about.html" />
 
 <!-- Facebook -->
-<meta property="og:image" content="https://sunjaydhama.com/images/about.jpg"/>
+<meta property="og:image" content="https://sunjaydhama.com/images/about.webp"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="About Sunjay Dhama"/>
 <meta property="og:url" content="https://sunjaydhama.com/about"/>
 <meta property="og:site_name" content="sunjaydhama.com"/>
 <meta property="og:description" content="I'm a Software Engineer and am passionate about Machine Learning, currently based in Seattle, Washington."/>
-<meta property=”og:locale” content=”en_US” />
+<meta property="og:locale" content="en_US" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@sdsunjay">
-<meta name="twitter:title" content="Sunjay Dhama">
+<meta name="twitter:title" content="About Sunjay Dhama">
 <meta name="twitter:description" content="I'm a Software Engineer and am passionate about Machine Learning, currently based in Seattle, Washington."/>
-<meta name="twitter:image:src" content="https://sunjaydhama.com/images/about.jpg">
+<meta name="twitter:image:src" content="https://sunjaydhama.com/images/about.webp">
 
 <!-- Google+ -->
 <meta itemprop="name" content="Sunjay Dhama">
 <meta itemprop="description" content="I'm a Software Engineer and am passionate about Machine Learning, currently based in Seattle, Washington.">
-<meta itemprop="image" content="https://sunjaydhama.com/images/about.jpg">
+<meta itemprop="image" content="https://sunjaydhama.com/images/about.webp">
 
 <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -55,14 +56,27 @@
 
 <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/about.css">
 
+    <!-- Google tag (gtag.js)
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRD5PMETRP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-BRD5PMETRP');
+    </script>
+    <link rel="preload" as="image" href="images/about.webp" type="image/webp" />
 </head>
 <body>
 
 <!-- Nav
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div id="navbar">
+    <div id="navbar">
 
         <a href="index.html"><img src="images/logo.png" alt="Personal Identity"></a>
 
@@ -80,31 +94,29 @@
 <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
    <!-- .container is main centered wrapper -->
-      <div class="aboutcontainer">
-        <div class="container">
+        <div class="container aboutcontainer">
               <h1>About Sunjay Dhama</h1>
           <!-- just use a number and class 'column' or 'columns' -->
-          <div class="row about">
-            <div class="five columns">
-              <img class="portrait" src="images/large/about.jpg" alt="Sunjay Dhama Portrait" />
+          <div class="row">
+            <div class="one-third column">
+                <div class="profile-image">
+                    <img class="portrait" src="images/about.webp" alt="Sunjay Dhama Portrait" />
+                </div>
             </div>
-            <div class="seven columns">
-              <h4>The Friend you haven&rsquo;t met yet</h4>
-              <p>Welcome. I am currently applying to grad school with the goal of obtaining my Master's degree in Computer Science and eventually my PhD. I want to focus on Machine Learning. I am working on a <a href="projects/movie_recommendations_with_ml/index.html">Machine Learning project</a> as well as taking a <a href="http://ml-class.org">Machine Learning course</a>. In my free time I like to <a href="http://wsj.com">read</a>, workout at the gym, and work on this website. <br> I graduated from <a href="https://calpoly.edu" target="_blank" title="Cal Poly">Cal Poly</a>, San Luis Obispo in March 2014 with a degree in Computer Science. I entered Cal Poly with no programming experience, but through hardwork and determination was able to excel in programming assignments. Throughout college I competed in numerous hackathons and <a href="http://startupweekend.org/" target="_blank" title="Startup Weekend">Startup Weekends</a> (See some pictures from these events <a href="images/index.html">here</a>). I enjoy these type of events because at each one I learn something new and meet some of the most amazing people. I have been drawn to entrepreneurships since a young age because of its unique challenges. This is also why I enjoy machine learning so much. The field is constantly evolving, which makes it exciting.
-                <!-- I never feel like I am working when I am trying to fix or exploit a security
-          flaw.-->
-                <br>
-                <!-- I am currently looking for new employment opportunities, so if your
-          company is hiring please <a href="contact.html">reach out to me</a>. I look forward to the
-          future and whatever challenges it may bring.-->
-              </p>
+            <div class="two-thirds column">
+                <div class="profile-content">
+                <h4>The Friend you haven&rsquo;t met yet</h4>
+                    <p>Welcome. I am currently working on a <a href="projects/alexa_chat_skill/index.html" target="_blank">Machine Learning project</a> and taking a <a href="https://www.udemy.com/course/pytorch-deep-learning/" target="_blank"
+                                title="PyTorch Deep Learning">PyTorch Deep Learning course</a>. In my free time, I like to <a href="blog.html" target="_blank">write blogs</a>, work on side projects, and <a href="timelog.html" title="Website Timelog" referrerpolicy="strict-origin" target="_blank">work on this website</a>.
+                    </p>
+                    <p>I graduated from <a href="https://calpoly.edu" target="_blank" title="Cal Poly">Cal Poly</a>, San Luis Obispo with a degree in Computer Science.
+                    I began my journey at Cal Poly without any programming experience, but through hard work and determination, I excelled in programming assignments.
+                    During my college years, I participated in numerous hackathons and <a href="http://startupweekend.org/" target="_blank" title="Startup Weekend">Startup Weekends</a>. <a href="images/index.html" target="_blank" title="Pictures from Startup Weekend">See some pictures of my teams from these events</a>.
+                    I enjoy these types of events because I always learn something new and meet some of the most amazing people.
+                    I&rsquo;ve been passionate about entrepreneurship from a young age due to its unique challenges.
+                    This is also why I find machine learning intriguing. The field is constantly evolving, which makes it exciting.</p>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Scripts
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <!-- Google Analytics -->
-      <script type="text/javascript" src="js/googleAnalytics.js"></script>
     </body>
   </html>
