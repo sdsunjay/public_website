@@ -6,117 +6,238 @@
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <title>Chat GPT Alexa Skill</title>
 
-      <!-- Mobile Specific Metas
+	<!-- Meta Content
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Chat GPT Alexa Skill" />
+	<meta name="keywords" content="ChatGPT, Alexa, Skill, OpenAI, Amazon" />
+	<meta name="author" content="Sunjay Dhama">
+	<meta content="../../images/favicon.ico" itemprop="image" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="max-image-preview:large" />
 
-        <!-- Favicon
-          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <link rel="icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon" />
-          <link rel="shortcut icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon" />
+	<!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-          <!-- Meta Content
-            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- Favicon
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" href="../../images/favicon.ico" type="image/x-icon" />
 
-          <meta name="description" content="Chat GPT Alexa Skill" />
-          <meta name="author" content="Sunjay Dhama" />
-          <meta charset="utf-8" />
-          <meta name="keywords" content="ChatGPT, Alexa, Skill, OpenAI, Amazon" />
-          <meta content="images/favicon.ico" itemprop="image" />
+	<!-- SEO
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="canonical" href="https://sunjaydhama.com/projects/alexa_chat_skill/index.html" />
 
-            <!-- SEO -->
-            <link rel="canonical" href="https://sunjaydhama.com/projects/alexa_chat_skill/index.html" />
+	<!-- Facebook -->
+	<meta property="og:image" content="https://sunjaydhama.com/images/frontFace/alexa_chat_skill/frontFace.webp" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Chat GPT Alexa Skill" />
+	<meta property="og:url" content="https://sunjaydhama.com/" />
+	<meta property="og:site_name" content="sunjaydhama.com" />
+	<meta property="og:description" content="Alexa skill that uses OpenAI's GPT-3.5 model to answer user's questions" />
+	<meta property="og:locale" content="en_US" />
 
-            <!-- Facebook -->
-            <meta property="og:image" content="https://sunjaydhama.com/images/frontFace/alexa_chat_skill/frontFace.webp" />
-            <meta property="og:type" content="website" />
-            <meta property="og:title" content="Chat GPT Alexa Skill" />
-            <meta property="og:url" content="https://sunjaydhama.com/" />
-            <meta property="og:site_name" content="sunjaydhama.com" />
-            <meta property="og:description" content="Alexa skill that uses OpenAI's GPT-3.5 model to answer user's questions" />
-            <meta property="og:locale" content="en_US" />
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@sdsunjay" />
+	<meta name="twitter:title" content="Chat GPT Alexa Skill" />
+	<meta name="twitter:description" content="Alexa skill that uses OpenAI's GPT-3.5 model to answer user's questions" />
+	<meta name="twitter:image:src" content="https://sunjaydhama.com/images/frontFace/alexa_chat_skill/frontFace.webp" />
 
-            <!-- Twitter -->
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:creator" content="@sdsunjay" />
-            <meta name="twitter:title" content="Chat GPT Alexa Skill" />
-            <meta name="twitter:description" content="Alexa skill that uses OpenAI's GPT-3.5 model to answer user's questions" />
-            <meta name="twitter:image:src" content="https://sunjaydhama.com/images/frontFace/alexa_chat_skill/frontFace.webp" />
+	<!-- Google Font -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-            <!-- Google+ -->
-            <meta itemprop="name" content="Sunjay Dhama">
-            <meta itemprop="description" content="Alexa skill that uses OpenAI's GPT-3.5 model to answer user's questions" />
-            <meta itemprop="image" content="https://sunjaydhama.com/images/frontFace/alexa_chat_skill/frontFace.webp" />
+	<!-- FontAwesome JS -->
+	<script defer src="../../assets/fontawesome/js/all.min.js"></script>
 
-              <!-- FONT
-                –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic' rel='stylesheet' type='text/css' />
-                <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css' />
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="../../assets/css/theme-1.css">
 
-                <!-- CSS
-                  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                  <link rel="stylesheet" href="../../css/normalize.css" />
-                  <link rel="stylesheet" href="../../css/skeleton.css" />
+	<!-- Google tag (gtag.js)
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-BRD5PMETRP"></script>
 
-    <!-- Google tag (gtag.js)
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRD5PMETRP"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-BRD5PMETRP');
-  </script>
-
+	<link rel="preload" as="image" href="../../images/projects/alexa_chat_skill/alexa-description.webp" type="image/webp" />
+	<link rel="preload" as="image" href="../../images/projects/alexa_chat_skill/alexa-description-full.webp" type="image/webp" />
   </head>
   <body>
+  	<header class="header">
+		<div class="top-bar theme-bg-primary-darken">
+			<div class="container-fluid">
+				<nav class="navbar navbar-expand-lg navbar-dark position-relative">
+					<ul class="social-list list-inline mb-0">
+						<li class="list-inline-item">
+							<a class="text-white" href="https://linkedin.com/in/sdsunjay" title="Sunjay&#39s LinkedIn" target="_blank">
+								<i class="fab fa-linkedin-in fa-fw"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a class="text-white" href="https://github.com/sdsunjay" title="Sunjay&#39s GitHub" target="_blank">
+								<i class="fab fa-github-alt fa-fw"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a class="text-white" href="https://dhamaharpal.medium.com" title="Sunjay&#39s Medium" target="_blank">
+								<i class="fab fa-medium-m fa-fw"></i>
+							</a>
+						</li>
+					</ul>
+					<!--//social-list-->
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse text-uppercase" id="navigation">
+						<ul class="navbar-nav ms-lg-auto">
+							<li class="nav-item me-lg-3">
+								<a class="nav-link" href="../../index.html">Home</a>
+							</li>
+							<li class="nav-item me-lg-3">
+								<a class="nav-link active" href="../../projects.html">Projects<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item me-lg-3">
+								<a class="nav-link" href="../../resume.html">Résumé</a>
+							</li>
+							<li class="nav-item me-lg-3">
+								<a class="nav-link" href="../../contact.html">Contact</a>
+							</li>
+						</ul>
+						<span id="slide-line"></span>
+					</div>
+				</nav>
+			</div>
+			<!--//container-->
+		</div>
+		<!--//top-bar-->
+		<div class="header-intro theme-bg-primary text-white py-5">
+			<div class="container position-relative">
+				<h2 class="page-heading mb-2">Chat GPT Alexa Skill</h2>
+				<div class="page-heading-tagline">Interactive voice experience using OpenAI's GPT model with Amazon Alexa.</div>
+			</div>
+			<!--//container-->
+		</div>
+		<!--//header-intro-->
+	</header>
+	<!--//header-->
+	<div class="project-wrapper container py-5">
+		<div class="row">
+			<section class="col-12 col-lg-8">
+				<div class="section-row">
+					<div class="mb-5">
+						<img class="img-fluid img-thumbnail" src="../../images/projects/alexa_chat_skill/alexa-description.webp" alt="Chat GPT Alexa Skill" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
+					</div>
+					<!-- Image Modal Structure -->
+					<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-xl">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="imageModalLabel">Chat GPT Alexa Skill Description</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<img src="../../images/projects/alexa_chat_skill/alexa-description-full.webp" alt="Larger Image" class="img-fluid">
+								</div>
+							</div>
+						</div>
+					</div>
+					<h3 class="section-title">Project Background</h3>
 
-    <!-- Nav
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <div id="navbar">
+					<p>This project features an Alexa skill that leverages <a href="https://platform.openai.com/docs/guides/text-generation/chat-completions-api" title="Chat Completions API" target="_blank">OpenAI's Chat API</a> to respond to user inquiries. To ask a question, users simply say "ask," followed by their query. This input triggers a Python <a href="https://aws.amazon.com/lambda/" title="AWS Lambda" target="_blank">Lambda</a> function on AWS, which interacts with the OpenAI API to obtain the answer. Alexa then vocalizes the response and prompts the user if they wish to continue asking questions. User do <b>not</b> need to continue to say "ask" before asking their follow-up questions.</p>
+					<div class="mb-5"><a class="btn btn-primary" href="https://www.amazon.com/dp/B0BZRJVY4P/" target="_blank" title="Amazon.com: chat gpt Alexa Skills"><i class="fas fa-external-link-alt me-2"></i>View Live Alexa Skill</a></div>
+				</div>
+				<!--//section-row-->
 
-        <a href="../../index.html"><img src="../../images/logo.png" alt="Sunjay Dhama Logo"></a>
-        <ul>
-          <li><a href="../../index.html">HOME</a></li>
-          <li><a href="../../index.html">ABOUT</a></li>
-          <li><span class="active"><a href="../../projects.html"><em>PROJECTS</em></a></span></li>
-          <li><a href="../../resume.html">R&Eacute;SUM&Eacute;</a></li>
-          <li><a href="../../contact.html">CONTACT</a></li>
-        </ul>
-      </div>
+				<div class="section-row">
+					<h3 class="section-title">Technical Details</h3>
+					<p>For retrieving questions and answers from a specific date, the skill incorporates <a href="https://github.com/sdsunjay/amazon-date-parser" title="Amazon Date Parser" target="_blank">custom Python code</a> that parses dates for the <a href="https://developer.amazon.com/en-US/docs/alexa/custom-skills/slot-type-reference.html#date" title="Alexa Slot Type Reference" target="_blank">AMAZON.DATE slot</a>. Overall, this Alexa skill offers a streamlined and effective method for users to access information through OpenAI's GPT-3.5 model.</p>
+					<p>The infrastructure for this project was developed using AWS CDK in TypeScript and included several components: S3 for storage, Lambda for serverless compute, Cloudwatch for logging and monitoring dashboard, Secrets Manager for managing sensitive data, such as the OpenAI API Key, and the <a href="https://github.com/aws-samples/cdk-alexa-skill" title="Alexa Skill in CDK" target="_blank">Alexa skill</a>.</p>
+				</div>
+				<!--//section-row-->
 
-      <div class="shell spacer">
+				<div class="section-row">
+					<h3 class="section-title">Actions &amp; Outcomes</h3>
+					<p>The skill offers several interactive features: it can repeat the last question and answer, incorporate past conversations into the current dialogue, and fetch questions and answers from a specific date. Users can add to their conversation history by saying, "add conversation history," and retrieve previous questions and answers by stating, "What are my questions and answers," followed by a date or time period. Additionally, users can search for their historical questions with prompts like, "What were my questions on [specific date]?" or "What were my questions last month?"</p>
+				</div>
+				<!--//section-row-->
 
-        <div class="left-col">
-          <h1>Chat GPT Alexa Skill</h1>
-          <h4>Chat with Chat GPT using Amazon Alexa</h4>
-          <p>See the skill: <a href="https://www.amazon.com/dp/B0BZRJVY4P/">chat gpt in Alexa Skills</a></p>
-          <p>This project is an Alexa skill that utilizes <a href="https://platform.openai.com/docs/guides/chat/introduction">OpenAI's Chat API</a> to answer user's questions. Users can ask a question by saying "ask" followed by their question, which is then sent to a <a href="https://aws.amazon.com/lambda/">Python Lambda in AWS</a> that calls the OpenAI API to retrieve the response. Alexa will then speak the answer and ask if the user wants to ask another question.</p>
-          <p>
-            The skill also has the ability to repeat the last question and answer, add past conversations to the current conversation, and retrieve questions and answers from a particular date. Users can add past conversations by saying "add conversation history," and retrieve past questions by saying "what are my questions and answers" followed by a numerical response.
-          </p>
-          <p>
-            To retrieve questions and answers from a particular date, the skill utilizes a Python parser for the <a href="https://developer.amazon.com/en-US/docs/alexa/custom-skills/slot-type-reference.html#date">AMAZON.DATE slot</a>. Overall, this project provides a convenient and efficient way for users to get answers to their questions using OpenAI's GPT-3.5 model via Alexa.
-        </p>
-        <p>
-          The infrastructure for this project included S3, lambda, logging, Secrets Manager, and the Alexa skill itself. The entire infrastructure was built using AWS CDK in TypeScript.
-        </p>
-      <p>
-        <p>
-            <a class="navbuts" href="../swslo12/index.html"><img src="../../images/css/previous.png"></a>
-            <a class="navbuts" href="../stock_ml/index.html"><img src="../../images/css/next.png"></a>
-        </p>
-          </p>
-        </div>
+				<div class="section-row">
+					<h3 class="section-title">Testimonials</h3>
+					<p>There were periods when the skill was not fully functional or optimized for the best user experience, resulting in some negative feedback. However, as I continue to enhance it, I am hopeful that the reviews will improve and lead to more 5-star ratings. If you like the skill, please give it a <b>5-star review</b> on Amazon.</p>
+					<div class="testimonial bg-white my-5">
+						<div class="position-relative p-5 shadow-sm">
+							<blockquote class="blockquote theme-blockquote text-center">
+										<span class="fa-layers fa-fw mb-3">
+											<svg class="svg-inline--fa fa-circle text-secondary" data-fa-transform="grow-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.5em;">
+												<g transform="translate(256 256)">
+													<g transform="translate(0, 0)  scale(1.75, 1.75)  rotate(0 0 0)">
+														<path fill="currentColor" d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256z" transform="translate(-256 -256)"></path>
+													</g>
+												</g>
+											</svg>
+											<!-- <i class="fas fa-circle text-secondary" data-fa-transform="grow-12"></i> Font Awesome fontawesome.com -->
+											<svg class="svg-inline--fa fa-quote-right fa-inverse text-white" data-fa-transform="shrink-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="" style="transform-origin: 0.4375em 0.5em;">
+												<g transform="translate(224 256)">
+													<g transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)">
+														<path fill="currentColor" d="M96 96C42.98 96 0 138.1 0 192s42.98 96 96 96c11.28 0 21.95-2.305 32-5.879V288c0 35.3-28.7 64-64 64c-17.67 0-32 14.33-32 32s14.33 32 32 32c70.58 0 128-57.42 128-128V192C192 138.1 149 96 96 96zM448 192c0-53.02-42.98-96-96-96s-96 42.98-96 96s42.98 96 96 96c11.28 0 21.95-2.305 32-5.879V288c0 35.3-28.7 64-64 64c-17.67 0-32 14.33-32 32s14.33 32 32 32c70.58 0 128-57.42 128-128V192z" transform="translate(-224 -256)"></path>
+													</g>
+												</g>
+											</svg>
+											<!-- <i class="fa-inverse fas fa-quote-right text-white" data-fa-transform="shrink-4"></i> Font Awesome fontawesome.com -->
+										</span>
+								<p class="mb-3">"People have said it doesn&#8217;t work, but it did for me. Perhaps some bugs have been worked out. The technology is new, so I would expect issues. For example, nothing happened the first time I asked a question. I tried again and it worked. And it worked well, allowing me to start a conversation with ChatGPT. The user experience could be improved. as other said, it's annoying to have to “ask” each time, but I found it more annoying to hear my question repeated back to me. I told it to stop doing that and it did. It behaves similar to the web interface, but there is no way to connect it to my ChatGPT account.
+									"
+								</p>
+								<footer class="blockquote-footer mt-0"><cite title="Source Title">James Bond</cite></footer>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+				<!--//section-row-->
+				<div class="section-row">
+					<h3 class="section-title">Conclusions</h3>
+					<p>
+						This project has been an enlightening educational experience, significantly enhancing my understanding of Alexa and user's voice interactions. I was pleasantly surprised by the extensive engagement the Alexa skill garnered, with hundreds of users and thousands of questions processed. I only created this skill with myself as a user, but I was pleased to see so many people using it. This level of interaction not only underlines the robustness and reliability of the skill, but also highlights AWS's scalable and dependable infrastructure, which effortlessly handled the increasing load. The experience has greatly contributed to my professional growth, offering valuable insights into user behavior, the scalability of cloud solutions, and the practical applications of Alexa, ChatGPT, and AWS technology.
+					</p>
+				</div>
+				<!--//section-row-->
 
-        <div class="left-col">
-          <div class="workimgs ugsbb">
-            <img src="../../images/frontFace/alexa_chat_skill/frontFace.webp" alt="Chat GPT skill shown in the Amazon Alexa Skill Store">
-          </div>
-        </div>
-      </div>
-      <!--
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+			</section>
+			<aside class="project-sidebar col-12 col-lg-4 ps-lg-5">
+				<div class="project-sidebar-inner bg-white p-4">
+					<div class="sidebar-row mb-5">
+						<h3 class="sidebar-title mb-4">Project Info</h3>
+						<ul class="list-unstyled ps-2">
+							<li class="mb-4"><i class="fas fa-building me-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong>Client: </strong>Amazon Alexa Users</li>
+							<li class="mb-4"><i class="fas fa-external-link-alt me-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong>Project Link: </strong><a href="https://www.amazon.com/dp/B0BZRJVY4P/" target="_blank" title="Amazon.com: chat gpt Alexa Skill">View on Amazon</a></li>
+							<li><i class="fas fa-wrench me-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong>Type: </strong>Alexa Skill</li>
+						</ul>
+					</div>
+					<div class="sidebar-row">
+						<h3 class="sidebar-title mb-3">Technologies Used</h3>
+						<div class="webdev-icons row mb-5 justify-content-center">
+							<div class="webdev-icon col-3 col-xl-2 me-0 mb-4"><img class="img-fluid" alt="Amazon Alexa icon" src="../../images/projects/alexa_chat_skill/alexa.svg"></div>
+							<div class="webdev-icon col-3 col-xl-2 me-0 mb-4"><img class="img-fluid" alt="AWS Lambda icon" src="../../assets/images/webdev-icons/lambda.svg"></div>
+							<div class="webdev-icon col-3 col-xl-2 me-0 mb-4"><img class="img-fluid" alt="AWS Cloudwatch icon" src="../../assets/images/webdev-icons/cloudwatch.svg"></div>
+							<div class="webdev-icon col-3 col-xl-2 me-0 mb-4"><img class="img-fluid" alt="AWS Cloud Development Kit icon" src="../../assets/images/webdev-icons/cdk.svg"></div>
+							<div class="webdev-icon col-3 col-xl-2 me-0 mb-4"><img class="img-fluid" alt="Python 3 icon" src="../../assets/images/webdev-icons/python.svg"></div>
+							<div class="webdev-icon col-3 col-xl-2 me-0 mb-4"><img class="img-fluid" alt="Node JS icon" src="../../assets/images/webdev-icons/nodejs.svg"></div>
+						</div>
+					</div>
+				</div>
+				<!--//project-sidebar-inner-->
+			</aside>
+		</div>
+		<!--//row-->
+	</div>
+	<!--//container-->
+	<footer class="footer text-light text-center py-2">
+		<small>Copyright &copy; Sunjay Dhama. All rights reserved.</small>
+	</footer>
+	<!-- Javascript -->
+	<script defer type="text/javascript" src="../../assets/plugins/popper.min.js"></script>
+	<script defer type="text/javascript" src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script defer type="text/javascript"  src="../../assets/plugins/vanilla-back-to-top.min.js"></script>
+	<!-- Custom JS -->
+	<script defer type="text/javascript" src="../../assets/js/main.js"></script>
   </body>
 </html>
