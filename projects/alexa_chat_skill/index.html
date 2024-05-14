@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Basic Page Needs
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <title>Chat GPT Alexa Skill</title>
+
+      <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Favicon
+          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <link rel="icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon" />
+          <link rel="shortcut icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon" />
+
+          <!-- Meta Content
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+          <meta name="description" content="Chat GPT Alexa Skill" />
+          <meta name="author" content="Sunjay Dhama" />
+          <meta charset="utf-8" />
+          <meta name="keywords" content="ChatGPT, Alexa, Skill, OpenAI, Amazon" />
+          <meta content="images/favicon.ico" itemprop="image" />
+
+            <!-- SEO -->
+            <link rel="canonical" href="https://sunjaydhama.com/projects/alexa_chat_skill/index.html" />
+
+            <!-- Facebook -->
+            <meta property="og:image" content="https://sunjaydhama.com/images/frontFace/alexa_chat_skill/frontFace.webp" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="Chat GPT Alexa Skill" />
+            <meta property="og:url" content="https://sunjaydhama.com/" />
+            <meta property="og:site_name" content="sunjaydhama.com" />
+            <meta property="og:description" content="Alexa skill that uses OpenAI's GPT-3.5 model to answer user's questions" />
+            <meta property="og:locale" content="en_US" />
+
+            <!-- Twitter -->
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:creator" content="@sdsunjay" />
+            <meta name="twitter:title" content="Chat GPT Alexa Skill" />
+            <meta name="twitter:description" content="Alexa skill that uses OpenAI's GPT-3.5 model to answer user's questions" />
+            <meta name="twitter:image:src" content="https://sunjaydhama.com/images/frontFace/alexa_chat_skill/frontFace.webp" />
+
+            <!-- Google+ -->
+            <meta itemprop="name" content="Sunjay Dhama">
+            <meta itemprop="description" content="Alexa skill that uses OpenAI's GPT-3.5 model to answer user's questions" />
+            <meta itemprop="image" content="https://sunjaydhama.com/images/frontFace/alexa_chat_skill/frontFace.webp" />
+
+              <!-- FONT
+                –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic' rel='stylesheet' type='text/css' />
+                <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css' />
+
+                <!-- CSS
+                  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                  <link rel="stylesheet" href="../../css/normalize.css" />
+                  <link rel="stylesheet" href="../../css/skeleton.css" />
+
+    <!-- Google tag (gtag.js)
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRD5PMETRP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-BRD5PMETRP');
+  </script>
+
+  </head>
+  <body>
+
+    <!-- Nav
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div id="navbar">
+
+        <a href="../../index.html"><img src="../../images/logo.png" alt="Sunjay Dhama Logo"></a>
+        <ul>
+          <li><a href="../../index.html">HOME</a></li>
+          <li><a href="../../index.html">ABOUT</a></li>
+          <li><span class="active"><a href="../../projects.html"><em>PROJECTS</em></a></span></li>
+          <li><a href="../../resume.html">R&Eacute;SUM&Eacute;</a></li>
+          <li><a href="../../contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div class="shell spacer">
+
+        <div class="left-col">
+          <h1>Chat GPT Alexa Skill</h1>
+          <h4>Chat with Chat GPT using Amazon Alexa</h4>
+          <p>See the skill: <a href="https://www.amazon.com/dp/B0BZRJVY4P/">chat gpt in Alexa Skills</a></p>
+          <p>This project is an Alexa skill that utilizes <a href="https://platform.openai.com/docs/guides/chat/introduction">OpenAI's Chat API</a> to answer user's questions. Users can ask a question by saying "ask" followed by their question, which is then sent to a <a href="https://aws.amazon.com/lambda/">Python Lambda in AWS</a> that calls the OpenAI API to retrieve the response. Alexa will then speak the answer and ask if the user wants to ask another question.</p>
+          <p>
+            The skill also has the ability to repeat the last question and answer, add past conversations to the current conversation, and retrieve questions and answers from a particular date. Users can add past conversations by saying "add conversation history," and retrieve past questions by saying "what are my questions and answers" followed by a numerical response.
+          </p>
+          <p>
+            To retrieve questions and answers from a particular date, the skill utilizes a Python parser for the <a href="https://developer.amazon.com/en-US/docs/alexa/custom-skills/slot-type-reference.html#date">AMAZON.DATE slot</a>. Overall, this project provides a convenient and efficient way for users to get answers to their questions using OpenAI's GPT-3.5 model via Alexa.
+        </p>
+        <p>
+          The infrastructure for this project included S3, lambda, logging, Secrets Manager, and the Alexa skill itself. The entire infrastructure was built using AWS CDK in TypeScript.
+        </p>
+      <p>
+        <p>
+            <a class="navbuts" href="../swslo12/index.html"><img src="../../images/css/previous.png"></a>
+            <a class="navbuts" href="../stock_ml/index.html"><img src="../../images/css/next.png"></a>
+        </p>
+          </p>
+        </div>
+
+        <div class="left-col">
+          <div class="workimgs ugsbb">
+            <img src="../../images/frontFace/alexa_chat_skill/frontFace.webp" alt="Chat GPT skill shown in the Amazon Alexa Skill Store">
+          </div>
+        </div>
+      </div>
+      <!--
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </body>
+</html>
