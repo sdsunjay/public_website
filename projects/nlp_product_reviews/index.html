@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <title>Product Review Classification with BERT and PyTorch</title>
+
+    <!-- Meta Content
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <meta name="description" content="Product Review Classification with BERT and PyTorch" >
+    <meta name="keywords" content="NLP, PyTorch, BERT, Machine Learning, Amazon, Reviews" >
+    <meta name="author" content="Sunjay Dhama" >
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <meta name="robots" content="max-image-preview:large" >
+
+    <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+
+    <!-- Favicon
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon" />
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://sunjaydhama.com/projects/nlp_product_reviews/index.html" />
+
+    <!-- Facebook -->
+    <meta property="og:image" content="https://sunjaydhama.com/images/frontFace/nlp_product_reviews/frontFace.webp" >
+    <meta property="og:type" content="website" >
+    <meta property="og:title" content="Product Review Classification with BERT and PyTorch" >
+    <meta property="og:url" content="https://sunjaydhama.com/" >
+    <meta property="og:site_name" content="sunjaydhama.com" >
+    <meta property="og:description" content="." >
+    <meta property="og:locale" content="en_US" >
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" >
+    <meta name="twitter:creator" content="@sdsunjay" >
+    <meta name="twitter:title" content="Product Review Classification with BERT and PyTorch" >
+    <meta name="twitter:description" content="." >
+    <meta name="twitter:image:src" content="https://sunjaydhama.com/images/frontFace/nlp_product_reviews/frontFace.webp" >
+
+    <!-- Google+ -->
+    <meta itemprop="name" content="Sunjay Dhama" >
+    <meta itemprop="description" content="." >
+    <meta itemprop="image" content="https://sunjaydhama.com/images/frontFace/nlp_product_reviews/frontFace.webp" >
+    <!-- Google tag (gtag.js)
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRD5PMETRP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BRD5PMETRP');
+    </script>
+
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- FontAwesome JS -->
+    <script defer src="../../assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/theme-1.css">
+
+    <link rel="preload" as="image" href="../../images/projects/nlp_product_reviews/main.webp" type="image/webp" />
+  </head>
+  <body>
+  <header class="header">
+    <div class="top-bar theme-bg-primary-darken">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark position-relative">
+          <ul class="social-list list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="text-white" href="https://linkedin.com/in/sdsunjay" title="Sunjay&#39s LinkedIn" target="_blank">
+                <i class="fab fa-linkedin-in fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="text-white" href="https://github.com/sdsunjay" title="Sunjay&#39s GitHub" target="_blank">
+                <i class="fab fa-github-alt fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="text-white" href="https://dhamaharpal.medium.com" title="Sunjay&#39s Medium" target="_blank">
+                <i class="fab fa-medium-m fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+          <!--//social-list-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-uppercase" id="navigation">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item me-lg-3">
+                <a class="nav-link" href="../../index.html">Home</a>
+              </li>
+              <li class="nav-item me-lg-3">
+                <a class="nav-link active" href="../../projects.html">Projects</a>
+              </li>
+              <li class="nav-item me-lg-3">
+                <a class="nav-link" href="../../resume.html">Résumé</a>
+              </li>
+              <li class="nav-item me-lg-3">
+                <a class="nav-link" href="../../contact.html">Contact</a>
+              </li>
+            </ul>
+            <span id="slide-line"></span>
+          </div>
+        </nav>
+      </div>
+      <!--//container-->
+    </div>
+    <!--//top-bar-->
+    <div class="header-intro theme-bg-primary text-white py-5">
+      <div class="container">
+        <h2 class="page-heading mb-2">Product Review Classification with BERT and PyTorch</h2>
+        <div class="page-heading-tagline">Classifying Amazon Product Reviews using BERT and PyTorch.</div>
+      </div>
+    </div>
+  </header>
+  <!--//header-->
+  <div class="project-wrapper container py-5">
+    <div class="row">
+      <section class="col-12 col-lg-8">
+        <div class="section-row">
+          <div class="mb-5">
+            <img class="img-fluid" src="../../images/projects/nlp_product_reviews/main.webp" alt="Bert gesturing to a neural network on a computer screen">
+          </div>
+          <h3 class="section-title">Project Overview</h3>
+          <p>In this project, we followed <a href="http://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/" target="_blank" title="a visual guide to using bert for the first time">this guide</a> and used the <a href="https://huggingface.co/bert-large-uncased" target="_blank" title="bert large uncased">bert-large-uncased model</a>, which is a version of BERT (Bidirectional Encoder Representations from Transformers), a state-of-the-art natural language processing model, to classify product reviews as written on <a href="https://amazon.com">Amazon</a>.</p>
+          <p>We wanted to determine if users had encountered a safety issue with the product, such as it being dangerous for children or pets or if it had the potential to cause harm. We implemented two state-of-the-art models, BERT and ALBERT (A Lite BERT), in Python using the <a href="https://pytorch.org/">PyTorch library</a>, which is a popular open-source machine learning framework. Ensemble learning is a machine learning technique that combines the predictions of multiple models to make more accurate predictions.</p>
+          <!--//section-row-->
+        </div>
+        <div class="section-row">
+          <h3 class="section-title">Data</h3>
+          <p>Amazon supplied the dataset of hundreds of product reviews with very few reviews indicating a safety issue. The text provided was already labeled, but we did not have access to the labels for the final test dataset. We used a dataset of customer reviews for a particular product. The dataset consisted of text reviews and corresponding labels indicating whether the review was safe or unsafe.</p>
+        </div>
+        <!--//section-row-->
+        <div class="section-row">
+          <h3 class="section-title">Preprocessing</h3>
+          <p>Before training the model, we preprocessed the data by changing the text to lowercase, removing punctuation, and tokenizing the reviews using the BERT vocabulary. Since BERT is limited to 500 tokens, we needed to remove any unnecessary words and for long reviews, we simply truncated the review. We also split the dataset into training, validation, and test sets.</p>
+        </div>
+        <!--//section-row-->
+        <div class="section-row">
+          <h3 class="section-title">Training</h3>
+          <p>We trained the BERT model on the training set using the Adam optimization algorithm and a binary cross-entropy loss function. We fine-tuned the model by adjusting the learning rate and the number of epochs. PyTorch provided a convenient and efficient way to build, train, and deploy the model for text classification.</p>
+          <p>We then used ensemble learning to combine the predictions of the BERT and ALBERT models. We experimented with different ensemble methods, such as simple averaging and weighted averaging, and selected the method that provided the best performance on the validation set.</p>
+        </div>
+        <!--//section-row-->
+        <div class="section-row">
+          <h3 class="section-title">Conclusions</h3>
+          <p>We evaluated the model on the test set and obtained an accuracy of 84.25% and f1-score of 77.05% respectively.</p>
+          <p>The BERT model achieved good performance on the task of classifying product reviews as dangerous or not dangerous. This can be useful for businesses seeking to gather customer feedback and improve their products and services. The PyTorch library made it easy to implement and train the model for this task.</p>
+        </div>
+        <!--//section-row-->
+      </section>
+      <aside class="project-sidebar col-12 col-lg-4 ps-lg-5">
+        <div class="project-sidebar-inner bg-white p-4">
+          <div class="sidebar-row mb-5">
+            <h3 class="sidebar-title mb-4">Project Info</h3>
+            <ul class="list-unstyled ps-2">
+              <li class="mb-4"><i class="fas fa-building me-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong>Client: </strong>Amazon</li>
+              <li class="mb-4"><i class="fas fa-external-link-alt me-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong>GitHub Link: </strong><a href=https://github.com/sdsunjay/nlp-product-reviews target="_blank" title="NLP Product Review">NLP Product Reviews</a></li>
+              <li><i class="fas fa-wrench me-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong>Type: </strong>Backend</li>
+            </ul>
+          </div>
+          <div class="sidebar-row">
+            <h3 class="sidebar-title mb-3">Technologies Used</h3>
+            <div class="webdev-icons row mb-5 justify-content-center">
+              <div class="webdev-icon col-3 col-xl-2 me-0 mb-4"><img class="img-fluid" alt="Python 3 icon" src="../../assets/images/webdev-icons/python.svg"></div>
+              <div class="webdev-icon col-3 col-xl-2 me-0 mb-4"><img class="img-fluid" alt="PyTorch icon" src="../../assets/images/webdev-icons/pytorch.svg"></div>
+            </div>
+          </div>
+        </div>
+        <!--//project-sidebar-inner-->
+      </aside>
+    </div>
+    <!--//row-->
+  </div>
+  <!--//container-->
+  <footer class="footer text-light text-center py-2">
+    <small>Copyright &copy; Sunjay Dhama. All rights reserved.</small>
+  </footer>
+  <!-- Javascript Libraries-->
+  <script defer type="text/javascript" src="../../assets/plugins/popper.min.js"></script>
+  <script defer type="text/javascript" src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script defer type="text/javascript"  src="../../assets/plugins/vanilla-back-to-top.min.js"></script>
+
+  <!-- Custom Scripts -->
+  <script defer type="text/javascript" src="../../assets/js/main.js"></script>
+  </body>
+</html>
