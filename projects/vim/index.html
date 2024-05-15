@@ -1,105 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <title>Vim</title>
 
-<!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<title>Vim</title>
-<meta name="author" content="Sunjay Dhama">
+    <!-- Meta Content
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <meta name="description" content="Vim Editor in the Browser" >
+    <meta name="keywords" content="Sunjay, Dhama, Vim, HTML,CSS" />
+    <meta name="author" content="Sunjay Dhama" >
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <meta name="robots" content="max-image-preview:large" >
 
-<!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link rel="icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon">
+    <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
 
-<!-- Meta Content
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Favicon
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://sunjaydhama.com/images/favicon.ico" type="image/x-icon" />
 
-<meta charset="utf-8">
-<meta name="keywords" content="Sunjay, Dhama, Cal, Poly, California, Polytechnic, San Luis Obispo, Obispo, Software, Engineering, Computer, Science, Android, Java, HTML,CSS"/>
-<meta name="author" content="Sunjay Dhama">
-<meta content="images/favicon.ico" itemprop="image">
-<meta https-equiv="content-type" content="text/html; charset=utf-8" />
+    <!-- SEO -->
+    <link rel="canonical" href="https://sunjaydhama.com/projects/vim/index.html" />
 
-<!-- SEO -->
-<link rel="canonical" href="https://sunjaydhama.com/" />
+    <!-- Google tag (gtag.js)
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRD5PMETRP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-<!-- Facebook -->
-<meta property="og:image" content="https://sunjaydhama.com/images/about.jpg"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://sunjaydhama.com/"/>
-<meta property="og:site_name" content="sunjaydhama.com"/>
-<meta property="og:description" content="I'm a Software Engineer, passionate about Machine Learning,  currently based in Seattle, Washington."/>
-<meta property=”og:locale” content=”en_US” />
+      gtag('config', 'G-BRD5PMETRP');
+    </script>
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:creator" content="@sdsunjay">
-<meta name="twitter:title" content="Sunjay Dhama">
-<meta name="twitter:description" content="I'm a Software Engineer, passionate about Machine Learning,  currently based in Seattle, Washington."/>
-<meta name="twitter:image:src" content="https://sunjaydhama.com/images/about.jpg">
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-<!-- Google+ -->
-<meta itemprop="name" content="Sunjay Dhama">
-<meta itemprop="description" content="I'm a Software Engineer, passionate about Machine Learning,  currently based in Seattle, Washington."/>
-<meta itemprop="image" content="https://sunjaydhama.com/images/about.jpg">
+    <!-- FontAwesome JS -->
+    <script defer src="../../assets/fontawesome/js/all.min.js"></script>
 
-<!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/theme-1.css">
 
-<!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-
-<!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link rel="stylesheet" href="../../css/normalize.css">
-<link rel="stylesheet" href="../../css/skeleton.css">
-<!-- specific to the homepage -->
-
-</head>
-<body>
-
-<!-- Nav
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<nav>
-   <ul>
-      <li><a href="../../about.html">ABOUT</a></li>
-      <li><a href="../../projects.html">PROJECTS</a></li>
-      <li>
-      <a href="../index.html">
-         <img id="navlogo" src="../../images/logo.png" alt="navagation-logo"></a></li>
-      <li><a href="../../resume.html">R&Eacute;SUM&Eacute;</a></li>
-      <li><a href="../../contact.html">CONTACT</a></li>
-   </ul>
-</nav>
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="shell spacer">
-
-   <div class="left-col">
-      <h1>Vim</h1>
-      <h4><a href="index.html">The best text editor ever!</a></h4>
-      <p> Update: this project is now usable, see it <a href="demo/vim.html">here</a><a></a></p><a>
-      </a><p><a>
-      This project was inspired by my push to make my </a><a href="../projects/terminal/terminal.html">terminal project</a> as realistic as possible. As any good programmer knows, <a href="http://www.vim.org/">Vim</a> is essential when writing code. Even if I am mainly using <a href="https://en.wikipedia.org/wiki/IntelliJ_IDEA" title="IntelliJ IDE">IntelliJ IDE</a>, I will still occasionally use Vim to make small edits (all development for this website was done using Vim). This is why I knew I had to integrate a <b>very good</b> emulator of it. After a good bit of searching, I found the <a href="https://codemirror.net/" title="Code Mirror">Code Mirror</a> project, which is in active development to create emulators of popular text editors, such as <a href="https://codemirror.net/5/demo/vim.html">Vim</a>, <a href="https://codemirror.net/5/demo/emacs.html">Emacs</a>, and others. I downloaded the project and made <b>many</b> edits to it before I was finally able to add it to my site. However, recently my development has fallen behind the main branch of the project and a few features that used to work, no longer do (like full-screen mode). I hope to get back to this project soon, but adjusting the CSS after every download is a huge time suck. The save and load features work and soon the file will become associated with a particular user, assuming you <a href=../projects/accounts/register.html">create an account</a>. In the meantime, have fun playing around with Vim, almost all of the shortcuts work as expected.
-      </p>
-      <p>
-        <a class="navbuts" href="../mindbody/mindbody.html">
-          <img src="../../images/css/previous.png">
-        </a>
-        <a class="navbuts" href="../swslo12/index.html">
-          <img src="../../images/css/next.png">
-        </a>
-      </p>
-   </div>
-   <div class="left-colmn">
-      <div class="workimgs ugsbb">
-        <img src="../../images/frontFace/vim/frontFace.jpg" alt="Web Vim Project">
+    <link rel="preload" as="image" href="../../images/frontFace/vim/frontFace.webp" type="image/webp" />
+  </head>
+  <body>
+  <header class="header">
+    <div class="top-bar theme-bg-primary-darken">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark position-relative">
+          <ul class="social-list list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="text-white" href="https://linkedin.com/in/sdsunjay" title="Sunjay&#39s LinkedIn" target="_blank">
+                <i class="fab fa-linkedin-in fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="text-white" href="https://github.com/sdsunjay" title="Sunjay&#39s GitHub" target="_blank">
+                <i class="fab fa-github-alt fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="text-white" href="https://dhamaharpal.medium.com" title="Sunjay&#39s Medium" target="_blank">
+                <i class="fab fa-medium-m fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+          <!--//social-list-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-uppercase" id="navigation">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item me-lg-3">
+                <a class="nav-link" href="../../index.html">Home</a>
+              </li>
+              <li class="nav-item me-lg-3">
+                <a class="nav-link active" href="../../projects.html">Projects</a>
+              </li>
+              <li class="nav-item me-lg-3">
+                <a class="nav-link" href="../../resume.html">Résumé</a>
+              </li>
+              <li class="nav-item me-lg-3">
+                <a class="nav-link" href="../../contact.html">Contact</a>
+              </li>
+            </ul>
+            <span id="slide-line"></span>
+          </div>
+        </nav>
       </div>
-   </div>
-</div>
-</body>
+      <!--//container-->
+    </div>
+    <!--//top-bar-->
+    <div class="header-intro theme-bg-primary text-white py-5">
+      <div class="container">
+        <h2 class="page-heading mb-2">Product Review Classification with BERT and PyTorch</h2>
+        <div class="page-heading-tagline">Classifying Amazon Product Reviews using BERT and PyTorch.</div>
+      </div>
+    </div>
+  </header>
+  <!--//header-->
+  <div class="project-wrapper container py-5">
+    <div class="row">
+      <section class="col-12 col-lg-8">
+        <div class="section-row">
+          <div class="mb-5">
+            <img class="img-fluid" src="../../images/frontFace/vim/frontFace.webp" alt="Web Vim Project">
+          </div>
+          <h3 class="section-title">Project Overview</h3>
+          <p>
+            This project was inspired by my desire to have my <a href="../terminal/terminal.html">terminal project</a> as realistic as possible. As any good programmer knows,
+            <a href="http://www.vim.org/">Vim</a> is essential when writing code.
+            Even if I am mainly using <a href="https://en.wikipedia.org/wiki/IntelliJ_IDEA" title="IntelliJ IDE">IntelliJ IDE</a>,
+            I will still occasionally use Vim to make small edits (all development for this website was done using Vim).
+            This is why I knew I had to integrate a <b>very good</b> emulator of it. After a good bit of searching, I found the <a href="https://codemirror.net/" title="Code Mirror">Code Mirror</a> project,
+            which is in active development to create emulators of popular text editors, such as <a href="https://codemirror.net/5/demo/index.html">Vim</a>, <a href="https://codemirror.net/5/demo/emacs.html">Emacs</a>, and others. I downloaded the project and made <b>many</b> edits to it before I was finally able to add it to my site. However, recently my development has fallen behind the main branch of the project and a few features that used to work, no longer do (like full-screen mode). I hope to get back to this project soon, but adjusting the CSS after every download is a huge time suck. The save and load features work and soon the file will become associated with a particular user, assuming you <a href="../accounts/register.html">create an account</a>. In the meantime, have fun playing around with Vim, almost all of the shortcuts work as expected.
+          </p>
+        </div>
+          <!--//section-row-->
+      </section>
+      <aside class="project-sidebar col-12 col-lg-4 ps-lg-5">
+        <div class="project-sidebar-inner bg-white p-4">
+          <div class="sidebar-row mb-5">
+            <h3 class="sidebar-title mb-4">Project Info</h3>
+            <ul class="list-unstyled ps-2">
+              <li class="mb-4"><i class="fas fa-building me-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong>Client: </strong>Sunjay</li>
+              <li class="mb-4"><i class="fas fa-external-link-alt me-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong>GitHub Link: </strong>Coming Soon</li>
+              <li><i class="fas fa-wrench me-3 text-primary" data-fa-transform="grow-6 down-2"></i><strong>Type: </strong>Backend and Frontend</li>
+            </ul>
+          </div>
+          <div class="sidebar-row">
+            <h3 class="sidebar-title mb-3">Technologies Used</h3>
+            <div class="webdev-icons row mb-5 justify-content-center">
+              <div class="webdev-icon col-3 col-xl-2 me-0 mb-4"><img class="img-fluid" alt="PHP icon" src="../../assets/images/webdev-icons/php.svg"></div>
+              <div class="webdev-icon col-3 col-xl-2 me-0 mb-4"><img class="img-fluid" alt="JavaScript icon" src="../../assets/images/webdev-icons/javascript.svg"></div>
+              <div class="webdev-icon col-3 col-xl-2 me-0 mb-4"><img class="img-fluid" alt="HTML icon" src="../../assets/images/webdev-icons/html5.svg"></div>
+              <div class="webdev-icon col-3 col-xl-2 me-0 mb-4"><img class="img-fluid" alt="MySQL icon" src="../../assets/images/webdev-icons/mysql-alt.svg"></div>
+            </div>
+          </div>
+        </div>
+        <!--//project-sidebar-inner-->
+      </aside>
+    </div>
+    <!--//row-->
+  </div>
+  <!--//container-->
+  <footer class="footer text-light text-center py-2">
+    <small>Copyright &copy; Sunjay Dhama. All rights reserved.</small>
+  </footer>
+  <!-- Javascript Libraries-->
+  <script defer type="text/javascript" src="../../assets/plugins/popper.min.js"></script>
+  <script defer type="text/javascript" src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script defer type="text/javascript"  src="../../assets/plugins/vanilla-back-to-top.min.js"></script>
+
+  <!-- Custom Scripts -->
+  <script defer type="text/javascript" src="../../assets/js/main.js"></script>
+  </body>
 </html>
